@@ -1,11 +1,13 @@
 require 'rubygems'
 require 'erb'
 require 'json'
+require 'yaml'
 
 def render_files_with_template(glob, template_file, filename_generator)
   template = ERB.new(File.read(template_file))
   Dir.glob(glob).each do |file|
-    page = JSON.parse(File.read(file))
+    puts file
+    page = JSON.parse(File.read(file)) rescue page = YAML.load(File.read(file))
     rendered_filename = filename_generator.call(page)
     File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
     puts "Rendered post #{rendered_filename}."
@@ -21,7 +23,7 @@ end
 desc "Render static pages"
 task :render_static do
   render_files_with_template('static/*.json', 'templates/static.erb',
-                             lambda { |page| "public/#{page['name']}.html" })
+                             lambda { |page| "public/#{page['title'].downcase}.html" })
 end
 
 desc "Render Atom feed"
@@ -34,6 +36,6 @@ desc "Render pages of posts"
 task :render_pages do
 end
 
-task :render => [:render_posts, :render_pages, :render_feed, :render_static]
+task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
