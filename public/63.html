@@ -1,0 +1,191 @@
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' />
+    <title>more rails testing help - Technomancy</title>
+    <script src="/static/prototype.js" type="text/javascript"></script>
+
+    <link href="http://technomancy.us/feed/atom" rel="alternate" type="application/atom+xml"/>
+    <link rel='stylesheet' href='/static/style.css' type='text/css' />
+  </head>
+
+  <body>
+
+    <div id='background'>
+      <img src='/static/i/top.png' alt='Technomancy' border='0' id='corner' />
+
+      <div id='wrapper'> &nbsp;
+
+      <div id='nav'>
+        <ul>
+          <li><a href='/'>blog</a></li>
+          <li><a href='/resume'>r&eacute;sum&eacute;</a></li>
+          <li><a href='/contact'>contact</a></li>
+          <li><a href='/meta'>meta</a></li>
+          <li><a href='http://dev.technomancy.us'>projects</a></li>
+        </ul>
+
+      </div><!-- end nav -->
+
+      <p id='tagline'>Any sufficiently advanced technology is indistinguishable from magic.</p>
+
+      <div id='content'>
+        <h2>{ blog }</h2><div id='sidebar'>
+
+        <h3>What you say?</h3>
+
+        <p class='explain'>These are the technology musings of Phil
+        Hagelberg. I write Ruby and Javascript code for a living, but I also spend a lot of
+        time considering how to do so in the most efficient manner. This
+        necessarily involves good-sized chunks of Emacs lisp.</p>
+
+        <p class='explain'>I've got a separate <a href="http://philisha.net">blog for
+        personal thoughts</a> and a <a href="http://dev.technomancy.us">wiki</a>
+        for my projects.</p>
+
+        <form action='http://www.google.com/search' name='searchbox' method='get'>
+          <input type='hidden' name='sitesearch' value='technomancy.us' />
+          <input type='text' name='q' size='9' value='Search' class='form-text'
+                 onfocus="if (this.value=='Search') value='';"
+                 onblur="if (this.value=='') value='Search';" />
+          <input type='submit' value='&#187;' class='button' title="Because I didn't want to code search myself" />
+        </form>
+
+        <p><a href='/feed/atom' title='Syndication is your friend'><img src='/static/i/feedIcon.png' alt='feed' align='left' /> Feed</a></p>
+
+        <h3>Fellow Hackers</h3>
+        <ul>
+          <li><a href='http://arko.net/' rel='friend met colleague'>andr&eacute; arko</a></li>
+          <li><a href='http://brainspl.at' rel='friend met colleague'>ezra Z</a></li>
+          <li><a href='http://blog.livollmers.net/' rel='friend colleague met'>alex</a></li>
+          <li><a href='http://userprimary.net/user' rel='frient colleague met'>seth</a></li>
+          <li><a href='http://www.lathi.net' rel='friend colleague met'>doug alcorn</a></li>
+          <li><a href='http://blog.hasmanythrough.com' rel='friend colleague met'>josh susser</a></li>
+          <li><a href='http://yehudakatz.com'>katz</a></li>
+          <li><a href='http://evil.che.lu' rel='friend colleague'>evilchelu</a></li>
+          <li><a href='http://jw.fi' rel='friend colleague'>unfo-</a></li>
+          <li><a href='http://metaatem.com' rel='friend colleague met'>kastner</a></li>
+          <li><a href='http://www.anarchaia.org/'>anarchaia</a></li>
+          <li><a href='http://blog.codahale.com' rel='friend colleague met'>coda hale</a></li>
+          <li><a href='http://gilesbowkett.blogspot.com' rel='colleague'>giles bowkett</a></li>
+          <li><a href='http://on-ruby.blogspot.com/' rel='colleague met'>pate</a></li>
+          <li><a href='http://schneier.com/blog' title='SecurityInsight'>bruce schneier</a></li>
+          <li><a href='http://tbray.org/ongoing' rel='met' title='t1m'>tim bray</a></li>
+          <li><a href='http://diveintomark.org'>mark pilgrim</a></li>
+          <li><a href='http://intertwingly.net'>sam ruby</a></li>
+          <li><a href='http://hackety.org' rel='met'>hackety</a></li>
+          <li><a href='http://redhanded.hobix.com/' rel='met' title='Lucky Stiff and Friends'>redHanded</a></li>
+          <li><a href='http://eigenclass.org' title="maybe if i read this more often i'll get smarter and understand it">mauricio</a></li>
+          <li><a href='http://onestepback.org' title='the santa claus of Ruby'>jim weirich</a></li>
+          <li><a href='http://ejohn.org'>john resig</a></li>
+          <li><a href='http://steve-yegge.blogspot.com/' title='mostly he is listed because of emacs'>steve yegge</a></li>
+        </ul>
+
+        <h3 title='aggregation is key here'>Communities</h3>
+        <ul>
+          <li><a href='http://planet.lisp.org' title="(grok 'lisp)">planet lisp</a></li>
+          <li><a href='http://planet.emacsen.org' title='denizens of #emacs'>planet emacs</a></li>
+          <li><a href='http://planetruby.0x42.net' title='Yes, it runs on Python'>planet ruby</a></li>
+          <li><a href='http://planet.caboo.se' title='my latest planet'>planet caboose</a></li>
+          <li><a href='http://planet.ubuntu.com' title='humanity'>planet ubuntu</a></li>
+          <li><a href='http://planet.mozilla.org' title='Gecko will save us'>planet mozilla</a></li>
+          <li><a href='http://radar.oreilly.com/' title='there are those that call me... tim'>planet o'reilly</a></li>
+        </ul>
+
+        <h3><a href='http://dev.technomancy.us/'>Projects</a></h3>
+        <ul>
+          <li><a href='http://bus-scheme.rubyforge.org'>bus scheme</a></li>
+          <li><a href='http://augment.rubyforge.org'>augment</a></li>
+          <li><a href='http://www.emacswiki.org/cgi-bin/wiki/ElUnit' title='Emacs Lisp TDD'>elunit</a></li>
+          <li><a href='http://rinari.rubyforge.org' title='rails emacs mode'>rinari</a></li>
+          <li><a href='http://concour.se' title='railsday 06 project'>Concourse</a></li>
+          <li><a href='http://rubyforge.org/projects/rplanet' title='Feed Aggregator'>rPlanet</a></li>
+          <li><a href='http://rav.rubyforge.org/' title='Rails Application Visualizer'>rav</a></li>
+          <li><a href='http://cartographer.rubyforge.org' title='Google Maps in Rails'>Cartographer</a></li>
+          <li><a href='http://dev.technomancy.us/ebby' title='collaborative editing with Emacs'>ebby</a></li>
+        </ul>
+
+      </div><!-- end sidebar -->
+
+      <div class='post'>
+        <h3><a href='/63'>more rails testing help</a></h3>
+
+        <div>
+          <p>Hi, my name is Phil, and I suck at testing my views.</p>
+
+<p>You might argue that views aren't that crucial to functionality,
+  and that's not the job of the programmer--a designer will have to go
+  over them anyway. If you're on a team with a designer, it might not
+  be your job to make sure everything is displayed properly. However,
+  there is something pretty functionally crucial about the
+  views--forms. No amount of CSS and designer-fu will be able to fix a
+  form that doesn't ask the right questions.</p>
+
+<pre class='code'>
+  <span class="keyword">def</span> <span class="function-name">post_form_check</span>(action, params = <span class="variable-name">nil</span>, session = <span class="variable-name">nil</span>, flash = <span class="variable-name">nil</span>)
+    get_action, action = action <span class="keyword">if</span> action.is_a?(<span class="type">Array</span>) 
+    get (get_action || action), params.dup, session, flash
+    assert_response <span class="constant">:success</span>
+
+    assert_form_elements_present(params)
+
+    post action, params, session, flash
+  <span class="keyword">end</span>
+
+  <span class="keyword">def</span> <span class="function-name">assert_form_elements_present</span>(params, parents=[])
+    params.each <span class="keyword">do</span> |id, value|
+      <span class="keyword">next</span> <span class="keyword">if</span> id.to_sym == <span class="constant">:id</span>
+      <span class="keyword">if</span> value.is_a? <span class="type">Hash</span>
+        assert_form_elements_present(value, parents + [id])
+      <span class="keyword">else</span>
+        assert_select <span class="string">"input#</span><span class="variable-name">#{(parents + [id]).join('_')}</span><span class="string">"</span>
+      <span class="keyword">end</span>
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+</pre>
+
+<p>Generally when you have a page that people post data to, users get
+  a form from an action in the same controller--often even the same
+  action. So why not have Rails check that the form has the right
+  inputs anyway? You've already got a list of input parameters lined
+  up in a hash there just asking to be used.</p>
+
+<p><tt>post_form_check :new, { :name => 'Mead', :description => 'A
+    fermented beverage made of honey, water, and yeast, often served
+    mulled or with fruit', :alcoholic => true }</tt></p>
+
+<p>The above line will act as a <tt>post</tt>, on the <tt>:new</tt>
+  action of your controller, but will first <tt>get</tt> the same
+  action and ensure that there are <tt>&lt;input&gt;</tt> tags
+  named <tt>name</tt>, <tt>description</tt>,
+  and <tt>alcoholic</tt>. If you need to <tt>get</tt> a different
+  action than you are <tt>post</tt>ing to, you can use an array rather
+  than a symbol for the action:</p>
+
+<p><tt>post_form_check [:list, :drink], { :to_drink => 32 }</tt></p>
+
+<p>It still needs a bit of work to be able to support nested hashes,
+  but it should be helpful as it is.</p>
+
+<p><b>Update</b>: Now works with nested hashes.</p>
+
+<p><a href='http://www.chatmag.com/news/091606_rob_levin.html'>R.I.P lilo</a>.</p>
+
+        </div>
+
+        <p class='dt'>
+          <a href='/63'>Sat Oct 13 00:00:01 -0700 2007</a>
+        </p>
+      </div>
+    </div>
+
+    <p id='foot'>
+      &copy; 2004 - 2007 Phil Hagelberg <span title='soli Deo gloria'>SDG</span>
+    </p>
+
+  </div><!-- end wrapper -->
+  <img src='/static/i/foot.png' alt='' id='corner' style='display: block;' />
+
+</div><!-- end background -->
+
+
+</body></html>

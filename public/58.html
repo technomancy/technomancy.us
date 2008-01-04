@@ -1,0 +1,187 @@
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' />
+    <title>elunit? - Technomancy</title>
+    <script src="/static/prototype.js" type="text/javascript"></script>
+
+    <link href="http://technomancy.us/feed/atom" rel="alternate" type="application/atom+xml"/>
+    <link rel='stylesheet' href='/static/style.css' type='text/css' />
+  </head>
+
+  <body>
+
+    <div id='background'>
+      <img src='/static/i/top.png' alt='Technomancy' border='0' id='corner' />
+
+      <div id='wrapper'> &nbsp;
+
+      <div id='nav'>
+        <ul>
+          <li><a href='/'>blog</a></li>
+          <li><a href='/resume'>r&eacute;sum&eacute;</a></li>
+          <li><a href='/contact'>contact</a></li>
+          <li><a href='/meta'>meta</a></li>
+          <li><a href='http://dev.technomancy.us'>projects</a></li>
+        </ul>
+
+      </div><!-- end nav -->
+
+      <p id='tagline'>Any sufficiently advanced technology is indistinguishable from magic.</p>
+
+      <div id='content'>
+        <h2>{ blog }</h2><div id='sidebar'>
+
+        <h3>What you say?</h3>
+
+        <p class='explain'>These are the technology musings of Phil
+        Hagelberg. I write Ruby and Javascript code for a living, but I also spend a lot of
+        time considering how to do so in the most efficient manner. This
+        necessarily involves good-sized chunks of Emacs lisp.</p>
+
+        <p class='explain'>I've got a separate <a href="http://philisha.net">blog for
+        personal thoughts</a> and a <a href="http://dev.technomancy.us">wiki</a>
+        for my projects.</p>
+
+        <form action='http://www.google.com/search' name='searchbox' method='get'>
+          <input type='hidden' name='sitesearch' value='technomancy.us' />
+          <input type='text' name='q' size='9' value='Search' class='form-text'
+                 onfocus="if (this.value=='Search') value='';"
+                 onblur="if (this.value=='') value='Search';" />
+          <input type='submit' value='&#187;' class='button' title="Because I didn't want to code search myself" />
+        </form>
+
+        <p><a href='/feed/atom' title='Syndication is your friend'><img src='/static/i/feedIcon.png' alt='feed' align='left' /> Feed</a></p>
+
+        <h3>Fellow Hackers</h3>
+        <ul>
+          <li><a href='http://arko.net/' rel='friend met colleague'>andr&eacute; arko</a></li>
+          <li><a href='http://brainspl.at' rel='friend met colleague'>ezra Z</a></li>
+          <li><a href='http://blog.livollmers.net/' rel='friend colleague met'>alex</a></li>
+          <li><a href='http://userprimary.net/user' rel='frient colleague met'>seth</a></li>
+          <li><a href='http://www.lathi.net' rel='friend colleague met'>doug alcorn</a></li>
+          <li><a href='http://blog.hasmanythrough.com' rel='friend colleague met'>josh susser</a></li>
+          <li><a href='http://yehudakatz.com'>katz</a></li>
+          <li><a href='http://evil.che.lu' rel='friend colleague'>evilchelu</a></li>
+          <li><a href='http://jw.fi' rel='friend colleague'>unfo-</a></li>
+          <li><a href='http://metaatem.com' rel='friend colleague met'>kastner</a></li>
+          <li><a href='http://www.anarchaia.org/'>anarchaia</a></li>
+          <li><a href='http://blog.codahale.com' rel='friend colleague met'>coda hale</a></li>
+          <li><a href='http://gilesbowkett.blogspot.com' rel='colleague'>giles bowkett</a></li>
+          <li><a href='http://on-ruby.blogspot.com/' rel='colleague met'>pate</a></li>
+          <li><a href='http://schneier.com/blog' title='SecurityInsight'>bruce schneier</a></li>
+          <li><a href='http://tbray.org/ongoing' rel='met' title='t1m'>tim bray</a></li>
+          <li><a href='http://diveintomark.org'>mark pilgrim</a></li>
+          <li><a href='http://intertwingly.net'>sam ruby</a></li>
+          <li><a href='http://hackety.org' rel='met'>hackety</a></li>
+          <li><a href='http://redhanded.hobix.com/' rel='met' title='Lucky Stiff and Friends'>redHanded</a></li>
+          <li><a href='http://eigenclass.org' title="maybe if i read this more often i'll get smarter and understand it">mauricio</a></li>
+          <li><a href='http://onestepback.org' title='the santa claus of Ruby'>jim weirich</a></li>
+          <li><a href='http://ejohn.org'>john resig</a></li>
+          <li><a href='http://steve-yegge.blogspot.com/' title='mostly he is listed because of emacs'>steve yegge</a></li>
+        </ul>
+
+        <h3 title='aggregation is key here'>Communities</h3>
+        <ul>
+          <li><a href='http://planet.lisp.org' title="(grok 'lisp)">planet lisp</a></li>
+          <li><a href='http://planet.emacsen.org' title='denizens of #emacs'>planet emacs</a></li>
+          <li><a href='http://planetruby.0x42.net' title='Yes, it runs on Python'>planet ruby</a></li>
+          <li><a href='http://planet.caboo.se' title='my latest planet'>planet caboose</a></li>
+          <li><a href='http://planet.ubuntu.com' title='humanity'>planet ubuntu</a></li>
+          <li><a href='http://planet.mozilla.org' title='Gecko will save us'>planet mozilla</a></li>
+          <li><a href='http://radar.oreilly.com/' title='there are those that call me... tim'>planet o'reilly</a></li>
+        </ul>
+
+        <h3><a href='http://dev.technomancy.us/'>Projects</a></h3>
+        <ul>
+          <li><a href='http://bus-scheme.rubyforge.org'>bus scheme</a></li>
+          <li><a href='http://augment.rubyforge.org'>augment</a></li>
+          <li><a href='http://www.emacswiki.org/cgi-bin/wiki/ElUnit' title='Emacs Lisp TDD'>elunit</a></li>
+          <li><a href='http://rinari.rubyforge.org' title='rails emacs mode'>rinari</a></li>
+          <li><a href='http://concour.se' title='railsday 06 project'>Concourse</a></li>
+          <li><a href='http://rubyforge.org/projects/rplanet' title='Feed Aggregator'>rPlanet</a></li>
+          <li><a href='http://rav.rubyforge.org/' title='Rails Application Visualizer'>rav</a></li>
+          <li><a href='http://cartographer.rubyforge.org' title='Google Maps in Rails'>Cartographer</a></li>
+          <li><a href='http://dev.technomancy.us/ebby' title='collaborative editing with Emacs'>ebby</a></li>
+        </ul>
+
+      </div><!-- end sidebar -->
+
+      <div class='post'>
+        <h3><a href='/58'>elunit?</a></h3>
+
+        <div>
+          <p>Considering the number
+  of <a
+  href="http://sztywny.titaniumhosting.com/2006/07/23/stiff-asks-great-programmers-answers/">agile
+  folk who use emacs</a>, it's pretty surprising how difficult it is
+  to find code for automated testing of elisp. There's plenty of stuff
+  for <a
+  href="http://www.emacswiki.org/cgi-bin/emacs/unit-test.el">running
+  tests in other languages</a>, but I was only able to find <a href='http://www.panix.com/~tehom/my-code/regress.el'>one Emacs
+  Lisp specific testing library</a>.</p>
+
+<p>Unfortunately as I look at the internals of regress.el, it's clear
+  that it's written by someone very unfamiliar with everyday Lisp
+  idioms:</p>
+
+  <pre>
+    (<span class="keyword">while</span> suites
+      (setq suite (car suites)
+            suites (cdr suites))
+      (<span class="keyword">if</span> (and (car suite) (not (stringp (car suite))))
+          (setq description <span class="string">"Untitled test suite"</span>)
+        (setq description (car suite)
+              suite (cdr suite)))
+  </pre>
+
+<p>Apparently the map function is unfamiliar to the author. It's
+  strange, because this is a <i>really useful</i> library. It works
+  very well, and it's quite well documented. (It was well-tested, go
+  figure.)  I've made a few improvements to it so the test results are
+  more readable, but I'm thinking I might just want to rewrite it.
+  This is partially because the internals <i>are</i> so bad, partially
+  to make it more xUnit-ish and focused on TDD rather than regression
+  testing, and partially just because it would be a good exercise in
+  emacs lisp.</p>
+
+<p>We'll see how that goes. It should be fun, but it may be foolish to
+  put off improving Rails support for the time that this will take to
+  implement. Then again, if my past experiences with elisp are any
+  indication, this will take a lot less time than it would seem like
+  it should up front. Also, having this in place while writing the
+  Rails support modes would probably smooth things along quite a
+  bit.</p>
+
+<p>Speaking of Rails support, I've
+  improved <a
+	      href="http://dev.technomancy.us/phil/browser/dotfiles/.emacs.d/arorem2/rhtml-mode.el">RHTML-mode</a>
+  rather significantly in the past few days. There is still
+  one <a href="http://dev.technomancy.us/phil/ticket/216">immensely
+  irritating bug</a> that is getting in the way, but on the whole it's
+  coming along quite nicely.</p>
+
+<p>On an unrelated note, I came across this little gem about how in an
+  unprecedented move, the Department of Homeland Security has deemed
+  an entire state of matter to be a national security risk:</p>
+
+<a href="http://cosmicvariance.com/2006/08/12/liquid/"><img src="http://cosmicvariance.com/wp-images/phasediagram.jpg"></a>
+
+        </div>
+
+        <p class='dt'>
+          <a href='/58'>Sat Oct 13 00:00:01 -0700 2007</a>
+        </p>
+      </div>
+    </div>
+
+    <p id='foot'>
+      &copy; 2004 - 2007 Phil Hagelberg <span title='soli Deo gloria'>SDG</span>
+    </p>
+
+  </div><!-- end wrapper -->
+  <img src='/static/i/foot.png' alt='' id='corner' style='display: block;' />
+
+</div><!-- end background -->
+
+
+</body></html>

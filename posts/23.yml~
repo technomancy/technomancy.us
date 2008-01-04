@@ -1,0 +1,14 @@
+--- !ruby/object:Post 
+attributes: 
+  title: cistern
+  id: "23"
+  content: >-
+    What happens when you put a Ruby developer on a plane for twenty-one hours?<br />
+    <br />
+    <a href='/code/cistern.tar.gz'>
+    <img src='/pics/cistern.png' alt='cistern screenshot' border='0' />
+    Nothing too dramatic</a>. I'm working on making it into an NS-Shaft-type game, but it
+    is very rudimentary so far.<br />
+    <br />
+
+  datetime: 2005-12-28 17:35:23

@@ -1,0 +1,12 @@
+--- !ruby/object:Post 
+attributes: 
+  title: petals around the rose in 18 lines of Ruby
+  id: "18"
+  content: >-
+    <p>
+    I just implemented <a href='http://www.borrett.id.au/computing/petals-j.htm'>Petals
+    around the Rose</a> in 18 lines of Ruby. Can you beat that?
+    </p>
+    <p>Get <a href='http://technomancy.us/code/petals.rb'>my code</a>.</p>
+
+  datetime: 2005-11-17 11:35:23
