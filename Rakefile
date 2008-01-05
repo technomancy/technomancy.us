@@ -1,22 +1,32 @@
 require 'rubygems'
 require 'erb'
 require 'time'
-require 'json'
 require 'cgi' # for HTML escaping
 require 'uri'
-require 'vlad'
+begin
+  require 'vlad'
+rescue LoadError
+end
 
-set :domain, 'hagelb.org'
+begin
+  require 'json'
+  def parse(filename)
+    JSON.parse(File.read(filename).gsub("\n", ''))
+  end
+rescue LoadError
+  require 'yaml'
+  def parse(filename)
+    YAML.parse(File.read(filename).gsub("\n", ''))
+  end
+end
+
+set :domain, 'technomancy.us'
 PAGE_SIZE = 10
 
 class Time
   def to_s
     strftime("%Y-%m-%dT%H:%M:%SZ")
   end
-end
-
-def parse(filename)
-  JSON.parse(File.read(filename).gsub("\n", '')) # TODO - add in line breaks
 end
 
 def render_files_with_template(glob, template_file, filename_generator)
@@ -29,7 +39,7 @@ def render_files_with_template(glob, template_file, filename_generator)
   end
 end
 
-def render_file_with_template(pages, template_file, rendered_filename, page_num = nil, page_count = nil)
+def render_file_with_template(page, template_file, rendered_filename, page_num = nil, page_count = nil)
   template = ERB.new(File.read(template_file))
   File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
   puts "Rendered #{rendered_filename}."
@@ -39,6 +49,13 @@ desc "Render posts to static files"
 task :render_posts do
   render_files_with_template('posts/*.json', 'templates/post.erb',
                              lambda { |page| "public/#{page['id']}.html" })
+end
+
+desc "Render a single post"
+task :render_post do
+  page = parse("posts/#{ENV['POST']}.json")
+  render_file_with_template(page, 'templates/post.erb',
+                            "public/#{page['id']}.html")
 end
 
 desc "Render static pages"
@@ -77,7 +94,8 @@ task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
 
-desc "Deploy blog to remote server"
-remote_task :deploy => :default do
-  rsync 'public', 'technomancy.us'
+# Can't deploy with Rake 0.8!
+desc "Deploy blog files to remote server"
+remote_task :deploy do
+  rsync '.', 'technomancy.us'
 end

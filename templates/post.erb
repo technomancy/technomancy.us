@@ -117,11 +117,12 @@
           <a href='/<%= page['id'] %>'><%= Time.parse(page['timestamp']) %></a>
         </p>
 
-        <div class='comments'>
+        <div class='comment'>
+          <a name='c'></a>
           <% parse("comments/#{page['id']}.json").sort_by{|c| Time.parse(c['timestamp'])}.each do |comment| %>
-            <p><%= comment['uri'] ? "<a href='#{comment['uri']}'>#{comment['author']}" : comment['author'] %></p>
+            <p><%= comment['uri'] ? "<a href='#{comment['uri']}'>#{comment['author']}</a>" : comment['author'] %></p>
             <p><%= comment['content'] %></p>
-            <p><%= Time.parse(comment['timestamp']).to_s %></p>
+            <p class="dt"><%= Time.parse(comment['timestamp']).to_s %></p>
           <% end %>
         </div>
       </div>

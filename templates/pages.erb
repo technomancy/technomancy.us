@@ -106,16 +106,19 @@
 
       </div><!-- end sidebar -->
 
-      <% pages.each do |page| %>
+      <% page.each do |post| %>
       <div class='post'>
-        <h3><a href='/<%= page['id'] %>'><%= page['title'] %></a></h3>
+        <h3><a href='/<%= post['id'] %>'><%= post['title'] %></a></h3>
 
         <div>
-          <%= page['content'] %>
+          <%= post['content'] %>
         </div>
 
         <p class='dt'>
-          <a href='/<%= page['id'] %>'><%= Time.parse(page['timestamp']) %></a>
+          <a href='/<%= post['id'] %>'><%= Time.parse(post['timestamp']) %></a> |
+          <% comment_count = parse("comments/#{post['id']}.json").length %>
+          <a href='/<%= post['id'] %>#c'>
+            <%= comment_count == 0 ? 'no' : comment_count %> comment<%= comment_count == 1 ? '' : 's' %></a>
         </p>
       </div>
       <% end %>

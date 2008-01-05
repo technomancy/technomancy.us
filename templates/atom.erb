@@ -6,19 +6,19 @@
   <link href="http://technomancy.us/" rel="alternate" type="text/html"/>
   <updated><%= Time.now.to_s %></updated>
 
-  <% pages.each do |page| %>
+  <% page.each do |post| %>
   <entry xml:base="http://technomancy.us">
     <author>
       <name>Phil Hagelberg</name>
     </author>
-    <id>tag:technomancy.us,2007:<%= URI.escape page['title'] %></id>
-    <published><%= Time.parse(page['timestamp']).to_s %></published>
-    <updated><%= Time.parse(page['timestamp']).to_s %></updated>
+    <id>tag:technomancy.us,2007:<%= URI.escape post['title'] %></id>
+    <published><%= Time.parse(post['timestamp']).to_s %></published>
+    <updated><%= Time.parse(post['timestamp']).to_s %></updated>
 
-    <link href="http://technomancy.us/<%= page['id'] %>" rel="alternate" type="text/html"/>
-    <title><%= CGI.escapeHTML page['title'] %></title>
+    <link href="http://technomancy.us/<%= post['id'] %>" rel="alternate" type="text/html"/>
+    <title><%= CGI.escapeHTML post['title'] %></title>
     <content type="html">
-      <%= CGI.escapeHTML page['content'] %>
+      <%= CGI.escapeHTML post['content'] %>
     </content>
   </entry>
   <% end %>
