@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'erb'
-require 'json'
+require 'time'
 require 'yaml'
 require 'cgi' # for HTML escaping
 require 'uri'
@@ -18,7 +18,7 @@ end
 def render_files_with_template(glob, template_file, filename_generator)
   template = ERB.new(File.read(template_file))
   Dir.glob(glob).each do |file|
-    page = JSON.parse(File.read(file)) rescue page = YAML.load(File.read(file))
+    page = YAML.load(File.read(file))
     rendered_filename = filename_generator.call(page)
     File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
     puts "Rendered #{rendered_filename}."
@@ -45,14 +45,14 @@ end
 
 desc "Render Atom feed"
 task :render_feed do
-  pages = Dir.glob('posts/*.json').sort_by{ |f| f.match(/(\d+)/)[1].to_i }[-16 .. -1].reverse.map{ |f| JSON.parse(File.read(f)) }
+  pages = Dir.glob('posts/*.json').sort_by{ |f| f.match(/(\d+)/)[1].to_i }[-16 .. -1].reverse.map{ |f| YAML.load(File.read(f)) }
   render_file_with_template(pages, 'templates/atom.erb',
                             'public/feed/atom.xml')
 end
 
 desc "Render pages of posts"
 task :render_pages do
-  all_pages = Dir.glob('posts/*.json').sort_by{ |f| f.match(/(\d+)/)[1].to_i }.map{ |f| JSON.parse(File.read(f)) }
+  all_pages = Dir.glob('posts/*.json').sort_by{ |f| f.match(/(\d+)/)[1].to_i }.map{ |f| YAML.load(File.read(f)) }
   page_count = (all_pages.size.to_f / PAGE_SIZE).ceil
 
   # save the initial index first
@@ -77,7 +77,3 @@ desc "Deploy blog to remote server"
 remote_task :deploy => :default do
   rsync 'public', 'technomancy.us'
 end
-
-# TODO
-# - Comments
-
