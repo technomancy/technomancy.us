@@ -2,12 +2,14 @@ require 'rubygems'
 require 'erb'
 require 'json'
 require 'yaml'
+require 'cgi' # for HTML escaping
+require 'uri'
 
 PAGE_SIZE = 10
 
 class Time
   def to_s
-    strftime("%Y-%m-%d %H:%M")
+    strftime("%Y-%m-%dT%H:%M:%SZ")
   end
 end
 
@@ -70,6 +72,5 @@ task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 task :default => [:render_posts, :render_feed, :render_pages]
 
 # TODO
-# - Feed
 # - Comments
 # - Content-negotiation on serve.rb

@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <title>Technomancy</title>
-  <id>tag:technomancy.us,2007:helma/</id>
+  <id>tag:technomancy.us,2007:blog/</id>
   <link href="http://technomancy.us/feed/atom" rel="self" type="application/atom+xml"/>
   <link href="http://technomancy.us/" rel="alternate" type="text/html"/>
-  <updated></updated>
+  <updated><%= Time.now.to_s %></updated>
 
+  <% pages.each do |page| %>
+  <entry xml:base="http://technomancy.us">
+    <author>
+      <name>Phil Hagelberg</name>
+    </author>
+    <id>tag:technomancy.us,2007:<%= URI.escape page['title'] %></id>
+    <published><%= Time.parse(page['timestamp']).to_s %></published>
+    <updated><%= Time.parse(page['timestamp']).to_s %></updated>
 
+    <link href="http://technomancy.us/<%= page['id'] %>" rel="alternate" type="text/html"/>
+    <title><%= CGI.escapeHTML page['title'] %></title>
+    <content type="html">
+      <%= CGI.escapeHTML page['content'] %>
+    </content>
+  </entry>
+  <% end %>
 </feed>
