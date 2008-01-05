@@ -1,1 +1,1 @@
-{"timestamp":"Fri Jan 26 13:31:38 -0800 2007","uri":"http:\/\/blog.evanweaver.com","post_id":72,"author":"evan","id":65,"content":"<p>Have you looked at <a href=\"http:\/\/zabor.org\/taw\/rlisp\/\">RLisp<\/a>?<\/p>\n\n\n\t<p>It runs its interpreter on top of the CRuby interpreter, so all the Ruby object stuff gets tossed right to real Ruby.<\/p>"}
+[]

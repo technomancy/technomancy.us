@@ -116,6 +116,14 @@
         <p class='dt'>
           <a href='/<%= page['id'] %>'><%= Time.parse(page['timestamp']) %></a>
         </p>
+
+        <div class='comments'>
+          <% parse("comments/#{page['id']}.json").sort_by{|c| Time.parse(c['timestamp'])}.each do |comment| %>
+            <p><%= comment['uri'] ? "<a href='#{comment['uri']}'>#{comment['author']}" : comment['author'] %></p>
+            <p><%= comment['content'] %></p>
+            <p><%= Time.parse(comment['timestamp']).to_s %></p>
+          <% end %>
+        </div>
       </div>
     </div>
 

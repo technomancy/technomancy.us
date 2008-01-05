@@ -35,8 +35,6 @@ def render_file_with_template(pages, template_file, rendered_filename, page_num 
   puts "Rendered #{rendered_filename}."
 end
 
-
-
 desc "Render posts to static files"
 task :render_posts do
   render_files_with_template('posts/*.json', 'templates/post.erb',
