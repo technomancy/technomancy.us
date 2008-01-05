@@ -4,7 +4,9 @@ require 'json'
 require 'yaml'
 require 'cgi' # for HTML escaping
 require 'uri'
+require 'vlad'
 
+set :domain, 'hagelb.org'
 PAGE_SIZE = 10
 
 class Time
@@ -71,6 +73,11 @@ task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
 
+desc "Deploy blog to remote server"
+remote_task :deploy => :default do
+  rsync 'public', 'technomancy.us'
+end
+
 # TODO
 # - Comments
-# - Content-negotiation on serve.rb
+
