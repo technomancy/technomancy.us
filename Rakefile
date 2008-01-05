@@ -63,7 +63,7 @@ task :render_pages do
   until all_pages.empty? do
     pages = []
     PAGE_SIZE.times { pages << all_pages.pop } rescue nil
-    render_file_with_template(pages.reverse.compact, 'templates/pages.erb',
+    render_file_with_template(pages.compact, 'templates/pages.erb',
                               "public/page/#{page_num}.html", page_num, page_count)
     page_num += 1
   end
