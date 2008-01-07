@@ -13,14 +13,16 @@ begin
   def parse(filename)
     JSON.parse(File.read(filename).gsub("\n", ''))
   end
-rescue LoadError
+rescue LoadError # json is not installed on Dreamhost
   require 'yaml'
   def parse(filename)
-    YAML.parse(File.read(filename).gsub("\n", ''))
+    YAML.parse(File.read(filename))
   end
 end
 
 set :domain, 'technomancy.us'
+set :rsync_flags, ['-azP', '--delete', '--exclude=.git*']
+
 PAGE_SIZE = 10
 
 class Time
