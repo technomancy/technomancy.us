@@ -11,12 +11,12 @@ end
 begin
   require 'json'
   def parse(filename)
-    JSON.parse(File.read(filename).gsub("\n", ''))
+    JSON.parse(File.read(filename).gsub("\n", ""))
   end
 rescue LoadError # json is not installed on Dreamhost
   require 'yaml'
   def parse(filename)
-    YAML.parse(File.read(filename))
+    YAML.load(File.read(filename))
   end
 end
 
