@@ -1,23 +1,12 @@
 require 'rubygems'
 require 'erb'
 require 'time'
-require 'cgi' # for HTML escaping
+require 'cgi'
 require 'uri'
+require 'yaml'
 begin
   require 'vlad'
 rescue LoadError
-end
-
-begin
-  require 'json'
-  def parse(filename)
-    JSON.parse(File.read(filename).gsub("\n", ""))
-  end
-rescue LoadError # json is not installed on Dreamhost
-  require 'yaml'
-  def parse(filename)
-    YAML.load(File.read(filename))
-  end
 end
 
 set :domain, 'technomancy.us'
@@ -31,17 +20,28 @@ class Time
   end
 end
 
+def parse(filename)
+  YAML.load(File.read(filename))
+end
+
+def up_to_date?(file, template, rendered_filename)
+  File.exist?(rendered_filename) and (File.mtime(rendered_filename) > File.mtime(file)) and
+                                     (File.mtime(rendered_filename) > File.mtime(template))
+end
+
 def render_files_with_template(glob, template_file, filename_generator)
   template = ERB.new(File.read(template_file))
   Dir.glob(glob).each do |file|
     page = parse(file)
     rendered_filename = filename_generator.call(page)
+    next if up_to_date? file, template_file, rendered_filename
     File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
     puts "Rendered #{rendered_filename}."
   end
 end
 
 def render_file_with_template(page, template_file, rendered_filename, page_num = nil, page_count = nil)
+  # TODO: check for up_to_date?
   template = ERB.new(File.read(template_file))
   File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
   puts "Rendered #{rendered_filename}."
@@ -98,6 +98,6 @@ task :default => [:render_posts, :render_feed, :render_pages]
 
 # Can't deploy with Rake 0.8!
 desc "Deploy blog files to remote server"
-remote_task :deploy do
+remote_task :deploy => :default do
   rsync '.', 'technomancy.us'
 end
