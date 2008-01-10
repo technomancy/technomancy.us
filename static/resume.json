@@ -166,12 +166,14 @@ Office Cleaner</p>
    Smatterings of <a href='http://www.freebsd.org'>FreeBSD</a>.
    </dd>
 
-   <dt><i>Programs</i></dt>
+   <dt><i>Tools</i></dt>
    <dd>Knowledgeable concerning
    <a href='http://www.rubyonrails.org'>Rails</a>,
    <a href='http://www.gnu.org/software/emacs/emacs.html' title='Oops, this belongs in Operating Systems.'>GNU Emacs</a>,
    <a href='http://testunit.talbott.ws/'>Test::Unit</a>,
    <a href='http://rspec.rubyforge.org'>RSpec</a>,
+   <a href='http://prototypejs.org'>Prototype</a>,
+   <a href='http://jquery.com'>jQuery</a>,
    <a href='http://git.or.cz'>Git</a>,
    <a href='http://subversion.tigris.org'>Subversion</a>,
    <a href='http://http://nubyonrails.com/articles/tutorial-publishing-rubygems-with-hoe'>hoe</a>,
@@ -180,7 +182,6 @@ Office Cleaner</p>
    <a href='http://lighttpd.net'>Lighttpd</a>,
    <a href='http://mongrel.rubyforge.org'>Mongrel</a>,
    <a href='http://www.apache.org'>Apache</a>,
-   <a href='http://www.edgewall.com/trac'>Trac</a>,
    and more.</dd>
   </dl>
 
