@@ -4,13 +4,34 @@ require 'time'
 require 'cgi'
 require 'uri'
 require 'yaml'
+
 begin
   require 'vlad'
-rescue LoadError
-end
+  set :domain, 'technomancy.us'
+  set :rsync_flags, ['-azP', '--exclude=.git*']
 
-set :domain, 'technomancy.us'
-set :rsync_flags, ['-azP', '--delete', '--exclude=.git*']
+  def reverse_rsync local, remote
+    cmd = [rsync_cmd, rsync_flags, "technomancy.us:#{remote}", local].flatten.compact
+    success = system(*cmd)
+
+    unless success then
+      raise Vlad::CommandFailedError, "execution failed: #{cmd.join ' '}"
+    end
+  end
+
+  # Can't deploy with Rake 0.8!
+  desc "Deploy blog files to remote server"
+  remote_task :deploy => :default do
+    rsync '.', 'technomancy.us'
+  end
+
+  desc "Copy comments from remote host to local copy of blog"
+  remote_task :sync_comments do
+    reverse_rsync '.', 'technomancy.us/comments'
+  end
+rescue LoadError
+  task :sync_comments { "dummy task to satisfy deps when vlad is not present"}
+end
 
 PAGE_SIZE = 10
 
@@ -48,7 +69,7 @@ def render_file_with_template(page, template_file, rendered_filename, page_num =
 end
 
 desc "Render posts to static files"
-task :render_posts do
+task :render_posts => :sync_comments do
   render_files_with_template('posts/*.json', 'templates/post.erb',
                              lambda { |page| "public/#{page['id']}.html" })
 end
@@ -95,9 +116,3 @@ end
 task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
-
-# Can't deploy with Rake 0.8!
-desc "Deploy blog files to remote server"
-remote_task :deploy => :default do
-  rsync '.', 'technomancy.us'
-end
