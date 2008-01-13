@@ -25,6 +25,9 @@ filename = "../comments/#{cgi.params['post_id']}.json"
 comments = YAML.load(File.read(filename))
 comments << new_comment
 
-File.open(filename, ,'w') { |f| f.puts '[' + comments.map{ |c| to_json(c) }.join(',') + ']' }
+if cgi.params['spammers'] == 'suck'
+  File.open(filename, ,'w') { |f| f.puts '[' + comments.map{ |c| to_json(c) }.join(', ') + ']' }
+end
+
 
 cgi.redirect "http://technomancy.us/#{cgi.params['post_id']}"
