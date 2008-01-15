@@ -11,7 +11,7 @@ cgi = CGI.new
 
 new_comment = { 'timestamp' => Time.now.to_s }
 ['author', 'uri', 'content'].each { |param| new_comment[param] = CGI.escapeHTML(cgi.params[param].to_s) }
-filename = File.expand_path "../comments/#{cgi.params['post_id']}.json"
+filename = File.expand_path "../comments/#{cgi.params['post_id'].to_i}.json"
 
 begin
   comments = YAML.load(File.read(filename))
@@ -29,4 +29,4 @@ end
 cgi.out("status" => "301 Moved", "X-Spammer" => spammer,
         "Location" => "http://technomancy.us/#{cgi.params['post_id']}#c") { json }
 
-`rake render_post POST=#{cgi.params['post_id']}`
+`rake render_post POST=#{cgi.params['post_id'].to_i}`

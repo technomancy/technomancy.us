@@ -30,7 +30,7 @@ begin
     reverse_rsync '.', 'technomancy.us/comments'
   end
 rescue LoadError
-  task :sync_comments { "dummy task to satisfy deps when vlad is not present"}
+  task(:sync_comments) { "dummy task to satisfy deps when vlad is not present"}
 end
 
 PAGE_SIZE = 10
