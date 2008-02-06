@@ -1,5 +1,5 @@
 {
-  "timestamp":  "Sat Oct 13 00: 00: 01 -0700 2007", 
+  "timestamp":  "Sat Oct 13 00:00:01 -0700 2007", 
   "title":  "new blog", 
   "id":  1, 
   "content":  "<p>
@@ -13,11 +13,12 @@ I'm thinking about--hence the term Technomancy.</p>
 
 <p>
 First thought:  Lisp. It's awesome. It's mind-blowing. And there's a
-<a href='http: //gigamonkeys.com/book'>really good book</a> on it
+<a href='http://gigamonkeys.com/book'>really good book</a> on it
 available for free. I'm using <a
-href='http: //clisp.cons.org'>CLisp</a> to write the server this blog
+href='http://clisp.cons.org'>CLisp</a> to write the server this blog
 is running on,  with help from code by <a
-href='http: //www.flownet.com/gat/'>Ron Garret</a>. You can <a
-href='http: //dev.technomancy.us/trac.cgi/browser/durendal/'>see the
-code</a> on my Trac.</p>"
+href='http://www.flownet.com/gat/'>Ron Garret</a>. You can <a
+href='http://dev.technomancy.us/trac.cgi/browser/durendal/'>see the
+code</a> on my Trac.</p>",
+  "tags": "lisp"
 }

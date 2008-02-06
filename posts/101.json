@@ -1,4 +1,4 @@
-{"timestamp": "2008-01-06 19: 49: 21", "title": "octo-redux", "id": 101, "content": "
+{"timestamp": "2008-01-06 19:49:21", "title": "octo-redux", "id": 101, "content": "
 
 <blockquote>I know lots of perfectly decent and honorable people
   connect databases to websites at runtime,  and many of them go on to
@@ -6,7 +6,7 @@
   runtime databases (but my new daughter isn't going to marry one of
   <i>them</i>).</blockquote>
 
-<p>&mdash;<a href='http: //www.tbray.org/ongoing/When/200x/2006/07/10/Gone-Camping'>Tim
+<p>&mdash;<a href='http://www.tbray.org/ongoing/When/200x/2006/07/10/Gone-Camping'>Tim
   Bray</a></p>
 
 <p>You may (or may not) have noticed that the new comment submission
@@ -14,10 +14,10 @@
    blog (for the eighth time,  once in raw unmanaged HTML,  twice in PHP
    (University days; don't ask),  twice in Rails,  once in Common Lisp, 
    and once in Javascript). I know this is starting to sound like the
-   kind of <a  href='http: //philisha.net/2003/11/New-setup/'>lame
+   kind of <a  href='http://philisha.net/2003/11/New-setup/'>lame
    meta-blogging self-indulgence</a> that always makes me quickly
    mentally check out,  so I'll try to avoid that if you will <a
-   href='http: //xkcd.com/365/'>bear with me for a moment</a>.</p>
+   href='http://xkcd.com/365/'>bear with me for a moment</a>.</p>
 
 <p>A lot of the stuff I've been doing at work has been focusing on
   dropping layers of architecture and simplifying services to the point
@@ -30,7 +30,7 @@
 
 <p>It used to be that when people would ask what Rails blogging
    software to use,  I would tell them to write their own rather than
-   use <a href='http: //mephistoblog.com'>Mephisto</a> or Typo,  not
+   use <a href='http://mephistoblog.com'>Mephisto</a> or Typo,  not
    because I don't like them (well,  OK,  maybe I don't like
    Typo&mdash;personal grudge from the pain it's caused me) but
    because it's a simple project that teaches you a lot about the
@@ -56,12 +56,11 @@
   <li>Saving memory on localhost when running it there to make
     modifications</li>
   <li>Writing posts in the editor of choince without resorting
-    to <a href='http: //savannah.nongnu.org/projects/emacsweblogs'>
+    to <a href='http://savannah.nongnu.org/projects/emacsweblogs'>
     blogging extensions</a></li>
   <li>Depending on far fewer libraries</li>
 </ul>
 
-<p>Anyway,  that's what's been on my mind. Nothing earth-shattering, 
-  hopefully not too boring. Comment submission should be on the way
+<p>Anyway,  that's what's been on my mind. Nothing earth-shattering. Comment submission should be on the way
   once I get a moment to sit down and spend a bit of quality time
-  with CGI.rb.</p>"}
+  with CGI.rb. <b>Update</b>: Comments working.</p>", "tags", "projects, ruby"}

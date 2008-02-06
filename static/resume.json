@@ -172,16 +172,15 @@ Office Cleaner</p>
    <a href='http://www.gnu.org/software/emacs/emacs.html' title='Oops, this belongs in Operating Systems.'>GNU Emacs</a>,
    <a href='http://testunit.talbott.ws/'>Test::Unit</a>,
    <a href='http://rspec.rubyforge.org'>RSpec</a>,
-   <a href='http://prototypejs.org'>Prototype</a>,
    <a href='http://jquery.com'>jQuery</a>,
+   <a href='http://prototypejs.org'>Prototype</a>,
    <a href='http://git.or.cz'>Git</a>,
    <a href='http://subversion.tigris.org'>Subversion</a>,
    <a href='http://http://nubyonrails.com/articles/tutorial-publishing-rubygems-with-hoe'>hoe</a>,
    extending <a href='http://www.mozilla.org/products/firefox'>Firefox</a>,
-   <a href='http://nginx.net'>NGinX</a>,
+   <a href='http://nginx.net'>nginx</a>,
    <a href='http://lighttpd.net'>Lighttpd</a>,
    <a href='http://mongrel.rubyforge.org'>Mongrel</a>,
-   <a href='http://www.apache.org'>Apache</a>,
    and more.</dd>
   </dl>
 
@@ -213,7 +212,8 @@ Office Cleaner</p>
     </li>
 
     <li><b>Initiated and contributed to several other Free Software projects</b>:<br />
-      <a
+     <a href='http://bus-scheme.rubyforge.org'>Bus Scheme</a>,
+     <a href='http://augment.rubyforge.org'>Augment</a>, <a
       href='http://rubyforge.org/projects/rplanet'>RPlanet</a>, <a
       href='http://cartographer.rubyforge.org'>Cartographer</a>, and
       <a href='http://rav.rubyforge.org'>RAV</a> are all projects

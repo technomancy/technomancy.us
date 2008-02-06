@@ -1,1 +1,6 @@
-{"timestamp": "Sat Oct 13 00: 00: 01 -0700 2007", "title": "rubyconf day 2", "id": 7, "content": "<p>\nCheck out <a\nhref='http: //dev.technomancy.us/trac.cgi/wiki/RPlanet/'>rplanet</a>!</p>\n<p>No,  seriously:  check it out:  <code>svn co\nsvn: //dev.technomancy.us/rplanet</code>.\n</p>"}
+{"timestamp": "Sat Oct 13 00:00:01 -0700 2007", "title": "rubyconf day 2", "id": 7, "content": "<p>
+Check out <a
+href='http://dev.technomancy.us/trac.cgi/wiki/RPlanet/'>rplanet</a>!</p>
+<p>No,  seriously:  check it out:  <code>svn co
+svn://dev.technomancy.us/rplanet</code>.
+</p>", "tags": "ruby, projects, conf"}

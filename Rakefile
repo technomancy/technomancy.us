@@ -11,7 +11,7 @@ begin
   set :rsync_flags, ['-azP', '--exclude=.git*']
 
   def reverse_rsync local, remote
-    cmd = [rsync_cmd, rsync_flags, "technomancy.us:#{remote}", local].flatten.compact
+    cmd = [rsync_cmd, rsync_flags, "#{domain}:#{remote}", local].flatten.compact
     success = system(*cmd)
 
     unless success then
@@ -19,10 +19,9 @@ begin
     end
   end
 
-  # Can't deploy with Rake 0.8!
   desc "Deploy blog files to remote server"
   remote_task :deploy => :default do
-    rsync '.', 'technomancy.us'
+    rsync '.', domain
   end
 
   desc "Copy comments from remote host to local copy of blog"
@@ -45,23 +44,29 @@ def parse(filename)
   YAML.load(File.read(filename))
 end
 
-def up_to_date?(file, template, rendered_filename)
-  File.exist?(rendered_filename) and (File.mtime(rendered_filename) > File.mtime(file)) and
-                                     (File.mtime(rendered_filename) > File.mtime(template))
+def template(name)
+  ERB.new(File.read("templates/#{name}.erb")).result(binding)
 end
 
-def render_files_with_template(glob, template_file, filename_generator)
+def up_to_date?(file, template, rendered_filename)
+  File.exist?(rendered_filename) and
+    (File.mtime(rendered_filename) > File.mtime(file)) and
+    (File.mtime(rendered_filename) > File.mtime(template))
+end
+
+def render_files_with_template(glob, template_file)
   template = ERB.new(File.read(template_file))
   Dir.glob(glob).each do |file|
     page = parse(file)
-    rendered_filename = filename_generator.call(page)
+    rendered_filename = yield(page)
     next if up_to_date? file, template_file, rendered_filename
     File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
     puts "Rendered #{rendered_filename}."
   end
 end
 
-def render_file_with_template(page, template_file, rendered_filename, page_num = nil, page_count = nil)
+def render_file_with_template(page, template_file, rendered_filename,
+                              page_num = nil, page_count = nil)
   # TODO: check for up_to_date?
   template = ERB.new(File.read(template_file))
   File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
@@ -70,8 +75,7 @@ end
 
 desc "Render posts to static files"
 task :render_posts => :sync_comments do
-  render_files_with_template('posts/*.json', 'templates/post.erb',
-                             lambda { |page| "public/#{page['id']}.html" })
+  render_files_with_template('posts/*.json', 'templates/post.erb') { |page| "public/#{page['id']}.html" }
 end
 
 desc "Render a single post"
@@ -83,8 +87,7 @@ end
 
 desc "Render static pages"
 task :render_static do
-  render_files_with_template('static/*.json', 'templates/static.erb',
-                             lambda { |page| "public/#{page['title'].downcase}.html" })
+  render_files_with_template('static/*.json', 'templates/static.erb') { |page| "public/#{page['title'].downcase}.html" }
 end
 
 desc "Render Atom feed"
