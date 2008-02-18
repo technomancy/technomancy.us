@@ -11,4 +11,5 @@ config = Mongrel::Configurator.new :host => "127.0.0.1" do
   run
 end
 
+puts "Serving on port 3000..."
 config.join
