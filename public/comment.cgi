@@ -30,4 +30,4 @@ cgi.out("status" => "301 Moved", "X-Spammer" => spammer,
         "Location" => "http://technomancy.us/#{cgi.params['post_id']}#c") { json }
 
 `touch #{File.dirname(__FILE__)}/../posts/#{cgi.params['post_id']}.json`
-`cd #{File.dirname(__FILE__)}/.. rake render_post POST=#{cgi.params['post_id']}`
+`cd #{File.dirname(__FILE__)}/../ rake render_post POST=#{cgi.params['post_id']}`
