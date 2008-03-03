@@ -18,7 +18,7 @@
 
 <p>Firstly, Chris and Tom are fairly high-profile in the Ruby
 community. They've got a reputation to maintain, so I think they'll do
-all they can to make their service awesome. Since Chris does <a
+all they can to make their service work well. Since Chris does <a
 href='http://errfree.com'>consulting work</a>, having a reputation for
 delivering awesome software is great for business.</p>
 
@@ -96,6 +96,7 @@ Stallman is just plain obsessed with contribution. Witness the <a
 href='http://lists.gnu.org/archive/html/emacs-devel/'>emacs-devel
 mailing list</a>:</p>
 
+<div style='margin-left: 3em; width: 75%;'>
 <p><i>I'm just another emacs-user lurking for a chance to say thank you to
 it's creator and (future) maintainers.</i></p>
 
@@ -116,6 +117,7 @@ to help?</i></p>
 <p>How about looking at etc/TODO in the latest sources, and implementing
 one of the projects there?</p>
 <p><a href='http://article.gmane.org/gmane.emacs.devel/90305'>http://article.gmane.org/gmane.emacs.devel/90305</a></p>
+</div>
 
 <p>Keep in mind that the context of these posts in a thread in which
 he's announced he will no longer be the maintainer and people are
