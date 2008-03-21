@@ -4,13 +4,7 @@
 <div style='text-align: center;'>
   <a name='top'></a>
   <h2>Philip N. Hagelberg</h2>
-<!--  <address>
-  920 Glencliff Street #226<br />
-  La Habra, CA 90631<br />
-  </address> -->
-  <br style='clear: both;' />
-  techno<span style='display: none;'>!nospamthankyou!</span>mancy@gmail.com<br />
-  Jabber: phil@hag<span style='display: none;'>!spammers deserve the death penalty!</span>elb.org
+  <address>techno<span style='display: none;'>!nospamthankyou!</span>mancy@gmail.com</address>
 </div>
 
 
@@ -151,12 +145,8 @@ Office Cleaner</p>
    <a href='http://www.php.net'>PHP</a>,
    <a href='http://www.mozilla.org/projects/xul'>XUL</a>,
 <!--   <a href='http://qbasicstation.com'>QBasic</a>,-->
-   <a href='http://www.python.org'>Python</a>,
-   <a href='http://www.w3.org/Style/CSS/'>CSS</a>,
-   <a href='http://laku19.adsl.netsonic.fi/era/unix/shell.html'>the Bourne Shell</a>, and
-   <a href='http://www.tug.org'>T<sub>E</sub>X</a>.
-
-   Some <a href='http://en.wikipedia.org/wiki/C_programming_language' title='but I did not have to like it'>C</a> exposure.
+   <a href='http://www.python.org'>Python</a>, and
+   <a href='http://www.w3.org/Style/CSS/'>CSS</a>.
    <!-- Extensive 'to learn' list; won't get into that here... -->
    </dd>
 
@@ -177,7 +167,8 @@ Office Cleaner</p>
    <a href='http://git.or.cz'>Git</a>,
    <a href='http://subversion.tigris.org'>Subversion</a>,
    <a href='http://http://nubyonrails.com/articles/tutorial-publishing-rubygems-with-hoe'>hoe</a>,
-   extending <a href='http://www.mozilla.org/products/firefox'>Firefox</a>,
+   <a href='http://rubyhitsquad.com/Vlad_the_Deployer.html'>Vlad the Deployer</a>,
+   <a href='http://www.mozilla.org/products/firefox'>Firefox</a> extensions,
    <a href='http://nginx.net'>nginx</a>,
    <a href='http://lighttpd.net'>Lighttpd</a>,
    <a href='http://mongrel.rubyforge.org'>Mongrel</a>,
@@ -194,12 +185,18 @@ Office Cleaner</p>
 
     <li><b>Speaker at <a href='http://rubyconf.org/'>RubyConf
     2007</a>.</b><br />
-    My talk was on 'Tightening the Feedback Loop', and
+    Gave a talk titled 'Tightening the Feedback Loop' and
     focused on ways that programmers could be more attentive of the
     state of their code. Those ideas spawned the <a
     href='http://augment.rubyforge.org'>augment</a> project. The talk
     was <a href='http://hagelb.org/feedback_loop.avi'>recorded by
     ConFreaks</a>.<br /><br /></li>
+
+    <li><b>Implemented <a href='http://bus-scheme.rubyforge.org'>Bus
+    Scheme</a></b>:<br /> Wrote a Scheme interpreter in Ruby
+    (mostly while riding the bus) capable of serving web applications
+    and integrating Ruby libraries. I discovered and fixed a number of
+    Rubinius bugs in the process.<br /><br /></li>
 
     <li><b><a href='http://technomancy.us/blog/post/47'>Wrote</a> and
       maintained <a href='http://concour.se'>Concourse</a></b>:<br />
@@ -211,22 +208,21 @@ Office Cleaner</p>
       manner.<br /><br />
     </li>
 
-    <li><b>Initiated and contributed to several other Free Software projects</b>:<br />
-     <a href='http://bus-scheme.rubyforge.org'>Bus Scheme</a>,
-     <a href='http://augment.rubyforge.org'>Augment</a>, <a
-      href='http://rubyforge.org/projects/rplanet'>RPlanet</a>, <a
-      href='http://cartographer.rubyforge.org'>Cartographer</a>, and
-      <a href='http://rav.rubyforge.org'>RAV</a> are all projects
-      which I've contributed major portions of code to. ElUnit,
-      Rinari, Ebby, ExceptionIM, RuseMail, and Behave.el are all
-      projects I started and currently maintain. For more details,
-      see <a href='http://dev.technomancy.us/'>my Trac</a>. I've
-      also had a few minor patches accepted into Rails
-      and <a
-      href='http://dev.technomancy.us/conkeror'>Conkeror</a>.<br
-      /><br />
-<!-- http://www.flickr.com/photo_zoom.gne?id=127983917&context=photostream&size=l -->
-    </li>
+    <!-- TODO: split this into its own section -->
+    <li><b>Initiated and contributed to several other Free Software
+     projects</b>:<br /> <a
+     href='http://roastbeef.rubyforge.org'>Roast Beef</a>, <a
+     href='http://www.emacswiki.org/cgi-bin/wiki/ElUnit'>ElUnit</a>,
+     <a href='http://rinari.rubyforge.org'>Rinari</a>, <a
+     href='http://rubyforge.org/projects/rplanet'>RPlanet</a>, <a
+     href='http://rav.rubyforge.org'>RAV</a>, <a
+     href='http://dev.technomancy.us/ebby'>Ebby</a>, RuseMail, and
+     Behave.el are all projects I started. I've also had a few patches
+     accepted into GNU Emacs, Rails, Ruby, Rubinius, Cartographer, <a
+     href='http://dev.technomancy.us/conkeror'>Conkeror</a>.<br /><br
+     />
+
+     <!-- http://www.flickr.com/photo_zoom.gne?id=127983917&context=photostream&size=l --> </li>
 
     <li><b>Systems Administrator of Biola University's Linux lab</b>:
       <br />Responsible for the installation and maintenance of a set of
@@ -238,7 +234,7 @@ Office Cleaner</p>
 
   </ul>
   <br />
-  <p>References and work samples available upon request.</p>
+  <p>References and further work samples available upon request.</p>
 
 </div>
 
