@@ -32,3 +32,4 @@ content: " <p>So a number of folks have asked me how they should get started wit
   <p><a name='fn2'>2</a> - I imagine this causes <a href='http://blog.fallingsnow.net'>Evan</a> and <a href='http://headius.blogspot.com/'>Charles</a> some varying amounts of distress.</p>\n\
   <p><a name='fn3'>3</a> - In Scheme every value is true except <tt>#f</tt>, which is equivalent to Ruby's <tt>false</tt>.</p>\n\
   <p><a name='fn4'>4</a> - Observant readers will note that this does not follow the evaluation rule for functions given above which states that every argument is evaluated before the function is called. This is because <tt>if</tt> is not technically a function, but rather a <b>special form</b>, and different rules apply for the evaluation of a special form's arguments. There's more to this than I can cover in this article, but these rules allow for great syntactic flexibility.</p> "
+tags: projects, bus-scheme, ruby

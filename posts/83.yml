@@ -46,3 +46,4 @@ content: |-
   <p>Not what you'd call exciting,  but the point is it's written in Ruby and thus easily extensible by myself. Instant messaging has been the lone holdout in terms of the daily tasks that I was unable to automate and tie into programmatically,  so it's good to see that taken care of.</p>
   
   <p>Code is <a href='http://dev.technomancy.us/browser/dotfiles/bin/pidgin-tools.rb'>in Trac</a> as usual.</p>
+tags: ruby, projects, desktop

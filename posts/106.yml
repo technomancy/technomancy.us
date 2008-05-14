@@ -20,3 +20,4 @@ content: |-
   <li>A lot of packages don't have any automatic removal process when they get installed from source. Right now roastbeef will warn you about such packages, but it's no fun to have to have to remove a program by hand.</li>
   <li>It's entirely possible this kind of tool is useful only to me; not everyone installs as much crazy crap as I do. If that's the case please ignore this; I'm really OK with that.</li> </ul>
   <p>If it sounds interesting to you, <a href='http://github.com/technomancy/roast-beef/tree/master'>fork it on github</a>. I've still got some invites if anyone wants to contribute.</p>
+tags: projects, ruby

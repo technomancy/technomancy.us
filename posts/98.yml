@@ -1,7 +1,7 @@
 --- 
 timestamp: Sun Dec 09 07:23:42 -0800 2007
 title: bus scheme
-tags: projects, lisp, ruby, conf
+tags: projects, lisp, rubyconf, bus-scheme
 id: 98
 content: |-
   <p>So during RubyConf,  Matz asked how many in the audience had written a Lisp implementation. It was pretty impressive&mdash;somewhere between five and ten percent of the crowd raised their hands. Unfortunately I was not one of them,  to my great shame.</p>

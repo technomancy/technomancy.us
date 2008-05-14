@@ -52,3 +52,4 @@ content: |-
   <p>Usage:  <tt>RAILS_ROOT=~/projects/foo mongrel_panel.rb &</tt> or run it from your rails root.</p>
   
   <p>This is nothing really,  but it might be a nice base to adapt for other similar d&aelig;mons,  I suppose. Let me know if you find it useful.</p>
+tags: railsconf, ruby, projects, desktop

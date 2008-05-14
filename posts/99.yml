@@ -1,7 +1,7 @@
 --- 
 timestamp: Mon Dec 17 00:52:14 -0800 2007
 title: another one rides the bus
-tags: projects, lisp, ruby
+tags: projects, lisp, ruby, bus-scheme
 id: 99
 content: "    <p>Well,  Bus Scheme has matured just a bit. It's gotten to the point where the gaps in functionality are a bit less crippling. But the more interesting bit is that it's hosted at a publicly accessible repository now,  so you can grab it if you're interested.</p>\n\
   <pre class='code'> $ git clone git://git.caboo.se/bus_scheme.git </pre>\n\

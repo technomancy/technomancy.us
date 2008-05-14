@@ -1,7 +1,7 @@
 --- 
 timestamp: Sat Oct 13 00:00:01 -0700 2007
 title: messages instantly
-tags: projects, ruby
+tags: projects, ruby, desktop
 id: 91
 content: |-
   <p>So I've updated my <a href='/83'>Pidgin</a> script fairly significantly. The goal here is to be able to be as keyboard-driven as possible. It's always bugged me how you need to find the pidgin window,  scroll down to find the buddy you want,  and double-click to start talking. So much excess motion. We can improve on this. I've discovered a <a href='http://www.suckless.org/wiki/tools/xlib'>nifty tool called dmenu</a> that provides super-lightweight  menus. (If you've used <a href='http://eigenclass.org/hiki.rb?wmii+ruby'>wmii</a> or dwm you'll recognize it.) Basically you send it a list of options,  and it provides you with an autocompleting choice of what has been piped in. It emits the one you chose as output,  making it very convenient for inclusion in scripts.</p>

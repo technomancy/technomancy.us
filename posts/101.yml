@@ -1,7 +1,7 @@
 --- 
 timestamp: 2008-01-06 19:49:21
 title: octo-redux
-tags: 
+tags: projects, ruby
 id: 101
 content: |-
   
@@ -13,4 +13,3 @@ content: |-
   <p> I'm not saying that everyone who is using a hand-rolled Rails blog should rewrite it to use static files,  (it's not a hard task,  but the payoff: effort ratio turns out to be fairly low) but it is a useful exercise in simplicity for someone with a few hours to kill. It's easy to get caught up in the excitement of new tools,  but learning when you need to step back and re-evaluate the appropriateness of a tool that you enjoy using and know well is not a common skill.</p>
   <p>A few of the advantages of the static approach I've noticed: </p> <ul> <li>Deploying on Dreamhost without tearing hair out over FastCGI</li> <li>Trivially applying version control to posts</li> <li>Saving memory on localhost when running it there to make modifications</li> <li>Writing posts in the editor of choice without resorting to <a href='http://savannah.nongnu.org/projects/emacsweblogs'> blogging extensions</a></li> <li>Depending on far fewer libraries</li> </ul>
   <p>Anyway,  that's what's been on my mind. Nothing earth-shattering. Comment submission should be on the way once I get a moment to sit down and spend a bit of quality time with CGI.rb. <b>Update</b>: Comments working.</p>
-projects, ruby: 

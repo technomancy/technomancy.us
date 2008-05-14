@@ -4,7 +4,6 @@ title: concerning a number of tools
 tags: tools, projects
 id: 108
 content: |
-  
   <p>Today's post is going to consist of a roundup of a bunch of small tools that may not deserve their own post but are still quite useful in their own way with a short bonus round at the end for a micro-project I cooked up yesterday. Perhaps I'll throw in a preview of another in-progress project if I don't forget by the time I'm done writing this post.</p>
   <p>To start with: any self-respecting prog'er needs to bind keystrokes to execute commands. [<a href='#fn108'>1</a>] The truly hardcore can simply bind keys within Emacs with the <tt>global-set-key</tt> function and leave it at that. The rest of us, however, must venture outside the warm embrace of Emacs from time to time and would understandably be irked to find our carefully-bound key strokes void of bindings. Are we then doomed to set up bindings in our window managers that will not outlast our committment to that WM? Are we not to know the peace of mind that comes with storing all such settings in text files under revision control?</p>
   <p>The answer to the above questions will already be guessed by the astute reader as 'no'. The solution to the problem raised above is <a href='http://hocwp.free.fr/xbindkeys'>xbindkeys</a>, a small yet indispensable utility for binding keystrokes to commands. As a small bonus it embeds the GNU Guile Scheme interpreter, so configuration may be written in that most blissful of formats, the S-expression.</p>
@@ -15,4 +14,4 @@ content: |
   <p>Oh, I almost forgot the sneak preview: <a href='http://github.com/technomancy/rdoc_texinfo/tree/master'>behold RDoc Texinfo</a>. Soon you will no longer have to deal with the silliness of Ruby having its own reimplementation of <tt>man</tt> and <tt>info</tt> but will be able to read your documentation from the comfort of your fast, hyperlinked Info reader. Stay tuned!</p>
   <hr />
   <p>[<a name='fn108'>1</a>] - This does not hold for people (I'm told they exist) who use the mouse for absolutely everything. These people, however, may only rarely qualify as &quot;self-respecting prog'ers&quot;.</p>
-
+tags: emacs, desktop
