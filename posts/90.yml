@@ -4,7 +4,7 @@ title: unprecedented cluefulness
 id: 90
 content: |
   <p>I came across <a
-  href='http: //lenovoblogs.com/insidethebox/?p=98'>something
+  href='http://lenovoblogs.com/insidethebox/?p=98'>something
   interesting on a Lenovo blog</a> the other day. It seems they're
   putting some thought into their OS strategy. You may remember the
   big fuss a while back about Dell offering Ubuntu as an option on
@@ -31,7 +31,7 @@ content: |
   thrown out there to placate the rabit GNU fans; the wording shows that
   they clearly understand why binary-only drivers are bad for the
   community. Having spent a few hours yesterday wrangling with some <a
-  href='http: //nvidia.com'>particularly odious offenders</a>,  this is
+  href='http://nvidia.com'>particularly odious offenders</a>,  this is
   extremely encouraging to read. The binary driver that ATI offers for
   the card in my Thinkpad is absolutely worthless. It drops the refresh
   rate to a level approaching 1Hz when I plug in an external display, 

@@ -11,7 +11,7 @@ content: |
   <ol>
     <li>At the first stage you have someone who has learned to write
       code that
-      doesn't <a href='http: //technomancy.us/blog/post/36'>smell
+      doesn't <a href='http://technomancy.us/36'>smell
       bad</a>. He's got the idea--separate your business logic from your
       display logic and avoid tight coupling. He may have a lot of old
       spaghetti code around somewhere which embarrasses him,  but he's
@@ -51,4 +51,4 @@ content: |
     experience coding solo. I'm sure a mentorship type of situation
     could help things,  but I suspect most programmers follow a
     progression like this. </p>
-
+tags: hacking

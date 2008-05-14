@@ -4,7 +4,7 @@ title: hardware hacks
 id: 70
 content: |
   <p><a
-        href='http: //dev.technomancy.us/phil/wiki/NorbertRobot'>Norbert</a>
+        href='http://dev.technomancy.us/phil/wiki/NorbertRobot'>Norbert</a>
         is my latest project:  a robot that I plan on building up and
         programming.</p>
   
@@ -38,7 +38,7 @@ content: |
     <li>Bump sensors so that it will stop rather than keep pushing into an
       unyielding object </li>
     <li>... and more brainstorming
-    on <a href='http: //dev.technomancy.us/phil/wiki/NorbertRobot'>the
+    on <a href='http://dev.technomancy.us/phil/wiki/NorbertRobot'>the
     wiki page</a>.</li>
   </ol>
   
@@ -51,7 +51,7 @@ content: |
     decided on parallel vs serial. (I had an old laptop I was
     considering using that had an easier-to-interface-with parallel
     port,  but it was lacking a battery.) Hopefully it shouldn't be too difficult
-    to modify it to use the <a href='http: //ruby-serialport.rubyforge.org'>
+    to modify it to use the <a href='http://ruby-serialport.rubyforge.org'>
       ruby-serialport</a> library.</p>
   
       <pre class='code'>
@@ -76,7 +76,7 @@ content: |
     <span class="keyword">end</span>
   
     <span class="keyword">def</span> <span class="function-name">write_byte</span>(byte)
-      <span class="comment-delimiter"># </span><span class="comment">http: //blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/24605
+      <span class="comment-delimiter"># </span><span class="comment">http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/24605
   </span>    p = open(<span class="string">'/dev/port'</span>,  <span class="string">'w'</span>)  <span class="comment-delimiter"># </span><span class="comment">open /dev/port in write mode
   </span>    p.sync = <span class="variable-name">true</span>               <span class="comment-delimiter"># </span><span class="comment">turn buffering off,  write to the
   </span>                                <span class="comment-delimiter"># </span><span class="comment">port as soon as it is requested

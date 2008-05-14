@@ -4,7 +4,7 @@ title: post-railsconf 07
 id: 82
 content: |-
   <p>RailsConf just ended. I've got a big refactoring
-  of <a href='http: //rav.rubyforge.org'>RAV</a> in the works,  but until
+  of <a href='http://rav.rubyforge.org'>RAV</a> in the works,  but until
   I wrap that up I'll post this to hold things over: </p>
   
   <img src='/static/i/mongrel_panel.png' alt='mongrel panel screenshot' />

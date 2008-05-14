@@ -5,12 +5,12 @@ id: 58
 content: |
   <p>Considering the number
     of <a
-    href="http: //sztywny.titaniumhosting.com/2006/07/23/stiff-asks-great-programmers-answers/">agile
+    href="http://sztywny.titaniumhosting.com/2006/07/23/stiff-asks-great-programmers-answers/">agile
     folk who use emacs</a>,  it's pretty surprising how difficult it is
     to find code for automated testing of elisp. There's plenty of stuff
     for <a
-    href="http: //www.emacswiki.org/cgi-bin/emacs/unit-test.el">running
-    tests in other languages</a>,  but I was only able to find <a href='http: //www.panix.com/~tehom/my-code/regress.el'>one Emacs
+    href="http://www.emacswiki.org/cgi-bin/emacs/unit-test.el">running
+    tests in other languages</a>,  but I was only able to find <a href='http://www.panix.com/~tehom/my-code/regress.el'>one Emacs
     Lisp specific testing library</a>.</p>
   
   <p>Unfortunately as I look at the internals of regress.el,  it's clear
@@ -47,9 +47,9 @@ content: |
   
   <p>Speaking of Rails support,  I've
     improved <a
-  	      href="http: //dev.technomancy.us/phil/browser/dotfiles/.emacs.d/arorem2/rhtml-mode.el">RHTML-mode</a>
+  	      href="http://dev.technomancy.us/phil/browser/dotfiles/.emacs.d/arorem2/rhtml-mode.el">RHTML-mode</a>
     rather significantly in the past few days. There is still
-    one <a href="http: //dev.technomancy.us/phil/ticket/216">immensely
+    one <a href="http://dev.technomancy.us/phil/ticket/216">immensely
     irritating bug</a> that is getting in the way,  but on the whole it's
     coming along quite nicely.</p>
   
@@ -57,5 +57,5 @@ content: |
     unprecedented move,  the Department of Homeland Security has deemed
     an entire state of matter to be a national security risk: </p>
   
-  <a href="http: //cosmicvariance.com/2006/08/12/liquid/"><img src="http: //cosmicvariance.com/wp-images/phasediagram.jpg"></a>
-
+  <a href="http://cosmicvariance.com/2006/08/12/liquid/"><img src="http://cosmicvariance.com/wp-images/phasediagram.jpg"></a>
+tags: projects, emacs

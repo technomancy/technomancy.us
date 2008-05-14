@@ -3,14 +3,14 @@ timestamp: "Sat Oct 13 00: 00: 01 -0700 2007"
 title: arorem hacks
 id: 54
 content: |
-  <a href="http: //safetystate.com/ss.cgi?action=material&id=31"><img
+  <a href="http://safetystate.com/ss.cgi?action=material&id=31"><img
   		src="/static/i/patents.png" alt=
   		"software patents - because extortionists are people
   		too." /></a>
   
   <p>I've been
     improving <a
-  	       href="http: //dev.technomancy.us/phil/wiki/arorem">arorem</a>
+  	       href="http://dev.technomancy.us/phil/wiki/arorem">arorem</a>
     a bit these past few days,  and this little snippet has come in very
     handy: </p>
   
@@ -42,4 +42,4 @@ content: |
           nil
         (rails-root (expand-file-name (concat dir <span class="string">"../"</span>))))))
   </pre>
-
+tags: arorem, projects, rails

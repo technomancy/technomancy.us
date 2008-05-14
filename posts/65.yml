@@ -4,9 +4,9 @@ title: quaker terms
 id: 65
 content: |
   <p>A few months ago there was a bit of a fuss about a
-    so-called <a href="http: //docs.blacktree.com/visor/visor">Quake-style
+    so-called <a href="http://docs.blacktree.com/visor/visor">Quake-style
     terminal emulator</a> for OS X. There's
-    a <a href="http: //yakuake.uv.ro/">Free alternative</a> if you're
+    a <a href="http://yakuake.uv.ro/">Free alternative</a> if you're
     into KDE and that jazz,  but if you're not it's ridiculously simple
     to hack something up with existing terminal emulators in X. You just
     need to install the <tt>wmctrl</tt> utility: </p>

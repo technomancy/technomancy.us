@@ -121,9 +121,3 @@ end
 task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
-
-task :yamlize do
-  Dir.glob('**/*.json').each do |file|
-    File.open(file.gsub(/json/, 'yml'), 'w') { |f| f.puts YAML.dump(YAML.load(File.read(file)))}
-  end
-end

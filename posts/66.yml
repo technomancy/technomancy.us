@@ -32,7 +32,7 @@ content: |
   </style>
   
   <p>I know,  I know,  this has
-    been <a href='http: //technomancy.us/blog/post/48'>long
+    been <a href='http://technomancy.us/48'>long
     overdue</a>. But I've finally bit the bullet and dove into enough
     Javascript to get <a href='/sample/concourse'>Concourse</a> all
     shiny and slick. There have been a few other new features,  but the
@@ -205,11 +205,11 @@ content: |
        onmousemove="moveWeek(event);" onmouseup="releaseWeek();"></div>
   
   <script
-     src="http: //concour.se/javascripts/prototype.js"
+     src="http://concour.se/javascripts/prototype.js"
      type="text/javascript"></script>
   
   <script
-     src="http: //concour.se/javascripts/effects.js"
+     src="http://concour.se/javascripts/effects.js"
      type="text/javascript"></script>
   
   <script type="text/javascript">
@@ -357,7 +357,7 @@ content: |
   
   <p><b>Update</b>:  Aggregators seem to be stripping out the fancy JS, 
   so if you see a bunch of checkboxes,  you're seeing the degraded
-  version. <a href='http: //technomancy.us/blog/post/66'>See the
+  version. <a href='http://technomancy.us/66'>See the
   original</a>.</p>
   
   <p>Before this was implemented,  my poor users had to click a separate
@@ -376,11 +376,11 @@ content: |
   
   <p>The biggest thing about developing in Javascript that really annoys
   me is that it's very difficult to do without using the mouse. Ever
-  since switching to <a href='http: //sawmill.sf.net'>the Sawfish window
+  since switching to <a href='http://sawmill.sf.net'>the Sawfish window
   manager</a> I've been quite spoiled by my newfound ability to do
   nearly everything from the keyboard--but Javascript wrecks this,  and
   I've got an ache in my shoulder to prove it. Hopefully once I dig into
   some <a
-  href='http: //mir.aculo.us/2006/9/16/adventures-in-javascript-testing'>unit
+  href='http://mir.aculo.us/2006/9/16/adventures-in-javascript-testing'>unit
   testing for Javascript</a>,  things will improve.</p>
 

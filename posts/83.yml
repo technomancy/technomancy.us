@@ -7,9 +7,9 @@ content: |-
   
   <img src='/static/i/portland_street.jpg' alt='portland street' />
   
-  <p>Recently the ever-useful gaim project was <a href='http: //pidgin.im'>renamed to pidgin</a>. The new release is quite nice,  but several plugins haven't really been ported over yet. On top of that,  the notification plugin has some <a href='https: //bugs.launchpad.net/ubuntu/+source/gaim/+bug/93638'>serious problems</a> on 64-bit machines. How troublesome! Of course,  you can always scratch your itches by writing plugins in Python or C,  but then you have to use Python or C.</p>
+  <p>Recently the ever-useful gaim project was <a href='http://pidgin.im'>renamed to pidgin</a>. The new release is quite nice,  but several plugins haven't really been ported over yet. On top of that,  the notification plugin has some <a href='https: //bugs.launchpad.net/ubuntu/+source/gaim/+bug/93638'>serious problems</a> on 64-bit machines. How troublesome! Of course,  you can always scratch your itches by writing plugins in Python or C,  but then you have to use Python or C.</p>
   
-  <p>Well it turns out if you take advantage of <a href='http: //dbus.freedesktop.org'>dbus</a>,  the whole plugin architecture with its limited language support becomes a bit of a non-issue. The <a href='https: //trac.luon.net/ruby-dbus/'>ruby-dbus</a> project helps out here admirably. I should note that there's a proliferation of projects purporting to allow dbus usage from within Ruby,  but this one seemed the most mature and active. I was also very impressed by the quick response on the mailing list I got from the developers when I found a problem.</p>
+  <p>Well it turns out if you take advantage of <a href='http://dbus.freedesktop.org'>dbus</a>,  the whole plugin architecture with its limited language support becomes a bit of a non-issue. The <a href='https: //trac.luon.net/ruby-dbus/'>ruby-dbus</a> project helps out here admirably. I should note that there's a proliferation of projects purporting to allow dbus usage from within Ruby,  but this one seemed the most mature and active. I was also very impressed by the quick response on the mailing list I got from the developers when I found a problem.</p>
   
   <pre class='code'>
     <span class="keyword">def</span> <span class="function-name">watch_status</span>
@@ -38,11 +38,11 @@ content: |-
   
   <p>So far it does a few things: </p>
   <ul>
-  <li>listens for changes in my IM status and posts them to <a href='http: //twitter.com/technomancy'>Twitter</a></li>
+  <li>listens for changes in my IM status and posts them to <a href='http://twitter.com/technomancy'>Twitter</a></li>
   <li>pops up a notification bubble on incoming messages (with buddy icons)</li>
   <li>flashes the light on my laptop when a message is received</li>
   </ul>
   
   <p>Not what you'd call exciting,  but the point is it's written in Ruby and thus easily extensible by myself. Instant messaging has been the lone holdout in terms of the daily tasks that I was unable to automate and tie into programmatically,  so it's good to see that taken care of.</p>
   
-  <p>Code is <a href='http: //dev.technomancy.us/browser/dotfiles/bin/pidgin-tools.rb'>in Trac</a> as usual.</p>
+  <p>Code is <a href='http://dev.technomancy.us/browser/dotfiles/bin/pidgin-tools.rb'>in Trac</a> as usual.</p>

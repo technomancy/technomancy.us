@@ -7,15 +7,15 @@ content: |+
     interesting going on.</p>
   
   <blockquote> The <a
-  href="http: //dev.technomancy.us/phil/wiki/ExceptionIM">Exception IM
+  href="http://dev.technomancy.us/phil/wiki/ExceptionIM">Exception IM
   Notifier plugin</a> is just like the regular Exception Notifier by
   Jamis Buck except that it uses <a
-  href="http: //trypticon.org/software/actionmessenger/">ActionMessenger</a>
+  href="http://trypticon.org/software/actionmessenger/">ActionMessenger</a>
   to send instant messages rather than using ActionMailer to send
   email.</blockquote>
   
   <p>Just do your usual <tt>script/plugin install -x
-      svn: //technomancy.us/exception-im</tt> and follow the directions
+      svn://technomancy.us/exception-im</tt> and follow the directions
       there.</p>
   
   <p>Note that you'll only get notification in production mode for
@@ -28,10 +28,10 @@ content: |+
     on email notification if the user is not online.</p>
   
   <p>Oh,  also I found out that <a
-  href="http: //dev.technomancy.us/phil/wiki/ebby">Ebby</a> got mentioned
+  href="http://dev.technomancy.us/phil/wiki/ebby">Ebby</a> got mentioned
   in <a
-  href="http: //applications.linux.com/article.pl?sid=06/06/27/1837234&tid=47&tid=13&tid=100">a
+  href="http://applications.linux.com/article.pl?sid=06/06/27/1837234&tid=47&tid=13&tid=100">a
   Linux.com article</a>. It was a pretty insignificant blurb,  but it
   still seems cool by my low standards. (I've never had any high-profile
   mention but for a quick link on RedHanded.)</p>
-  
+tags: projects, rails

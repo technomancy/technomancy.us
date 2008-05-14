@@ -6,7 +6,7 @@ content: |
   <p>Has it really almost been a week? Well,  it's been a good week for
     hacks.</p>
   
-  <p><a href='http: //dev.technomancy.us/phil/wiki/ElUnit'>ElUnit</a> is
+  <p><a href='http://dev.technomancy.us/phil/wiki/ElUnit'>ElUnit</a> is
     a unit testing framework for Emacs Lisp designed to allow
     Test-Driven development. I believe it to be pretty much at release
     quality,  though a few more convenience macros (assert-equal,  for
@@ -52,10 +52,10 @@ content: |
     Anyway,  I'm pretty happy with the results,  especially considering I
     was able to keep it at about 90 LOC. Give it a shot,  and if you've
     got anything to say,  pipe up
-    on <a href='http: //dev.technomancy.us/phil/wiki/ElUnit'>the wiki
+    on <a href='http://dev.technomancy.us/phil/wiki/ElUnit'>the wiki
     discussion</a>.</p>
   
   <p><a
-        href='http: //dev.technomancy.us/phil/browser/dotfiles/.emacs.d/elunit.el?format=txt'>Grab
+        href='http://dev.technomancy.us/phil/browser/dotfiles/.emacs.d/elunit.el?format=txt'>Grab
         it</a> straight out of my Trac.</p>
-
+tags: projects, emacs

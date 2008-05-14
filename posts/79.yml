@@ -5,15 +5,15 @@ id: 79
 content: |
   <p>Somehow I'm getting a wifi signal in LAX,  so I'll be able to remedy
     the fact that I wasn't able to get a post in before I took off. As I
-    <a href='http: //philisha.net/2007/03/big-news/'>mentioned on my
+    <a href='http://philisha.net/2007/03/big-news/'>mentioned on my
     other blog</a>,  Alisha and I are heading off to Indonesia for a
     month. I'll be doing training and setup with GNU/Linux,  Ruby,  and
     other Free Software at a small software development shop in Central Java.</p>
   
   <p>Before I left I had a bit more Javascript fun. My brother-in-law
-    <a href='http: //www.birdsofyore.com'>Loren Broach</a> came up with a
+    <a href='http://www.birdsofyore.com'>Loren Broach</a> came up with a
     game that I coded up. You
-    can <a href='http: //technomancy.us/static/code/monolith/index.html'>play it
+    can <a href='http://technomancy.us/static/code/monolith/index.html'>play it
     in your browser</a> if you want. I haven't done game programming in
     a while; that was a lot of fun. I haven't done GUI programming in a
     while; that aspect was only fun because it was so simple. The cool
@@ -35,23 +35,23 @@ content: |
     Lisp</i> book. Anyway,  it's always fun to play with a new way of
     thinking.</p>
   
-  <p>We <a href='http: //philisha.net/2007/04/staging/'>cleared out our
+  <p>We <a href='http://philisha.net/2007/04/staging/'>cleared out our
     apartment</a> before we left,  so my server had to be moved to
     Alisha's parents' house. A 311-day uptime isn't too unusual these
     days (especially with a UPS),  but I was disappointed to start from
     scratch again. Unfortunately Alisha's parents' ISP is pulling some
     dirty moves and blocking all the interesting ports,  so I've had to
     move everything I can over to my account
-    on <a href='http: //dreamhost.com'>Dreamhost</a> in the mean time. I
+    on <a href='http://dreamhost.com'>Dreamhost</a> in the mean time. I
     haven't been able to get Trac moved over; according to the Dreamhost
     wiki it's a fairly complex task. That means
-    the <a href='http: //dev.technomancy.us: 8080/conkeror'>Conkeror
+    the <a href='http://dev.technomancy.us: 8080/conkeror'>Conkeror
     Trac</a> is only available on port 8080... sorry guys! I'll try to
     remedy that when I get the chance.</p>
   
-  <p>And finally,  I owe <a href='http: //blog.zenspider.com'>Ryan
+  <p>And finally,  I owe <a href='http://blog.zenspider.com'>Ryan
       Davis</a> some <a
-      href='http: //blog.zenspider.com/archives/2007/04/released_toggleel_v_12_and_autotestel_10_beta_2.html'>code</a>. I'm
+      href='http://blog.zenspider.com/archives/2007/04/released_toggleel_v_12_and_autotestel_10_beta_2.html'>code</a>. I'm
       charging my battery right now so I can hopefully get to writing it
       on the flight. I expect I'll be too beat when I arrive to get it
       posted promptly,  but I'm a man of my word&mdash;it'll be uploaded

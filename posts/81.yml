@@ -3,12 +3,12 @@ timestamp: "Sat Oct 13 00: 00: 01 -0700 2007"
 title: turtle power
 id: 81
 content: |
-  <p><a href='http: //myconfplan.com/conferences/RailsConf2007'>Railsconf</a>
+  <p><a href='http://myconfplan.com/conferences/RailsConf2007'>Railsconf</a>
     is a go. The first day is just wrapping up,  and I've finally got
     some downtime. First impressions:  Portland is a great place for a
     conference. There's green everywhere,  and being within the free ride
     zone for the transit system is quite handy. Having
-    <a href='http: //www.powells.com/technicalbooks'>Powell's Technical
+    <a href='http://www.powells.com/technicalbooks'>Powell's Technical
     Books</a> around is an &uuml;bergeek joy. To top it off,  there's
     municipal wireless that would be easily up for the task of handling
     a tech crowd of the size of any previous Ruby-related
@@ -30,14 +30,14 @@ content: |
   <img src='/static/i/avi.jpg' alt='avi bryant' title='turtles and web heresies' />
   
   <p>Tonight's keynotes were
-    from <a href='http: //smallthought.com/avi/'>Avi Bryant</a>
-    and <a href='http: //zefrank.com'>Ze Frank</a>. Ze had an immensely
+    from <a href='http://smallthought.com/avi/'>Avi Bryant</a>
+    and <a href='http://zefrank.com'>Ze Frank</a>. Ze had an immensely
     fun talk about how audiences contribute and how the Web is
     accelerating that kind of thing. He's funny as the dickens,  but it
     turns out he's got a sharp technical mind. Avi's talk was probably
     the most thought-provoking thing I've heard in a while. He talked
     about how there's no reason Ruby can't be
-    totally <a href='http: //en.wikipedia.org/wiki/Self-hosting'>self-hosting</a>.
+    totally <a href='http://en.wikipedia.org/wiki/Self-hosting'>self-hosting</a>.
     Having core classes like Array and Hash implemented in C is
     currently necessary from a performance point of view,  but it causes
     annoyances when you want to peek behind the curtain.</p>
@@ -49,7 +49,7 @@ content: |
     likely to be more pressing than your technical problems.) The thing
     is,  performance <i>indirectly</i> affects your app in a huge way:  it
     limits
-    the <a href='http: //blog.caboo.se/articles/2007/4/8/heresy-and-turtles-all-the-way-down-with-avi-bryant'>Turtle
+    the <a href='http://blog.caboo.se/articles/2007/4/8/heresy-and-turtles-all-the-way-down-with-avi-bryant'>Turtle
     Factor</a>.</p>
   <img src='/static/i/turtles1.png' alt='low turtle factor' align='left' />
          

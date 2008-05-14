@@ -4,7 +4,7 @@ title: 30 plus bad
 id: 73
 content: |+
   
-  <p><a href="http: //behaviour-driven.org">Behaviour-Driven
+  <p><a href="http://behaviour-driven.org">Behaviour-Driven
   Development</a> has been percolating around in the collective
   consciousnesses of some of the communities I'm involved in. It's
   basically a methodology that has grown out of some of the weaknesses
@@ -16,7 +16,7 @@ content: |+
   <p>The main issue that BDD tackles is one of terminology&mdash;when
   you are constantly referring to tests in TDD,  it's easy to forget
   that what you really care about is behaviour. It's not <i>really</i>
-  about tests,  (in fact,  <a href="http: //blog.daveastels.com">Dave
+  about tests,  (in fact,  <a href="http://blog.daveastels.com">Dave
   Astels's</a> book on TDD begins with the sentence,  "This is not a
   book about testing.")  those just happen to be the most obvious way
   to get check behaviour. So BDD tries to come in with a new
@@ -28,18 +28,18 @@ content: |+
   be honest,  I agree with that except for the word just. When people
   talk about coding styles and things to always be mindful of,  one of
   the things that repeatedly comes up
-  is <a href="http: //cc2e.com/Page.aspx?hid=225">how important good
+  is <a href="http://cc2e.com/Page.aspx?hid=225">how important good
   names are</a>. Not to get
   all <a
-  href="http: //en.wikipedia.org/wiki/Sapir-Whorf_hypothesis">Sapir-Whorf</a>
+  href="http://en.wikipedia.org/wiki/Sapir-Whorf_hypothesis">Sapir-Whorf</a>
   on you,  but the words you use really affect the way you think in an
   inescapable way. In fact,  there's an
   excellent <a
-  href="http: //deadhobosociety.com/index.php/Essays/ESSAY12">essay on
+  href="http://deadhobosociety.com/index.php/Essays/ESSAY12">essay on
   Confucianism and Technical standards</a> which states: </p> <blockquote>
   In a famous
   passage,  <a
-  href="http: //www.analects-ink.com/mission/Confucius_Rectification.html">Analects
+  href="http://www.analects-ink.com/mission/Confucius_Rectification.html">Analects
   13.3</a>,  Confucius was asked by a disciple what his first order of
   business would be if he were to govern a state. He replied, 
   &#27491;&#21517;,  meaning roughly [...] "rectify the names." His disciple
@@ -86,7 +86,7 @@ content: |+
                     <span class="paren">(</span>expect <span class="paren">(</span>pop list<span class="paren">)</span> equal <span class="string">"a"</span><span class="paren">)</span>
                     <span class="paren">(</span>expect <span class="paren">(</span>pop list<span class="paren">)</span> equal <span class="string">"b"</span><span class="paren">))))</span></pre><p>It's BDD. In Emacs Lisp. (And it's only 89 lines of code.&lt;/brag&gt;)</p>
   <p>The most obvious difference it has from other libraries
-  like <a href="http: //rspec.rubyforge.org">RSpec</a> (well,  apart from
+  like <a href="http://rspec.rubyforge.org">RSpec</a> (well,  apart from
   Lisp) is that behave.el meant to run in an interactive environment
   rather than from the command line. You could certainly script it,  but
   the tagging functionality is designed with interactivity in mind. The
@@ -110,15 +110,15 @@ content: |+
   
   <p><tt>behave.el</tt>
   supercedes <a
-  href="http: //dev.technomancy.us/phil/wiki/ElUnit">ElUnit</a>,  my
+  href="http://dev.technomancy.us/phil/wiki/ElUnit">ElUnit</a>,  my
   previous unit-testing framework for Emacs Lisp.</p>
   
   <p>Anyway,  real point here is that now that I've got a BDD framework
   in Emacs Lisp,  I can port it to Common Lisp and then use it to hack
-  on <a href="http: //technomancy.us/blog/post/72">Darjeeling</a>. Woo hoo!</p>
+  on <a href="http://technomancy.us/72">Darjeeling</a>. Woo hoo!</p>
   
-  <p><a href="http: //dev.technomancy.us/phil/browser/dotfiles/.emacs.d/behave">Grab it</a>
+  <p><a href="http://dev.technomancy.us/phil/browser/dotfiles/.emacs.d/behave">Grab it</a>
   from my repository. There's also
   a <a
-  href="http: //dev.technomancy.us/phil/wiki/behave">Trac page</a>.</p>
+  href="http://dev.technomancy.us/phil/wiki/behave">Trac page</a>.</p>
   

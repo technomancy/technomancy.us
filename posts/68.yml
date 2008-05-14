@@ -14,19 +14,19 @@ content: |
     revelation to me since people have been building apps like
     Thunderbird or Sunbird on the Mozilla platform for ages. Folks have
     even been putting together
-    some <a href="http: //songbirdnest.com">crazier</a>
-    <a href="http: //flock.com">apps</a> in XUL. But Firefox was always
+    some <a href="http://songbirdnest.com">crazier</a>
+    <a href="http://flock.com">apps</a> in XUL. But Firefox was always
     a big monolithic app written in a non-dynamic language to me.</p>
   
   <p>Anyway,  the cause of my most recent epiphany
-    is <a href="http: //dev.hyperstruct.net/mozlab/wiki">Mozlab</a>. It's
+    is <a href="http://dev.hyperstruct.net/mozlab/wiki">Mozlab</a>. It's
     a Firefox plugin that gives you access to a
-    killer <a href="http: //en.wikipedia.org/wiki/REPL">REPL</a> 
+    killer <a href="http://en.wikipedia.org/wiki/REPL">REPL</a> 
     for interacting with a live Mozilla session. There's
-    a <a href="http: //dev.hyperstruct.net/movie/mozrepl.html">neat lil'
+    a <a href="http://dev.hyperstruct.net/movie/mozrepl.html">neat lil'
     flash screencast</a> that explains its usefulness better than I can
     here. The Emacs integration is also top-notch--if you've
-    used <a href="http: //common-lisp.net/project/slime/">SLIME</a> for
+    used <a href="http://common-lisp.net/project/slime/">SLIME</a> for
     doing Common Lisp development,  this is basically the same thing for
     XUL. You connect to a running instance of Firefox and can send it
     bits of Javascript that you are working on to evaluate.</p>
@@ -36,7 +36,7 @@ content: |
     amounts of customization using Javascript alone. It really is a
     platform on which you can build apps that just happen to have access
     to one of the best rendering engines written. I've often
-    <a href="http: //technomancy.us/blog/post/44">lamented about the lack
+    <a href="http://technomancy.us/44">lamented about the lack
     of a solid browser written in one of my favorite languages</a>. At
     one point I thought the answer might be to try to get bindings to
     the Gecko rendering engine in Ruby or Lisp,  but this involves more C

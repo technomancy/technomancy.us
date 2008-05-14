@@ -5,7 +5,7 @@ id: 55
 content: |
   <p>Last February,  I started a project
     called <a
-    href='http: //dev.technomancy.us/phil/wiki/RuseMail'>RuseMail</a> and
+    href='http://dev.technomancy.us/phil/wiki/RuseMail'>RuseMail</a> and
     promptly forgot about it since I couldn't get the bindings compiled
     properly. This afternoon,  I finished it.</p>
   
@@ -20,6 +20,6 @@ content: |
     counts. Right? Give it a go if you're interested,  but note that
     you'll need to
     install <a
-    href='http: //rubyforge.org/frs/?group_id=948&release_id=3876'>FuseFS</a>
+    href='http://rubyforge.org/frs/?group_id=948&release_id=3876'>FuseFS</a>
     (the Ruby FUSE bindings) for it to work.</p>
-
+tags: projects, ruby

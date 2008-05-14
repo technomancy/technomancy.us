@@ -5,7 +5,7 @@ id: 72
 content: |
   <p>Well by now if you follow Ruby much you've probably noticed the
     whole <a
-    href="http: //on-ruby.blogspot.com/2007/01/will-rubinius-be-acceptable-lisp.html">Will Rubinius
+    href="http://on-ruby.blogspot.com/2007/01/will-rubinius-be-acceptable-lisp.html">Will Rubinius
     be an acceptable Lisp</a> ponderings or brainstormings or whatever you want to
     call it. And if you know me at all,  you'd be aware that the
     union of such concepts is exactly the kind of thing that would
@@ -13,7 +13,7 @@ content: |
   
   <p>So I meddled around a bit
     with <a
-    href="http: //parsetree.rubyforge.org">ParseTree</a>. Honestly,  it's
+    href="http://parsetree.rubyforge.org">ParseTree</a>. Honestly,  it's
     ridiculous; the Ruby side of this kind of thing has been made more
     or less trivial by Ryan's great work: </p>
   
@@ -71,7 +71,7 @@ content: |
     in Ruby-the-language will be able to be translated through the infuser shown
     above. Now I know that the official Ruby has gobs and gobs of stuff
     implemented in C,  but it seems to be a stated goal
-    of <a href="http: //rubini.us/rubinius">Rubinius</a> to decrease the
+    of <a href="http://rubini.us/rubinius">Rubinius</a> to decrease the
     C-to-Ruby ratio. That may be something that could be leveraged
     here. (Note to self:  need to check out MetaRuby as well.)</p>
   
@@ -79,7 +79,7 @@ content: |
     <acronym title="Behaviour-Driven Development">BDD</acronym>
     framework for Common Lisp. A few weeks back I started
     writing <a
-    href="http: //dev.technomancy.us/phil/browser/dotfiles/.emacs.d/behave">behave.el</a>
+    href="http://dev.technomancy.us/phil/browser/dotfiles/.emacs.d/behave">behave.el</a>
     for Emacs Lisp. The pieces are all coming together in my head,  so it
     seems the thing to do at this point would be to finish it,  port it
     to CL,  and then start porting the Rubinius specs to it.</p>
@@ -88,6 +88,6 @@ content: |
     doesn't,  (or if it's the kind of insanity that intrigues you,  and
     you can't bring yourself to take your eyes away from such a wreck of an idea)
     hop on the mailing list; I've got
-    a <a href="http: //rubyforge.org/projects/darjeeling">project</a> set
+    a <a href="http://rubyforge.org/projects/darjeeling">project</a> set
     up at RubyForge. It's called Darjeeling.</p>
 
