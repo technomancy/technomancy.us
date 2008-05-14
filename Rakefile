@@ -26,7 +26,7 @@ begin
 
   desc "Copy comments from remote host to local copy of blog"
   remote_task :sync_comments do
-    reverse_rsync '.', 'technomancy.us/comments'
+    reverse_rsync '.', "#{domain}/comments"
   end
 rescue LoadError
   task(:sync_comments) { "dummy task to satisfy deps when vlad is not present"}

@@ -55,7 +55,7 @@
   <li>Trivially applying version control to posts</li>
   <li>Saving memory on localhost when running it there to make
     modifications</li>
-  <li>Writing posts in the editor of choince without resorting
+  <li>Writing posts in the editor of choice without resorting
     to <a href='http://savannah.nongnu.org/projects/emacsweblogs'>
     blogging extensions</a></li>
   <li>Depending on far fewer libraries</li>
