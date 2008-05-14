@@ -1,0 +1,10 @@
+--- 
+timestamp: Sat Oct 13 00:00:01 -0700 2007
+title: metalicious
+tags: lisp, projects
+id: 46
+content: |-
+  <blockquote>From a safe distance Mickos will ask such questions as "How do you plan your day?"<br/>  <br/>  If a reply comes back that says "I always sleep until 11 A.M.,  and then I start working, " Mickos doesn't want to hear any more. He's sold. "The brightest engineers like the calmness and coolness of the night, " he says.  </blockquote>
+  <p>&mdash;<a href='http://money.cnn.com/2006/05/31/magazines/fortune/mysql_greatteams_fortune/index.htm'>Marten Mickos</a> on MySQL's interviewing and hiring practices</p>
+  <p>Funny story:  when I was in eighth grade,  I was a crack QBasic programmer. I was about as good as you can get at writing QBasic code,  which says a lot about QBasic and not much about my own skill level. I'd written a few games,  and I decided I wanted to make something that would allow others to make text adventure games. My program would ask questions and output the text adventure as runnable QBasic code. Thus began my first foray into metaprogramming and perhaps the most foolish coding project I would ever attempt. (Though my program could output games just fine,  it had a difficult time loading them back in and editing them.)</p>
+  <p>Speaking of metaprogramming,  I had a stimulating conversation with a philosopher yesterday about <a href='http://en.wikipedia.org/wiki/Symbolic_logic'>symbolic logic</a> that turned towards Lisp and AI. Symbolic logic attempts to describe knowledge by use of a specific dialect. (I'm sure I'm oversimplifying,  but this seems to be the aspect which most relates to what I understand.)  My discovery of the night was that Lisp is particularly suited to AI because it's very good at metaprogramming because metaprogramming is almost the same thing as learning. (I sense this statement needs to be backed up,  but I'm not sure how.) The problem with writing AI is that it goes beyond metaprogramming--an AI system must metaprogram itself,  and thus writing an AI system would be meta-meta-programming.</p>

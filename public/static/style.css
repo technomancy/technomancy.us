@@ -1,0 +1,412 @@
+body
+ { 
+   font: 12px/16px Tahoma, Arial, Veranda, sans-serif;
+   background-color: #11472b;
+ }
+
+div#background
+ { 
+   padding: 0;
+   background: #11472b url(/static/i/bg.png) repeat-y 0 20px;
+   width: 770px;
+   margin: auto;
+ }
+
+div#wrapper
+ { 
+   width: 748px;
+   margin: 0 auto;
+   background: url(/static/i/main2.jpg) no-repeat 0 0; 
+   /* image is an iMac motherboard, BTW. */
+ }
+
+#corner
+ { 
+   display: block;
+   width: 760px;
+   margin: 0 5px 0 5px;
+ }
+
+#nav ul
+ {
+   margin: 10px;
+   margin-top: 72px;
+   padding: 0; 
+ }
+
+#nav li
+ { 
+   list-style-type: none;
+   padding: 3px;
+   margin: 0px;
+   margin-left: 3em;
+   margin-top: -2px;
+   float: left;
+   border-left: 1px white solid;
+   border-right: 1px white solid;
+   font-weight: bold;
+ }
+
+#nav li.nav_selected
+ { 
+   background: #ddd;
+ }
+
+#nav li:hover
+ { 
+   background: white;
+ }
+
+#nav a
+ { 
+   color: black;
+ }
+
+#notice
+{ 
+  background-color: #ccc; 
+  padding: 0.5em;
+  border: 1px #aaa solid;
+  display: block;
+  color: green;
+  clear: both;
+  margin: 1em;
+}
+
+
+p#tagline
+ { 
+   font-size: 0.8em;
+   float: right;
+   padding: 2px 2em 2px 2em;
+   border-left: 1px white solid;
+   border-bottom: 1px white solid;
+   margin-top: 8px;
+   margin-right: 1px;
+ }
+
+p#foot 
+ { 
+   clear: both;
+   margin: auto;
+   text-align: center;
+   font-size: 0.8em;
+   border-top: 1px #bbb solid;
+   background-color: #ddd;
+ }
+
+
+
+/* global styles */
+
+a 
+ { 
+   text-decoration: none;
+   color: #555;
+ }
+
+a:hover
+ { 
+   text-decoration: underline;
+   color: #444;
+ }
+
+.button
+ { 
+   background-color: #bbb;
+   border: 1px white solid;
+ }
+
+.disclaimer
+ { 
+   font-size: 0.8em;
+ }
+
+img
+{ 
+  display: block;
+  border: 0;
+  /* thanks, Tim! */
+}
+
+address { clear: both; }
+
+.code
+{
+  width: 500px;
+  border: 1px grey solid;
+  background: #eee;
+  padding: 1em;
+  font-family: "Inconsolata", Courier, "Courier New", monospace;
+  font-size: 8pt;
+}
+
+.tags
+{ 
+  color: #999;
+  float: right;
+  font-size: 8pt;
+  margin-left: 3em;
+}
+
+.all-tags
+{ 
+  color: #999;
+  font-size: 8pt;
+  width: 100px;
+  margin-left: 1em;
+}
+
+
+/* transparent PNGs should be hidden from IE
+   but good browsers should see them. */
+.trans-png { display: none; }
+* > img.trans-png { display: block; }
+
+
+/* resume styles */
+
+#res div p
+ {
+   margin: 1em;
+ }
+#res h3
+ { 
+   margin-top: 3em;
+ }
+
+
+/* sample styles */
+
+#sample_list
+ { 
+   list-style-type: none;
+   float: right; 
+   clear: right;
+   background-color: #eee; 
+   padding: 1em;
+   border: 2px white solid;
+   margin: 1em;
+ }
+
+img.sample
+ { 
+   margin: 1em 2em 1em 2em;
+   border: 2px #ddd solid;
+ }
+
+
+/* article styles */
+
+#article_list
+ { 
+   list-style-type: none;
+   float: right; 
+   clear: right;
+   background-color: #eee; 
+   padding: 1em;
+   border: 2px white solid;
+   margin: 1em;
+ }
+
+/* misc styles */
+
+.irc { 
+       margin-left: 2em;
+       font-size: 80%;
+ }
+
+/* code styles */
+
+.keyword { color: blue; }
+.literal { color: purple; }
+
+/* blog styles */
+
+#sidebar 
+{ 
+  clear: right;
+  float: right; 
+  padding: 1em; 
+  border: 1px #aaa solid;
+  border-width: 1px 0 0 1px;
+  margin: 0 -2em 2em 2em;
+}
+
+#sidebar ul
+{ 
+  margin-left: 0;
+  padding-left: 1em;
+  list-style-type: none;
+}
+
+.explain
+{ 
+  width: 120px;
+  font-size: 75%;
+}
+
+#content 
+{ 
+  padding: 2em;
+}
+
+h2
+{ 
+  float: left;
+  margin-top: 2em;
+  clear: left;
+  font-family: monospace;
+}
+
+h2 a
+{ 
+  color: #222;
+}
+h2 a:hover
+{ 
+  text-decoration: none;
+}
+
+h2#bloghead
+{   margin: 7em 1em 0 1em;  }
+
+
+/* each post */
+
+.post
+{ 
+  width: 550px;
+  padding: 2em;
+}
+
+.post h3
+{ 
+  font-family: monospace;
+  letter-spacing: 0.4em;
+  clear: left;
+  margin: 4em 0 0 1em;
+}
+
+.post h3 a:hover
+{ 
+  text-decoration: none;
+  background: #bbb;
+}
+
+.dt
+{ 
+  font-size: 85%;
+  float: right;
+  color: #888;
+  padding: 1px 4px;
+  border: 1px #aaa solid;
+}
+
+.post img
+{ 
+  border: 3px #375 solid;
+  margin: 1em;
+}
+
+.form-text
+{ 
+  border: 1px grey solid;
+}
+
+.button
+{ 
+  border: 1px grey solid;
+  padding: 0 2px;
+}
+
+#pages { background-color: #ccc; 
+         clear: both;
+         padding: 0.5em;
+         border: 1px #aaa solid;}
+
+/* comment styles */
+
+.comment
+{ 
+  width: 420px;
+  margin: 3em; 
+  padding: 1em;
+}
+
+.comment p {   color: black;  }
+#comment-form
+{ 
+  float: right;
+  margin: 3em 2em;
+}
+
+#comment-form input, textarea
+{ 
+  border: 1px grey solid;
+}
+
+#comment-form label {
+  width: 5em;
+}
+
+
+/* htmlize styles for code snippets */
+
+      .comment {
+        /* font-lock-comment-face */
+        color: #7f9f7f;
+      }
+      .comment-delimiter {
+        /* font-lock-comment-delimiter-face */
+        color: #708070;
+      }
+      .function-name {
+        /* font-lock-function-name-face */
+        color: #9f8ff0;
+      }
+      .keyword {
+        /* font-lock-keyword-face */
+        color: #900f4f;
+        font-weight: bold;
+      }
+      .negation-char {
+        /* font-lock-negation-char-face */
+        color: #f0dfaf;
+        font-weight: bold;
+      }
+      .string {
+        /* font-lock-string-face */
+        color: #cc9393;
+      }
+      .type {
+        /* font-lock-type-face */
+        color: #4f0fff;
+        font-weight: bold;
+      }
+      .variable-name {
+        /* font-lock-variable-name-face */
+        color: #308f3f;
+      }
+      .builtin {
+        /* font-lock-builtin-face */
+        color: #da70d6;
+      }
+      .doc {
+        /* font-lock-doc-face */
+        color: #bc8f8f;
+      }
+      .paren {
+        /* paren-face */
+        color: #8c8c8c;
+      }
+
+
+/* articles */
+#bindings dt
+{ 
+  float: left; 
+  margin-right: 1.5em;
+  margin-left: 2em;
+  font-weight: bold;
+}

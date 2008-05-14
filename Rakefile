@@ -24,6 +24,8 @@ begin
     rsync '.', domain
   end
 
+  remote_task :publish => :deploy
+  
   desc "Copy comments from remote host to local copy of blog"
   remote_task :sync_comments do
     reverse_rsync '.', "#{domain}/comments"
@@ -75,31 +77,31 @@ end
 
 desc "Render posts to static files"
 task :render_posts => :sync_comments do
-  render_files_with_template('posts/*.json', 'templates/post.erb') { |page| "public/#{page['id']}.html" }
+  render_files_with_template('posts/*.yml', 'templates/post.erb') { |page| "public/#{page['id']}.html" }
 end
 
 desc "Render a single post"
 task :render_post do
-  page = parse("posts/#{ENV['POST']}.json")
+  page = parse("posts/#{ENV['POST']}.yml")
   render_file_with_template(page, 'templates/post.erb',
                             "public/#{page['id']}.html")
 end
 
 desc "Render static pages"
 task :render_static do
-  render_files_with_template('static/*.json', 'templates/static.erb') { |page| "public/#{page['title'].downcase}.html" }
+  render_files_with_template('static/*.yml', 'templates/static.erb') { |page| "public/#{page['title'].downcase}.html" }
 end
 
 desc "Render Atom feed"
 task :render_feed do
-  pages = Dir.glob('posts/*.json').sort_by{ |f| f.match(/(\d+)/)[1].to_i }[-16 .. -1].reverse.map{ |f| parse(f) }
+  pages = Dir.glob('posts/*.yml').sort_by{ |f| f.match(/(\d+)/)[1].to_i }[-16 .. -1].reverse.map{ |f| parse(f) }
   render_file_with_template(pages, 'templates/atom.erb',
                             'public/feed/atom.xml')
 end
 
 desc "Render pages of posts"
 task :render_pages do
-  all_pages = Dir.glob('posts/*.json').sort_by{ |f| f.match(/(\d+)/)[1].to_i }.map{ |f| parse(f) }
+  all_pages = Dir.glob('posts/*.yml').sort_by{ |f| f.match(/(\d+)/)[1].to_i }.map{ |f| parse(f) }
   page_count = (all_pages.size.to_f / PAGE_SIZE).ceil
 
   # save the initial index first
@@ -119,3 +121,9 @@ end
 task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
+
+task :yamlize do
+  Dir.glob('**/*.json').each do |file|
+    File.open(file.gsub(/json/, 'yml'), 'w') { |f| f.puts YAML.dump(YAML.load(File.read(file)))}
+  end
+end

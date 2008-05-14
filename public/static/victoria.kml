@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1009678812'><img src="http://farm2.static.flickr.com/1102/1009678812_3f6f846183.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.376666666667,48.4115</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1008830757'><img src="http://farm2.static.flickr.com/1311/1008830757_58e2b6092e.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.378166666667,48.4121666666667</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1009633144'><img src="http://farm2.static.flickr.com/1202/1009633144_a9cfd67529.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.351,48.4055</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1008792355'><img src="http://farm2.static.flickr.com/1279/1008792355_ce1365103a.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.372333333333,48.4095</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1008740023'><img src="http://farm2.static.flickr.com/1111/1008740023_4b5b25b4f5.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.334833333333,48.409</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1009624434'><img src="http://farm2.static.flickr.com/1121/1009624434_557d40f476.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.351,48.4055</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1009641552'><img src="http://farm2.static.flickr.com/1073/1009641552_e38cad83c8.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.351,48.4055</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:33:28</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1008811515'><img src="http://farm2.static.flickr.com/1420/1008811515_686c88bd53.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.375833333333,48.411</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1009658894'><img src="http://farm2.static.flickr.com/1384/1009658894_96db2faa98.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.375166666667,48.4108333333333</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:37:35</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1008756437'><img src="http://farm2.static.flickr.com/1362/1008756437_cb269b3871.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.351,48.4055</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>2007:07:30 08:32:40</name>
+    <description>
+      <![CDATA[<a href='http://flickr.com/photos/Technomancy/1009606536'><img src="http://farm2.static.flickr.com/1028/1009606536_f29e443b11.jpg" /></a>]]>
+    </description>
+    <Point>
+      <coordinates>-123.336,48.41</coordinates>
+    </Point>
+  </Placemark>
+</kml>

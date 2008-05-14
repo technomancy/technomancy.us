@@ -1,0 +1,8 @@
+--- 
+timestamp: 2006-03-08 17:01:07
+title: brain breaks
+tags: ruby
+id: 39
+content: "<p>What will this code produce?</p> <pre class=\"code\"><span class=\"keyword\">class </span>Confusion\n <span class=\"keyword\">def</span> <span class=\"keyword\">self</span>.confuse\n &nbsp;    never_defined = <span class=\"literal\">'defined'</span> <span class=\"keyword\">if</span> <span class=\"keyword\">false</span>\n &nbsp;    never_defined\n <span class=\"keyword\">end</span>\n\n\
+  <span class=\"keyword\">def</span> method_missing(m,  *args)\n &nbsp;    <span class=\"literal\">'Will you see this?'</span>\n <span class=\"keyword\">end</span>\n <span class=\"keyword\">end</span>\n \n puts Confusion.confuse</pre>\n\
+  <p><b>Update: </b> KirinDave has <a href='http://blog.caboo.se/articles/2006/03/08/your-ruby-gotcha-of-the-day#comments'>a more informative explanation</a> on the caboose blog.</p> "

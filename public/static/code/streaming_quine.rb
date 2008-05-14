@@ -1,9 +1,8 @@
 require 'rubygems'
-gem 'technomancy-rack'
 require 'rack/response'
 require 'rack/handler/mongrel'
 
-# Launches an HTTP server on http://localhost:9999/N that outputs its own code N times
+# Launches an HTTP server on http://localhost:9999/N that streams its own code N times
 Rack::Handler::Mongrel.run(Proc.new do |env|
                              [200, {}, Proc.new do |response|
                                 response.send_status_no_connection_close('')

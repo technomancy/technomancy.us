@@ -1,0 +1,6 @@
+--- 
+timestamp: Sat Oct 13 00:00:01 -0700 2007
+title: new freaki rad sweet
+tags: ruby
+id: 11
+content: "<p>Lisp is fun,  but...</p> <code>ruby -ropen-uri -e 'eval(open(\"http://go.hobix.com/\").read)'</code> <p>... is even more intriguing.<br /> Try it; I dare you.</p> <p><b>Update</b>:  head hurts.</p>"

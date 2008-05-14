@@ -1,0 +1,130 @@
+=== added directory 'cache'
+=== added directory 'public'
+=== added file 'test/test_opml.rb'
+--- test/test_opml.rb   1970-01-01 00:00:00 +0000
++++ test/test_opml.rb   2008-01-08 22:04:41 +0000
+@@ -0,0 +1,26 @@
++require 'rubygems'
++require 'test/unit'
++
++$LOAD_PATH << File.dirname(__FILE__) + '/../planet'
++
++require 'config'
++
++class OpmlParserTest < Test::Unit::TestCase
++  def test_roster_loading
++    Planet.config.read_opml(File.dirname(__FILE__) + '/test_opml.xml')
++
++    assert_equal "Test Planet", Planet.config['Planet']['name']
++    assert_equal "Joe Bloggs", Planet.config['Planet']['owner_name']
++    assert_equal "joe@example.com", Planet.config['Planet']['owner_email']
++
++    { 'Sam Ruby' => 'http://intertwingly.net/blog/index.atom',
++      'Tim Bray' => 'http://www.tbray.org/ongoing/ongoing.atom',
++      'Phil Hagelberg' => 'http://technomancy.us/feed/atom'
++    }.each do |name, url|
++      assert Planet.config[url], "No entry for #{url}"
++      assert_equal name, Planet.config[url]['name'], "No entry for #{name}"
++    end
++
++    assert ! Planet.config['http://excluded.blog.com/feed'], "Bad feed not excluded."
++  end
++end
+
+=== added file 'test/test_opml.xml'
+--- test/test_opml.xml  1970-01-01 00:00:00 +0000
++++ test/test_opml.xml  2008-01-08 22:08:44 +0000
+@@ -0,0 +1,27 @@
++<?xml version="1.0" encoding="ISO-8859-1"?>
++<opml version="1.1">
++  <head>
++    <title>Test Planet</title>
++    <ownerName>Joe Bloggs</ownerName>
++    <ownerEmail>joe@example.com</ownerEmail>
++    <uri>http://planet.example.com</uri>
++  </head>
++  <body>
++
++    <outline text="folks">
++      <outline text="Sam Ruby"
++               xmlUrl="http://intertwingly.net/blog/index.atom" />
++      <outline text="Tim Bray"
++               xmlUrl="http://www.tbray.org/ongoing/ongoing.atom" />
++      <outline text="other">
++        <outline text="Phil Hagelberg"
++                 xmlUrl="http://technomancy.us/feed/atom" />
++      </outline>
++    </outline>
++
++    <outline text="planet-exclude">
++      <outline text="Bad blog"
++               xmlUrl="http://excluded.blog.com/feed" />
++    </outline>
++  </body>
++</opml>
+\ No newline at end of file
+
+=== modified file 'planet/config.rb'
+--- planet/config.rb    2007-12-26 01:23:30 +0000
++++ planet/config.rb    2008-01-08 22:19:31 +0000
+@@ -1,5 +1,6 @@
+ require 'delegate'
+ require 'planet/log'
++require 'planet/xmlparser'
+
+ module Planet
+
+@@ -75,19 +76,50 @@
+   end
+
+   class ConfigParser < PythonConfigParser
++    DEFAULTS = { 'cache_directory' => 'cache',
++      'output_dir' => 'public',
++      'items_per_page' => 60,
++      'days_per_page' => 0,
++      'date_format' => '%B %d, %Y %I:%M %p',
++      'new_date_format' => '%B %d, %Y',
++      'encoding' => 'utf-8',
++      'template_files' => ''
++    }
++
+     def initialize
+       super
+-      self['Planet'] = {}
++      self['Planet'] = DEFAULTS
+     end
+
+     def read filename
+-      super(filename)
++      if filename =~ /opml/
++        read_opml(filename)
++      else
++        super(filename)
++      end
+
+       planet = self['Planet']
+
+       Planet.log_format planet['log_format'] if planet['log_format']
+       Planet.log_level  planet['log_level']  if planet['log_level']
+     end
++
++    def read_opml filename
++      doc = XmlParser.parse(File.read(filename))
++      elements = doc.elements[1].elements
++
++      self['Planet']['name'] = elements["head/title"].text
++      self['Planet']['link'] = elements["head/uri"].text # there's probably a better place to get this
++      self['Planet']['owner_name'] = elements["head/ownerName"].text
++      self['Planet']['owner_email'] = elements["head/ownerEmail"].text
++
++      REXML::XPath.each(doc, "//outline") do |member|
++        next if member.attributes['xmlUrl'].nil?
++        next if member.parent.attributes['text'] == 'planet-exclude'
++        self[member.attributes['xmlUrl']] = { 'name' => member.attributes['text'],
++          '__name__' => member.attributes['xmlUrl']}
++      end
++    end
+   end
+
+   @@config = ConfigParser.new
+
