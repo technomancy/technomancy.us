@@ -76,7 +76,13 @@ content: |-
   of other stuff that allows the project to actually build as a gem;
   the source as I found it was not in a working state. (Who knew there
   were people out there who haven't yet discovered <a
-  href='http://http://blog.zenspider.com/2006/09/farmer-ted-uses-hoe-to-beat-ra.html'>hoe</a>?)</p>
+  href='http://blog.zenspider.com/2006/09/farmer-ted-uses-hoe-to-beat-ra.html'>hoe</a>?)</p>
+
+  <p><b>Update</b>: It sounds like the streaming stuff hasn't been
+  accepted upstream because it only works with Mongrel, and the whole
+  point of Rack is to provide a consistent interface across many
+  different web servers. I may try to port the streaming functionality
+  to other servers so it can become part of the official spec.</p>
   
   <p>Much thanks to Ezra for the fix. I was starting to lose hope that
   I'd even be able to even pull this off without resorting to

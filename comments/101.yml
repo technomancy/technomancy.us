@@ -1,9 +1,0 @@
---- 
-- timestamp: Sun Jan 13 14:36:21 -0800 2008
-  uri: http://technomancy.us
-  author: Phil
-  content: Well, it looks like comments are working again. Unfortunately, Ruby's raw CGI library is kind of a pain to work with, especially with debugging.
-- timestamp: Wed Feb 27 11:34:49 -0800 2008
-  uri: ""
-  author: ""
-  content: ""
