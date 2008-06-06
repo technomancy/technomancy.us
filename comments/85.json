@@ -1,1 +1,31 @@
-[{"timestamp":  "Tue Jun 19 09: 06: 22 -0700 2007",  "uri":  "http: //technomancy.us",  "author":  "Phil",  "content":  "riffraff:  it's not awkward to work with for a blog. For stuff that's more complicated:  I'll have to get back to you on that. I have a feeling it's like REST:  feeling constraining at first,  but actually pretty liberating once you go with the flow and  let it dictate the structure of your app."}, {"timestamp":  "Wed Jul 18 05: 33: 36 -0700 2007",  "uri":  "http: //zumbrunn.com/mochazone/",  "author":  "Chris Zumbrunn",  "content":  "@riffraff:  the Helma framework provides an automatic hierarchical default behavior,  but there are various handlers like \u0026quot;onRequest\u0026quot; and \u0026quot;getChildElement\u0026quot; which can override the default and allow you to implement your own mechanism wherever the default becomes restrictive."}, {"timestamp":  "Mon Jun 18 02: 16: 00 -0700 2007",  "uri":  "http: //riffraff.info",  "author":  "riffraff",  "content":  "this is really cool thanks for pointing it out : )\r\u003Cbr /\u003E\nBut isn't the hierarchy-ish persistence layer a little bit awkward to work with ?"}, {"timestamp":  "Sun Jun 17 15: 55: 32 -0700 2007",  "uri":  "http: //technomancy.us",  "author":  "Phil",  "content":  "Spam check on commenting is in place. It is slightly annoying (you have to submit twice) if you don't have Javascript enabled,  but considering that I had over 200 spam comments from a month or so,  it's necessary."}, {"timestamp":  "Tue Jul 17 10: 37: 49 -0700 2007",  "uri":  "http: //nomatic.org",  "author":  "robert",  "content":  "Jala (of which the unit testing framework is a part of) recently moved to a different server due to the severe stability problems of opensvn.csie.org,  it's now located at http: //dev.orf.at/trac/jala. Reg. the the testing framework:  could you elaborate a bit more on what you're missing resp. what makes it inconvenient to use? being the one who developed jala.Test i'm really interested in your opinion (i must confess that i have no experience with unit testing in rails,  apart from skimming the docs)."}, {"timestamp":  "Wed Jul 18 13: 04: 54 -0700 2007",  "uri":  "http: //howareyou.twoday.net",  "author":  "MasterOfDesaster",  "content":  "\u0026gt; Of course,  to use them you need to leave the comfort of JS and write some Java,  so it's a trade-off; as always.\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nnot really: \r\u003Cbr /\u003E\nhttp: //helma.org/docs/guide/introductions/javapackages/"}]
+--- 
+- timestamp: "Tue Jun 19 09: 06: 22 -0700 2007"
+  uri: "http: //technomancy.us"
+  author: Phil
+  content: "riffraff:  it's not awkward to work with for a blog. For stuff that's more complicated:  I'll have to get back to you on that. I have a feeling it's like REST:  feeling constraining at first,  but actually pretty liberating once you go with the flow and  let it dictate the structure of your app."
+- timestamp: "Wed Jul 18 05: 33: 36 -0700 2007"
+  uri: "http: //zumbrunn.com/mochazone/"
+  author: Chris Zumbrunn
+  content: "@riffraff:  the Helma framework provides an automatic hierarchical default behavior,  but there are various handlers like \\u0026quot;onRequest\\u0026quot; and \\u0026quot;getChildElement\\u0026quot; which can override the default and allow you to implement your own mechanism wherever the default becomes restrictive."
+- timestamp: "Mon Jun 18 02: 16: 00 -0700 2007"
+  uri: "http: //riffraff.info"
+  author: riffraff
+  content: |-
+    this is really cool thanks for pointing it out : )\u003Cbr /\u003E
+    But isn't the hierarchy-ish persistence layer a little bit awkward to work with ?
+- timestamp: "Sun Jun 17 15: 55: 32 -0700 2007"
+  uri: "http: //technomancy.us"
+  author: Phil
+  content: Spam check on commenting is in place. It is slightly annoying (you have to submit twice) if you don't have Javascript enabled,  but considering that I had over 200 spam comments from a month or so,  it's necessary.
+- timestamp: "Tue Jul 17 10: 37: 49 -0700 2007"
+  uri: "http: //nomatic.org"
+  author: robert
+  content: "Jala (of which the unit testing framework is a part of) recently moved to a different server due to the severe stability problems of opensvn.csie.org,  it's now located at http: //dev.orf.at/trac/jala. Reg. the the testing framework:  could you elaborate a bit more on what you're missing resp. what makes it inconvenient to use? being the one who developed jala.Test i'm really interested in your opinion (i must confess that i have no experience with unit testing in rails,  apart from skimming the docs)."
+- timestamp: "Wed Jul 18 13: 04: 54 -0700 2007"
+  uri: "http: //howareyou.twoday.net"
+  author: MasterOfDesaster
+  content: |-
+    \u0026gt; Of course,  to use them you need to leave the comfort of JS and write some Java,  so it's a trade-off; as always.\u003Cbr /\u003E
+    \u003Cbr /\u003E
+    not really: \u003Cbr /\u003E
+    http: //helma.org/docs/guide/introductions/javapackages/

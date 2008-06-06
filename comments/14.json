@@ -1,1 +1,5 @@
-[{"timestamp":  "Fri Apr 04 07:51:19 -0700 2008",  "uri":  "http://www.wisdomandwonder.com/",  "author":  "Grant Rettke",  "content":  "Silence is the best thing for coding."}]
+--- 
+- timestamp: Fri Apr 04 07:51:19 -0700 2008
+  uri: http://www.wisdomandwonder.com/
+  author: Grant Rettke
+  content: Silence is the best thing for coding.

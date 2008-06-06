@@ -1,3 +1,7 @@
-[{"timestamp":  "Sat Feb 09 08:25:27 -0800 2008",  "uri":  "bicosyes.com",  "author":  "Blaxter",  "content":  "libgtk-trayicon-ruby1.8 is not in the ubuntu repositories anymore :-/. 
-
-The last version of libgnome2-ruby (aptitude show libgnome2-ruby indicates conflicts with libgtk-trayicon-ruby1.8) should replace it, but Gtk::TrayIcon isn't there :(."}]
+--- 
+- timestamp: Sat Feb 09 08:25:27 -0800 2008
+  uri: bicosyes.com
+  author: Blaxter
+  content: |-
+    libgtk-trayicon-ruby1.8 is not in the ubuntu repositories anymore :-/. 
+    The last version of libgnome2-ruby (aptitude show libgnome2-ruby indicates conflicts with libgtk-trayicon-ruby1.8) should replace it, but Gtk::TrayIcon isn't there :(.

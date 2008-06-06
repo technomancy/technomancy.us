@@ -1,1 +1,25 @@
-[{"timestamp":  "Sat Sep 08 05: 41: 43 -0700 2007",  "uri":  "",  "author":  "",  "content":  "This seems to work: \r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\n\u0026lt;?xml version=\u0026quot;1.0\u0026quot; encoding=\u0026quot;UTF-8\u0026quot;?\u0026gt;\r\u003Cbr /\u003E\n\u0026lt;kml xmlns=\u0026quot;http: //earth.google.com/kml/2.1\u0026quot;\u0026gt;\r\u003Cbr /\u003E\n  \u0026lt;Placemark\u0026gt;\r\u003Cbr /\u003E\n    \u0026lt;name\u0026gt;2007: 07: 21 17: 40: 38\u0026lt;/name\u0026gt;\r\u003Cbr /\u003E\n    \u0026lt;description\u0026gt;\r\u003Cbr /\u003E\n      \u0026lt;![CDATA[\u0026lt;img src=\u0026quot;http: //farm2.static.flickr.com/1066/866523067_9185030f90.jpg?v=0\u0026quot; \u0026gt;]]\u0026gt;\r\u003Cbr /\u003E\n    \u0026lt;/description\u0026gt;\r\u003Cbr /\u003E\n    \u0026lt;Point\u0026gt;\r\u003Cbr /\u003E\n      \u0026lt;coordinates\u0026gt;-122.262, 47.7355\u0026lt;/coordinates\u0026gt;\r\u003Cbr /\u003E\n    \u0026lt;/Point\u0026gt;\r\u003Cbr /\u003E\n  \u0026lt;/Placemark\u0026gt;\r\u003Cbr /\u003E\n\u0026lt;/kml\u0026gt;\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nYou'll have to get all the urls for the flickr images yourself,  though..."}, {"timestamp":  "Fri Sep 21 15: 29: 47 -0700 2007",  "uri":  "http: //technomancy.us",  "author":  "Phil",  "content":  "Anonymous person:  you're my hero!"}]
+--- 
+- timestamp: "Sat Sep 08 05: 41: 43 -0700 2007"
+  uri: ""
+  author: ""
+  content: |-
+    This seems to work: \u003Cbr /\u003E
+    \u003Cbr /\u003E
+    \u0026lt;?xml version=\u0026quot;1.0\u0026quot; encoding=\u0026quot;UTF-8\u0026quot;?\u0026gt;\u003Cbr /\u003E
+    \u0026lt;kml xmlns=\u0026quot;http: //earth.google.com/kml/2.1\u0026quot;\u0026gt;\u003Cbr /\u003E
+      \u0026lt;Placemark\u0026gt;\u003Cbr /\u003E
+        \u0026lt;name\u0026gt;2007: 07: 21 17: 40: 38\u0026lt;/name\u0026gt;\u003Cbr /\u003E
+        \u0026lt;description\u0026gt;\u003Cbr /\u003E
+          \u0026lt;![CDATA[\u0026lt;img src=\u0026quot;http: //farm2.static.flickr.com/1066/866523067_9185030f90.jpg?v=0\u0026quot; \u0026gt;]]\u0026gt;\u003Cbr /\u003E
+        \u0026lt;/description\u0026gt;\u003Cbr /\u003E
+        \u0026lt;Point\u0026gt;\u003Cbr /\u003E
+          \u0026lt;coordinates\u0026gt;-122.262, 47.7355\u0026lt;/coordinates\u0026gt;\u003Cbr /\u003E
+        \u0026lt;/Point\u0026gt;\u003Cbr /\u003E
+      \u0026lt;/Placemark\u0026gt;\u003Cbr /\u003E
+    \u0026lt;/kml\u0026gt;\u003Cbr /\u003E
+    \u003Cbr /\u003E
+    You'll have to get all the urls for the flickr images yourself,  though...
+- timestamp: "Fri Sep 21 15: 29: 47 -0700 2007"
+  uri: "http: //technomancy.us"
+  author: Phil
+  content: "Anonymous person:  you're my hero!"

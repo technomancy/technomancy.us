@@ -1,1 +1,5 @@
-[{"timestamp":  "Fri Apr 04 07:12:24 -0700 2008",  "uri":  "http://www.wisdomandwonder.com/",  "author":  "Grant Rettke",  "content":  "What did you learn, or think different of, about Ruby by working on this?"}]
+--- 
+- timestamp: Fri Apr 04 07:12:24 -0700 2008
+  uri: http://www.wisdomandwonder.com/
+  author: Grant Rettke
+  content: What did you learn, or think different of, about Ruby by working on this?

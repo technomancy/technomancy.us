@@ -1,1 +1,68 @@
-[{"timestamp":  "Fri Jul 20 09: 54: 30 -0700 2007",  "uri":  "http: //technomancy.us",  "author":  "Phil",  "content":  "Thanks Noah. It was working for me when I piped the output to /etc/hosts2,  but shame on me for not testing it all the way through. I also escaped the space,  but my blogging software must have munched it.\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nPerhaps the pithiness of the original could be retained if it were ported to Ruby."}, {"timestamp":  "Fri Jul 20 12: 22: 32 -0700 2007",  "uri":  "",  "author":  "Fnor",  "content":  "You can also use the -i option of sed to edit in place instead of redirecting to a temporary file : )"}, {"timestamp":  "Fri Jul 20 12: 25: 01 -0700 2007",  "uri":  "",  "author":  "Fnor",  "content":  "Yes,  I do agree for the redirect!\r\u003Cbr /\u003E\nAnd thanks for the portability information."}, {"timestamp":  "Fri Jul 20 08: 17: 54 -0700 2007",  "uri":  "",  "author":  "Noah Slater",  "content":  "This example has two major errors.\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nFirstly,  you need to quote the argument to sed or you will get a \u0026quot;sed:  -e expression #1,  char 21:  unterminated `s' command\u0026quot; error.\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nSecondly,  you cannot use sed to read from a while while concurrently writing to the same file. You need to use a temporary file in this instance.\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nA working script would look something like: \r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\ntemporary_file=$(tempfile)\r\u003Cbr /\u003E\nif [ $? -ne 0 ]; then\r\u003Cbr /\u003E\n    echo \u0026quot;Could not create temporary file.\u0026quot;;\r\u003Cbr /\u003E\nelse\r\u003Cbr /\u003E\n    sed \u0026quot;s/localhost/localhost lolcathost/\u0026quot; /etc/hosts \u0026gt; $temporary_file;\r\u003Cbr /\u003E\n    mv $temporary_file /etc/hosts\r\u003Cbr /\u003E\nfi"}, {"timestamp":  "Fri Jul 20 11: 45: 25 -0700 2007",  "uri":  "",  "author":  "Noah Slater",  "content":  "Aha,  but the \u0026quot;-i\u0026quot; option is not portable. Heh."}, {"timestamp":  "Fri Jul 20 04: 35: 48 -0700 2007",  "uri":  "http: //www.sorn.net",  "author":  "Sandy",  "content":  "On Windows "}, {"timestamp":  "Fri Jul 20 10: 00: 06 -0700 2007",  "uri":  "",  "author":  "Fnor",  "content":  "You can also use the -i option of sed to edit in place instead of redirecting to a temporary file : )"}, {"timestamp":  "Thu Jul 19 14: 26: 03 -0700 2007",  "uri":  "",  "author":  "",  "content":  ""}, {"timestamp":  "Fri Jul 20 17: 17: 33 -0700 2007",  "uri":  "http: //lolcathost",  "author":  "Phil",  "content":  "Noted re:  redirects. There's a lot of things this blog software should do. =)\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nUpdated the example; thanks."}, {"timestamp":  "Fri Jul 20 11: 46: 22 -0700 2007",  "uri":  "",  "author":  "Noah Slater",  "content":  "Your blogging software should do a redirect after the POST to avoid duplicate submissions by pressing \u0026quot;refresh\u0026quot;."}, {"timestamp":  "Fri Jul 20 10: 58: 39 -0700 2007",  "uri":  "",  "author":  "Noah Slater",  "content":  "Aha,  but the \u0026quot;-i\u0026quot; option is not portable. Heh."}]
+--- 
+- timestamp: "Fri Jul 20 09: 54: 30 -0700 2007"
+  uri: "http: //technomancy.us"
+  author: Phil
+  content: |-
+    Thanks Noah. It was working for me when I piped the output to /etc/hosts2,  but shame on me for not testing it all the way through. I also escaped the space,  but my blogging software must have munched it.\u003Cbr /\u003E
+    \u003Cbr /\u003E
+    Perhaps the pithiness of the original could be retained if it were ported to Ruby.
+- timestamp: "Fri Jul 20 12: 22: 32 -0700 2007"
+  uri: ""
+  author: Fnor
+  content: "You can also use the -i option of sed to edit in place instead of redirecting to a temporary file : )"
+- timestamp: "Fri Jul 20 12: 25: 01 -0700 2007"
+  uri: ""
+  author: Fnor
+  content: |-
+    Yes,  I do agree for the redirect!\u003Cbr /\u003E
+    And thanks for the portability information.
+- timestamp: "Fri Jul 20 08: 17: 54 -0700 2007"
+  uri: ""
+  author: Noah Slater
+  content: |-
+    This example has two major errors.\u003Cbr /\u003E
+    \u003Cbr /\u003E
+    Firstly,  you need to quote the argument to sed or you will get a \u0026quot;sed:  -e expression #1,  char 21:  unterminated `s' command\u0026quot; error.\u003Cbr /\u003E
+    \u003Cbr /\u003E
+    Secondly,  you cannot use sed to read from a while while concurrently writing to the same file. You need to use a temporary file in this instance.\u003Cbr /\u003E
+    \u003Cbr /\u003E
+    A working script would look something like: \u003Cbr /\u003E
+    \u003Cbr /\u003E
+    temporary_file=$(tempfile)\u003Cbr /\u003E
+    if [ $? -ne 0 ]; then\u003Cbr /\u003E
+        echo \u0026quot;Could not create temporary file.\u0026quot;;\u003Cbr /\u003E
+    else\u003Cbr /\u003E
+        sed \u0026quot;s/localhost/localhost lolcathost/\u0026quot; /etc/hosts \u0026gt; $temporary_file;\u003Cbr /\u003E
+        mv $temporary_file /etc/hosts\u003Cbr /\u003E
+    fi
+- timestamp: "Fri Jul 20 11: 45: 25 -0700 2007"
+  uri: ""
+  author: Noah Slater
+  content: Aha,  but the \u0026quot;-i\u0026quot; option is not portable. Heh.
+- timestamp: "Fri Jul 20 04: 35: 48 -0700 2007"
+  uri: "http: //www.sorn.net"
+  author: Sandy
+  content: "On Windows "
+- timestamp: "Fri Jul 20 10: 00: 06 -0700 2007"
+  uri: ""
+  author: Fnor
+  content: "You can also use the -i option of sed to edit in place instead of redirecting to a temporary file : )"
+- timestamp: "Thu Jul 19 14: 26: 03 -0700 2007"
+  uri: ""
+  author: ""
+  content: ""
+- timestamp: "Fri Jul 20 17: 17: 33 -0700 2007"
+  uri: "http: //lolcathost"
+  author: Phil
+  content: |-
+    Noted re:  redirects. There's a lot of things this blog software should do. =)\u003Cbr /\u003E
+    \u003Cbr /\u003E
+    Updated the example; thanks.
+- timestamp: "Fri Jul 20 11: 46: 22 -0700 2007"
+  uri: ""
+  author: Noah Slater
+  content: Your blogging software should do a redirect after the POST to avoid duplicate submissions by pressing \u0026quot;refresh\u0026quot;.
+- timestamp: "Fri Jul 20 10: 58: 39 -0700 2007"
+  uri: ""
+  author: Noah Slater
+  content: Aha,  but the \u0026quot;-i\u0026quot; option is not portable. Heh.

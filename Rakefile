@@ -121,3 +121,10 @@ end
 task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
+
+task :despam do
+  Dir.glob('comments/*json').each do |comment_file|
+    comments = YAML.load(File.read(comment_file)).reject { |c| c['content'] =~ /warcraft/ }
+    File.open(comment_file, 'w') { |f| f.puts YAML.dump(comments) }
+  end
+end
