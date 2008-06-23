@@ -50,8 +50,8 @@
 
         <div class='comment'>
           <a name='c'></a>
-          <% parse("comments/#{page['id']}.json").sort_by{|c| Time.parse(c['timestamp'])}.each do |comment| %>
-            <p><%= comment['uri'] ? "<a href='#{comment['uri']}'>#{comment['author']}</a>" : comment['author'] %></p>
+          <% parse("comments/#{page['id']}.yml").sort_by{|c| Time.parse(c['timestamp'])}.each do |comment| %>
+            <p><%= comment['uri'].empty? ? comment['author'] : "<a href='#{comment['uri']}'>#{comment['author']}</a>" %></p>
             <p><%= comment['content'] %></p>
             <p class="dt"><%= Time.parse(comment['timestamp']).to_s %></p>
           <% end %>
@@ -67,6 +67,8 @@
 	  <textarea name='content' rows='15' cols='60'></textarea>
 	  <p><input type='submit' value='Post a Comment' /></p>
 	</form>
+
+	<p>Comments are manually moderated for now. HTML will be escaped.</p>
       </div>
     </div>
 

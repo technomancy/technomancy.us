@@ -1,25 +1,1 @@
---- 
-- timestamp: "Sun Oct 14 15: 58: 00 -0700 2007"
-  uri: "http: //blog.hasmanythrough.com"
-  author: josh
-  content: |-
-    Interesting. It's like micro-mocking. Seems very functional,  meaning antithetical to how object-oriented programming is supposed to work. Of course Ruby is full of stuff like that,  so whatever. Paradigm wars aside,  I have two comments: \u003Cbr /\u003E
-    \u003Cbr /\u003E
-    1) Restoring the old methods should happen in an ensure clause,  in case something raises an exception in the block.\u003Cbr /\u003E
-    \u003Cbr /\u003E
-    2) This doesn't appear thread safe. Yeah I know,  who cares about threads in Ruby?\u003Cbr /\u003E
-    \u003Cbr /\u003E
-    By the way,  this should be a little easier in Rubinius.
-- timestamp: "Mon Oct 15 01: 02: 40 -0700 2007"
-  uri: "http: //technomancy.us"
-  author: Phil
-  content: "Tore:  That's pretty cool. I love the sneaky stuff you can get away with when you're prototype-based."
-- timestamp: "Sun Oct 14 23: 43: 20 -0700 2007"
-  uri: "http: //tore.darell.no/"
-  author: Tore Darell
-  content: |-
-    As long as you're already touching onto other paradigms (hey,  it's lisp after all),  here's a version that works on objects instead of classes: \u003Cbr /\u003E
-    \u003Cbr /\u003E
-    http: //pastie.caboo.se/107161\u003Cbr /\u003E
-    \u003Cbr /\u003E
-    It uses a prototype-ish proxy object which receives the \u0026quot;fletted\u0026quot; methods and the block is evaluated in its context.. It looks a little funky because of all the different scopes it has to access at different times,  but it should work nonetheless. I know next to nothing about threads,  but shouldn't this also be thread safe?
+[{"timestamp":  "Sun Oct 14 15: 58: 00 -0700 2007",  "uri":  "http: //blog.hasmanythrough.com",  "author":  "josh",  "content":  "Interesting. It's like micro-mocking. Seems very functional,  meaning antithetical to how object-oriented programming is supposed to work. Of course Ruby is full of stuff like that,  so whatever. Paradigm wars aside,  I have two comments: \r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\n1) Restoring the old methods should happen in an ensure clause,  in case something raises an exception in the block.\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\n2) This doesn't appear thread safe. Yeah I know,  who cares about threads in Ruby?\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nBy the way,  this should be a little easier in Rubinius."}, {"timestamp":  "Mon Oct 15 01: 02: 40 -0700 2007",  "uri":  "http: //technomancy.us",  "author":  "Phil",  "content":  "Tore:  That's pretty cool. I love the sneaky stuff you can get away with when you're prototype-based."}, {"timestamp":  "Sun Oct 14 23: 43: 20 -0700 2007",  "uri":  "http: //tore.darell.no/",  "author":  "Tore Darell",  "content":  "As long as you're already touching onto other paradigms (hey,  it's lisp after all),  here's a version that works on objects instead of classes: \r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nhttp: //pastie.caboo.se/107161\r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nIt uses a prototype-ish proxy object which receives the \u0026quot;fletted\u0026quot; methods and the block is evaluated in its context.. It looks a little funky because of all the different scopes it has to access at different times,  but it should work nonetheless. I know next to nothing about threads,  but shouldn't this also be thread safe?"}]

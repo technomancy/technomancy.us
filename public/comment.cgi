@@ -3,31 +3,24 @@
 require 'cgi'
 require 'yaml'
 
-def to_json(hash)
-  "{\"timestamp\":  \"#{hash['timestamp']}\",  \"uri\":  \"#{hash['uri']}\",  \"author\":  \"#{hash['author']}\",  \"content\":  \"#{hash['content']}\"}"
-end
-
 cgi = CGI.new
 
 new_comment = { 'timestamp' => Time.now.to_s }
 ['author', 'uri', 'content'].each { |param| new_comment[param] = CGI.escapeHTML(cgi.params[param].to_s) }
-filename = File.expand_path "../comments/#{cgi.params['post_id']}.json"
+new_comment['content'].gsub!("\n", "<br />") # newlines
 
-begin
-  comments = YAML.load(File.read(filename))
-rescue
-  comments = []
-end
+filename = File.expand_path "#{File.dirname(__FILE__)}/../comments/#{cgi.params['post_id']}.yml"
+
+comments = YAML.load(File.read(filename)) rescue []
 
 comments << new_comment
-json = '[' + comments.map{ |c| to_json(c) }.join(', ') + ']'
 
-if not spammer = cgi.params['spammers'].to_s != 'suck'
-  File.open(filename, 'w') { |f| f.puts json }
+if cgi.params['spammers'].to_s != 'suck'
+  File.open(filename, 'w') { |f| f.puts comments.to_yaml }
 end
 
-cgi.out("status" => "301 Moved", "X-Spammer" => spammer,
-        "Location" => "http://technomancy.us/#{cgi.params['post_id']}#c") { json }
+cgi.out("status" => "301 Moved",
+        "Location" => "http://technomancy.us/#{cgi.params['post_id']}#c") { comments.to_yaml }
 
-`touch #{File.dirname(__FILE__)}/../posts/#{cgi.params['post_id']}.json`
-`cd #{File.dirname(__FILE__)}/../ rake render_post POST=#{cgi.params['post_id']}`
+`touch #{File.dirname(__FILE__)}/../posts/#{cgi.params['post_id']}.yml`
+# `cd #{File.dirname(__FILE__)}/../ rake render_post POST=#{cgi.params['post_id']}`

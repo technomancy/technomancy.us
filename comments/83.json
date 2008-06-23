@@ -1,8 +1,1 @@
---- 
-- timestamp: "Thu May 31 21: 55: 02 -0700 2007"
-  uri: "http: //technomancy.us"
-  author: Phil
-  content: |-
-    Forgot to mention this:  this code requires the twitter gem. Also:  getting Pidgin and Ruby-DBus working together nicely requires a version of Ruby-DBus that's *newer* than 0.1.1. As of this writing,  that means getting it from SVN: \u003Cbr /\u003E
-    \u003Cbr /\u003E
-    svn co svn: //trac.luon.net/ruby-dbus/trunk ruby-dbus
+[{"timestamp":  "Thu May 31 21: 55: 02 -0700 2007",  "uri":  "http: //technomancy.us",  "author":  "Phil",  "content":  "Forgot to mention this:  this code requires the twitter gem. Also:  getting Pidgin and Ruby-DBus working together nicely requires a version of Ruby-DBus that's *newer* than 0.1.1. As of this writing,  that means getting it from SVN: \r\u003Cbr /\u003E\n\r\u003Cbr /\u003E\nsvn co svn: //trac.luon.net/ruby-dbus/trunk ruby-dbus"}]

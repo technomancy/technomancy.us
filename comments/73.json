@@ -1,60 +1,36 @@
---- 
-- timestamp: "Sat Jun 30 10: 22: 23 -0700 2007"
-  uri: ""
-  author: elisp newbie
-  content: |
-    Thank you for writing behave.el.  I plan to download and study/use it.\u003Cbr /\u003E
-    \u003Cbr /\u003E
-    Your links to behave.el,  both at this web page and at \u0026lt;http: //technomancy.us/72\u0026gt;,  are not working for me.  The following appears to be the correct link: \u003Cbr /\u003E
-    \u003Cbr /\u003E
-    http: //dev.technomancy.us/index.cgi/browser/dotfiles/.emacs.d/behave\u003Cbr /\u003E
-    \u003Cbr /\u003E
-    P.S.,  Does technomancy.us not support spell checking,  or is that considered to be too distracting due to the number of jargon terms?\u003Cbr /\u003E
+[{"timestamp":  "Sat Jun 30 10: 22: 23 -0700 2007",  "uri":  "",  "author":  "elisp newbie",  "content":  "Thank you for writing behave.el.  I plan to download and study/use it.\r\u003Cbr /\u003E
+\r\u003Cbr /\u003E
+Your links to behave.el,  both at this web page and at \u0026lt;http: //technomancy.us/72\u0026gt;,  are not working for me.  The following appears to be the correct link: \r\u003Cbr /\u003E
+\r\u003Cbr /\u003E
+http: //dev.technomancy.us/index.cgi/browser/dotfiles/.emacs.d/behave\r\u003Cbr /\u003E
+\r\u003Cbr /\u003E
+P.S.,  Does technomancy.us not support spell checking,  or is that considered to be too distracting due to the number of jargon terms?\r\u003Cbr /\u003E
+"}, {"timestamp":  "Tue Apr 03 11: 16: 43 -0700 2007",  "uri":  "",  "author":  "Matt Scilipoti",  "content":  "\u003Cp\u003EA possible marriage of the two concepts: \u003C/p\u003E
 
-- timestamp: "Tue Apr 03 11: 16: 43 -0700 2007"
-  uri: ""
-  author: Matt Scilipoti
-  content: |-
-    \u003Cp\u003EA possible marriage of the two concepts: \u003C/p\u003E
-    
-    
-    	\u003Cp\u003EI wish my \u003Cspan class="caps"\u003EIDE\u003C/span\u003E had two formats for visualizing a class; one with just the code and another including the \u003Cspan class="caps"\u003EBDD\u003C/span\u003E specifications referencing the class(\u003Cstrong\u003E).  There are times when a format like the doctests is  helpful (i.e. learning about the class,  reviewing \u003Cspan class="caps"\u003EALL\u003C/span\u003E the specs relating to this class).  But,  if the specs were visible all the time,  it would just distract from the solution to the domain problem.  That would be \u003Cspan class="caps"\u003EBAD\u003C/span\u003E.\u003C/p\u003E
-    
-    
-    	\u003Cp\u003E(\u003C/strong\u003E) Since specifications for a particular class are often spread across many contexts,  I would like it to gather the specifications in which this class is referenced outside of a mock/stub.\u003C/p\u003E
-- timestamp: "Tue Feb 06 08: 37: 03 -0800 2007"
-  uri: "http: //technomancy.us"
-  author: Phil
-  content: |-
-    \u003Cp\u003EIan:  that\u0026#8217;s a pretty cool hack. Seriously. It looks to be very idiomatic Python.\u003C/p\u003E
-    
-    
-    	\u003Cp\u003EHowever,  when you say,  \u0026#8220;the technique is applicable to any scripting-style language\u0026#8221; I think you\u0026#8217;re failing to see the point of what\u0026#8217;s written here. The Python doctests use code embedded in strings (data) to specify behaviour,  and that\u0026#8217;s fine. However,  doing that in Lisp would feel clunky because Lisp doesn\u0026#8217;t enforce a strict separation of code and data. Lisp encourages you to cross that line. You might even say it\u0026#8217;s the whole point of using Lisp. If something is code,  express it in code; don\u0026#8217;t hide it in a string.\u003C/p\u003E
-    
-    
-    	\u003Cp\u003E(Also:  calling a technique that uses string-eval more elegant than a solution involving macros is highly suspect.)\u003C/p\u003E
-    
-    
-    	\u003Cp\u003EFinally:  documentation-driven testing just \u003Cem\u003Esounds wrong\u003C/em\u003E. The article above makes the case that the names you use have a significant impact on how you go about your work. When you\u0026#8217;re writing code,  you care about how it \u003Cem\u003Ebehaves\u003C/em\u003E. Like it or not,  how it is documented is entirely orthogonal to whether it functions correctly or not.\u003C/p\u003E
-    
-    
-    	\u003Cp\u003EStill,  I\u0026#8217;d say it\u0026#8217;s a nifty technique if you\u0026#8217;re using Python and don\u0026#8217;t have the benifit of code-is-data. It could even be a nice solution in Ruby,  although RSpec has an intelligent use of blocks and has the advantage of treating code as code rather than as strings.\u003C/p\u003E
-- timestamp: "Mon Apr 09 09: 56: 19 -0700 2007"
-  uri: "http: //technomancy.us"
-  author: Phil
-  content: \u003Cp\u003EWell despite the formatting woes,  I think you got the point across. An interesting idea; I\u0026#8217;ll think about how to integrate it.\u003C/p\u003E
-- timestamp: "Tue Apr 03 11: 47: 38 -0700 2007"
-  uri: ""
-  author: Matt Scilipoti
-  content: \u003Cp\u003EAh well,  bitten by Textile (w/o preview).  \u003Cpre\u003E"class (*)"\u003C/pre\u003E became \u0026#8220;class(\u003Cstrong\u003E) blah,  blah\u003C/strong\u003E.\u003C/p\u003E
-- timestamp: "Mon Feb 05 19: 01: 23 -0800 2007"
-  uri: "http: //blog.ianbicking.org"
-  author: Ian Bicking
-  content: |-
-    \u003Cp\u003EAnyone looking at the nonsense \u003Cspan class="caps"\u003EBDD\u003C/span\u003E/RSpec implementations out there really \u003Cstrong\u003Emust\u003C/strong\u003E do themselves a favor and look at \u003Ca href="http: //python.org/doc/current/lib/module-doctest.html"\u003EPython doctests\u003C/a\u003E\u003C/p\u003E
-    
-    
-    	\u003Cp\u003EIt does everything \u003Cspan class="caps"\u003EBDD\u003C/span\u003E/RSpec/whatever systems do,  but in a far more elegant manner.  And the technique is applicable to any scripting-style language (Ruby and elisp included).  And the implementation should be simple.\u003C/p\u003E
-    
-    
-    	\u003Cp\u003EI\u0026#8217;d call doctest-style tests \u0026#8220;document driven testing\u0026#8221; (slightly higher level than \u003Cspan class="caps"\u003EBDD\u003C/span\u003E,  as it emphasizes intention and narratives),  or \u0026#8220;functionally driven testing\u0026#8221;,  which is like \u003Cspan class="caps"\u003EBDD\u003C/span\u003E,  but uses the existing term \u0026#8220;functional tests\u0026#8221;.  And really that\u0026#8217;s all this is\u0026#8212;writing functional tests up front instead of unit/programmer tests.  There\u0026#8217;s nothing very magic or new about it,  except the practice itself if you haven\u0026#8217;t used it before.  And,  language and implementation aside,  doing functional tests before implementation is a great way to program.\u003C/p\u003E
+
+\u003Cp\u003EI wish my \u003Cspan class='caps'\u003EIDE\u003C/span\u003E had two formats for visualizing a class; one with just the code and another including the \u003Cspan class='caps'\u003EBDD\u003C/span\u003E specifications referencing the class(\u003Cstrong\u003E).  There are times when a format like the doctests is  helpful (i.e. learning about the class,  reviewing \u003Cspan class='caps'\u003EALL\u003C/span\u003E the specs relating to this class).  But,  if the specs were visible all the time,  it would just distract from the solution to the domain problem.  That would be \u003Cspan class='caps'\u003EBAD\u003C/span\u003E.\u003C/p\u003E
+
+
+\u003Cp\u003E(\u003C/strong\u003E) Since specifications for a particular class are often spread across many contexts,  I would like it to gather the specifications in which this class is referenced outside of a mock/stub.\u003C/p\u003E"}, {"timestamp":  "Tue Feb 06 08: 37: 03 -0800 2007",  "uri":  "http: //technomancy.us",  "author":  "Phil",  "content":  "\u003Cp\u003EIan:  that\u0026#8217;s a pretty cool hack. Seriously. It looks to be very idiomatic Python.\u003C/p\u003E
+
+
+\u003Cp\u003EHowever,  when you say,  \u0026#8220;the technique is applicable to any scripting-style language\u0026#8221; I think you\u0026#8217;re failing to see the point of what\u0026#8217;s written here. The Python doctests use code embedded in strings (data) to specify behaviour,  and that\u0026#8217;s fine. However,  doing that in Lisp would feel clunky because Lisp doesn\u0026#8217;t enforce a strict separation of code and data. Lisp encourages you to cross that line. You might even say it\u0026#8217;s the whole point of using Lisp. If something is code,  express it in code; don\u0026#8217;t hide it in a string.\u003C/p\u003E
+
+
+\u003Cp\u003E(Also:  calling a technique that uses string-eval more elegant than a solution involving macros is highly suspect.)\u003C/p\u003E
+
+
+\u003Cp\u003EFinally:  documentation-driven testing just \u003Cem\u003Esounds wrong\u003C/em\u003E. The article above makes the case that the names you use have a significant impact on how you go about your work. When you\u0026#8217;re writing code,  you care about how it \u003Cem\u003Ebehaves\u003C/em\u003E. Like it or not,  how it is documented is entirely orthogonal to whether it functions correctly or not.\u003C/p\u003E
+
+
+\u003Cp\u003EStill,  I\u0026#8217;d say it\u0026#8217;s a nifty technique if you\u0026#8217;re using Python and don\u0026#8217;t have the benifit of code-is-data. It could even be a nice solution in Ruby,  although RSpec has an intelligent use of blocks and has the advantage of treating code as code rather than as strings.\u003C/p\u003E"}, 
+
+{"timestamp":  "Mon Apr 09 09: 56: 19 -0700 2007",  "uri":  "http: //technomancy.us",  "author":  "Phil",  "content":  "\u003Cp\u003EWell despite the formatting woes,  I think you got the point across. An interesting idea; I\u0026#8217;ll think about how to integrate it.\u003C/p\u003E"}, 
+
+{"timestamp":  "Tue Apr 03 11: 47: 38 -0700 2007",  "uri":  "",  "author":  "Matt Scilipoti",  "content":  "\u003Cp\u003EAh well,  bitten by Textile (w/o preview).  \u003Cpre\u003E\u 003C/pre\u003E became \u0026#8220;class(\u003Cstrong\u003E) blah,  blah\u003C/strong\u003E.\u003C/p\u003E"}, {"timestamp":  "Mon Feb 05 19: 01: 23 -0800 2007",  "uri":  "http: //blog.ianbicking.org",  "author":  "Ian Bicking",  "content":  "\u003Cp\u003EAnyone looking at the nonsense \u003Cspan class='caps'\u003EBDD\u003C/span\u003E/RSpec implementations out there really \u003Cstrong\u003Emust\u003C/strong\u003E do themselves a favor and look at \u003Ca href='http: //python.org/doc/current/lib/module-doctest.html'\u003EPython doctests\u003C/a\u003E\u003C/p\u003E
+
+
+\u003Cp\u003EIt does everything \u003Cspan class='caps'\u003EBDD\u003C/span\u003E/RSpec/whatever systems do,  but in a far more elegant manner.  And the technique is applicable to any scripting-style language (Ruby and elisp included).  And the implementation should be simple.\u003C/p\u003E
+
+
+\u003Cp\u003EI\u0026#8217;d call doctest-style tests \u0026#8220;document driven testing\u0026#8221; (slightly higher level than \u003Cspan class='caps'\u003EBDD\u003C/span\u003E,  as it emphasizes intention and narratives),  or \u0026#8220;functionally driven testing\u0026#8221;,  which is like \u003Cspan class='caps'\u003EBDD\u003C/span\u003E,  but uses the existing term \u0026#8220;functional tests\u0026#8221;.  And really that\u0026#8217;s all this is\u0026#8212;writing functional tests up front instead of unit/programmer tests.  There\u0026#8217;s nothing very magic or new about it,  except the practice itself if you haven\u0026#8217;t used it before.  And,  language and implementation aside,  doing functional tests before implementation is a great way to program.\u003C/p\u003E"}]

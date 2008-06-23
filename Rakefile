@@ -28,7 +28,7 @@ begin
   
   desc "Copy comments from remote host to local copy of blog"
   remote_task :sync_comments do
-    reverse_rsync '.', "#{domain}/comments"
+    # reverse_rsync '.', "#{domain}/comments"
   end
 rescue LoadError
   task(:sync_comments) { "dummy task to satisfy deps when vlad is not present"}
@@ -124,7 +124,10 @@ task :default => [:render_posts, :render_feed, :render_pages]
 
 task :despam do
   Dir.glob('comments/*json').each do |comment_file|
-    comments = YAML.load(File.read(comment_file)).reject { |c| c['content'] =~ /warcraft/ }
-    File.open(comment_file, 'w') { |f| f.puts YAML.dump(comments) }
+    contents = File.read(comment_file).gsub('\\u003C', '<').gsub('\\u003E', '>').gsub("\\\"", "\"").gsub('\\u0026', '&').gsub('class="caps"', "class='caps'")
+    comments = YAML.load(contents).reject { |c| c['content'] =~ /warcraft/ }
+    puts "Writing #{comment_file.gsub(/json/, 'yml')}"
+    File.open(comment_file.gsub(/json/, 'yml'), 'w') { |f| f.puts YAML.dump(comments) }
   end
 end
+
