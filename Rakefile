@@ -61,7 +61,7 @@ def render_files_with_template(glob, template_file)
   Dir.glob(glob).each do |file|
     page = parse(file)
     rendered_filename = yield(page)
-    next if up_to_date? file, template_file, rendered_filename
+    next if up_to_date? file, template_file, rendered_filename and ENV['force'].nil?
     File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
     puts "Rendered #{rendered_filename}."
   end
@@ -121,13 +121,4 @@ end
 task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
-
-task :despam do
-  Dir.glob('comments/*json').each do |comment_file|
-    contents = File.read(comment_file).gsub('\\u003C', '<').gsub('\\u003E', '>').gsub("\\\"", "\"").gsub('\\u0026', '&').gsub('class="caps"', "class='caps'")
-    comments = YAML.load(contents).reject { |c| c['content'] =~ /warcraft/ }
-    puts "Writing #{comment_file.gsub(/json/, 'yml')}"
-    File.open(comment_file.gsub(/json/, 'yml'), 'w') { |f| f.puts YAML.dump(comments) }
-  end
-end
 

@@ -1,0 +1,31 @@
+--- 
+- timestamp: "Wed Nov 07 13: 30: 00 -0800 2007"
+  uri: http://agileconsultingllc.com
+  author: Rob Biedenharn
+  content: |-
+    The Columbus/Cincinnati group includes Doug Alcorn,  Jim Weirich,  Rob Biedenharn,  Joe O'Brien,  Craig Muth,  (and more).  I think there were about 10 or 12 of us at the last meeting.<br />
+    <br />
+    -Rob
+- timestamp: "Thu Nov 22 02: 59: 16 -0800 2007"
+  uri: http://neoglam.com
+  author: the daniel
+  content: |-
+    I love the js lambda stuff,  though I like to have point in the function body: <br />
+    <br />
+    &lt;code&gt;<br />
+    (defun my-javascript-lambda () (interactive) (insert &quot;function () {\n};&quot;)<br />
+      (backward-char 3)<br />
+      (newline-and-indent))<br />
+    <br />
+    &lt;/code&gt;
+- timestamp: "Wed Nov 07 06: 49: 34 -0800 2007"
+  uri: http://lathi.net
+  author: Doug
+  content: "&quot;Emaculate Strike Force&quot; sounds good.  Let's get a more detailed hit list and let folks just start knocking them off! "
+- timestamp: "Wed Nov 07 02: 23: 34 -0800 2007"
+  uri: http://www.grokblok.com
+  author: Josh
+  content: |-
+    Phil, <br />
+    <br />
+    This is great that you're spearheading this effort.  There is certainly a lot of interest in emacs from the rails/ruby folks,  especially here in Columbus.  We've got our own group dedicated to the integration between the 2.  http://groups.google.com/group/emacs-unite  Currently,  we're investigating el4r a little more,  but there is some good emacs-lisp chops within the group as well.

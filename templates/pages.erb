@@ -44,7 +44,7 @@
 
         <p class='dt'>
           <a href='/<%= post['id'] %>'><%= Time.parse(post['timestamp']) %></a> |
-          <% comment_count = parse("comments/#{post['id']}.json").length %>
+          <% comment_count = parse("comments/#{post['id']}.yml").length %>
           <a href='/<%= post['id'] %>#c'>
             <%= comment_count == 0 ? 'no' : comment_count %> comment<%= comment_count == 1 ? '' : 's' %></a>
         </p>
