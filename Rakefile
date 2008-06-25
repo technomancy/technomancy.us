@@ -43,7 +43,7 @@ class Time
 end
 
 def parse(filename)
-  YAML.load(File.read(filename))
+  YAML.load(File.read(filename)) rescue {}
 end
 
 def template(name)
@@ -122,3 +122,6 @@ task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
 
 task :default => [:render_posts, :render_feed, :render_pages]
 
+# TODO:
+# ensure rel=next/prev works
+# single-page archive
