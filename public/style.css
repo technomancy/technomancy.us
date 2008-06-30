@@ -19,10 +19,9 @@ h1 a {
     text-decoration: none;
 }
 
-#wrapper {
+#entry {
     font-size: 14pt;
-    width: 40em;
-    margin-left: 5em;
+    letter-spacing: 0.05em
 }
 
 #entry img {
@@ -30,13 +29,23 @@ h1 a {
 }
 
 #comments {
+    text-align: justify;
     border-top: 1px grey solid;
     font-size: 12pt;
     padding: 3em;
 }
 
+#entry, #comments {
+    width: 40em;
+    margin-left: 5em;
+    text-align: justify;
+}
+
 #footer {
     border-top: 1px grey solid;
+}
+
+#footer p {
     text-align: center;
 }
 
@@ -58,5 +67,58 @@ a img { border: 0; }
 }
 
 .timestamp {
+    text-align: right;
     color: grey;
 }
+
+/* htmlize styles for code snippets */
+
+.comment {
+        /* font-lock-comment-face */
+        color: #7f9f7f;
+    }
+    .comment-delimiter {
+        /* font-lock-comment-delimiter-face */
+        color: #708070;
+    }
+    .function-name {
+        /* font-lock-function-name-face */
+        color: #9f8ff0;
+    }
+    .keyword {
+        /* font-lock-keyword-face */
+        color: #900f4f;
+        font-weight: bold;
+    }
+    .negation-char {
+        /* font-lock-negation-char-face */
+        color: #f0dfaf;
+        font-weight: bold;
+    }
+    .string {
+        /* font-lock-string-face */
+        color: #cc9393;
+    }
+    .type {
+        /* font-lock-type-face */
+        color: #4f0fff;
+        font-weight: bold;
+    }
+    .variable-name {
+        /* font-lock-variable-name-face */
+        color: #308f3f;
+    }
+    .builtin {
+        /* font-lock-builtin-face */
+        color: #da70d6;
+    }
+    .doc {
+        /* font-lock-doc-face */
+        color: #bc8f8f;
+    }
+    .paren {
+        /* paren-face */
+        color: #8c8c8c;
+    }
+    .keyword { color: blue; }
+    .literal { color: purple; }

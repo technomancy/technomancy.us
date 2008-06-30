@@ -95,15 +95,12 @@ task :render_static do
   render_files_with_template('static/*.yml', 'templates/static.erb') { |page| "public/#{page['title'].downcase}.html" }
 end
 
-task :default => [:render_posts, :render_list, :render_feed, :render_static]
+task :default => [:render_posts, :render_list, :render_feed]
 
 # TODO:
-# ensure rel=next/prev works
-# single-page archive
+# Footer that lists "around" posts
 
 # Pages:
-# * Posts
-# * List
 # * Feed
 # * About
 # * Projects (retire dev.technomancy.us)
