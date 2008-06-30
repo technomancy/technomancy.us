@@ -1,8 +1,0 @@
---- 
-title: Contact
-content: |-
-  <h2>Contact me</h2>
-  <br style='clear: both' />
-  <img src='/static/i/contact.jpg' alt='say hi' align='right' style='border: 2px white solid;' title='Speak that I may hear.' />
-  <p>Please email me at technomancy at google's email service if you wish to get ahold of me.</p>
-  <br style='clear: both;' />

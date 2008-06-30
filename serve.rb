@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'mongrel'
 
-config = Mongrel::Configurator.new :host => "127.0.0.1" do
+config = Mongrel::Configurator.new :host => "0.0.0.0" do
   listener :port => 3001 do
     uri "/", :handler => Mongrel::DirHandler.new("public")
   end

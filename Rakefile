@@ -25,7 +25,7 @@ begin
   end
 
   remote_task :publish => :deploy
-  
+
   desc "Copy comments from remote host to local copy of blog"
   remote_task :sync_comments do
     reverse_rsync '.', "#{domain}/comments"
@@ -34,20 +34,12 @@ rescue LoadError
   task(:sync_comments) { "dummy task to satisfy deps when vlad is not present"}
 end
 
-PAGE_SIZE = 10
-
-class Time
-  def to_s
-    strftime("%Y-%m-%dT%H:%M:%SZ")
-  end
-end
-
 def parse(filename)
   YAML.load(File.read(filename)) rescue {}
 end
 
-def template(name)
-  ERB.new(File.read("templates/#{name}.erb")).result(binding)
+def timestamp(time)
+  Time.parse(time).strftime("%Y-%m-%dT%H:%M:%SZ")
 end
 
 def up_to_date?(file, template, rendered_filename)
@@ -67,29 +59,22 @@ def render_files_with_template(glob, template_file)
   end
 end
 
-def render_file_with_template(page, template_file, rendered_filename,
-                              page_num = nil, page_count = nil)
-  # TODO: check for up_to_date?
+def render_file_with_template(page, template_file, rendered_filename)
   template = ERB.new(File.read(template_file))
   File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
   puts "Rendered #{rendered_filename}."
 end
 
 desc "Render posts to static files"
-task :render_posts => :sync_comments do
-  render_files_with_template('posts/*.yml', 'templates/post.erb') { |page| "public/#{page['id']}.html" }
+task :render_posts do
+  render_files_with_template('posts/*.yml', 'templates/post.html.erb') { |page| "public/#{page['id']}.html" }
 end
 
 desc "Render a single post"
 task :render_post do
   page = parse("posts/#{ENV['POST']}.yml")
-  render_file_with_template(page, 'templates/post.erb',
+  render_file_with_template(page, 'templates/post.html.erb',
                             "public/#{page['id']}.html")
-end
-
-desc "Render static pages"
-task :render_static do
-  render_files_with_template('static/*.yml', 'templates/static.erb') { |page| "public/#{page['title'].downcase}.html" }
 end
 
 desc "Render Atom feed"
@@ -99,29 +84,26 @@ task :render_feed do
                             'public/feed/atom.xml')
 end
 
-desc "Render pages of posts"
-task :render_pages do
-  all_pages = Dir.glob('posts/*.yml').sort_by{ |f| f.match(/(\d+)/)[1].to_i }.map{ |f| parse(f) }
-  page_count = (all_pages.size.to_f / PAGE_SIZE).ceil
-
-  # save the initial index first
-  render_file_with_template(all_pages[-11 .. -1].reverse, 'templates/pages.erb', 'public/index.html', 1, page_count)
-
-  page_num = 1
-
-  until all_pages.empty? do
-    pages = []
-    PAGE_SIZE.times { pages << all_pages.pop } rescue nil
-    render_file_with_template(pages.compact, 'templates/pages.erb',
-                              "public/page/#{page_num}.html", page_num, page_count)
-    page_num += 1
-  end
+desc "Render list of posts"
+task :render_list do
+  posts = Dir.glob('posts/*.yml').sort_by{ |f| f.match(/(\d+)/)[1].to_i }.map{ |f| parse(f) }.reverse
+  render_file_with_template(posts, 'templates/list.html.erb', "public/list.html")
 end
 
-task :render_all => [:render_posts, :render_pages, :render_feed, :render_static]
+desc "Render static pages"
+task :render_static do
+  render_files_with_template('static/*.yml', 'templates/static.erb') { |page| "public/#{page['title'].downcase}.html" }
+end
 
-task :default => [:render_posts, :render_feed, :render_pages]
+task :default => [:render_posts, :render_list, :render_feed, :render_static]
 
 # TODO:
 # ensure rel=next/prev works
 # single-page archive
+
+# Pages:
+# * Posts
+# * List
+# * Feed
+# * About
+# * Projects (retire dev.technomancy.us)

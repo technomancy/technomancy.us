@@ -1,0 +1,62 @@
+* {
+    font-family: Palatino, "Book Antiqua", "URW Palladio L", serif;
+}
+
+body { 
+    margin: 0; 
+}
+
+h1 {
+    margin: 1em;
+}
+
+h1 img {
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+#wrapper {
+    font-size: 14pt;
+    width: 40em;
+    margin-left: 5em;
+}
+
+#entry img {
+    margin: 1em;
+}
+
+#comments {
+    border-top: 1px grey solid;
+    font-size: 12pt;
+    padding: 3em;
+}
+
+#footer {
+    border-top: 1px grey solid;
+    text-align: center;
+}
+
+a { 
+   color: #31674b;
+}
+
+a:hover { 
+    color: #11472b;
+}
+
+a img { border: 0; }
+
+.code {
+  border: 1px grey solid;
+  background: #eee;
+  padding: 1em;
+  font-family: Inconsolata, Consolas, monospace;
+}
+
+.timestamp {
+    color: grey;
+}

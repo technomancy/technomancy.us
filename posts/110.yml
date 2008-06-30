@@ -12,7 +12,7 @@ content: "<p>Over the weekend I spent some time with thousands of geeks
   and only attend the &quot;hallway track&quot; at the main event.</p>
   
   <img src='http://technomancy.us/static/i/portland_boardwalk.jpg' alt='portland skyline' 
-       align='left' style='margin-left: 0;' />
+       align='left' />
   
   <p>As usual, Portland was the ideal host city for the
   conference. It's beautifully green in a way that makes it simply
@@ -77,8 +77,7 @@ content: "<p>Over the weekend I spent some time with thousands of geeks
   use a Ruby implementation that ties you into their proprietary
   software stack.</p>
 
-  <img src='http://technomancy.us/static/i/github_machine.jpg' alt='pay to github'
-       style='margin: 2em 0;' />
+  <img src='http://technomancy.us/static/i/github_machine.jpg' alt='pay to github' />
 
   <p>The really crazy thing about the whole issue is that it reveals
   an idea that somehow it's difficult to make money with a really

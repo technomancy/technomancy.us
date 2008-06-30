@@ -8,9 +8,7 @@
 
   <% page.each do |post| %>
   <entry xml:base="http://technomancy.us">
-    <author>
-      <name>Phil Hagelberg</name>
-    </author>
+    <author><name>Phil Hagelberg</name></author>
     <id>tag:technomancy.us,2007:<%= URI.escape post['title'] %></id>
     <published><%= Time.parse(post['timestamp']).to_s %></published>
     <updated><%= Time.parse(post['timestamp']).to_s %></updated>
