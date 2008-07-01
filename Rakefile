@@ -98,7 +98,6 @@ task :default => [:render_posts, :render_list, :render_feed]
 # whitespace in code snippets
 # Comment submission
 # List posts by month
-# Make Mongrel redirect to .html versions of a page on 404
 # Make index page a little bit more special?
 
 # Pages:
