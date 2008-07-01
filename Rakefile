@@ -88,11 +88,7 @@ desc "Render list of posts"
 task :render_list do
   posts = Dir.glob('posts/*.yml').sort_by{ |f| f.match(/(\d+)/)[1].to_i }.map{ |f| parse(f) }.reverse
   render_file_with_template(posts, 'templates/list.html.erb', "public/list.html")
-end
-
-desc "Render static pages"
-task :render_static do
-  render_files_with_template('static/*.yml', 'templates/static.erb') { |page| "public/#{page['title'].downcase}.html" }
+  FileUtils.cp("public/#{posts.first['id']}.html", 'public/index.html')
 end
 
 task :default => [:render_posts, :render_list, :render_feed]
@@ -103,7 +99,7 @@ task :default => [:render_posts, :render_list, :render_feed]
 # Comment submission
 # List posts by month
 # Make Mongrel redirect to .html versions of a page on 404
-# Wrap titles reasonably
+# Make index page a little bit more special?
 
 # Pages:
 # * About

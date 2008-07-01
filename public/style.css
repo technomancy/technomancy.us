@@ -12,8 +12,8 @@ h1 {
 }
 
 h1 img {
-    margin-right: 1em;
-    vertical-align: middle;
+    margin: 0 1em 1em 0;
+    float: left;
 }
 
 h1 a {
