@@ -97,6 +97,7 @@ task :default => [:render_posts, :render_list, :render_feed]
 # Footer that lists "around" posts
 # whitespace in code snippets
 # Comment submission
+# Uncover old timestamps
 # List posts by month
 # Make index page a little bit more special?
 

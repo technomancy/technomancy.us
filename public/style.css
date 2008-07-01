@@ -55,10 +55,12 @@ h1 a {
 }
 
 a { 
-   color: #31674b;
+    text-decoration: none;
+    color: #31674b;
 }
 
 a:hover { 
+    text-decoration: underline;
     color: #11472b;
 }
 

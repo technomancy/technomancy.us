@@ -16,7 +16,10 @@
 
     <div id='wrapper'>
       <div id='entry'><%= page['content'] %>
-      <p class='timestamp'><a href=''><%= timestamp page['timestamp'] %></a></p>
+      <p class='timestamp'>
+        <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><a href='/<%= page['id'].to_i - 1 %>'>&larr;</a><% end %>
+        <a href=''><%= timestamp page['timestamp'] %></a>
+        <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><a href='/<%= page['id'].to_i + 1 %>'>&rarr;</a><% end %></p>
       </div>
 
       <% comments = parse("comments/#{page['id']}.yml").sort_by {|c| timestamp(c['timestamp']) } %>
