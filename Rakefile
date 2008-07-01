@@ -66,37 +66,37 @@ def render_file_with_template(page, template_file, rendered_filename)
 end
 
 desc "Render posts to static files"
-task :render_posts do
+task :posts do
   render_files_with_template('posts/*.yml', 'templates/post.html.erb') { |page| "public/#{page['id']}.html" }
 end
 
 desc "Render a single post"
-task :render_post do
+task :post do
   page = parse("posts/#{ENV['POST']}.yml")
   render_file_with_template(page, 'templates/post.html.erb',
                             "public/#{page['id']}.html")
 end
 
 desc "Render Atom feed"
-task :render_feed do
+task :feed do
   pages = Dir.glob('posts/*.yml').sort_by{ |f| f.match(/(\d+)/)[1].to_i }[-16 .. -1].reverse.map{ |f| parse(f) }
   render_file_with_template(pages, 'templates/atom.erb',
                             'public/feed/atom.xml')
 end
 
 desc "Render list of posts"
-task :render_list do
+task :list do
   posts = Dir.glob('posts/*.yml').sort_by{ |f| f.match(/(\d+)/)[1].to_i }.map{ |f| parse(f) }.reverse
   render_file_with_template(posts, 'templates/list.html.erb', "public/list.html")
   FileUtils.cp("public/#{posts.first['id']}.html", 'public/index.html')
 end
 
-task :default => [:render_posts, :render_list, :render_feed]
+task :default => [:posts, :list, :feed]
 
 # TODO:
+# Comment submission
 # Footer that lists "around" posts
 # whitespace in code snippets
-# Comment submission
 # Uncover old timestamps
 # List posts by month
 # Make index page a little bit more special?

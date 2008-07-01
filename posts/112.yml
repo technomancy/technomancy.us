@@ -42,6 +42,7 @@ content: "<p>I've been <a href='http://diveintomark.org/archives/2008/06/21/mini
 
   <p><b>Update</b>: tried browsing the site in Firefox for a while
   without the prev/next links in chrome... it's a pain. So I added in
-  hyperlinks for now. But it wouldn't hurt to petition browser
-  creators to expose this juicy bit of metadata instead of just
-  throwing it away.</p>
+  hyperlinks for now. But it wouldn't hurt to <a
+  href='https://bugzilla.mozilla.org/show_bug.cgi?id=291340'>petition
+  browser creators</a> to expose this juicy bit of metadata instead of
+  just throwing it away.</p>

@@ -4,6 +4,11 @@
     <link rel="stylesheet" href="/style.css" type="text/css"/>
     <title><%= page['title'] %> - Technomancy</title>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <script src="/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function () { $('#spammers').val('suck'); });
+    </script>
+
     <link rel="alternate" href="/feed/atom.xml" title="Technomancy Feed" type="application/atom+xml"/>
     <link rel="up" href='/list' />
     <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><link rel="next" href='/<%= page['id'].to_i + 1 %>' /><% end %>
@@ -14,24 +19,32 @@
     <h1><a href='/list'><img src='/i/technomancy.png' alt='Technomancy' /></a>
     <a href=''><%= page['title'] %></a></h1>
 
-    <div id='wrapper'>
-      <div id='entry'><%= page['content'] %>
-      <p class='timestamp'>
-        <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><a href='/<%= page['id'].to_i - 1 %>'>&larr;</a><% end %>
-        <a href=''><%= timestamp page['timestamp'] %></a>
-        <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><a href='/<%= page['id'].to_i + 1 %>'>&rarr;</a><% end %></p>
-      </div>
+    <div id='entry'><%= page['content'] %>
+    <p class='timestamp'>
+      <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><a href='/<%= page['id'].to_i - 1 %>'>&larr;</a><% end %>
+      <a href=''><%= timestamp page['timestamp'] %></a>
+      <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><a href='/<%= page['id'].to_i + 1 %>'>&rarr;</a><% end %></p>
+    </div>
 
-      <% comments = parse("comments/#{page['id']}.yml").sort_by {|c| timestamp(c['timestamp']) } %>
-      <% unless comments.empty? %>
-      <dl id='comments'>
-        <% comments.each do |comment| %>
+    <div id='comments'>
+      <dl>
+        <% parse("comments/#{page['id']}.yml").sort_by {|c| timestamp(c['timestamp']) }.each do |comment| %>
         <dt><%= comment['uri'].to_s == '' ? comment['author'] : "<a href='#{comment['uri']}' rel='nofollow'>#{comment['author']}</a>" %> 
         &ndash; <span class='timestamp'><%= timestamp comment['timestamp'] %></span></dt>
         <dd><%= comment['content'] %></dd>
         <% end %>
       </dl>
-      <% end %>
+      <form action='/comment.cgi' method='post'>
+        <p><input type='text' name='author' /> Name</p>
+        <p><input type='text' name='uri' /> URL</p>
+        
+        <input type='hidden' name='post_id' value='<%= page['id'] %>' />
+        <input type='hidden' name='spammers' id='spammers' value='are ok' />
+
+        <textarea name='content' rows='10' cols='60'></textarea>
+        <p><input type='submit' value='Post a Comment' /></p>
+        <p>HTML will be escaped for now. Comments are currently moderated; sorry.</p>
+      </form>
     </div>
 
     <div id='footer'>

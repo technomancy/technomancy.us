@@ -22,4 +22,4 @@ end
 cgi.out("status" => "301 Moved",
         "Location" => "http://technomancy.us/#{cgi.params['post_id']}#c") { comments.to_yaml }
 
-# system "cd .. && rake render_post POST=#{cgi.params['post_id']} force=y"
+# system "cd .. && rake post POST=#{cgi.params['post_id']} force=y"
