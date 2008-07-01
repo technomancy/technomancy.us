@@ -103,7 +103,7 @@ content: |+
   equal something. More flexibility in the expect macro is certainly to
   be desired. The other big thing is that each <tt>specify</tt> form
   does not start with a fresh binding of variables. (The <tt>setup</tt>
-  methods in both Ruby's Test: : Unit and rSpec both provide this,  and it
+  methods in both Ruby's Test::Unit and rSpec both provide this,  and it
   often proves to be handy.) I've been battling the CL-emulation
   libraries in elisp and so far losing,  but I'm sure I can provide such
   a thing in a future release.</p>

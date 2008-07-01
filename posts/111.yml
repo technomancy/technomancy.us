@@ -12,7 +12,7 @@ content: "<blockquote style='font-style: italic'>Now these points of data make a
   just launched</a>. Basically the system leverages natural language
   parsing to create a rich data graph of all the concepts on the Web
   that we can get our hands on. I could go into more detail, but the
-  official post does a great job of that. It's pretty cool to browse
+  official post linked above does a great job of that. It's pretty cool to browse
   around and see the article recommendations for a given
   entity. Unfortunately the visualization aspect requires the Flash
   plugin, so if you don't want to put up with the insane crashes, UI
@@ -20,7 +20,7 @@ content: "<blockquote style='font-style: italic'>Now these points of data make a
   that plugin then you miss out on that goodness. Hopefully Gnash will
   be able to run it soon.</p>
 
-  <img src='/static/i/cake.jpg' alt='the cake: not a lie' />
+  <img src='/static/i/cake.jpg' alt='the cake: not a lie' align='right' />
 
   <p>Anyway, it's great to have something public and at the same time
   useful, especially after the how my <a

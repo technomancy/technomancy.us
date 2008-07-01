@@ -99,8 +99,12 @@ task :default => [:render_posts, :render_list, :render_feed]
 
 # TODO:
 # Footer that lists "around" posts
+# whitespace in code snippets
+# Comment submission
+# List posts by month
+# Make Mongrel redirect to .html versions of a page on 404
+# Wrap titles reasonably
 
 # Pages:
-# * Feed
 # * About
 # * Projects (retire dev.technomancy.us)

@@ -4,7 +4,7 @@ title: there aught to be a law against you coming around
 tags: rails
 id: 20
 content: |-
-  <div class="ruby"><pre>        <span class="comment"># failed login</span>
+  <div class="ruby"><pre class='code'>        <span class="comment"># failed login</span>
    <span class="ident">flash</span><span class="punct">.</span><span class="ident">now</span><span class="punct">[</span><span class="symbol">: attempts</span><span class="punct">]</span> <span class="punct">=</span> <span class="attribute">@params</span><span class="punct">[</span><span class="symbol">: attempts</span><span class="punct">].</span><span class="ident">to_i</span> <span class="punct">+</span> <span class="number">1</span>
    
    <span class="keyword">if</span> <span class="ident">flash</span><span class="punct">[</span><span class="symbol">: attempts</span><span class="punct">]</span> <span class="punct">&gt;</span> <span class="number">3</span>

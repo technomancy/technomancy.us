@@ -47,10 +47,6 @@
   uri: ""
   author: Fnor
   content: "You can also use the -i option of sed to edit in place instead of redirecting to a temporary file : )"
-- timestamp: "Thu Jul 19 14: 26: 03 -0700 2007"
-  uri: ""
-  author: ""
-  content: ""
 - timestamp: "Fri Jul 20 17: 17: 33 -0700 2007"
   uri: http://lolcathost
   author: Phil
