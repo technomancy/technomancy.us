@@ -7,7 +7,7 @@ content: |
     the <a href='http://birdsofyore.com'>Birds of Yore</a>) I've got a
     nifty logo: </p>
   
-  <img src='/static/i/logo.jpg' alt='logo' />
+  <img src='/i/logo.jpg' alt='logo' />
   
   <p>Business cards are in the works. Much fun.</p>
 tags: ""

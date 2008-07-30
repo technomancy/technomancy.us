@@ -33,7 +33,7 @@ content: |-
   content.</p>
   
   <p>Sure enough, Merb's changes to Rack <a
-  href='http://technomancy.us/static/code/streaming_quine.rb'>do the
+  href='http://technomancy.us/code/streaming_quine.rb'>do the
   trick</a>:</p>
   
   <pre class='code'>require <span class='string'>'rubygems'</span>
@@ -65,7 +65,7 @@ content: |-
   Rack distribution. Merb seems to be Rack's biggest user, so the fact
   that they have to bundle their own patched version seemes quite
   odd. Anyway, if you need HTTP streaming outside Merb, you can use my
-  <a href='http://technomancy.us/static/code/rack-0.3.0.gem'>version of
+  <a href='http://technomancy.us/code/rack-0.3.0.gem'>version of
   Rack</a>. I haven't been able to get the gem served by Github;
   unreproducible remote problems in the gem build process are very
   opaque and give no feedback. Will look into this later.</p>

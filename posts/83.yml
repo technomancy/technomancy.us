@@ -5,7 +5,7 @@ id: 83
 content: |-
   <p>So I've been playing around with some more of this new-fangled "desktop integration" stuff. Pretty crazy.</p>
   
-  <img src='/static/i/portland_street.jpg' alt='portland street' />
+  <img src='/i/portland_street.jpg' alt='portland street' />
   
   <p>Recently the ever-useful gaim project was <a href='http://pidgin.im'>renamed to pidgin</a>. The new release is quite nice,  but several plugins haven't really been ported over yet. On top of that,  the notification plugin has some <a href='https: //bugs.launchpad.net/ubuntu/+source/gaim/+bug/93638'>serious problems</a> on 64-bit machines. How troublesome! Of course,  you can always scratch your itches by writing plugins in Python or C,  but then you have to use Python or C.</p>
   

@@ -5,7 +5,7 @@ id: 85
 content: |-
   <p>So at <a href='http://bostonsteamer.livejournal.com/876269.html'>Dave Thomas's closing RailsConf</a> keynote,  he talked about the dangers of <a href='http://en.wikipedia.org/wiki/Cargo_cult'>cargo culting</a> and how we need to be aware of how those kinds of things affect our thinking. This made me feel somewhat vindicated considering I was committing what amounts to serious heterodoxy in the Rails community:  playing with <a href='http://helma.org'>software written in Java</a>.</p>
   
-  <img src='/static/i/rats-close.jpg' alt='JAVASCRIPT OBJECT PLZ' />
+  <img src='/i/rats-close.jpg' alt='JAVASCRIPT OBJECT PLZ' />
   
   <p>Anyone who listened to me rant during that weekend probably heard me talk about <a href='http://helma.org'>Helma</a>. Most people gave me funny looks,  which made me feel all the better about PragDave's keynote. ("Cargo-culters!") Helma is a web development framework I discovered during <a href='/80'>my time in Indonesia</a>. The bulk of it's written in Java,  but the apps you write with it are written in Javascript. I had seen it mentioned before and simply disregarded it,  but now that <a href='http://www.sun.com/2006-1113/feature/'>Java is Free Software</a> I figured it was worth a second look.</p>
   
@@ -33,7 +33,7 @@ content: |-
   
   </ul>
   
-  <img src='/static/i/rats-cup.jpg' alt='KTHXBAI' align='right' />
+  <img src='/i/rats-cup.jpg' alt='KTHXBAI' align='right' />
   
   <p>So I'd love to dig into the meat of Helma,  but I'll have to wait until I can find a new project that would be suitable for it. It seems that due to its flexibility it would allow you to put together the initial stages of a project very quickly,  but I suppose the jury is still out on keeping the project maintainable. It is more ad-hoc and allows for more deviation from convention,  so that might cause maintainability to suffer. Still,  I'm looking forward to being able to give it a shot.</p>
 tags: javascript

@@ -27,7 +27,7 @@ content: |
     shame. But it's probably worth it as the price of having more
     people share in the fun.</p>
   
-  <img src='/static/i/avi.jpg' alt='avi bryant' title='turtles and web heresies' />
+  <img src='/i/avi.jpg' alt='avi bryant' title='turtles and web heresies' />
   
   <p>Tonight's keynotes were
     from <a href='http://smallthought.com/avi/'>Avi Bryant</a>
@@ -51,7 +51,7 @@ content: |
     limits
     the <a href='http://blog.caboo.se/articles/2007/4/8/heresy-and-turtles-all-the-way-down-with-avi-bryant'>Turtle
     Factor</a>.</p>
-  <img src='/static/i/turtles1.png' alt='low turtle factor' align='left' />
+  <img src='/i/turtles1.png' alt='low turtle factor' align='left' />
          
   <p>"Turtles all the way down" refers to how much of the language is
     accessible from within the language itself. We're talking about
@@ -63,7 +63,7 @@ content: |
     (altering the behaviour of Arrays,  for instance) the Turtle Factor
     hits a bit of trouble: </p>
   
-  <img src='/static/i/shredder.gif' alt='shredder' align='right' />
+  <img src='/i/shredder.gif' alt='shredder' align='right' />
   
   <p>Ideally,  Ruby would give programs access (in Ruby) to every level
     of the language,  which would be much easier to do (according to Avi)
@@ -73,7 +73,7 @@ content: |
     override the default behaviour for certain objects that should be
     treated differently,  which is easy in (say) Lisp.</p>
   
-  <img src='/static/i/turtles2.jpg' alt='high turtle factor' align='left' />
+  <img src='/i/turtles2.jpg' alt='high turtle factor' align='left' />
   
   <p>It sounds like the low turtle factor of MRI Ruby is necessary in
     order to achieve decent performance in the current implementation, 

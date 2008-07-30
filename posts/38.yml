@@ -4,5 +4,5 @@ title: orientation
 tags: ubuntu
 id: 38
 content: "<p>The other day I was thinking to myself,  \"You know,  I'm glad I don't have a widescreen display,  because I already waste a lot of horizontal space. Vertical space is much more valuable.\" A few pokes to my <tt>xorg.conf</tt> produced this: </p>\n\
-  <img src='/static/i/multihead-rotate.jpg' alt='sideways' />\n\
+  <img src='/i/multihead-rotate.jpg' alt='sideways' />\n\
   <p>If you're using X,  the trick is to add the line <code>Option \"Rotate\" \"CW\"</code> to the relevant device section. Not sure about other OSes; I've heard you can do it in Windows if you buy a special Samsung monitor. Thanks to AaronP from #xorg on freenode for pointing me in the right direction.</p> "

@@ -4,5 +4,5 @@ title: i still don't understand dwemthy's array
 id: 30
 rails, conf: 
 content: |-
-  <img src='/static/i/professorspudding.jpg' alt='lucky stiff concert' />
+  <img src='/i/professorspudding.jpg' alt='lucky stiff concert' />
   <p>That's right&mdash;<a href='http://whytheluckystiff.net'>_why</a> will be at <a href='http://railsconf.org'>RailsConf</a>! He won't be ditching us like he did at RubyConf. <a href='http://www.whytheluckystiff.net/starry/'>Samples of previous performances</a> are available,  so knock thyself out.</p>

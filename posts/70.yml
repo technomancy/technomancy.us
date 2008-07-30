@@ -8,7 +8,7 @@ content: |
         is my latest project:  a robot that I plan on building up and
         programming.</p>
   
-  <img src='/static/i/die_roboter.jpg' 
+  <img src='/i/die_roboter.jpg' 
        alt='die roboter' title='die roboter' align='right' />
   
   
@@ -44,7 +44,7 @@ content: |
   
   <p>(<i>Italics</i> indicate completed revisions.)</p>
   
-  <img src='/static/i/norbert.jpg' alt='norbert'
+  <img src='/i/norbert.jpg' alt='norbert'
        title="lil' norbert" />
   
   <p>I drummed up a bit of code for the controller before I had really
