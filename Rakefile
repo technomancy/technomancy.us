@@ -108,13 +108,12 @@ task :default => [:posts, :list, :feed]
 # Favicon
 # Footer that lists "around" posts
 # whitespace in code snippets
-# Uncover old timestamps
-# List posts by month
+# Uncover old timestamps, then list posts by month
 # Make index page a little bit more special?
 # redirect /blog/rss
 # robots.txt
 # add /blog/post/$ID redirect
-# Make technomancy.png transparent
+# Drop caps?
 
 # Pages:
 # * About
