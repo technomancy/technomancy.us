@@ -17,13 +17,13 @@
 
   <body>
     <h1><a href='/list'><img src='/i/technomancy.png' alt='Technomancy' /></a>
-    <a href=''><%= page['title'] %></a></h1>
+    <a href='/<%= page['id'] %>'><%= page['title'] %></a></h1>
 
     <div id='entry'><%= page['content'] %>
     <p class='timestamp'>
-      <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><a href='/<%= page['id'].to_i - 1 %>'>&larr;</a><% end %>
-      <a href=''><%= timestamp page['timestamp'] %></a>
-      <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><a href='/<%= page['id'].to_i + 1 %>'>&rarr;</a><% end %></p>
+      <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><a href='/<%= page['id'].to_i - 1 %>'>&laquo;</a><% end %>
+      <a href='/<%= page['id'] %>'><%= timestamp page['timestamp'] %></a>
+      <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><a href='/<%= page['id'].to_i + 1 %>'>&raquo;</a><% end %></p>
     </div>
 
     <div id='comments'>

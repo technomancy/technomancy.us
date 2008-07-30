@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- HTML based on Planet Intertwingly: http://planet.intertwingly.net -->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title><%= Planet.config['name'] %></title>
+    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="generator" content="Mars <%= Planet::VERSION %>"/>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link rel="alternate" href="atom.xml" title="<%= Planet.config['name'] %>" type="application/atom+xml"/>
+  </head>
+
+  <body>
+    <h1>
+      <img src='planet.png' alt='planet logo' title='<%= Planet.config['name'] %>' />
+      <a href=''><%= Planet.config['name'] %></a>
+    </h1>
+
+    <div id="body">
+      <% feed.root.each_element('entry') do |elt| %>
+      <% @elt = elt %>
+
+      <div class="news " xml:lang="<%= elt.attribute('xml:lang') %>">
+	<h3 class='title'>
+	  <a href="<%= source_link %>"
+	     title="<%= source.get_elements('title').first.text %>">
+	  <%= source.get_elements('title').first.text %></a> &mdash;
+	
+	  <a href="<%= link.attribute('href') %>">
+	  <%= title.text %></a>
+	</h3>
+
+	<div class="content"><%= content %></div>
+	
+	<div class="permalink">
+	  <a href="<%= link.attribute('href') %>">
+	    by <%= source.get_elements('title').first.text %> at <time datetime="<%= updated.text %>"><%= updated.text %></time>
+	  </a>
+	</div>
+      </div>
+      <% end %>
+    </div>
+
+    <div id="sidebar">
+      <h2>Info</h2>
+      <dl>
+	<dt>Last updated:</dt>
+	<dd><time datetime="<%= Time.now.utc %>" title="GMT"><%= Time.now.utc %></time></dd>
+	<dt>Powered by:</dt><dd><a href="http://github.com/rubys/mars/">Mars</a></dd>
+      </dl>
+    </div>
+
+    <div id="footer">
+      <h2>Subscriptions</h2>
+      <ul>
+	<% Planet.config['feeds'].each do |name, feed_url| %>
+	<li><a title="subscribe" href="<%= feed_url %>">
+	  <img src="feed.png" alt="(feed)"/></a> 
+	  <a href="<%= feed_url %>"><%= name %></a>
+	</li>
+	<% end %>
+      </ul>
+    </div>
+</body></html>

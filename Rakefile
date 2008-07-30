@@ -8,7 +8,7 @@ require 'yaml'
 begin
   require 'vlad'
   set :domain, 'technomancy.us'
-  set :rsync_flags, ['-azP', '--exclude=.git*']
+  set :rsync_flags, ['-azP', "--exclude=.git*"]
 
   def reverse_rsync local, remote
     cmd = [rsync_cmd, rsync_flags, "#{domain}:#{remote}", local].flatten.compact
@@ -21,7 +21,14 @@ begin
 
   desc "Deploy blog files to remote server"
   remote_task :deploy => :default do
-    rsync '.', domain
+    begin
+      # TODO: teach rsync to ignore cache
+      FileUtils.cd(File.dirname(__FILE__))
+      FileUtils.mv 'planet/cache', 'tmp/planet-cache' rescue nil
+      rsync '.', domain
+    ensure
+      FileUtils.mv 'tmp/planet-cache', 'planet/cache' rescue nil
+    end
   end
 
   remote_task :publish => :deploy
@@ -91,15 +98,23 @@ task :list do
   FileUtils.cp("public/#{posts.first['id']}.html", 'public/index.html')
 end
 
+task :planet do
+  system "mars planet/config.yml"
+end
+
 task :default => [:posts, :list, :feed]
 
 # TODO:
-# Comment submission
+# Favicon
 # Footer that lists "around" posts
 # whitespace in code snippets
 # Uncover old timestamps
 # List posts by month
 # Make index page a little bit more special?
+# redirect /blog/rss
+# robots.txt
+# add /blog/post/$ID redirect
+# Make technomancy.png transparent
 
 # Pages:
 # * About

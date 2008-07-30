@@ -35,7 +35,7 @@ h1 a {
     padding: 3em;
 }
 
-#entry, #comments, #entries {
+#entry, #comments, #entries, #wrapper {
     width: 40em;
     margin-left: 5em;
     text-align: justify;
@@ -52,6 +52,11 @@ h1 a {
 
 #footer p {
     text-align: center;
+}
+
+img.portrait {
+    margin-top: -3em;
+    margin-left: 3em;
 }
 
 a { 
