@@ -1,35 +1,15 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <link rel="stylesheet" href="/style.css" type="text/css"/>
-    <title>Technomancy</title>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <link rel="alternate" href="/feed/atom.xml" title="Technomancy Feed" type="application/atom+xml"/>
-  </head>
-
-  <body>
-    <h1><a href='/list'><img src='/i/technomancy.png' alt='Technomancy' /></a>
-    <a href='/'>Technomancy</a></h1>
-
+<%= including 'header' %>
     <div id='wrapper'>
       <img src='/i/portrait.jpg' alt='portrait' class='portrait' align='right' />
-      <p>My name is Phil Hagelberg, and I am a Free Software hacker. 
-      <!-- I have a number of <a href='/projects'>projects</a>, but this is
-      my weblog. --></p>
-
+      <h3>Posts</h3>
       <ul>
         <% page.each do |post| %>
         <li><a href='<%= post['id'] %>'><%= post['title'] %></a> 
-        <% if timestamp(post['timestamp']) != '2007-10-13T00:00:01Z' %>
-        &ndash; <span class='timestamp'><%= timestamp post['timestamp'] %></span></li>
+        <% if Time.stamp(post['timestamp']) != '2007-10-13T00:00:01Z' %>
+        &ndash; <span class='timestamp'><%= Time.stamp post['timestamp'] %></span></li>
         <% end %>
         <% end %>
       </ul>
     </div>
 
-    <div id='footer'>
-      <p id='copyright'><a href='/list'>Technomancy</a> is &copy; 2004 &ndash; <%= Time.now.year %> Phil Hagelberg
-      <acronym title='Soli Deo Gloria'>SDG</acronym></p>
-    </div>
-  </body>
-</html>
+<%= including 'footer' %>

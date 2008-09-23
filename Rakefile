@@ -12,11 +12,9 @@ begin
 
   def reverse_rsync local, remote
     cmd = [rsync_cmd, rsync_flags, "#{domain}:#{remote}", local].flatten.compact
-    success = system(*cmd)
 
-    unless success then
+    system(*cmd) or
       raise Vlad::CommandFailedError, "execution failed: #{cmd.join ' '}"
-    end
   end
 
   desc "Deploy blog files to remote server"
@@ -34,19 +32,23 @@ begin
   remote_task :publish => :deploy
 
   desc "Copy comments from remote host to local copy of blog"
-  remote_task :sync_comments do
-    reverse_rsync '.', "#{domain}/comments"
-  end
+  remote_task(:comments) { reverse_rsync '.', "#{domain}/comments" }
 rescue LoadError
-  task(:sync_comments) { "dummy task to satisfy deps when vlad is not present"}
+  task(:comments) { "dummy task to satisfy deps when vlad is not present" }
 end
 
 def parse(filename)
   YAML.load(File.read(filename)) rescue {}
 end
 
-def timestamp(time)
-  Time.parse(time).strftime("%Y-%m-%dT%H:%M:%SZ")
+class Time
+  def to_s
+    strftime("%Y-%m-%dT%H:%M:%SZ")
+  end
+
+  def self.stamp(time)
+    Time.parse(time).to_s
+  end
 end
 
 def up_to_date?(file, template, rendered_filename)
@@ -70,6 +72,10 @@ def render_file_with_template(page, template_file, rendered_filename)
   template = ERB.new(File.read(template_file))
   File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
   puts "Rendered #{rendered_filename}."
+end
+
+def including(template, locals = {})
+  ERB.new(File.read(File.dirname(__FILE__) + "/templates/#{template}.html.erb")).result(binding)
 end
 
 desc "Render posts to static files"
@@ -98,23 +104,26 @@ task :list do
   FileUtils.cp("public/#{posts.first['id']}.html", 'public/index.html')
 end
 
+task(:other) do
+  ['projects', 'colophon'].each { |s| render_file_with_template s, "templates/#{s}.html.erb", "public/#{s}.html" }
+end
+
 task :planet do
   system "mars planet/config.yml"
 end
 
-task :default => [:posts, :list, :feed]
+task :default => [:posts, :list, :feed, :other]
 
 # TODO:
 # Favicon
 # Footer that lists "around" posts
 # whitespace in code snippets
-# Uncover old timestamps, then list posts by month
-# Make index page a little bit more special?
-# redirect /blog/rss
+# Restore old timestamps, then list posts by month
+# Make index page stand out a bit
 # robots.txt
 # add /blog/post/$ID redirect
-# Drop caps?
-
-# Pages:
-# * About
-# * Projects (retire dev.technomancy.us)
+# drop caps?
+# fix the JS on post 66
+# retire dev.technomancy.us; move content here
+# colophon
+# convert resume into LaTeX

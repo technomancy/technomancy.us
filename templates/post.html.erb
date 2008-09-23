@@ -10,7 +10,7 @@
     </script>
 
     <link rel="alternate" href="/feed/atom.xml" title="Technomancy Feed" type="application/atom+xml"/>
-    <link rel="up" href='/list' />
+    <link rel="index" href='/list' />
     <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><link rel="next" href='/<%= page['id'].to_i + 1 %>' /><% end %>
     <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><link rel="prev" href='/<%= page['id'].to_i - 1 %>' /><% end %>
   </head>
@@ -22,15 +22,15 @@
     <div id='entry'><%= page['content'] %>
     <p class='timestamp'>
       <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><a href='/<%= page['id'].to_i - 1 %>'>&laquo;</a><% end %>
-      <a href='/<%= page['id'] %>'><%= timestamp page['timestamp'] %></a>
+      <a href='/<%= page['id'] %>'><%= Time.stamp page['timestamp'] %></a>
       <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><a href='/<%= page['id'].to_i + 1 %>'>&raquo;</a><% end %></p>
     </div>
 
     <div id='comments'>
       <dl>
-        <% parse("comments/#{page['id']}.yml").sort_by {|c| timestamp(c['timestamp']) }.each do |comment| %>
+        <% parse("comments/#{page['id']}.yml").sort_by {|c| Time.stamp(c['timestamp']) }.each do |comment| %>
         <dt><%= comment['uri'].to_s == '' ? comment['author'] : "<a href='#{comment['uri']}' rel='nofollow'>#{comment['author']}</a>" %> 
-        &ndash; <span class='timestamp'><%= timestamp comment['timestamp'] %></span></dt>
+        &ndash; <span class='timestamp'><%= Time.stamp comment['timestamp'] %></span></dt>
         <dd><%= comment['content'] %></dd>
         <% end %>
       </dl>
@@ -47,9 +47,4 @@
       </form>
     </div>
 
-    <div id='footer'>
-      <p id='copyright'><a href='/list'>Technomancy</a> is &copy; 2004 &ndash; <%= Time.now.year %> Phil Hagelberg
-      <acronym title='Soli Deo Gloria'>SDG</acronym></p>
-    </div>
-  </body>
-</html>
+<%= including "footer" %>

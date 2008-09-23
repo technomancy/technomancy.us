@@ -1,0 +1,9 @@
+--- 
+- timestamp: Thu Jul 31 02:57:01 -0700 2008
+  uri: http://ianp.org/
+  author: Ian Phillips
+  content: Why not just write some code to make automatic edits of a document, then you can just run up a couple of editor instances and start your code in each of them. That would get around the sole contributor problem and it should be possible to use in automated tests as a bonus.
+- timestamp: Thu Jul 31 09:58:56 -0700 2008
+  uri: http://technomancy.us
+  author: Phil
+  content: "Ian: that's my plan, I just haven't gotten to it yet. So far all my tests have been in-process unit tests, but it's become pretty clear that higher-level integration tests are needed that just shell out to conspire."
