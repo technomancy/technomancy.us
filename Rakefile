@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'erb'
 require 'time'
 require 'cgi'
@@ -108,11 +107,11 @@ task(:other) do
   ['projects', 'colophon'].each { |s| render_file_with_template s, "templates/#{s}.html.erb", "public/#{s}.html" }
 end
 
-task :planet do
-  system "mars planet/config.yml"
-end
+task(:planet) { system "mars planet/config.yml" }
 
 task :default => [:posts, :list, :feed, :other]
+
+task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or l =~ /^\s*#/ }.size }
 
 # TODO:
 # Favicon
@@ -120,10 +119,8 @@ task :default => [:posts, :list, :feed, :other]
 # whitespace in code snippets
 # Restore old timestamps, then list posts by month
 # Make index page stand out a bit
-# robots.txt
 # add /blog/post/$ID redirect
 # drop caps?
 # fix the JS on post 66
 # retire dev.technomancy.us; move content here
-# colophon
 # convert resume into LaTeX

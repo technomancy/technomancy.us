@@ -59,12 +59,13 @@ content: "<p>When
  write <a href='http://rubyforge.org/projects/gitjour'>gitjour</a>, a
  tool to share git repositories locally via ZeroConf networking. Once
  I found out about this, it was really just a matter of putting the
- pieces together before a collaborative editing tool was born.</p>
+ pieces together before a collaborative editing tool was born out of
+ it.</p>
 
-<p><b>Conspire</b> is that tool. It builds a realtime synchronization
-  platform on top of gitjour and then provides editor support on top
-  of that so your edits are automatically committed, rebased, and
-  refreshed on top of the state of the network's conspiracy
+<p><b>Conspire</b> is that tool. It builds a realtime repository
+  synchronization platform on top of gitjour and then provides editor
+  support on top of that so your edits are automatically committed,
+  rebased, and refreshed with of the state of the network's conspiracy
   session.</p>
 
 <p>As always with new software, there are a number of caveats:</p>
@@ -79,6 +80,8 @@ content: "<p>When
     install the conspire gem from github (after <tt>sudo apt-get install
     libavahi-compat-libdnssd-dev</tt> on Debian-based systems) it will
     pull in my custom up-to-date versions of the dependencies.</li>
+  <li><b>Conspiracy sessions are currently LAN-only</b>, no Internet
+    support or NAT-tunneling.</li>
   <li><b>I have <i>no idea</i> how it will scale beyond two
     conspirators</b>. The synchronization interval parameters could
     use some tweaking, to be sure, and it would be great if it could
