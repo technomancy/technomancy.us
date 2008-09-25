@@ -117,7 +117,7 @@ pre, pre span, tt {
     }
     .type {
         /* font-lock-type-face */
-        color: #4f0fff;
+        color: #9f0fdf;
         font-weight: bold;
     }
     .variable-name {

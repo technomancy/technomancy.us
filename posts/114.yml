@@ -1,0 +1,71 @@
+--- 
+timestamp: 2008-09-23 10:07:01
+title: exceptional confusion
+tags: ruby
+id: 114
+content: |-
+  <p>So I've noticed there seems to be a fair amount of confusion in
+  the Ruby world about exception hierarchies. A number of libraries I
+  use happen to use them in ways that cause problems&mdash;usually in
+  ways that surface at the worst possible times near the end of long
+  batch operations. So here's a little primer to refresh your memory
+  and hopefully save some of <i>my</i> sanity if I ever use one of
+  your gems.</p>
+
+  <p><tt>Exception</tt> is the root class for the whole exception
+    hierarchy. I see a lot of code that subclasses
+    <tt>Exception</tt> for regular non-fatal exceptions. It's not
+    obvious, but this is really not how it's meant to be used. The
+    following code will bring down the application:</p>
+
+  <pre class='code'>
+  <span class='keyword'>class</span> <span class='type'>GetSomeRest</span> &lt; <span class='type'>Exception</span>; <span class='keyword'>end</span>
+
+  <span class='keyword'>begin</span>
+    <span class='keyword'>if</span> (7 .. 11).include? <span class='type'>Time</span>.now.hour
+      perform_things
+    <span class='keyword'>else</span>
+      <span class='keyword'>raise</span> <span class='type'>GetSomeRest</span>
+    <span class='keyword'>end</span>
+  <span class='keyword'>rescue</span>
+    puts <span class='string'>'You really should not stay up so late.'</span>
+  <span class='keyword'>end</span>
+  </pre>
+
+  <p>This is because <tt>rescue</tt> will only capture errors that
+    descend from <tt>StandardError</tt> by default. We should be
+    subclassing <tt>StandardError</tt> here, as well as for anything
+    else that's non-fatal. Save <tt>Exception</tt> subclasses for very
+    serious things. Running out of memory should raise an
+    <tt>Exception</tt>. When a user presses control-c, it raises
+    <tt>Interrupt</tt>, which is descended directly from
+    <tt>Exception</tt> rather than <tt>StandardError</tt>. Sending a
+    Unix kill signal to a process does the same thing. If you rescue
+    <tt>Exception</tt> or <tt>Interrupt</tt>, then you have to resort
+    to <tt>kill -9</tt> to stop your application externally, leaving
+    it with no chance to clean up after yourself.</p>
+
+  <p>Unfortunately, we live in an imperfect world, and we have to deal
+  with libraries that misuse the exception hierarchy. The first thing
+  you should do when you encounter one of these misuses is submit a
+  patch to the offending library. (You could even include a link to
+  this post.) But it's not always possible to get it fixed, so here's
+  the workaround I've been using:</p>
+
+  <pre class='code'>
+  <span class='keyword'>begin</span>
+    perform_possibly_problematic_process
+  <span class='keyword'>rescue</span> <span class='type'>Exception</span> =&gt; e
+    <span class='keyword'>raise</span> e <span class='keyword'>unless</span> e.is_a? <span class='type'>StandardError</span> <span class='keyword'>or</span> e.is_a? <span class='type'>GetSomeRest</span>
+    <span class='variable-name'>@log</span>.warn e.message <span class='comment-delimiter'># </span><span class='comment'>or whatever
+  </span><span class='keyword'>end</span>
+  </pre>
+
+  <p>If you're not sure of all the problematic <tt>Exception</tt>s a
+  piece of code could raise, you could just rescue <tt>Exception</tt>
+  and re-raise <tt>e</tt> if it's an <tt>Interrupt</tt>, but this
+  might swallow some other legitimate serious problems, so it's best
+  to be specific.</p>
+
+  <p>Tell your friends to use Ruby's exception hierarchy as it was
+  intended!</p>
