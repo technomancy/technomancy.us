@@ -1,1 +1,5 @@
---- []
+--- 
+- timestamp: Tue Sep 30 14:39:07 -0700 2008
+  uri: http://livollmers.net
+  author: Alex
+  content: I think I can safely speak for a number of Java-dorks-turned-Ruby-dorks that a lot of this confusion comes from Java which treats these two concepts in the reverse. &lt;code&gt;Errors&lt;/code&gt; are for things gone horribly wrong that cannot be recovered from. &lt;code&gt;Exceptions&lt;/code&gt; come in two flavors, the checked and the unchecked. The distinction between the two really only makes sense in a compile language like Java.

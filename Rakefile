@@ -124,3 +124,11 @@ task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or 
 # fix the JS on post 66
 # retire dev.technomancy.us; move content here
 # convert resume into LaTeX
+
+# HTML5:
+#   use <article> for entries
+#   use <header> for titles
+#   use <time> for timestamps
+#   use <footer>
+#   use <command> and <output> for examples
+#   Switch <acronym> to <abbr>

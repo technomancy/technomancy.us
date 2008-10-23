@@ -13,17 +13,19 @@ content: |-
   your gems.</p>
 
   <p><tt>Exception</tt> is the root class for the whole exception
-    hierarchy. I see a lot of code that subclasses
-    <tt>Exception</tt> for regular non-fatal exceptions. It's not
-    obvious, but this is really not how it's meant to be used. The
-    following code will bring down the application:</p>
+    hierarchy. I see a lot of code that subclasses <tt>Exception</tt>
+    for regular non-fatal exceptions. It's not obvious, but this is
+    really not how it's meant to be used. Imagine you are building a
+    restful interface. The following code will bring down the
+    application:</p>
 
   <pre class='code'>
+  <span class='comment-delimiter'># </span><span class='comment'>This is wrong! Inherit from StandardError.</span>
   <span class='keyword'>class</span> <span class='type'>GetSomeRest</span> &lt; <span class='type'>Exception</span>; <span class='keyword'>end</span>
 
   <span class='keyword'>begin</span>
     <span class='keyword'>if</span> (7 .. 11).include? <span class='type'>Time</span>.now.hour
-      perform_things
+      perform_restful_operation
     <span class='keyword'>else</span>
       <span class='keyword'>raise</span> <span class='type'>GetSomeRest</span>
     <span class='keyword'>end</span>
@@ -68,4 +70,5 @@ content: |-
   to be specific.</p>
 
   <p>Tell your friends to use Ruby's exception hierarchy as it was
-  intended!</p>
+  intended! <b>Update</b>: Don't feel bad if you didn't know this,
+  apparently even the Lucky Stiff himself has <a href='http://github.com/technomancy/hpricot/commit/3f14969ccc862fde26e7fcdc072b01f4fc4b9146'>fallen into this trap</a>.</p>
