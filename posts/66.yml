@@ -205,11 +205,11 @@ content: |
        onmousemove="moveWeek(event);" onmouseup="releaseWeek();"></div>
   
   <script
-     src="http://concour.se/javascripts/prototype.js"
+     src="/prototype.js"
      type="text/javascript"></script>
   
   <script
-     src="http://concour.se/javascripts/effects.js"
+     src="/effects.js"
      type="text/javascript"></script>
   
   <script type="text/javascript">
