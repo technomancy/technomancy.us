@@ -1,5 +1,5 @@
 --- 
-timestamp: Thu Oct 23 08:30:01 2008
+timestamp: Thu Oct 24 17:19:01 2008
 title: in which a subject is attempted to be approached objectively, though such a thing is actually impossible
 tags: emacs, ruby
 id: 115
@@ -18,7 +18,7 @@ content: |-
     same holy wars of the past, so I will try to stay in the same
     frame of mind.</p>
 
-  <a href='http://m.assetbar.com/achewood/uua3GV1G0'>
+  <a href='http://m.assetbar.com/achewood/uua3cZ7cb'>
     <img src='/i/ray.gif' alt='ray' title='smug' align='right' /></a>
 
   <p>One of the complaints you see leveled over and over is that Emacs
@@ -104,7 +104,8 @@ content: |-
     with git repositories. When you add a file to the repository, it
     checks to make sure it hasn't been registered yet. This is pretty
     reasonable with most VCSes, but with git re-registering a file is
-    a common operation when you want to pull in the new changes.</p>
+    a common operation when you want to add a single change to the
+    staging area.</p>
 
   <p>If you didn't have the ability to modify functionality on the
     fly, you'd probably just bite the context-switching bullet and
@@ -129,23 +130,37 @@ content: |-
     dotfiles repository instantly[<a href='#115-3'>3</a>],
     bootstrapping-style.</p>
 
+  <p>If you have to use some tacked-on "plugin mechanism" to customize
+    it, then you’re going to be limited at the very least by the
+    imagination of the author of the plugin mechanism; only the things
+    he thought you would want to do with it are doable. But if you’re
+    using the exact same tools as the original authors were using to
+    write the program in the first place, you can bet they put all
+    their effort into making that a seamless, powerful experience, and
+    you'll be able to access things on an entirely new level.</p>
+
   <h3>However</h3>
 
-  <p>I don't want to pretend that there aren't any problems with the
-    Emacs way. The default key bindings are more an accident of
+  <p>I don't want to say that there aren't any problems with the
+    system I use. The default key bindings are more an accident of
     history without much advantage from the more standard
-    conventions. The lack of concurrency is a very real problem,
+    conventions. The <tt>M-x customize</tt> interface is frankly
+    pretty embarrassing and comes across as an attempt to shield users
+    from the act of writing and reading code, but this is easy to
+    avoid. The lack of concurrency is a very real problem,
     though <a href='http://article.gmane.org/gmane.emacs.devel/96339'>not
     one that's going unnoticed</a> by the
-    developers.[<a href='#115-4'>4</a>] The rendering engine has its
-    limitations. But these are problems that people are working
-    together to address, and it's remarkable how approachable some of
-    them are to someone who knows a little elisp.</p>
+    developers.[<a href='#115-4'>4</a>] The rendering engine is very
+    text-centric; it's hard to get it display other things. But these
+    are problems that people are working together to address, and it's
+    remarkable how approachable some of them are to someone who knows
+    a little elisp. And the capability to examine and change running
+    code on the fly makes them much easier to deal with.</p>
 
   <div class='footnotes'>
     <p>[<a name='115-1'>1</a>] - Perhaps this is intentional; keeping
-      too many tabs open at a time in Firefox can cause serious
-      performance issues. But that's another issue entirely.</p>
+      too many tabs open at a time in Firefox can cause performance
+      issues. But that's another issue entirely.</p>
     <p>[<a name='115-2'>2</a>] - The ex-Smalltalkers never have a hard
       time understanding it.</p>
     <p>[<a name='115-3'>3</a>] - Of course, it doesn't stop here; the
