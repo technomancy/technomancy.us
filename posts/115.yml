@@ -169,9 +169,9 @@ content: |-
       the fix upstream</a>. Unfortunately there's a feature-freeze
       right now, so this specific feature will probably have to wait
       for the next release.</p>
-    <p>[<a name='115-4'>4</a>] - The <code>lexbind</code> branch
-      provides optional lexical binding, the current lack thereof
-      being the greatest hindrance towards adding concurrency
+    <p>[<a name='115-4'>4</a>] - The <code>lexbind</code> branch of
+      development provides optional lexical binding, the current lack
+      thereof being the greatest hindrance towards adding concurrency
       features. The current plan is to merge it and add coroutines
       after the release of version 23 in December.</p>
   </div>
