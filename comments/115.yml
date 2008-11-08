@@ -16,3 +16,19 @@
     The problem with this is that you can't extend it using the same tools that it was written in. The fact that the author says, "look, here&mdash;we have a way for you extend the program, but it's not the way <b>I</b> extend the program" means there are a lot of things you just can't do. I've tried to get folks to support <a href='http://augment.rubyforge.org'>Augment</a> in Textmate, and it's simply not possible because the required functionality is just not exposed. That whole notion is rather offensive to begin with; it puts the author in a high holy place that is inaccessible to the users. Users should demand better of the programs they use.<br /><br />
     Piyo: In my experience, I haven't found anything customize is good for, though some have said it's good for modifying font faces. (I just use color-theme.) My problem with it is that everything it does can be done better by writing real code instead of having code written for you. It lets you alter the behaviour of libraries without looking at the code for those libraries, but why should you be hesitant to look at the code to begin with?<br /><br />
     Just my thoughts though; maybe there's something there I'm missing.
+- timestamp: Mon Oct 27 19:17:52 -0700 2008
+  uri: http://gweezlebur.com
+  author: Michael
+  content: Has anyone found a Firefox or Safari extension to do iswitchb-style tab switching?  I was sure there would be such a thing, but I'm drawing a blank.
+- timestamp: Tue Oct 28 10:40:59 -0700 2008
+  uri: http://livollmers.net
+  author: Alex
+  content: The funny thing about Emacs not being Mac-like enough is that the default text widgets in the windowing system support things like C-a, C-e, and C-k. There's more Emacs in OS X than most folks realize.
+- timestamp: Tue Oct 28 12:41:23 -0700 2008
+  uri: http://www.carcosa.net/jason/
+  author: Jason F. McBrayer
+  content: "Very interesting.  One thing I will note is that Macintosh users /will/ flock towards a minibuffer-like mechanism for selecting their files when it is presented to them in a sufficiently Mac-like way:  witness the success of Quicksilver."
+- timestamp: Thu Oct 30 10:50:55 -0700 2008
+  uri: http://technomancy.us
+  author: Phil
+  content: "Michael: It's not a Firefox extension (any more), but <a href='http://conkeror.org'>Conkeror</a> gives you that kind of interface. I use it for all my browsing, only switching to FF when I need Firebug."
