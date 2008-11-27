@@ -76,7 +76,7 @@ a:hover {
 
 a img { border: 0; }
 
-pre, pre span, tt {
+pre, pre span, tt, kbd {
   font-family: Inconsolata, Consolas, monospace;
 }
 

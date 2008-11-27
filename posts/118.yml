@@ -1,6 +1,6 @@
 --- 
 title: in which a hypothetical death occurs in order that a real one may be avoided
-timestamp: Thu Nov 27 09:30:32 2008
+timestamp: Thu Nov 27 11:10:32 2008
 tags: "ruby projects"
 id: 118
 content: |-
@@ -38,4 +38,4 @@ content: |-
 
   <p>It's just a <kbd>sudo gem install bludgeon</kbd> away. I'm not
     saying you should never use a library that's big enough to be
-    deadly, I'm just saying you should <i>know</i>.</p>
+    deadly; I'm just saying you should <i>know</i>.</p>
