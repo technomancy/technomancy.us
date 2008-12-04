@@ -20,7 +20,7 @@ h1 a {
     text-decoration: none;
 }
 
-#entry {
+#entry, #books, #resume {
     font-size: 14pt;
 }
 
@@ -35,7 +35,7 @@ h1 a {
     padding: 3em;
 }
 
-#entry, #comments, #entries, #wrapper {
+#entry, #comments, #entries, #wrapper, #books, #resume {
     width: 40em;
     margin-left: 5em;
     text-align: justify;
@@ -90,6 +90,14 @@ pre, pre span, tt, kbd {
 .timestamp {
     text-align: right;
     color: grey;
+}
+
+#books { padding-top: 1em; }
+
+#contributions li { 
+   list-style-type: none;
+   float: left;
+   padding-left: 2em;
 }
 
 /* htmlize styles for code snippets */
