@@ -1,1 +1,5 @@
---- []
+--- 
+- timestamp: Fri Dec 05 21:52:20 -0800 2008
+  uri: a@example.com
+  author: visitor
+  content: "I recommend showcasing the anything.el package: http://www.emacswiki.org/emacs/Anything\r<br />\r<br />\r<br />New users usually don't know it, though it's power could be very appealing to them. Some call it the Quicksilver of Emacs.\r<br />"

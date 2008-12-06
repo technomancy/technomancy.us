@@ -1,5 +1,5 @@
 --- 
-timestamp: Fri Dec 5 09:37:52 2008
+timestamp: Fri Dec 5 22:06:52 2008
 title: in which is revealed a rather ambitious undertaking
 tags: "emacs projects"
 id: 119
@@ -41,3 +41,8 @@ content: |-
     you're an old hand but are curious to pick up some new tricks, try
     out the starter kit and let me know if it's missing some must-have
     functionality that you're used to.</p>
+
+  <p><b>Update</b>:
+    Geoff <a href='http://nubyonrails.com/articles/emacs-emacs'>posted
+    a short screencast</a> on getting around Emacs and his first
+    impressions. It should serve as a nice teaser.</p>
