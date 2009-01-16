@@ -32,3 +32,7 @@
   uri: http://technomancy.us
   author: Phil
   content: "Michael: It's not a Firefox extension (any more), but <a href='http://conkeror.org'>Conkeror</a> gives you that kind of interface. I use it for all my browsing, only switching to FF when I need Firebug."
+- timestamp: Wed Dec 17 09:57:21 -0800 2008
+  uri: ""
+  author: Ian Ragsdale
+  content: "&gt; The fact that the author says, &quot;look, here\xE2\x80\x94we have a way for you extend the program, but it's not the way I extend the program&quot; means there are a lot of things you just can't do.\r<br />\r<br />I actually don't think that's a good characterization of how TextMate and bundles interact.  Yes, there is a core engine that provides some functionality, but I'd say that 90% of the useful features that TM comes with are implemented as bundles.  The fact is that the general author uses bundles for most functionality, so a really surprising amount of functionality is available to them."

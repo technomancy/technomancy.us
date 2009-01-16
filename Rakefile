@@ -17,7 +17,7 @@ begin
   end
 
   desc "Deploy blog files to remote server"
-  remote_task :deploy => :default do
+  remote_task :deploy => [:comments, :default] do
     begin
       # TODO: teach rsync to ignore cache
       FileUtils.cd(File.dirname(__FILE__))
@@ -51,6 +51,7 @@ class Time
 end
 
 def up_to_date?(file, template, rendered_filename)
+  return false if ENV['force']
   File.exist?(rendered_filename) and
     (File.mtime(rendered_filename) > File.mtime(file)) and
     (File.mtime(rendered_filename) > File.mtime(template))

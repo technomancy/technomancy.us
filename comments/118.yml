@@ -1,1 +1,5 @@
---- []
+--- 
+- timestamp: Tue Dec 02 01:35:04 -0800 2008
+  uri: ""
+  author: manveru
+  content: "Seems like the gem install fails:\r<br />\r<br />sigma ~ % gem install bludgeon\r<br />Successfully installed bludgeon-0.0.2\r<br />1 gem installed\r<br />Installing ri documentation for bludgeon-0.0.2...\r<br />ERROR:  While executing gem ... (Errno::ENOENT)\r<br />    No such file or directory - lib\r<br />zsh: exit 1     gem install bludgeon\r<br />"

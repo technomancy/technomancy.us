@@ -71,4 +71,4 @@ content: |-
 
   <p>Tell your friends to use Ruby's exception hierarchy as it was
   intended! <b>Update</b>: Don't feel bad if you didn't know this,
-  apparently even the Lucky Stiff himself has <a href='http://github.com/technomancy/hpricot/commit/3f14969ccc862fde26e7fcdc072b01f4fc4b9146'>fallen into this trap</a>.</p>
+  apparently even the Lucky Stiff himself has <a href='http://github.com/why/hpricot/commit/3f14969ccc862fde26e7fcdc072b01f4fc4b9146'>fallen into this trap</a>.</p>

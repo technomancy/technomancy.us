@@ -90,3 +90,7 @@ content: |-
   Merb, it's not really very clear how to use it, so I thought this
   post would save other people from going through the same crazy hoops
   I had to.</p>
+
+  <p><b>Update</b>: My patches have been accepted upstream, so
+  streaming works out of the box with Mongrel in Rack 0.9 and
+  higher.</p>

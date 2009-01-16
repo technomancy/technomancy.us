@@ -3,3 +3,7 @@
   uri: a@example.com
   author: visitor
   content: "I recommend showcasing the anything.el package: http://www.emacswiki.org/emacs/Anything\r<br />\r<br />\r<br />New users usually don't know it, though it's power could be very appealing to them. Some call it the Quicksilver of Emacs.\r<br />"
+- timestamp: Sat Dec 06 00:51:23 -0800 2008
+  uri: http://6brand.com
+  author: Jack Danger Canty
+  content: Thanks for doing this Phil!  I just finished the emacs tutorial to get the basics and your starter kit looks like it'll be a real godsend.  Can't wait for the screencast!

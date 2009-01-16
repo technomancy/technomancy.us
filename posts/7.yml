@@ -3,4 +3,4 @@ timestamp: Sat Oct 13 00:00:01 -0700 2007
 title: rubyconf day 2
 tags: ruby, projects, conf
 id: 7
-content: "<p> Check out <a href='http://dev.technomancy.us/trac.cgi/wiki/RPlanet/'>rplanet</a>!</p> <p>No,  seriously:  check it out:  <code>svn co svn://dev.technomancy.us/rplanet</code>. </p>"
+content: "<p>Check out <a href='http://rubyforge.org/projects/rplanet/'>rplanet</a>!</p> <p>No,  seriously:  check it out:  <tt>svn co svn://dev.technomancy.us/rplanet</tt>. </p>"
