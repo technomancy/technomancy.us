@@ -1,0 +1,32 @@
+--- 
+timestamp: Mon 02 Feb 2009 08:41:09 PM PST
+title: in which slime and mire and other sludges come into play
+tags: lisp, clojure, emacs
+id: 122
+content: |-
+  <p>I've been getting into Clojure more and more recently, and it's
+    been really enjoyable. My learning project
+    is <a href='http://github.com/technomancy/mire'>Mire</a>, a simple
+    multiplayer text adventure. It's a great way to get familiar with
+    the concurrency features of Clojure with a codebase that can still
+    pretty small due to being text-based.</p>
+
+  <p>Using SLIME to interactively develop Mire from within Emacs has
+    been really slick&mdash;the level of interactivity is really
+    impressive. The problem is, it's a bit of a bear to configure, and
+    there are more moving parts than I'm comfortable with. I'm not the
+    only one either; one of the most common questions in
+    the <tt>#clojure</tt> channel is how to configure SLIME.</p>
+
+  <p>I've worked on a bit of code to alleviate the confusion. There's
+    nothing about the problem that's particularly tricky; it's just
+    that the necessary code is changing so fast that using a package
+    manager for it isn't feasible. And installing software by hand
+    without a package manager&hellip; well let's just say it's fraught
+    with frustration. So I've added an <tt>M-x clojure-install</tt>
+    function
+    to <a href='http://github.com/technomancy/clojure-mode/tree/installer'>by
+    fork of clojure-mode</a> that should handle the necessary
+    checkouts and configuration. It should save a lot of confusion
+    for folks who are just getting started and not really sure of
+    the best way to proceed.</p>
