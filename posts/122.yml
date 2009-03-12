@@ -25,8 +25,19 @@ content: |-
     without a package manager&hellip; well let's just say it's fraught
     with frustration. So I've added an <tt>M-x clojure-install</tt>
     function
-    to <a href='http://github.com/technomancy/clojure-mode/tree/installer'>by
+    to <a href='http://github.com/technomancy/clojure-mode/'>by
     fork of clojure-mode</a> that should handle the necessary
     checkouts and configuration. It should save a lot of confusion
     for folks who are just getting started and not really sure of
     the best way to proceed.</p>
+
+  <p><b>Update</b>: If you use the <a
+    href='http://github.com/technomancy/emacs-starter-kit'>Emacs
+    Starter Kit</a>, you've already got what you need; just hit
+    <tt>M-x clojure-install</tt> to get going. And it should be in
+    ELPA before too long.</p>
+
+  <p><b>Update</b>: <tt>M-x clojure-install</tt> has been merged into
+    <a href='http://github.com/jochu/clojure-mode'>the mainline
+    clojure-mode repository</a>, so you don't need to use mine any
+    more.</p>
