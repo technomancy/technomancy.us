@@ -98,11 +98,8 @@ pre, pre span, tt, kbd {
 
 #books { padding-top: 1em; }
 
-#contributions li { 
-   list-style-type: none;
-   float: left;
-   padding-left: 2em;
-}
+#resume h3 { margin-left: -1em; }
+#resume dt { font-style: italic; }
 
 /* htmlize styles for code snippets */
 
