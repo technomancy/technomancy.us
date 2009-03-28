@@ -39,6 +39,7 @@ h1 a {
     width: 40em;
     margin-left: 5em;
     text-align: justify;
+    line-height: 165%;
 }
 
 #entries li {
