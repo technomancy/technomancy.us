@@ -17,7 +17,7 @@ begin
   end
 
   desc "Deploy blog files to remote server"
-  remote_task :deploy => [:comments, :default] do
+  remote_task :deploy => :default do
     begin
       # TODO: teach rsync to ignore cache
       FileUtils.cd(File.dirname(__FILE__))
@@ -27,8 +27,6 @@ begin
       FileUtils.mv 'tmp/planet-cache', 'planet/cache' rescue nil
     end
   end
-
-  remote_task :publish => :deploy
 
   desc "Copy comments from remote host to local copy of blog"
   remote_task(:comments) { reverse_rsync '.', "#{domain}/comments" }
@@ -62,9 +60,9 @@ def render_files_with_template(glob, template_file)
   Dir.glob(glob).each do |file|
     page = parse(file)
     rendered_filename = yield(page)
+    puts "Rendering #{rendered_filename}."
     next if up_to_date? file, template_file, rendered_filename and ENV['force'].nil?
     File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
-    puts "Rendered #{rendered_filename}."
   end
 end
 

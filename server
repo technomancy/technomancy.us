@@ -7,5 +7,6 @@ server = Perro::Server.new(3001)
 
 server.static("/style.css", 'public/style.css', 'text/css')
 server.static("/:file", 'public')
+server.static("/", 'public/index.html')
 
 server.start

@@ -20,8 +20,8 @@ h1 a {
     text-decoration: none;
 }
 
-#entry, #books, #resume {
-    font-size: 14pt;
+#entry {
+    font-size: 13pt;
 }
 
 #entry img {
@@ -83,6 +83,11 @@ a img { border: 0; }
 
 pre, pre span, tt, kbd {
   font-family: Inconsolata, Consolas, monospace;
+}
+
+kbd {
+  background: #eee;
+  padding: 0.2em;
 }
 
 .code, .irc {
@@ -147,7 +152,7 @@ pre, pre span, tt, kbd {
         /* font-lock-doc-face */
         color: #bc8f8f;
     }
-    .paren {
+    .paren, .esk-paren {
         /* paren-face */
         color: #8c8c8c;
     }

@@ -31,7 +31,7 @@ content:
   buffer, which is much more convenient than using the browser's text
   tools from Futon.</p>
 
-  <p>There are a few quirks with regard to pagination, (just
-  press <kbd>g</kbd> if it gets messed up) but it's pretty useful as
-  it is. It should be in ELPA soon, so <kbd>M-x
-  knock-yourself-out</kbd>.</p>
+  <p>There are a few quirks with regard to pagination, (just press
+  <kbd>g</kbd> if it gets messed up) but it's pretty useful as it
+  is. It should be in <a href='http://tromey.com/elpa'>ELPA</a> soon,
+  so <kbd>M-x knock-yourself-out</kbd>.</p>

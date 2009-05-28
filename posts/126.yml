@@ -1,5 +1,5 @@
 --- 
-timestamp: Wed 27 May 2009 17:55:46 PM PDT
+timestamp: Wed 27 May 2009 17:35:46 PM PDT
 title: in which are found tricks of the trade concerning clojure authorship
 tags: "clojure emacs"
 id: 126
@@ -56,26 +56,31 @@ content: |
     you might want to use the Starter Kit anyway as a base for your
     own customizations; also check out
     the <a href='http://peepcode.com/products/meet-emacs'>PeepCode
-    screencast</a>) Use <kbd>M-x package-list-packages</kbd> to pull
+    screencast</a>.) Use <kbd>M-x package-list-packages</kbd> to pull
     up the package list. Move down to <tt>clojure-mode</tt> and
     press <kbd>i</kbd> to mark it for installation, then
     press <kbd>x</kbd> to go.</p>
 
   <p>Once it's installed you should be able to work with .clj files,
-    but it's much more convenient to be able to interact with an
-    actual running Clojure process as you code. Hit <kbd>M-x
-    clojure-install</kbd> to kick off the installation process. Once
-    you choose a download location, this will download several
-    repositories and compile Clojure itself, so it will take a few
-    minutes. (It requires git, Java 1.5+, and ant be installed.) When
-    it's done, it will configure SLIME and swank-clojure, and it will
-    give you instructions on a few lines to add to your personal
-    config (usually found in <tt>$HOME/.emacs.d/init.el</tt>) so it
-    will work for future sessions.</p>
+    and you may be happy with just this. (In fact, Rich Hickey,
+    creator of Clojure, uses clojure-mode without any subprocess
+    integration.) But most of us find it much more convenient to be
+    able to interact with an actual running Clojure process as you
+    code.</p>
+
+  <p>Pressing <kbd>M-x clojure-install</kbd> will kick off the Clojure
+    installation process. Once you choose a download location, it will
+    download a number of repositories and compile Clojure itself, so
+    it will take a few minutes. (It requires having git, Java 1.5+,
+    and ant installed.)  When it's done, it will configure SLIME and
+    swank-clojure, and it will give you instructions on a few lines to
+    add to your personal config (usually found
+    in <tt>$HOME/.emacs.d/init.el</tt>) so it will work for future
+    sessions.</p>
 
   <h3>Usage</h3>
 
-  <p>Hitting <tt>M-x slime</tt> will launch a new Clojure session in
+  <p>Hitting <kbd>M-x slime</kbd> will launch a new Clojure session in
     a <tt>*slime-repl*</tt> buffer. You can also interact with
     the <tt>*inferior-lisp*</tt> buffer, but the slime-repl buffer provides
     a higher-level interface with a few extra niceties. The REPL
@@ -107,14 +112,16 @@ content: |
     is add <tt>src/</tt>, <tt>test/</tt>, <tt>target/dependency/</tt>,
     and <tt>target/classes/</tt> (for AOT compilation, if desired)
     directories in your project root to the classpath. Then you unpack
-    your dependencies in the <tt>dependency</tt> directory rather than
-    adding another entry to your classpath for every dependency that
-    you need. Something like <kbd>unzip ../clojure/clojure.jar -d
-    target/dependency</kbd> should do the trick. If you've got
-    complicated dependencies, you could
+    your dependencies in the <tt>target/dependency</tt> directory
+    rather than adding another entry to your classpath for every
+    dependency that you need. Something like <kbd>unzip
+    ../clojure/clojure.jar -d target/dependency</kbd> should do the
+    trick; repeat for each dependency. If you've got complicated
+    dependencies, you could
     <a href='http://github.com/dysinger/clojure-pom'>use maven to
     manage them</a>, but if you've only got a couple it's not hard to
-    do by hand.</p>
+    do by hand. Or stay tuned for a future post about a nicer way to
+    handle dependencies; I should have something ready in a week or so.</p>
 
   <p>This elisp function will prompt for a project root and then
     launch a SLIME session configured with a classpath for that project.</p>
@@ -167,4 +174,8 @@ content: |
     mirror the src namespaces with the addition of "test" as the
     second-to-last segment of the namespace.</p>
 
-  <p>I hope this is helpful and clears up some confusion. Happy hacking!</p>
+  <h3>Happy Hacking</h3>
+
+  <p>I hope this is helpful and clears up some confusion. Now get out
+    there and <a href='http://github.com/languages/Clojure'>write some
+      code</a>.</p>
