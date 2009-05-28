@@ -1,5 +1,5 @@
 --- 
-timestamp: "Sat Oct 13 00: 00: 01 -0700 2007"
+timestamp: 2007-02-10 15:06:10Z
 title: js invasion
 id: 68
 content: |
@@ -40,14 +40,7 @@ content: |
     of a solid browser written in one of my favorite languages</a>. At
     one point I thought the answer might be to try to get bindings to
     the Gecko rendering engine in Ruby or Lisp,  but this involves more C
-    than I can handle. The real answer here is that Firefox is written
+    than I can stomach. The real answer here is that Firefox is written
     in Javascript,  not C,  and Javascript is dynamic enough to be
     suitable for an application-building framework like Emacs.</a>
-  
-  <p>Oh,  and one more thing. In GNU/Linux,  setting the environment
-    variable <tt>MOZ_DISABLE_PANGO=1</tt> before launching Mozilla will
-    get you a serious speed boost at the expense of accurate rendering
-    of some non-latin characters. (I haven't seen any problems yet.)
-    This made Firefox just as fast as Epiphany for me,  which was the my
-    last objection to switching.</p>
 tags: javascript
