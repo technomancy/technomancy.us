@@ -3,7 +3,7 @@
       <h3>Posts</h3>
       <ul>
         <% page.each do |post| %>
-        <li><a href='<%= post['id'] %>'><%= post['title'] %></a> 
+        <li><a href='<%= post['id'] %>'><%= post['title'] %></a>
         <% if Time.stamp(post['timestamp']) != '2007-10-13T00:00:01Z' %>
         &ndash; <span class='timestamp'><%= Time.stamp post['timestamp'] %></span></li>
         <% end %>
