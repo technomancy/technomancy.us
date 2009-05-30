@@ -1,0 +1,21 @@
+--- 
+- timestamp: Wed May 27 20:24:14 -0700 2009
+  uri: http://arcanearcade.blogspot.com/
+  author: Robert Stehwien
+  content: Running 'clojure-install' didn't work until after I did a<br />M-X<br />load-file<br />~/.emacs.d/elpa/clojure-mode-1.1/clojure-mode.el <br /><br />Fortunately hitting ? while in ELPA told me to do that :)
+- timestamp: Thu May 28 08:59:44 -0700 2009
+  uri: ""
+  author: Bertrand Russell
+  content: I've been using emacs for 15 years and just discovered ESK a few nights ago.  Outstanding work.  I ditched my beloved .emacs and started from scratch (easier since I mostly work on clojure these days).  Anyway, thanks, and you should really consider renaming it.  I had ignored it previously due to the name.  It's more of a modular configuration framework for emacs that comes with some nice stuff prepackaged.<br /><br />One more thing, you say that the user's config is in init.el, but why not mention that it's probably better to put it in .emacs.d/username/username.el.  I was thinking off adding exactly this to the documentation the otherday since I had to track it down in one of the git commit entries.<br /><br />Anyway, thanks again.  Great stuff.  Rename it!
+- timestamp: Thu May 28 14:21:42 -0700 2009
+  uri: http://briancarper.net
+  author: Brian
+  content: Nice tutorial.  In my SLIME the shortcut to change namespace is ,i rather than ,p; is this a typo?
+- timestamp: Fri May 29 10:43:53 -0700 2009
+  uri: ""
+  author: AskMeAboutLoom
+  content: Really great tutorial :) Helped me understand what all those parts of clojure-mode are for. I had *no idea* before reading this blog post.<br /><br />Can't use the emacs-starter-kit though, there's a bug in it that makes it unusable (at least for me since I don't know how to fix it myself). Displays &quot;paredit void&quot; after starting emacs and big parts of the config aren't loaded. Was fixed 2 days ago in the chicken-or-egg commit I think but on the same day the error returned in new commits :p My uninformed guess would be that moving paredit from elpa-to-submit to elpa has something to do with it, or at least that commit.
+- timestamp: Fri May 29 17:03:57 -0700 2009
+  uri: http://technomancy.us
+  author: Phil
+  content: "Brian: Turns out <kbd>!p</kbd> and <kbd>i</kbd> are aliases of each other; I missed the <kbd>!</kbd>, but <kbd>i</kbd> is better; thanks.\n<br />\n<br />Bertrand: Thanks. I've had a couple other people suggest a rename, but nobody has come up with a better name. Also, renaming can be very disorienting to new users; it's very hard to update all pointers to the old name. Generally the Starter Kit is named at new users since most old Emacs hands are very reluctant to part with their existing config. A new name would be nice, but I'm not sure it's feasible right now."

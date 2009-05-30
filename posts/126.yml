@@ -85,7 +85,7 @@ content: |
     the <tt>*inferior-lisp*</tt> buffer, but the slime-repl buffer provides
     a higher-level interface with a few extra niceties. The REPL
     works as you'd expect, but you can hit <kbd>,</kbd> to activate
-    some shortcuts, the most useful being <kbd>p</kbd> to change the
+    some shortcuts, the most useful being <kbd>i</kbd> to change the
     current namespace (with tab-completion) and <tt>restart</tt>.</p>
 
   <p>Back in your .clj buffers, <kbd>C-x C-e</kbd> has been rebound to
@@ -179,3 +179,11 @@ content: |
   <p>I hope this is helpful and clears up some confusion. Now get out
     there and <a href='http://github.com/languages/Clojure'>write some
       code</a>.</p>
+
+  <p><b>Update</b>: Some users are reporting that some ELPA packages
+    failed to activate. I believe I've fixed this; do an <kbd>rm -rf
+    emacs-starter-kit/elpa/*</kbd> and relaunch Emacs to perform a full
+    reinstall of all your ELPA packages. If you're <i>still</i> seeing
+    the bug, please leave a comment or an issue on
+    the <a href='http://github.com/technomancy/emacs-starter-kit/issues'>github
+    project</a>.</p>
