@@ -2,4 +2,5 @@ planet/cache/*
 public/*html
 *~
 comments/spam.yml
-public/planet
+public/planet/
+old.sql
