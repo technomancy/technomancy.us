@@ -18,4 +18,27 @@
 - timestamp: Fri May 29 17:03:57 -0700 2009
   uri: http://technomancy.us
   author: Phil
-  content: "Brian: Turns out <kbd>!p</kbd> and <kbd>i</kbd> are aliases of each other; I missed the <kbd>!</kbd>, but <kbd>i</kbd> is better; thanks.\n<br />\n<br />Bertrand: Thanks. I've had a couple other people suggest a rename, but nobody has come up with a better name. Also, renaming can be very disorienting to new users; it's very hard to update all pointers to the old name. Generally the Starter Kit is named at new users since most old Emacs hands are very reluctant to part with their existing config. A new name would be nice, but I'm not sure it's feasible right now."
+  content: |-
+    Brian: Turns out <kbd>!p</kbd> and <kbd>i</kbd> are aliases of each other; I missed the <kbd>!</kbd>, but <kbd>i</kbd> is better; thanks.
+    <br />
+    <br />Bertrand: Thanks. I've had a couple other people suggest a rename, but nobody has come up with a better name. Also, renaming can be very disorienting to new users; it's very hard to update all pointers to the old name. Generally the Starter Kit is named at new users since most old Emacs hands are very reluctant to part with their existing config. A new name would be nice, but I'm not sure it's feasible right now.
+- timestamp: Sat May 30 11:03:21 -0700 2009
+  uri: ""
+  author: VS
+  content: I could get everything working on Mac/Linux, but on WinXP, I'm not able to properly compile clj files. C-c C-k says it is compiling but doesn't work. Any hints?
+- timestamp: Sat May 30 14:02:02 -0700 2009
+  uri: ""
+  author: eivind
+  content: Thanks a million for all the work you've put in all of this. I started playing around with emacs and clojure at about the same time. The learning curve is a bit steep, but the information and code you post really helps a lot.<br /><br />Looking forward to your post on clojure projects. I'm having some problems setting the classpath in emacs/slime correctly, so I'll stay tuned.<br /><br />cheers!
+- timestamp: Sat May 30 14:23:44 -0700 2009
+  uri: ""
+  author: Peter
+  content: I decided to junk my old .emacs file and start from scratch using ELPA to install clojure, slime + swank. It worked perfectly the first time, I typed M-x slime and had clojure running without problems.<br /><br />Unfortunately the information the ELPA install told me to add to my .emacs file was not sufficient to load everything on subsequent startups. I still haven't figured out exactly what the install process did to get clojure to be the default lisp, but I did have to add the following to my .emacs:<br /><br />(add-to-list 'load-path &quot;~/../swank-clojure&quot;)<br />(add-to-list 'load-path &quot;~/../slime/contrib&quot;)<br />(add-to-list 'load-path &quot;~/../slime&quot;)<br />(require 'slime)<br /><br />(autoload 'clojure-mode &quot;clojure-mode&quot; &quot;foo&quot; t)<br />(add-to-list 'auto-mode-alist '(&quot;\\.clj$&quot; . clojure-mode)<br /><br />ELPA for installing slime/clojure could be so great, it's too bad there's this tiny bit of configuration information missing.
+- timestamp: Sun May 31 13:53:24 -0700 2009
+  uri: http://technomancy.us
+  author: Phil
+  content: "VS: Sorry, I don't know how compiling works on Windows.\r<br />\r<br />Peter: the stuff you added to your .emacs file is almost exactly what the clojure-slime-config function does. Maybe if you set the <tt>clojure-src-root</tt> variable? I've had reports that for some reason on OS X that function doesn't work, but unfortunately I can't test on that platform. If you figure anything out please let me know."
+- timestamp: Mon Jun 01 14:05:40 -0700 2009
+  uri: ""
+  author: Hingebjerg
+  content: Hi Phil,<br /><br />Just installed the emacs-starter-kit and clojure-mode, and i can't delete curly braces when in clojure-mode. Is there a logical explanation for that?<br /><br />/Hingebjerg

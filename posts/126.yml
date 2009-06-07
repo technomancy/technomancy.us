@@ -8,7 +8,7 @@ content: |
     little tricky. The
     current <a href='http://bc.tech.coop/blog/081205.html'>first hit
     for a search on <tt>clojure emacs</tt></a> returns instructions
-    that are very out of date and far more complicated than
+    that are out of date and more complicated than
     necessary. There are a lot of disconnected tidbits about how folks
     have figured out how to configure things, but it can be a bit
     tricky to tell the difference between, "hey, this is how I finally
