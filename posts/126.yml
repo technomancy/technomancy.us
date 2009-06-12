@@ -44,9 +44,9 @@ content: |
       Emacs buffers and seeing the results displayed inline.</dd>
 
     <dt><a href='http://mumble.net/~campbell/emacs/paredit.el'>paredit</a></dt>
-    <dd>Paredit auto-balances parentheses and makes sure you don't
-      end up with structurally invalid expressions.</dd>
-  </dl>
+    <dd>Paredit auto-balances parentheses and other matched chars to
+    make sure you don't end up with structurally invalid
+    expressions.</dd> </dl>
 
   <h3>Installation</h3>
 

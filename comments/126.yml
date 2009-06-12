@@ -2,11 +2,11 @@
 - timestamp: Wed May 27 20:24:14 -0700 2009
   uri: http://arcanearcade.blogspot.com/
   author: Robert Stehwien
-  content: Running 'clojure-install' didn't work until after I did a<br />M-X<br />load-file<br />~/.emacs.d/elpa/clojure-mode-1.1/clojure-mode.el <br /><br />Fortunately hitting ? while in ELPA told me to do that :)
+  content: Running 'clojure-install' didn't work until after I did a<br />M-X<br />load-file<br />~/.emacs.d/elpa/clojure-mode-1.1/clojure-mode.el <br /><br />Fortunately hitting ? while in ELPA told me to do that :)
 - timestamp: Thu May 28 08:59:44 -0700 2009
   uri: ""
   author: Bertrand Russell
-  content: I've been using emacs for 15 years and just discovered ESK a few nights ago.  Outstanding work.  I ditched my beloved .emacs and started from scratch (easier since I mostly work on clojure these days).  Anyway, thanks, and you should really consider renaming it.  I had ignored it previously due to the name.  It's more of a modular configuration framework for emacs that comes with some nice stuff prepackaged.<br /><br />One more thing, you say that the user's config is in init.el, but why not mention that it's probably better to put it in .emacs.d/username/username.el.  I was thinking off adding exactly this to the documentation the otherday since I had to track it down in one of the git commit entries.<br /><br />Anyway, thanks again.  Great stuff.  Rename it!
+  content: I've been using emacs for 15 years and just discovered ESK a few nights ago.  Outstanding work.  I ditched my beloved .emacs and started from scratch (easier since I mostly work on clojure these days).  Anyway, thanks, and you should really consider renaming it.  I had ignored it previously due to the name.  It's more of a modular configuration framework for emacs that comes with some nice stuff prepackaged.<br /><br />One more thing, you say that the user's config is in init.el, but why not mention that it's probably better to put it in .emacs.d/username/username.el.  I was thinking off adding exactly this to the documentation the otherday since I had to track it down in one of the git commit entries.<br /><br />Anyway, thanks again.  Great stuff.  Rename it!
 - timestamp: Thu May 28 14:21:42 -0700 2009
   uri: http://briancarper.net
   author: Brian
@@ -14,7 +14,7 @@
 - timestamp: Fri May 29 10:43:53 -0700 2009
   uri: ""
   author: AskMeAboutLoom
-  content: Really great tutorial :) Helped me understand what all those parts of clojure-mode are for. I had *no idea* before reading this blog post.<br /><br />Can't use the emacs-starter-kit though, there's a bug in it that makes it unusable (at least for me since I don't know how to fix it myself). Displays &quot;paredit void&quot; after starting emacs and big parts of the config aren't loaded. Was fixed 2 days ago in the chicken-or-egg commit I think but on the same day the error returned in new commits :p My uninformed guess would be that moving paredit from elpa-to-submit to elpa has something to do with it, or at least that commit.
+  content: Really great tutorial :) Helped me understand what all those parts of clojure-mode are for. I had *no idea* before reading this blog post.<br /><br />Can't use the emacs-starter-kit though, there's a bug in it that makes it unusable (at least for me since I don't know how to fix it myself). Displays &quot;paredit void&quot; after starting emacs and big parts of the config aren't loaded. Was fixed 2 days ago in the chicken-or-egg commit I think but on the same day the error returned in new commits :p My uninformed guess would be that moving paredit from elpa-to-submit to elpa has something to do with it, or at least that commit.
 - timestamp: Fri May 29 17:03:57 -0700 2009
   uri: http://technomancy.us
   author: Phil
@@ -29,16 +29,24 @@
 - timestamp: Sat May 30 14:02:02 -0700 2009
   uri: ""
   author: eivind
-  content: Thanks a million for all the work you've put in all of this. I started playing around with emacs and clojure at about the same time. The learning curve is a bit steep, but the information and code you post really helps a lot.<br /><br />Looking forward to your post on clojure projects. I'm having some problems setting the classpath in emacs/slime correctly, so I'll stay tuned.<br /><br />cheers!
+  content: Thanks a million for all the work you've put in all of this. I started playing around with emacs and clojure at about the same time. The learning curve is a bit steep, but the information and code you post really helps a lot.<br /><br />Looking forward to your post on clojure projects. I'm having some problems setting the classpath in emacs/slime correctly, so I'll stay tuned.<br /><br />cheers!
 - timestamp: Sat May 30 14:23:44 -0700 2009
   uri: ""
   author: Peter
-  content: I decided to junk my old .emacs file and start from scratch using ELPA to install clojure, slime + swank. It worked perfectly the first time, I typed M-x slime and had clojure running without problems.<br /><br />Unfortunately the information the ELPA install told me to add to my .emacs file was not sufficient to load everything on subsequent startups. I still haven't figured out exactly what the install process did to get clojure to be the default lisp, but I did have to add the following to my .emacs:<br /><br />(add-to-list 'load-path &quot;~/../swank-clojure&quot;)<br />(add-to-list 'load-path &quot;~/../slime/contrib&quot;)<br />(add-to-list 'load-path &quot;~/../slime&quot;)<br />(require 'slime)<br /><br />(autoload 'clojure-mode &quot;clojure-mode&quot; &quot;foo&quot; t)<br />(add-to-list 'auto-mode-alist '(&quot;\\.clj$&quot; . clojure-mode)<br /><br />ELPA for installing slime/clojure could be so great, it's too bad there's this tiny bit of configuration information missing.
+  content: I decided to junk my old .emacs file and start from scratch using ELPA to install clojure, slime + swank. It worked perfectly the first time, I typed M-x slime and had clojure running without problems.<br /><br />Unfortunately the information the ELPA install told me to add to my .emacs file was not sufficient to load everything on subsequent startups. I still haven't figured out exactly what the install process did to get clojure to be the default lisp, but I did have to add the following to my .emacs:<br /><br />(add-to-list 'load-path &quot;~/../swank-clojure&quot;)<br />(add-to-list 'load-path &quot;~/../slime/contrib&quot;)<br />(add-to-list 'load-path &quot;~/../slime&quot;)<br />(require 'slime)<br /><br />(autoload 'clojure-mode &quot;clojure-mode&quot; &quot;foo&quot; t)<br />(add-to-list 'auto-mode-alist '(&quot;\\.clj$&quot; . clojure-mode)<br /><br />ELPA for installing slime/clojure could be so great, it's too bad there's this tiny bit of configuration information missing.
 - timestamp: Sun May 31 13:53:24 -0700 2009
   uri: http://technomancy.us
   author: Phil
-  content: "VS: Sorry, I don't know how compiling works on Windows.\r<br />\r<br />Peter: the stuff you added to your .emacs file is almost exactly what the clojure-slime-config function does. Maybe if you set the <tt>clojure-src-root</tt> variable? I've had reports that for some reason on OS X that function doesn't work, but unfortunately I can't test on that platform. If you figure anything out please let me know."
+  content: "VS: Sorry, I don't know how compiling works on Windows.<br /><br />Peter: the stuff you added to your .emacs file is almost exactly what the clojure-slime-config function does. Maybe if you set the <tt>clojure-src-root</tt> variable? I've had reports that for some reason on OS X that function doesn't work, but unfortunately I can't test on that platform. If you figure anything out please let me know."
 - timestamp: Mon Jun 01 14:05:40 -0700 2009
   uri: ""
   author: Hingebjerg
-  content: Hi Phil,<br /><br />Just installed the emacs-starter-kit and clojure-mode, and i can't delete curly braces when in clojure-mode. Is there a logical explanation for that?<br /><br />/Hingebjerg
+  content: Hi Phil,<br /><br />Just installed the emacs-starter-kit and clojure-mode, and i can't delete curly braces when in clojure-mode. Is there a logical explanation for that?<br /><br />/Hingebjerg
+- timestamp: Wed Jun 10 15:37:28 -0700 2009
+  uri: ""
+  author: Peter
+  content: "Phil: I think it was the clojure-src-root variable. I'm a little foggy on how I got it working, but I think I was trying to use the clojure-bin value instead, which clojure mode doc says I can do, but which apparently doesn't work."
+- timestamp: Fri Jun 12 09:37:15 -0700 2009
+  uri: http://technomancy.us
+  author: Phil
+  content: "Hingebjerg: That's a feature of paredit-mode; it enforces that you can't delete parens (or other matched chars) unless they're empty so you don't end up with invalid structure in your code. It's unbelievably handy/addictive once you get used to it, but if you're not sure what's going on it can be pretty annoying.<br /><br />I meant to cover it in this post, but it got too long; I'll try to cover it in a future post. In the mean time, take a look at the <a href='http://www.emacswiki.org/emacs/PareditCheatsheet'>cheat sheet</a> to see how it works.<br /><br />Peter: Sounds like the clojure-mode documentation needs a refresh. I'll take a look at that."

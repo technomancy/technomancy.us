@@ -10,7 +10,7 @@ new_comment = { 'timestamp' => Time.now.to_s }
   new_comment[param] = CGI.escapeHTML(cgi.params[param].to_s)
 end
 
-new_comment['content'].gsub!("\n", "<br />") # newlines
+new_comment['content'].gsub!("\r?\n", "<br />") # newlines
 
 if cgi.params['spammers'].to_s != 'suck' or cgi.params['post_id'].to_s == ''
   filename = '../comments/spam.yml'
