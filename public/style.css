@@ -35,6 +35,10 @@ h1 a {
     padding: 3em;
 }
 
+#comments dd {
+    margin-bottom: 1em;
+}
+
 #entry, #comments, #entries, #wrapper, #books, #resume {
     width: 40em;
     margin-left: 5em;
