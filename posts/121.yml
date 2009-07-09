@@ -62,7 +62,7 @@ content: |-
 
     <li>The biggest shortcoming of Clojure is easily its packaging and
       command-line interface. Launching it from the shell involves
-      simply invoking the <tt>java</tt> CLI launcher with the proper
+      simply invoking the <kbd>java</kbd> CLI launcher with the proper
       arguments; there are no shell scripts in the distribution. The
       problem with this is that you're supposed to know your classpath
       up front. When you're dealing with lisp code, the classpath acts
@@ -96,7 +96,7 @@ content: |-
     JRuby, but it works with anything that's JVM-hosted. It gives you
     a better launcher and overall shell experience but also makes the
     process name look decent instead of the meaningless jumble of
-    alphanumerics that <tt>java</tt> gives you out of the box and
+    alphanumerics that <kbd>java</kbd> gives you out of the box and
     provides some d&aelig;monization help.</p>
 
   <p>As a way of diving in, I'm using

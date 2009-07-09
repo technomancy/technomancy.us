@@ -53,8 +53,8 @@ content: |-
                              <span class='keyword'>end</span>, :<span class='type'>Port</span> =&gt; 9999)
   </pre>
   
-  <p>I check the streaming with curl; if it's properly streamed the <tt>%
-  Received</tt> will climb slowly instead of jumping at once to 100:</p>
+  <p>I check the streaming with curl; if it's properly streamed the <code>%
+  Received</code> will climb slowly instead of jumping at once to 100:</p>
   
   <pre class='code'>$ curl http://localhost:9999/7 > /dev/null
     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current

@@ -11,7 +11,7 @@ content: |
     Test-Driven development. I believe it to be pretty much at release
     quality,  though a few more convenience macros (assert-equal,  for
     instance) remain to be written. You define suites of tests using
-    the <tt>defsuite</tt> macro: </p>
+    the <code>defsuite</code> macro: </p>
   
       <pre class='code'>
   (defsuite <span class="keyword">my-test-suite</span>
@@ -33,7 +33,7 @@ content: |
   (add-hook 'my-test-suite-teardown-hook (<span class="keyword">lambda</span> () (message <span class="string">"teardown hook"</span>)))
   </pre>
   
-  <p><tt>M-x elunit</tt> gets you some nicely formatted reports: </p>
+  <p><kbd>M-x elunit</kbd> gets you some nicely formatted reports: </p>
   
   <pre class='code'>
   Loaded suite:  my-test-suite

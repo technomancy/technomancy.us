@@ -38,8 +38,8 @@ content: |-
     RubyGems trunk, so if you're interested in creating a prerelease
     gem, I'd encourage you to grab a copy of trunk and try it out:</p>
 
-  <p><tt>$ svn co svn://rubyforge.org/var/svn/rubygems/trunk rubygems</tt></p>
-  <p><tt>$ cd rubygems && sudo ruby setup.rb</tt></p>
+  <p><kbd>$ svn co svn://rubyforge.org/var/svn/rubygems/trunk rubygems</kbd></p>
+  <p><kbd>$ cd rubygems && sudo ruby setup.rb</kbd></p>
 
   <p>Once it's installed, try releasing a gem (using hoe or whatever)
     with a version with a segment that contains letters, and it will
@@ -75,14 +75,14 @@ content: |-
     expected, but I was happy to be able to help out. I ended up
     pushing out my fixes in a release as well as pulling in
     some <a href='http://github.com/alexvollmer/gitjour/commit/bd843d2aaeae4a5b721dbefd3725d5868645903c'>nice
-    web-related stuff from Alex</a>. <tt>gitjour web</tt> will now
+    web-related stuff from Alex</a>. <kbd>gitjour web</kbd> will now
     throw up
     an <a href='http://www.kernel.org/pub/software/scm/git/docs/git-instaweb.html'>instaweb</a>
-    instance, and <tt>gitjour browse</tt> will let you look through
+    instance, and <kbd>gitjour browse</kbd> will let you look through
     all the instawebs being advertised locally. So if you're headed to
     a conference at which you plan to hack any time soon, be sure to
-    not leave home without a copy of gitjour. You know the <tt>sudo
-    gem install</tt> drill.</p>
+    not leave home without a copy of gitjour. You know the <kbd>sudo
+    gem install</kbd> drill.</p>
 
   <p>Finally, there's been a recent turn of events that's left me
     without work for the present. As I've hopefully made obvious, I've

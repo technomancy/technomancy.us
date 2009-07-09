@@ -9,7 +9,7 @@ content: |-
   
   <img src='/i/mongrel_panel.png' alt='mongrel panel screenshot' />
   
-  <p>It may be hypocritical of me to keep harping on how it's best to avoid reliance on the mouse as much as you can,  but  I grudgingly admit that sometimes it <i>is</i> handy to be able to launch mongrel quickly with it. Below is the code for <tt>mongrel_panel.rb</tt>: </p>
+  <p>It may be hypocritical of me to keep harping on how it's best to avoid reliance on the mouse as much as you can,  but  I grudgingly admit that sometimes it <i>is</i> handy to be able to launch mongrel quickly with it. Below is the code for <code>mongrel_panel.rb</code>: </p>
   
   <pre class='code' style='font-size:  90%;'>
   <span class="comment-delimiter">#</span><span class="comment">!/usr/bin/env ruby
@@ -47,9 +47,9 @@ content: |-
   <span class="type">Gtk</span>.main
   </pre>
   
-  <p>I feel like I keep harping on this,  but man... GUI code is <i>weird</i> and unintuitive for me. Probably just a matter of familiarizing myself with the conventions,  but still. On Ubuntu/Debian:  <tt>sudo apt-get install libgnome2-ruby libgtk-trayicon-ruby1.8</tt> then <a href='/code/mongrel_panel.tar.gz'>grab it</a>.</p>
+  <p>I feel like I keep harping on this,  but man... GUI code is <i>weird</i> and unintuitive for me. Probably just a matter of familiarizing myself with the conventions,  but still. On Ubuntu/Debian:  <kbd>sudo apt-get install libgnome2-ruby libgtk-trayicon-ruby1.8</kbd> then <a href='/code/mongrel_panel.tar.gz'>grab it</a>.</p>
   
-  <p>Usage:  <tt>RAILS_ROOT=~/projects/foo mongrel_panel.rb &</tt> or run it from your rails root.</p>
+  <p>Usage:  <kbd>RAILS_ROOT=~/projects/foo mongrel_panel.rb &</kbd> or run it from your rails root.</p>
   
   <p>This is nothing really,  but it might be a nice base to adapt for other similar d&aelig;mons,  I suppose. Let me know if you find it useful.</p>
 tags: railsconf, ruby, projects, desktop

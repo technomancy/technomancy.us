@@ -24,7 +24,7 @@ content: "<p>When
   something useful so quickly. Ebby was actually a client for the
   existing <a href='http://gobby.0x539.de/trac/'>Obby protocol</a>
   which happened to have no documentation at the time, so I spent a
-  lot of time in <tt>ettercap</tt> analyzing traffic in between
+  lot of time in <kbd>ettercap</kbd> analyzing traffic in between
   banging out lisp functions.</p>
 
 <img src='/i/gobby.png' alt='gobby' title='gobby' align='left' />
@@ -48,7 +48,7 @@ content: "<p>When
      title='all aboard the git subway' align='right' />
 
 <p>Fast-forward to September or so of last year. I was just learning
-  about <tt>git</tt> and how its rebase operation works. I got the
+  about <kbd>git</kbd> and how its rebase operation works. I got the
   strangest feeling of d&eacute;javu about this until I realized it
   was the same rollback-and-reapply operation that I had tried to add
   to Ebby. I knew at some point I would want to revisit Ebby, so I
@@ -77,8 +77,8 @@ content: "<p>When
     naturally. But should not be hard to add support for your
     favourite editor, so give it a go.</li>
   <li><b>Installation depends on an unreleased gem</b>, but if you
-    install the conspire gem from github (after <tt>sudo apt-get install
-    libavahi-compat-libdnssd-dev</tt> on Debian-based systems) it will
+    install the conspire gem from github (after <kbd>sudo apt-get install
+    libavahi-compat-libdnssd-dev</kbd> on Debian-based systems) it will
     pull in my custom up-to-date versions of the dependencies.</li>
   <li><b>Conspiracy sessions are currently LAN-only</b>, no Internet
     support or NAT-tunneling.</li>
@@ -92,5 +92,5 @@ content: "<p>When
 <p>It currently lives
   at <a href='http://github.com/technomancy/conspire'>
   http://github.com/technomancy/conspire</a>. As always, patches are
-  warmly welcomed. Give it a shot: <tt>sudo gem install conspire
-  --source=http://gems.github.com</tt></p>"
+  warmly welcomed. Give it a shot: <kbd>sudo gem install conspire
+  --source=http://gems.github.com</kbd></p>"

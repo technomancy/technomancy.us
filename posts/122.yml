@@ -16,14 +16,14 @@ content: |-
     impressive. The problem is, it's a bit of a bear to configure, and
     there are more moving parts than I'm comfortable with. I'm not the
     only one either; one of the most common questions in
-    the <tt>#clojure</tt> channel is how to configure SLIME.</p>
+    the #clojure channel is how to configure SLIME.</p>
 
   <p>I've worked on a bit of code to alleviate the confusion. There's
     nothing about the problem that's particularly tricky; it's just
     that the necessary code is changing so fast that using a package
     manager for it isn't feasible. And installing software by hand
     without a package manager&hellip; well let's just say it's fraught
-    with frustration. So I've added an <tt>M-x clojure-install</tt>
+    with frustration. So I've added an <kbd>M-x clojure-install</kbd>
     function
     to <a href='http://github.com/technomancy/clojure-mode/'>by
     fork of clojure-mode</a> that should handle the necessary
@@ -34,10 +34,10 @@ content: |-
   <p><b>Update</b>: If you use the <a
     href='http://github.com/technomancy/emacs-starter-kit'>Emacs
     Starter Kit</a>, you've already got what you need; just hit
-    <tt>M-x clojure-install</tt> to get going. And it should be in
+    <kbd>M-x clojure-install</kbd> to get going. And it should be in
     ELPA before too long.</p>
 
-  <p><b>Update</b>: <tt>M-x clojure-install</tt> has been merged into
+  <p><b>Update</b>: <kbd>M-x clojure-install</kbd> has been merged into
     <a href='http://github.com/jochu/clojure-mode'>the mainline
     clojure-mode repository</a>, so you don't need to use mine any
     more.</p>

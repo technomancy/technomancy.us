@@ -58,8 +58,8 @@ content: |
   required an extra step to get working&mdash;and the fingerprint
   reader,  for which I had to compile the driver manually. (This was very
   easy to do.) By default it uses the vesa video drivers which work for
-  display but are quite slow. I'm going to hold off on <tt>apt-get
-  upgrade</tt>ing frequently just because that can be a recipe for
+  display but are quite slow. I'm going to hold off on <kbd>apt-get
+  upgrade</kbd>ing frequently just because that can be a recipe for
   disaster when you've got a lot of work to do. For my own use I
   kept <a
   href="http://dev.technomancy.us/phil/wiki/UbuntuInstallation">notes on

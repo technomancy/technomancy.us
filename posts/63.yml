@@ -42,19 +42,19 @@ content: |
     inputs anyway? You've already got a list of input parameters lined
     up in a hash there just asking to be used.</p>
   
-  <p><tt>post_form_check : new,  { : name => 'Mead',  : description => 'A
+  <p><code>post_form_check : new,  { :name => 'Mead',  :description => 'A
       fermented beverage made of honey,  water,  and yeast,  often served
-      mulled or with fruit',  : alcoholic => true }</tt></p>
+      mulled or with fruit',  :alcoholic => true }</code></p>
   
-  <p>The above line will act as a <tt>post</tt>,  on the <tt>: new</tt>
-    action of your controller,  but will first <tt>get</tt> the same
-    action and ensure that there are <tt>&lt;input&gt;</tt> tags
-    named <tt>name</tt>,  <tt>description</tt>, 
-    and <tt>alcoholic</tt>. If you need to <tt>get</tt> a different
-    action than you are <tt>post</tt>ing to,  you can use an array rather
+  <p>The above line will act as a <code>post</code>,  on the <code>:new</code>
+    action of your controller,  but will first <code>get</code> the same
+    action and ensure that there are <code>&lt;input&gt;</code> tags
+    named <code>name</code>,  <code>description</code>, 
+    and <code>alcoholic</code>. If you need to <code>get</code> a different
+    action than you are <code>post</code>ing to,  you can use an array rather
     than a symbol for the action: </p>
   
-  <p><tt>post_form_check [: list,  : drink],  { : to_drink => 32 }</tt></p>
+  <p><code>post_form_check [:list,  :drink],  { :to_drink => 32 }</code></p>
   
   <p>It still needs a bit of work to be able to support nested hashes, 
     but it should be helpful as it is.</p>

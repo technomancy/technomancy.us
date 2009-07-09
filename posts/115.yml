@@ -144,7 +144,7 @@ content: |-
   <p>I don't want to say that there aren't any problems with the
     system I use. The default key bindings are more an accident of
     history without much advantage from the more standard
-    conventions. The <tt>M-x customize</tt> interface is frankly
+    conventions. The <kbd>M-x customize</kbd> interface is frankly
     pretty embarrassing and comes across as an attempt to shield users
     from the act of writing and reading code, but this is easy to
     avoid. The lack of concurrency is a very real problem,

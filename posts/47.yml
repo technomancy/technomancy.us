@@ -11,6 +11,10 @@ content: "<p>So,  <a href=\"http://www.railsday2006.com/\">Railsday</a> just end
   <blockquote> OK,  so you've got this meeting,  right? A bunch of people have to come to this meeting,  but you don't know when they are going to be available. So what you do is sign on to Concourse and create a new meeting. You give provide some details and a list of folks you'd like to attend. When you're done,  each person gets an email asking them to please enter their availability for the meeting.</blockquote>\n\
   <blockquote> Each person can then log in with the URL provided in the email to specify the times they can make it to the meeting. In theory,  when everyone had entered their times,  the organizer would then be asked to decide upon a time,  and his decision would be informed by what everyone had said.</blockquote>\n\
   <img src='/i/concourse.png' alt='concourse screenshot' title='shiny' />\n\
-  <p>Unfortunately we came very close to finishing,  but didn't quite get in the last feature. The organizer can see all the times people have specified for the meeting,  but he cannot decide on one of them and have the attendees notified. Even though it was a bit disappointing to not be able to finish,  it was great fun to participate,  and we all got some great experience.</p>\n\
-  <p>There's a development version running at <a href=\"http://technomancy.us:3000\">http://technomancy.us:3000</a>,   though I hope to find a <a href=\"http://concour.se\">better place</a> for it soon. We do plan on finishing what we started,  as this could potentially be a rather useful service.</p>\n\
+  <p>Unfortunately we came very close to finishing,  but didn't quite get in the last feature. The organizer can see all the times people have specified for the meeting,  but he cannot decide on one of them and have the attendees notified. Even though it was a bit disappointing to not be able to finish,  it was great fun to participate,  and we all got some great experience.</p>
+
+  <p><b>Update</b>: The app is up and running at
+  at <a href='http://concourse.technomancy.us'>http://concourse.technomancy.us</a>,
+  It's been improved significantly since the contest.</p>
+
   <p>Lastly,  check out <a href=\"http://www.flickr.com/photos/tags/railsday/\">all these Railsday photos</a>!</p> "

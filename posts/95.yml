@@ -4,7 +4,7 @@ title: cleaning up ecmascript
 tags: emacs, ecmascript
 id: 95
 content: |-
-  <p>OK,  so I'm writing Javascript at work. It's not too shabby; the nonsensical requirement of an explicit return is starting to drive me a bit batty,  but other quirks can be dealt with. For example,  let's do something about the ridiculous proliferation of the <tt>function</tt> keyword. Let's damp the syntactic noise required to use closures: </p>
+  <p>OK,  so I'm writing Javascript at work. It's not too shabby; the nonsensical requirement of an explicit return is starting to drive me a bit batty,  but other quirks can be dealt with. For example,  let's do something about the ridiculous proliferation of the <code>function</code> keyword. Let's damp the syntactic noise required to use closures: </p>
   <pre class="code"><span class="paren">(</span><span class="keyword">defun</span> <span class="function-name">js-lambda</span> <span class="paren">()</span> <span class="paren">(</span>interactive<span class="paren">)</span> <span class="paren">(</span>insert <span class="string">"function () {
    };"</span><span class="paren">)</span>
    <span class="paren">(</span>backward-char 6<span class="paren">))</span>
@@ -18,4 +18,4 @@ content: |-
    
    <span class="paren">(</span>add-hook 'js-mode-hook 'js-pretty-lambdas<span class="paren">)</span>
    <span class="paren">(</span>define-key js-mode-map <span class="paren">(</span>kbd <span class="string">"C-c l"</span><span class="paren">)</span> 'js-lambda<span class="paren">)</span></pre>
-  <p>That means instead of the unsightly <tt>function () {};</tt> you get the more subtle <tt>&lambda; () { }</tt>&mdash;much easier on the eyes. Plus you get the <tt>C-c l</tt> binding to make up for the shortsightedness of keyboard manufacturers in neglecting to include a &lambda; key on their products. Drop this in your <tt>.emacs</tt> file to let them know who's boss.</p>
+  <p>That means instead of the unsightly <code>function () {};</code> you get the more subtle <code>&lambda; () { }</code>&mdash;much easier on the eyes. Plus you get the <kbd>C-c l</kbd> binding to make up for the shortsightedness of keyboard manufacturers in neglecting to include a &lambda; key on their products. Drop this in your <code>.emacs</code> file to let them know who's boss.</p>

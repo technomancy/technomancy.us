@@ -14,8 +14,8 @@ content: |+
   to send instant messages rather than using ActionMailer to send
   email.</blockquote>
   
-  <p>Just do your usual <tt>script/plugin install -x
-      svn://technomancy.us/exception-im</tt> and follow the directions
+  <p>Just do your usual <kbd>script/plugin install -x
+      svn://technomancy.us/exception-im</kbd> and follow the directions
       there.</p>
   
   <p>Note that you'll only get notification in production mode for

@@ -9,7 +9,7 @@ content: |
     a <a href="http://yakuake.uv.ro/">Free alternative</a> if you're
     into KDE and that jazz,  but if you're not it's ridiculously simple
     to hack something up with existing terminal emulators in X. You just
-    need to install the <tt>wmctrl</tt> utility: </p>
+    need to install the <kbd>wmctrl</kbd> utility: </p>
   
   <pre class="code">
   screenid=<span class="string">`wmctrl -l | grep screen | cut -f 1 -d " "`</span>.chomp.hex
@@ -27,7 +27,7 @@ content: |
   </span><span class="keyword">end</span>
   </pre>
   
-  <p>I bind this to <tt>M-`</tt> in Sawfish and have some
+  <p>I bind this to <kbd>M-`</kbd> in Sawfish and have some
     window-matching rules that govern the sizing and placement of the
     terminal window as it appears. I'm sure similar results could be
     achieved in other decently flexible window managers.</p>

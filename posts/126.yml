@@ -7,7 +7,7 @@ content: |
   <p>So it turns out getting set up to write Clojure code can be a
     little tricky. The
     current <a href='http://bc.tech.coop/blog/081205.html'>first hit
-    for a search on <tt>clojure emacs</tt></a> returns instructions
+    for a search on <code><clojure emacs</code></a> returns instructions
     that are out of date and more complicated than
     necessary. There are a lot of disconnected tidbits about how folks
     have figured out how to configure things, but it can be a bit
@@ -57,7 +57,7 @@ content: |
     own customizations; also check out
     the <a href='http://peepcode.com/products/meet-emacs'>PeepCode
     screencast</a>.) Use <kbd>M-x package-list-packages</kbd> to pull
-    up the package list. Move down to <tt>clojure-mode</tt> and
+    up the package list. Move down to <code>clojure-mode</code> and
     press <kbd>i</kbd> to mark it for installation, then
     press <kbd>x</kbd> to go.</p>
 
@@ -75,18 +75,18 @@ content: |
     and ant installed.)  When it's done, it will configure SLIME and
     swank-clojure, and it will give you instructions on a few lines to
     add to your personal config (usually found
-    in <tt>$HOME/.emacs.d/init.el</tt>) so it will work for future
+    in <code>$HOME/.emacs.d/init.el</code>) so it will work for future
     sessions.</p>
 
   <h3>Usage</h3>
 
   <p>Hitting <kbd>M-x slime</kbd> will launch a new Clojure session in
-    a <tt>*slime-repl*</tt> buffer. You can also interact with
-    the <tt>*inferior-lisp*</tt> buffer, but the slime-repl buffer provides
+    a <code>*slime-repl*</code> buffer. You can also interact with
+    the <code>*inferior-lisp*</code> buffer, but the slime-repl buffer provides
     a higher-level interface with a few extra niceties. The REPL
     works as you'd expect, but you can hit <kbd>,</kbd> to activate
     some shortcuts, the most useful being <kbd>i</kbd> to change the
-    current namespace (with tab-completion) and <tt>restart</tt>.</p>
+    current namespace (with tab-completion) and <code>restart</code>.</p>
 
   <p>Back in your .clj buffers, <kbd>C-x C-e</kbd> has been rebound to
     execute the form under the point in Clojure instead of Elisp. This
@@ -96,7 +96,7 @@ content: |
     through accurately.</p>
 
   <p>As you type out function calls, you should see their argument
-    list show in the minibuffer. This is called <tt>eldoc</tt>, and
+    list show in the minibuffer. This is called <code>eldoc</code>, and
     it's a great way to get a quick refresher about what a function
     expects. For full documentation lookup you'll need to get handy
     with <kbd>C-c C-d d</kbd> though. Finally you can
@@ -109,10 +109,10 @@ content: |
     REPL and want to hack on a real project. Since the JVM doesn't
     allow you to modify the classpath at runtime, you need to specify
     up front where it should look for code. The simplest thing to do
-    is add <tt>src/</tt>, <tt>test/</tt>, <tt>target/dependency/</tt>,
-    and <tt>target/classes/</tt> (for AOT compilation, if desired)
+    is add <code>src/</code>, <code>test/</code>, <code>target/dependency/</code>,
+    and <code>target/classes/</code> (for AOT compilation, if desired)
     directories in your project root to the classpath. Then you unpack
-    your dependencies in the <tt>target/dependency</tt> directory
+    your dependencies in the <code>target/dependency</code> directory
     rather than adding another entry to your classpath for every
     dependency that you need. Something like <kbd>unzip
     ../clojure/clojure.jar -d target/dependency</kbd> should do the
@@ -157,15 +157,15 @@ content: |
   <h3>Tests</h3>
 
   <p>If you've written automated tests for your project using
-    clojure.contrib's <tt>test-is</tt> library (which you should), you can
-    use <tt>clojure-test-mode</tt> to run them. Install it
+    clojure.contrib's <code>test-is</code> library (which you should), you can
+    use <code>clojure-test-mode</code> to run them. Install it
     via <kbd>M-x package-list-packages</kbd>, and then you can
     use <kbd>C-c C-,</kbd> to run the tests in the current
     buffer. Failures and errors get highlighted, so if you want to see
     details about a failure, move the point to the red region and
     press <kbd>C-c C-'</kbd>. Errors that occur <i>loading</i> the
     test will not be shown here; switch to
-    the <tt>*inferior-lisp*</tt> buffer to see them.</p>
+    the <code>*inferior-lisp*</code> buffer to see them.</p>
 
   <p>You can also switch between tests and implementation
     using <kbd>C-c t</kbd>. This assumes you've laid out your project
