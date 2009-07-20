@@ -50,3 +50,41 @@
   uri: http://technomancy.us
   author: Phil
   content: "Hingebjerg: That's a feature of paredit-mode; it enforces that you can't delete parens (or other matched chars) unless they're empty so you don't end up with invalid structure in your code. It's unbelievably handy/addictive once you get used to it, but if you're not sure what's going on it can be pretty annoying.<br /><br />I meant to cover it in this post, but it got too long; I'll try to cover it in a future post. In the mean time, take a look at the <a href='http://www.emacswiki.org/emacs/PareditCheatsheet'>cheat sheet</a> to see how it works.<br /><br />Peter: Sounds like the clojure-mode documentation needs a refresh. I'll take a look at that."
+- timestamp: Sat Jun 13 14:32:05 -0700 2009
+  uri: http://www.geekles.com
+  author: Shawn Hansen
+  content: |-
+    I followed the instructions here to a tee (with emacs-starter-kit previously installed) and had problems starting slime.  No lisp was found.
+    
+    After a few retries, I noticed that if I had opened a .clj file, thus starting up clojure-mode, then slime would start up and connect to a clojure REPL without issue.
+    
+    Long story short:
+    1. Follow the instructions in the post.
+    2. M-x clojure-mode (or open a .clj file)
+    3. M-x slime
+    
+    The above three steps work every time.
+- timestamp: Wed Jul 01 10:37:25 -0700 2009
+  uri: ""
+  author: Kato Hunter
+  content: Thanks for setting this up ... it's a huge time saver vs. starting from scratch!  One very helpful addition would be the ability to have Clojure and Common Lisp running in the same emacs session.  My .emacs setup was doing that until a recent Clojure update changed the way classpaths work; &lt;F5&gt; would launch an SBCL Slime REPL and &lt;Control&gt;&lt;F5&gt; would launch a Clojure Slime REPL in the same session.  Your contribution gives me a hands-off incantation for playing around with Clojure but I (and everyone else straddling the CL/Clojure boundary line) still need to come up with a way to get the two Lisps to coexist.
+- timestamp: Thu Jul 09 23:31:00 -0700 2009
+  uri: ""
+  author: Keith
+  content: |-
+    This is really excellent work, thank you. I'm probably just being thick, but I can't get clojure-project to work. Everything works for me up until I try to run clojure-project. I get this:
+    
+    Symbol's value as variable is void: swank-clojure-extra-vm-args
+    
+    This is on Mac OSX with Emacs 22.3.1. I have no .emacs file and a fresh install of ESK.
+- timestamp: Mon Jul 20 00:43:45 -0700 2009
+  uri: None
+  author: Jason
+  content: Finally got through some boneheaded errors, but seem to get one I can't resolve. When I do a M-x clojure-install, it looks like it references a git repo from kevinoneill, but there is not repo there. Rich Hickey maintains a repo on git now and I would think it should be pointing there, or at least to a 1.0 tag of that repo. Am I missing something?
+- timestamp: Mon Jul 20 12:20:04 -0700 2009
+  uri: http://technomancy.us
+  author: Phil
+  content: |-
+    Shawn, Jason, Keith: Recent versions of clojure-mode/starter-kit fix the problems you are seeing.
+    
+    Kato: I don't use CL anymore, but if you have any code or instructions that would help for that case I'd be glad to include or link to it.
