@@ -1,6 +1,7 @@
 --- 
-timestamp: "Sat Oct 13 00: 00: 01 -0700 2007"
+timestamp: 2006-07-28 23:12:21
 title: the afternoon's hack
+tags: projects, ruby
 id: 55
 content: |
   <p>Last February,  I started a project
@@ -22,4 +23,4 @@ content: |
     install <a
     href='http://rubyforge.org/frs/?group_id=948&release_id=3876'>FuseFS</a>
     (the Ruby FUSE bindings) for it to work.</p>
-tags: projects, ruby
+

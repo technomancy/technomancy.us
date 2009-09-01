@@ -1,6 +1,7 @@
 --- 
-timestamp: "Sat Oct 13 00: 00: 01 -0700 2007"
+timestamp: 2006-09-13 10:09:32
 title: mostly just pokage
+tags: emacs
 id: 62
 content: |
   <p>Overheard on #emacs: </p>
@@ -38,4 +39,4 @@ content: |
   right ahead</a>. There should be more Emacs/Rails goodness coming 
   soon; getting the last few bugs worked out of rhtml-mode was very
   tricky.</p>
-tags: emacs
+

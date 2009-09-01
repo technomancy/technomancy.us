@@ -6,7 +6,7 @@ id: 20
 content: |-
   <div class="ruby"><pre class='code'>        <span class="comment"># failed login</span>
    <span class="ident">flash</span><span class="punct">.</span><span class="ident">now</span><span class="punct">[</span><span class="symbol">: attempts</span><span class="punct">]</span> <span class="punct">=</span> <span class="attribute">@params</span><span class="punct">[</span><span class="symbol">: attempts</span><span class="punct">].</span><span class="ident">to_i</span> <span class="punct">+</span> <span class="number">1</span>
-   
+  
    <span class="keyword">if</span> <span class="ident">flash</span><span class="punct">[</span><span class="symbol">: attempts</span><span class="punct">]</span> <span class="punct">&gt;</span> <span class="number">3</span>
    <span class="ident">flash</span><span class="punct">.</span><span class="ident">now</span><span class="punct">[</span><span class="symbol">: error</span><span class="punct">]</span> <span class="punct">=</span> <span class="punct">'</span><span class="string">You seem to be having trouble logging in. If you want
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; your password reset,  simply try to log in with the password </span><span class="punct">"</span><span class="ident">forgot</span><span class="punct">'</span><span class="string"></span><span class="punct">"</span>

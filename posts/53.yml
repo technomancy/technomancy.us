@@ -1,8 +1,9 @@
 --- 
-timestamp: "Sat Oct 13 00: 00: 01 -0700 2007"
+timestamp: 2006-07-19 20:33:13
 title: exception im notifier
+tags: projects, rails
 id: 53
-content: |+
+content: |
   <p>Well,  it looks like I spoke too soon about not having anything
     interesting going on.</p>
   
@@ -34,4 +35,4 @@ content: |+
   Linux.com article</a>. It was a pretty insignificant blurb,  but it
   still seems cool by my low standards. (I've never had any high-profile
   mention but for a quick link on RedHanded.)</p>
-tags: projects, rails
+

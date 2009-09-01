@@ -1,6 +1,7 @@
 --- 
-timestamp: Sat Oct 13 00:00:01 -0700 2007
+timestamp: 2006-06-29 16:22:41
 title: level up
+tags: hacking
 id: 51
 content: |
   <p>Ok,  so i've got this theory which I'm sure totally oversimplifies
@@ -51,4 +52,4 @@ content: |
     experience coding solo. I'm sure a mentorship type of situation
     could help things,  but I suspect most programmers follow a
     progression like this. </p>
-tags: hacking
+

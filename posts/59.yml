@@ -1,6 +1,7 @@
 --- 
-timestamp: "Sat Oct 13 00: 00: 01 -0700 2007"
+timestamp: 2006-08-23 12:17:40
 title: yes,  elunit 1.0!
+tags: projects, emacs
 id: 59
 content: |
   <p>Has it really almost been a week? Well,  it's been a good week for
@@ -58,4 +59,4 @@ content: |
   <p><a
         href='http://dev.technomancy.us/phil/browser/dotfiles/.emacs.d/elunit.el?format=txt'>Grab
         it</a> straight out of my Trac.</p>
-tags: projects, emacs
+
