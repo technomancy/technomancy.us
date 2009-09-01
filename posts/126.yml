@@ -130,28 +130,33 @@ content: |
   <p>This elisp function will prompt for a project root and then
     launch a SLIME session configured with a classpath for that project.</p>
 
-  <pre class="code" style="font-size: 80%;"><span class='esk-paren'>(</span><span class='keyword'>defun</span> <span class='function-name'>clojure-project</span> <span class='esk-paren'>(</span>path<span class='esk-paren'>)</span>
-    <span class='doc'>&quot;Sets up classpath for a clojure project and starts a new SLIME session.&quot;</span>
-    <span class='esk-paren'>(</span>interactive <span class='esk-paren'>(</span>list
-                  <span class='esk-paren'>(</span>ido-read-directory-name
-                   <span class='string'>'Project root: '</span>
-                   <span class='esk-paren'>(</span>locate-dominating-file default-directory <span class='string'>'src'</span><span class='esk-paren'>))))</span>
-    <span class='esk-paren'>(</span><span class='keyword'>when</span> <span class='esk-paren'>(</span>get-buffer <span class='string'>'*inferior-lisp*'</span><span class='esk-paren'>)</span>
-      <span class='esk-paren'>(</span>kill-buffer <span class='string'>'*inferior-lisp*'</span><span class='esk-paren'>))</span>
-    <span class='esk-paren'>(</span>setq swank-clojure-binary nil
-          swank-clojure-jar-path <span class='esk-paren'>(</span>expand-file-name <span class='string'>'target/dependency/'</span> path<span class='esk-paren'>)</span>
+  <pre class="code" style="font-size: 80%;"><span class="esk-paren"><span class="hl-line">(defun clojure-project (path)
+  </span></span>  <span class="doc">"Setup classpaths for a clojure project and starts a new SLIME session."</span>
+    <span class="esk-paren">(</span>interactive <span class="esk-paren">(</span>list
+                  <span class="esk-paren">(</span>ido-read-directory-name
+                   <span class="string">"Project root: "</span>
+                   <span class="esk-paren">(</span>locate-dominating-file default-directory <span class="string">"pom.xml"</span><span class="esk-paren">))))</span>
+    <span class="esk-paren">(</span><span class="keyword">when</span> <span class="esk-paren">(</span>get-buffer <span class="string">"*inferior-lisp*"</span><span class="esk-paren">)</span>
+      <span class="esk-paren">(</span>kill-buffer <span class="string">"*inferior-lisp*"</span><span class="esk-paren">))</span>
+    <span class="esk-paren">(</span><span class="keyword">defvar</span> <span class="variable-name">swank-clojure-extra-vm-args</span> nil<span class="esk-paren">)</span>
+    <span class="esk-paren">(</span><span class="keyword">defvar</span> <span class="variable-name">slime-lisp-implementations</span> nil<span class="esk-paren">)</span>
+    <span class="esk-paren">(</span>add-to-list 'swank-clojure-extra-vm-args
+                 <span class="esk-paren">(</span>format <span class="string">"-Dclojure.compile.path=%s"</span>
+                         <span class="esk-paren">(</span>expand-file-name <span class="string">"target/classes/"</span> path<span class="esk-paren">)))</span>
+    <span class="esk-paren">(</span>setq swank-clojure-binary nil
+          swank-clojure-jar-path <span class="esk-paren">(</span>expand-file-name <span class="string">"target/dependency/"</span> path<span class="esk-paren">)</span>
           swank-clojure-extra-classpaths
-          <span class='esk-paren'>(</span>mapcar <span class='esk-paren'>(</span><span class='keyword'>lambda</span> <span class='esk-paren'>(</span>d<span class='esk-paren'>)</span> <span class='esk-paren'>(</span>expand-file-name d path<span class='esk-paren'>))</span>
-                  '<span class='esk-paren'>(</span><span class='string'>'src/'</span> <span class='string'>'target/classes/'</span> <span class='string'>'test/'</span><span class='esk-paren'>))</span>
-          swank-clojure-extra-vm-args
-          <span class='esk-paren'>(</span>list <span class='esk-paren'>(</span>format <span class='string'>'-Dclojure.compile.path=%s'</span>
-                        <span class='esk-paren'>(</span>expand-file-name <span class='string'>'target/classes/'</span> path<span class='esk-paren'>)))</span>
+          <span class="esk-paren">(</span>append <span class="esk-paren">(</span>mapcar <span class="esk-paren">(</span><span class="keyword">lambda</span> <span class="esk-paren">(</span>d<span class="esk-paren">)</span> <span class="esk-paren">(</span>expand-file-name d path<span class="esk-paren">))</span>
+                          '<span class="esk-paren">(</span><span class="string">"src/"</span> <span class="string">"target/classes/"</span> <span class="string">"test/"</span><span class="esk-paren">))</span>
+                  <span class="esk-paren">(</span><span class="keyword">let</span> <span class="esk-paren">((</span>lib <span class="esk-paren">(</span>expand-file-name <span class="string">"lib"</span> path<span class="esk-paren">)))</span>
+                    <span class="esk-paren">(</span><span class="keyword">if</span> <span class="esk-paren">(</span>file-exists-p lib<span class="esk-paren">)</span>
+                        <span class="esk-paren">(</span>directory-files lib t <span class="string">".jar$"</span><span class="esk-paren">))))</span>
           slime-lisp-implementations
-          <span class='esk-paren'>(</span>cons `<span class='esk-paren'>(</span>clojure ,<span class='esk-paren'>(</span>swank-clojure-cmd<span class='esk-paren'>)</span> <span class='builtin'>:init</span> swank-clojure-init<span class='esk-paren'>)</span>
-                <span class='esk-paren'>(</span>remove-if '<span class='esk-paren'>(</span><span class='keyword'>lambda</span> <span class='esk-paren'>(</span>x<span class='esk-paren'>)</span> <span class='esk-paren'>(</span>eq <span class='esk-paren'>(</span>car x<span class='esk-paren'>)</span> 'clojure<span class='esk-paren'>))</span>
-                           slime-lisp-implementations<span class='esk-paren'>)))</span>
-    <span class='esk-paren'>(</span><span class='keyword'>save-window-excursion</span>
-      <span class='esk-paren'>(</span>slime<span class='esk-paren'>)))</span></pre>
+          <span class="esk-paren">(</span>cons `<span class="esk-paren">(</span>clojure ,<span class="esk-paren">(</span>swank-clojure-cmd<span class="esk-paren">)</span> <span class="builtin">:init</span> swank-clojure-init<span class="esk-paren">)</span>
+                <span class="esk-paren">(</span>remove-if #'<span class="esk-paren">(</span><span class="keyword">lambda</span> <span class="esk-paren">(</span>x<span class="esk-paren">)</span> <span class="esk-paren">(</span>eq <span class="esk-paren">(</span>car x<span class="esk-paren">)</span> 'clojure<span class="esk-paren">))</span>
+                           slime-lisp-implementations<span class="esk-paren">)))</span>
+    <span class="esk-paren">(</span><span class="keyword">save-window-excursion</span>
+      <span class="esk-paren">(</span>slime<span class="esk-paren">)))</span></pre>
 
   <p>If you're using the starter kit, you'll already have it
     available. If you're on Emacs 22,
@@ -192,3 +197,7 @@ content: |
     the bug, please leave a comment or an issue on
     the <a href='http://github.com/technomancy/emacs-starter-kit/issues'>github
     project</a>.</p>
+
+  <p><b>Update</b>: If you are using Slime with both Clojure and
+    Common Lisp, refer to the instructions
+    at <a href='http://felipero.posterous.com/1446961'>http://felipero.posterous.com/1446961</a>.</p>

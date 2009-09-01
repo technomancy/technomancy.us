@@ -88,3 +88,58 @@
     Shawn, Jason, Keith: Recent versions of clojure-mode/starter-kit fix the problems you are seeing.
     
     Kato: I don't use CL anymore, but if you have any code or instructions that would help for that case I'd be glad to include or link to it.
+- timestamp: Tue Jul 21 09:11:16 -0700 2009
+  uri: http://luskwater.blogspot.com/
+  author: Ron
+  content: "No, not missing anything: change &quot;kevinoneill&quot; to &quot;richhickey&quot; and it should work.  (Or, at least, it did for me.)"
+- timestamp: Fri Jul 24 06:50:12 -0700 2009
+  uri: ""
+  author: jx
+  content: |
+    For my Win32 XP, I pointed to Rich Hickey, and wrapped all shell-command src-root args in a replace-regexp to convert forward to back slashes, a la:
+    
+    (format &quot;cd %s&amp;&amp; %s&quot; (replace-regexp-in-string &quot;/&quot; &quot;\\\\&quot; src-root)
+    
+    Note also the ampersands used by win32 batch language instead of semicolons.  I then setq'd clojure-src-root in my startup file, ran clojure-mode first, then slime.  Seems to work now.
+
+- timestamp: Fri Jul 24 07:39:41 -0700 2009
+  uri: http://twitter.com/febeling
+  author: Caspar Florian Ebeling
+  content: |
+    If you run into the error that M-x clojure-install cannot find the github repo, you have to manually open the clojure-mode.el and replace the kevinoneill user account with richhickey. Then everything works fine. So this is what the section in question looks like for me, line 616ff:
+    
+      (message &quot;Checking out source... this will take a while...&quot;)
+      (dolist (cmd '(&quot;git clone git://github.com/richhickey/clojure.git&quot;
+                     &quot;git clone git://github.com/richhickey/clojure-contrib.git&quot;
+                     &quot;git clone git://github.com/jochu/swank-clojure.git&quot;
+                     &quot;git clone --depth 2 git://github.com/nablaone/slime.git&quot;))
+        (unless (= 0 (shell-command (format &quot;cd %s; %s&quot; src-root cmd)))
+
+- timestamp: Tue Jul 28 09:29:24 -0700 2009
+  uri: http://technomancy.us
+  author: Phil
+  content: "Caspar: You must be using an old version of clojure-mode; recent versions contain that fix."
+- timestamp: Wed Jul 29 01:04:12 -0700 2009
+  uri: http://twitter.com/febeling
+  author: Caspar Florian Ebeling
+  content: "Phil: yes, I mailed the clojure-mode maintainers and they updated the ELPA version immediately. In the repo version of clojure-mode it was fixed already."
+- timestamp: Wed Jul 29 14:05:02 -0700 2009
+  uri: ""
+  author: Chad
+  content: |-
+    I installed the ESK and Clojure via the instructions above.  However, when I type M-x slime, I get the following error:
+    Search failed: &quot;[0-9]: \\([^$(]+\\).*?\\([0-9]*\\))&quot;
+    
+    I am on Max OS X.  Any ideas?
+    
+    Thanks!
+- timestamp: Thu Jul 30 09:14:40 -0700 2009
+  uri: ""
+  author: Chad
+  content: |-
+    I solved my problem with slime not starting up by adding this line to my personal configs:
+    (clojure-slime-config &quot;/Users/chad/src&quot;) 
+    instead of the suggested
+    (clojure-slime-config)
+    
+    Apparently, clojure-src-root doesn't get set properly on Mac OS X.  This sets it explicitly in the call to clojure-slime-config.
