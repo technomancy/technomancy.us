@@ -1,7 +1,7 @@
 <%= including "header", :title => 'Projects' %>
 
 <div id='wrapper'>
-  <p>I've written and contributed to a number of free software projects.</p>
+  <p>I've initiated, contributed to, and maintained a number of free software projects.</p>
 
   <h4>Contributed</h4>
   <dl>
@@ -14,8 +14,8 @@
     <dt><a href='http://clip.rubyforge.org'>Clip</a> (Ruby)</dt>
     <dd>A no-fuss command-line argument parser.</dd>
 
-    <dt><a href='http://github.com/technomancy/clojure-mode'>Clojure Mode (ELisp)</a></dt>
-    <dd>The Emacs mode for the Clojure language.</dd>
+    <dt><a href='http://github.com/technomancy/clojure-mode'>Clojure Mode</a> (ELisp)</dt>
+    <dd>The Emacs mode for the Clojure language. I maintain this package.</dd>
 
     <dt><a href='http://tromey.com/elpa'>ELPA</a> (ELisp)</dt>
     <dd>The Emacs Lisp Package Archive; a package manager for Emacs.</dd>
@@ -27,7 +27,14 @@
     <dd>A testing tool for Emacs Lisp libraries.</dd>
 
     <dt><a href='http://rubyforge.org/projects/gitjour/'>Gitjour</a> (Ruby)</dt>
-    <dd>A tool for sharing git repositories on a local network over ZeroConf.</dd>
+    <dd>A tool for sharing git repositories on a local network over
+    ZeroConf. I maintain this project.</dd>
+
+    <dt><a href='http://github.com/JackDanger/jack'>Jack</a> (Javascript)</dt>
+    <dd>A server-side Javascript web framework.</dd>
+
+    <dt><a href='http://wiki.github.com/jbarnette/johnson'>Johnson</a> (Ruby)</dt>
+    <dd>A bridge between Javascript and Ruby.</dd>
 
     <dt><a href='http://jruby.org'>JRuby</a> (Ruby)</dt>
     <dd>An implementation of Ruby on the JVM.</dd>
@@ -36,15 +43,10 @@
     <dd>A Git frontend for Emacs.</dd>
 
     <dt><a href='http://intertwingly.net/blog/2007/12/19/Yet-Another-Planet-Refactoring'>Mars</a> (Ruby)</dt>
-    <dd>A feed aggregator</dd>
+    <dd>A feed aggregator.</dd>
 
     <dt><a href='http://rack.rubyforge.org'>Rack</a> (Ruby)</dt>
     <dd>A web server adapter for Ruby frameworks.</dd>
-
-    <dt><a href='http:/rinari.rubyforge.org'>Rinari</a> (ELisp)</dt>
-    <dd>An Emacs mode for writing Ruby on Rails applications. I
-      started the project, but it's currently maintained by Eric
-      Schulte.</dd>
 
     <dt><a href='http://rubyonrails.org'>Ruby on Rails</a> (Ruby)</dt>
     <dd>A web framework for Ruby designed to allow quick application development.</dd>
@@ -56,7 +58,7 @@
     <dd>An ultra-liberal feed parser for Ruby based on the Python Universal Feed Parser.</dd>
 
     <dt><a href='http://rubiniu.us'>Rubinius</a> (Ruby)</dt>
-    <dd>A next-generation Ruby implementation.</dd>
+    <dd>A next-generation Ruby virtual machine and implementation.</dd>
 
     <dt><a href='http://ruby-lang.org'>Ruby</a> (Ruby)</dt>
     <dd>An object-oriented dynamic language.</dd>
@@ -66,7 +68,7 @@
 
     <dt><a href='http://github.com/technomancy/swank-clojure'>Swank Clojure</a> (Clojure)</dt>
     <dd>An adapter allowing <a href='http://common-lisp.net/project/slime/'>SLIME</a>
-    to be used with Clojure.</dd>
+    to be used with Clojure. I maintain this project.</dd>
   </dl>
 
   <h4>Created</h4>
@@ -80,7 +82,11 @@
     <dd>A Scheme written in Ruby, but implemented on the bus! I 
     <a href='http://technomancy.us/116'>spoke briefly about this</a> at RubyConf 08.</dd>
 
-    <dt><a href='http://github.com/technomancy/clojure-http-client'>Clojue HTTP Client</a> (Clojure)</dt>
+    <dt><a href='http://github.com/technomancy/clojure-gem>Clojure Gem</a> (Ruby)</dt>
+    <dd>An adapter for using Clojure's immutable data structures and
+      software transactional memory from JRuby.</dd>
+
+    <dt><a href='http://github.com/technomancy/clojure-http-client'>Clojure HTTP Client</a> (Clojure)</dt>
     <dd>An HTTP client for the Clojure language.</dd>
 
     <dt><a href='http://github.com/technomancy/conspire'>Conspire</a> (Ruby)</dt>
@@ -104,6 +110,10 @@
     <dt><a href='http://github.com/technomancy/relax.el'>Relax.el</a> (ELisp)</dt>
     <dd>An Emacs frontend interface to CouchDB.</dd>
 
+    <dt><a href='http:/rinari.rubyforge.org'>Rinari</a> (ELisp)</dt>
+    <dd>An Emacs mode for writing Ruby on Rails
+      applications. Maintainership has passed to Eric Schulte.</dd>
+
     <dt><a href='http://roast-beef.rubyforge.org'>Roast Beef</a> (Ruby)</dt>
     <dd>A bleeding-edge package manager.</dd>
 
@@ -114,6 +124,7 @@
     <dd><a href='http://www.emacswiki.org/cgi-bin/wiki/FindFileInProject'>find-file-in-project.el</a>,
       <a href='http://www.emacswiki.org/cgi-bin/wiki/IdleHighlight'>idle-highlight.el</a>,
       <a href='http://www.emacswiki.org/cgi-bin/wiki/ProjectLocalVariables'>project-local-variables.el</a>,
+      <a href='http://github.com/technomancy/ri.el'>ri.el</a>,
       <a href='http://www.emacswiki.org/cgi-bin/wiki/SCPaste'>scpaste.el</a>, and
       <a href='http://www.emacswiki.org/cgi-bin/wiki/Steersman'>steersman.el</a>.
     </dd>
@@ -129,13 +140,15 @@
      Geoffrey Grosenbach did the visuals and recorded the narration.</dd>
 
     <dt><a href='http://peepcode.com/products/meet-emacs'>Meet Emacs &ndash; Peepcode</a></dt>
-    <dd>An hour-long screencast tutorial introducing the GNU Emacs editor. Again, I wrote the script.</dd>
+    <dd>An hour-long screencast tutorial introducing the GNU Emacs
+    editor. Again, I wrote the script only.</dd>
 
     <dt><a href='/misc/feedback_loop.avi'>Tightening the Feedback Loop</a></dt>
-    <dd>A presentation given at RubyConf 2007.</dd>
+    <dd>A presentation given at RubyConf 2007 on measuring and
+    improving programming habits.</dd>
   </dl>
 
-  <h4>Discontinued</h4>
+  <h4>Deprecated</h4>
   <dl>
     <dt><a href='http://concourse.technomancy.us/'>Concourse</a> (Ruby)</dt>
     <dd>A web application to help schedule gatherings among participants
