@@ -59,8 +59,8 @@ def render_files_with_template(glob, template_file)
   template = ERB.new(File.read(template_file))
   Dir.glob(glob).each do |file|
     page = parse(file)
+    puts "Rendering #{file}."
     rendered_filename = yield(page)
-    puts "Rendering #{rendered_filename}."
     next if up_to_date? file, template_file, rendered_filename and ENV['force'].nil?
     File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
   end
@@ -103,7 +103,7 @@ task :list do
 end
 
 task(:other) do
-  ['projects', 'colophon', 'resume', 'books'].each { |s| render_file_with_template s, "templates/#{s}.html.erb", "public/#{s}.html" }
+  ['projects', 'colophon', 'resume', 'books', 'dynabook'].each { |s| render_file_with_template s, "templates/#{s}.html.erb", "public/#{s}.html" }
 end
 
 task(:planet) { system "mars planet/config.yml" }
