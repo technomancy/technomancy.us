@@ -72,3 +72,11 @@ content: |-
     sketchbook page uploaded soon. In the mean time
     it's <a href='http://github.com/technomancy/sketchbook'>on
     Github</a> if you want to try it yourself.</p>
+
+  <p><b>Update</b>: I've compiled <a href='/misc/sketchbook.jar'>all my
+    sketches so far together for download</a>. Depending on your OS
+    you may be able to double-click on it; otherwise just launch it
+    with <kbd>java -jar sketchbook.jar</kbd>. The <code>chu</code>
+    sketch has trouble launching, and there's one bug where the
+    sketches' window size is wrong upon launch, but you can adjust
+    that.</p>
