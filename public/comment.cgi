@@ -19,7 +19,7 @@ else
   filename = File.expand_path "../comments/#{cgi.params['post_id']}.yml"
 end
 
-comments = YAML.load(File.read(filename)) rescue []
+comments = YAML.load(File.read(filename)) || [] rescue []
 comments << new_comment
 
 File.open(filename, 'w') { |f| f.puts comments.to_yaml }

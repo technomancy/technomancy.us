@@ -143,3 +143,7 @@
     (clojure-slime-config)
     
     Apparently, clojure-src-root doesn't get set properly on Mac OS X.  This sets it explicitly in the call to clojure-slime-config.
+- timestamp: Fri Sep 18 16:49:24 -0700 2009
+  uri: ""
+  author: Nilu
+  content: Has any recent changes broken the tab autocomplete functionality? Even calling slime-indent-and-complete-symbol doesn't work for me. Both return an error of &quot;Format specifier doesn't match argument type&quot;.
