@@ -1,0 +1,31 @@
+<%= including "header", {:title => 'swank-clojure'} %>
+
+<div id="entry">
+
+<p>Swank-clojure is a tool that lets Emacs communicate with a Clojure
+  subprocess. It can set up your process in a number of ways:</p>
+
+<ol>
+<li>Standalone <kbd>M-x slime</kbd>: swank-clojure will download the jars for
+  Clojure 1.0, contrib, and swank-clojure and connect to it. Good
+  for beginners wanting to try things out!</li>
+
+<li>Custom classpath: If you have your own newer copies of Clojure
+  and other jars you'd like to use, set swank-clojure-classpath to
+  point to them, then hit <kbd>M-x slime</kbd>.</li>
+
+<li>Project: Put your project's dependencies in the lib/ directory,
+  then launch <kbd>M-x swank-clojure-project</kbd>. Note that
+  you <strong>must</strong> have a jar of swank-clojure in the lib/
+  directory, it will not automatically add itself to the classpath as
+  it did in past versions that had to run from a checkout.</li>
+</ol>
+
+<p>You should no longer need clojure-mode's <kbd>M-x
+    clojure-install</kbd> since swank-clojure can download the jars
+  for you. Get swank-clojure
+    through <a href="http://tromey.com/elpa/install.html">ELPA</a>.</p>
+
+<p><a href='http://github.com/technomancy/swank-clojure'>More details</a></p>
+</div>
+<%= including "footer" %>
