@@ -101,6 +101,11 @@ kbd {
   font-family: Inconsolata, Consolas, monospace;
 }
 
+code {
+  background: #eee;
+  font-family: Inconsolata, Consolas, monospace;
+}
+
 .timestamp {
     text-align: right;
     color: grey;
@@ -125,11 +130,10 @@ kbd {
         /* font-lock-function-name-face */
         color: #9f8ff0;
     }
-    .keyword {
+     .keyword {
         /* font-lock-keyword-face */
-        color: #900f4f;
-        font-weight: bold;
-    }
+        color: #a020f0;
+      }
     .negation-char {
         /* font-lock-negation-char-face */
         color: #f0dfaf;
