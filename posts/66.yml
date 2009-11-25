@@ -378,7 +378,7 @@ content: |
   me is that it's very difficult to do without using the mouse. Ever
   since switching to <a href='http://sawmill.sf.net'>the Sawfish window
   manager</a> I've been quite spoiled by my newfound ability to do
-  nearly everything from the keyboard--but Javascript wrecks this,  and
+  nearly everything from the keyboard&mdash;but Javascript wrecks this,  and
   I've got an ache in my shoulder to prove it. Hopefully once I dig into
   some <a
   href='http://mir.aculo.us/2006/9/16/adventures-in-javascript-testing'>unit

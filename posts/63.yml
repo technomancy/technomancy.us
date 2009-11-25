@@ -7,11 +7,11 @@ content: |
   <p>Hi,  my name is Phil,  and I suck at testing my views.</p>
   
   <p>You might argue that views aren't that crucial to functionality, 
-    and that's not the job of the programmer--a designer will have to go
+    and that's not the job of the programmer&mdash;a designer will have to go
     over them anyway. If you're on a team with a designer,  it might not
     be your job to make sure everything is displayed properly. However, 
     there is something pretty functionally crucial about the
-    views--forms. No amount of CSS and designer-fu will be able to fix a
+    views&mdash;forms. No amount of CSS and designer-fu will be able to fix a
     form that doesn't ask the right questions.</p>
   
   <pre class='code'>
@@ -38,7 +38,7 @@ content: |
   </pre>
   
   <p>Generally when you have a page that people post data to,  users get
-    a form from an action in the same controller--often even the same
+    a form from an action in the same controller&mdash;often even the same
     action. So why not have Rails check that the form has the right
     inputs anyway? You've already got a list of input parameters lined
     up in a hash there just asking to be used.</p>

@@ -83,11 +83,4 @@ content: |
     for Emacs Lisp. The pieces are all coming together in my head,  so it
     seems the thing to do at this point would be to finish it,  port it
     to CL,  and then start porting the Rubinius specs to it.</p>
-  
-  <p>If this sounds totally insane to you,  you're probably right. If it
-    doesn't,  (or if it's the kind of insanity that intrigues you,  and
-    you can't bring yourself to take your eyes away from such a wreck of an idea)
-    hop on the mailing list; I've got
-    a <a href="http://rubyforge.org/projects/darjeeling">project</a> set
-    up at RubyForge. It's called Darjeeling.</p>
 tags: projects, ruby, lisp, insane

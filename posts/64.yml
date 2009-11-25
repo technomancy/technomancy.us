@@ -30,18 +30,18 @@ content: |
     across the room.</li>
     <li>"We tell the computer to do something and it does it. We tell
     people to do something,  and they don't. That's why we like computers
-      better than people." -- Forrest Chang</li>
+      better than people." - Forrest Chang</li>
     <li>Fact:  Zed Shaw's code profiles itself.</li>
     <li>"Take us to mongrel factor 9. But Sir,  Zed said that we do not
-    need 9 mongrels!" -- Adam Keyes</li>
+    need 9 mongrels!" - Adam Keyes</li>
     <li>Fact:  Zed Shaw is so awesome that he uses Chad Fowler as a
       remote control.</li>
     <li>"One of the more exciting things about Vista is its security is
-      really good." -- XAMLchick</li>
+      really good." - XAMLchick</li>
     <li>Fact:  Zed Shaw runs his production apps out of irb.</li>
-    <li>"Myths:  YARV finds your girlfriend." -- SASADA Koichi</li>
+    <li>"Myths:  YARV finds your girlfriend." - SASADA Koichi</li>
     <li>Fact:  Zed Shaw writes code using every single one of those
-      250, 000 [unicode] characters.</li>
+      250,000 [unicode] characters.</li>
     <li>"Hello Joe." "Hello Mike."</li>
     <li>Fact:  Zed Shaw rfuzzed your girlfriend.</li>
   </ul>
@@ -65,7 +65,7 @@ content: |
     and even got a conversation in with the
     venerable <a href="http://www.rubyist.net/~matz/">Matz</a> and the
     controversial <a href="http://tbray.org/ongoing">Tim
-    Bray</a>.&lt;/fanboi&gt; Mostly we talked about those refactoring
+    Bray</a>. Mostly we talked about those refactoring
     ideas,  and Tim mentioned that leveraging tests would be a good way
     to get typing data about your code provided you've got good
     coverage. There's tons to be done,  but I'm excited to see how this

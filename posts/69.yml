@@ -4,7 +4,7 @@ title: must be what it feels like to get old
 id: 69
 content: |
   <p>Time for a little honesty here. I actually had a fairly lousy month
-    in December--for the first time in almost two years I went through a
+    in December&mdash;for the first time in almost two years I went through a
     month where I didn't feel at the end like I was at all better at
     what I do than I was at the month's beginning. Sure,  I had
     learned <a
@@ -20,7 +20,7 @@ content: |
     tried to keep busy with personal projects and whatnot,  but when I
     finally did start on a Rails job at the beginning of this month,  it
     was a bit distressing how rusty I felt. Part of this was also due to
-    picking up both RSpec (more on this in a future post) and the new Restful style,  which was a bit
+    picking up both RSpec and the new Restful style,  which was a bit
     disorienting. (Though Geoffrey's
     excellent <a
     href='http://peepcode.com/articles/2006/10/08/restful-rails'>PeepCode</a>
