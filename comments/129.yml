@@ -1,1 +1,7 @@
---- []
+--- 
+- uri: http://unhammer.wordpress.com
+  author: Kevin Brubeck Unhammer
+  timestamp: Mon Oct 05 01:54:40 -0700 2009
+  content: "&quot;the woefully under-appreciated M-x erevision&quot; -- THANK YOU for pointing this out to me! I've been using vc-diff all the time, going back to the horribly slow web interface of sf.net when I wanted side-by-side context; erevision is _so_ much better.\r\n\
+    \r\n\
+    I really want to try out Rudel soon, but I guess I'll wait for 0.2 before asking the other programmers to leave SubEthaEdit... "

@@ -1,14 +1,21 @@
 --- 
-- timestamp: Thu Sep 03 14:49:09 -0700 2009
-  uri: http://technomancy.us
+- uri: http://technomancy.us
   author: Phil
+  timestamp: Thu Sep 03 14:49:09 -0700 2009
   content: Sorry, comments were broken there for a while. Should be OK now.
-- timestamp: Sun Sep 27 08:18:22 -0700 2009
-  uri: http://vemod.net/
+- uri: http://vemod.net/
   author: Christoffer Sawicki
+  timestamp: Sun Sep 27 08:18:22 -0700 2009
   content: |-
     Nice! Thanks for sharing.
     
     &gt; Remember that funky leaf shape you used to draw with your ruler in math class in high school when you got bored? I can't be the only one who did this...
     
     I did that too! :)
+- uri: http://blog.tapoueh.org/
+  author: dim
+  timestamp: Sun Oct 04 06:20:37 -0700 2009
+  content: |-
+    http://docs.plt-scheme.org/quick/
+    
+    This seems to be programming starting kit with images and a real language too...
