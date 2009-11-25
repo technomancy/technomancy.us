@@ -18,6 +18,11 @@ content: |
     are a lot of moving parts, but bear with me; most of the
     installation is automated.</p>
 
+  <p><b>Spoiler Alert</b>: Using SLIME with Clojure is
+    now <a href="/swank-clojure.html">much, much easier than the
+    instructions detailed here indicate</a>. This page is left up as
+    it provides some background that may be helpful.</p>
+
   <a name="pieces"></a>
   <h3>The Pieces</h3>
 
@@ -64,21 +69,23 @@ content: |
     press <kbd>x</kbd> to go.</p>
 
   <p>Once it's installed you should be able to work with .clj files,
-    and you may be happy with just this. (In fact, Rich Hickey,
-    creator of Clojure, uses clojure-mode without any subprocess
-    integration.) But most of us find it much more convenient to be
-    able to interact with an actual running Clojure process as you
-    code.</p>
+    and you may be happy with just this. It has rudimentary subprocess
+    support with <kbd>M-x run-lisp</kbd>, which is good enough for
+    many, including Rich Hickey, the creator of Clojure. But most of
+    us find it much more convenient to be able to interact with an
+    actual running Clojure process as you code.</p>
 
-  <p>Pressing <kbd>M-x clojure-install</kbd> will kick off the Clojure
-    installation process. Once you choose a download location, it will
-    download a number of repositories and compile Clojure itself, so
-    it will take a few minutes. (It requires having git, Java 1.5+,
-    and ant installed.)  When it's done, it will configure SLIME and
-    swank-clojure, and it will give you instructions on a few lines to
-    add to your personal config (usually found
+  <p><strike>Pressing <kbd>M-x clojure-install</kbd> will kick off the
+    Clojure installation process. Once you choose a download location,
+    it will download a number of repositories and compile Clojure
+    itself, so it will take a few minutes. (It requires having git,
+    Java 1.5+, and ant installed.)  When it's done, it will configure
+    SLIME and swank-clojure, and it will give you instructions on a
+    few lines to add to your personal config (usually found
     in <code>$HOME/.emacs.d/init.el</code>) so it will work for future
-    sessions.</p>
+    sessions.</strike> Deprecated in favour
+    of <a href="/swank-clojure.html">similar functionality in
+    swank-clojure.</p>
 
   <a name="usage"></a>
   <h3>Usage</h3>
@@ -113,19 +120,16 @@ content: |
     REPL and want to hack on a real project. Since the JVM doesn't
     allow you to modify the classpath at runtime, you need to specify
     up front where it should look for code. The simplest thing to do
-    is add <code>src/</code>, <code>test/</code>, <code>target/dependency/</code>,
-    and <code>target/classes/</code> (for AOT compilation, if desired)
-    directories in your project root to the classpath. Then you unpack
-    your dependencies in the <code>target/dependency</code> directory
-    rather than adding another entry to your classpath for every
-    dependency that you need. Something like <kbd>unzip
-    ../clojure/clojure.jar -d target/dependency</kbd> should do the
-    trick; repeat for each dependency. If you've got complicated
-    dependencies, you could
+    is add <code>src/</code>, <code>test/</code>, <code>lib/</code>,
+    and <code>classes/</code> (for AOT compilation, if desired)
+    directories in your project root to the classpath. Then you place
+    your dependency jars in the <code>lib</code> directory. <strike>If
+    you've got complicated dependencies, you could
     <a href='http://github.com/dysinger/clojure-pom'>use maven to
     manage them</a>, but if you've only got a couple it's not hard to
-    do by hand. Or stay tuned for a future post about a nicer way to
-    handle dependencies; I should have something ready in a week or so.</p>
+    do by hand.</strike>
+    Use <a href="http://github.com/technomancy/leiningen">Leiningen</a>
+    for dependency management and other build needs.</p>
 
   <p>This elisp function will prompt for a project root and then
     launch a SLIME session configured with a classpath for that project.</p>
@@ -158,16 +162,19 @@ content: |
     <span class="esk-paren">(</span><span class="keyword">save-window-excursion</span>
       <span class="esk-paren">(</span>slime<span class="esk-paren">)))</span></pre>
 
-  <p>If you're using the starter kit, you'll already have it
+  <p><strike>If you're using the starter kit, you'll already have it
     available. If you're on Emacs 22,
     install <a href="http://github.com/technomancy/emacs-starter-kit/raw/b5d0aa78b87bde5866c4f834c61ecee3d1fdbc0c/dominating-file.el">this
-    backported function</a>.</p>
+    backported function</a>.</strike></p>
+
+  <p><b>Update</b>: this function has been added to swank-clojure as
+  <kbd>M-x swank-clojure-project</kbd>.</p>
 
   <a name="tests"></a>
   <h3>Tests</h3>
 
   <p>If you've written automated tests for your project using
-    clojure.contrib's <code>test-is</code> library (which you should), you can
+    the <code>clojure.test</code> library (which you should), you can
     use <code>clojure-test-mode</code> to run them. Install it
     via <kbd>M-x package-list-packages</kbd>, and then you can
     use <kbd>C-c C-,</kbd> to run the tests in the current
@@ -176,13 +183,6 @@ content: |
     press <kbd>C-c C-'</kbd>. Errors that occur <i>loading</i> the
     test will not be shown here; switch to
     the <code>*inferior-lisp*</code> buffer to see them.</p>
-
-  <p>You can also switch between tests and implementation
-    using <kbd>C-c t</kbd>. This assumes you've laid out your project
-    so it has src/ and test/ directories in its root containing files
-    that correspond to their namespace. The test namespaces should
-    mirror the src namespaces with the addition of "test" as the
-    second-to-last segment of the namespace.</p>
 
   <h3>Happy Hacking</h3>
 
