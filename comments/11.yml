@@ -1,2 +1,8 @@
---- []
-
+--- 
+- uri: http://royronalds.com
+  author: Roy
+  timestamp: Wed Jun 09 15:09:58 -0700 2010
+  content: |-
+    Looks like that url is down, so who can even say what this would do, at this point?
+    
+    Plus, I'm all in favor of Lisp.

@@ -41,3 +41,11 @@ content: |-
     <a href='http://github.com/jochu/clojure-mode'>the mainline
     clojure-mode repository</a>, so you don't need to use mine any
     more.</p>
+
+  <p><b>Update</b>: It's been a long time since this post was written;
+    in the mean time Clojure has had two stable releases and a package
+    manager created, so compiling from source as the default
+    installation mechanism doesn't make sense any more. <kbd>M-x
+    clojure-install</kbd> has been deprecated in favour of built-in
+    functionality
+    in <a href="http://github.com/technomancy/swank-clojure">swank-clojure</a></p>.

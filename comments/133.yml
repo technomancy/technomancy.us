@@ -1,0 +1,53 @@
+--- 
+- uri: http://larrytheliquid.com
+  author: Larry Diehl
+  timestamp: Sun Jan 31 20:11:33 -0800 2010
+  content: |-
+    Awesome job man. I have to admit to deciding that ELPA was too much of a bother after figuring out it required email submission and manual review. Also, the instructions for packages consisting of more than one file looked too bothersome.
+    
+    Given that the new rubyforge/gemcutter project is open source (and other projects like javagems.org taking advantage of that), it would be hella cool to see a similar site for elpa.
+- uri: www.bennee.com/~alex
+  timestamp: Mon Feb 01 04:01:41 -0800 2010
+  author: Alex
+  content: Out of interest how does package.el deal with version dependencies. For example if you want to track the more recent org-mode than what is packaged with emacs itself? What about the danger of tracking a package that adds dependencies on core emacs features only available in more recent snapshots?
+- uri: http://tapoueh.org
+  author: dim
+  timestamp: Mon Feb 01 08:06:14 -0800 2010
+  content: |-
+    I'd like to have something like debian dpkg --get-selections and --set-selections, a simple way to store the current package list (per archives, maybe).
+    
+    Then I'd only store that in my .emacs.d, and when installing emacs on a new environment I could package-set-selection or something, then package-dselect-upgrade or a better named function would apply it by installing what I need.
+    
+    It could even be a routine thing to pull from the emacs.d git then resync the package installations from the saved list.
+    
+    Regards,
+- uri: ""
+  timestamp: Mon Feb 01 12:16:26 -0800 2010
+  author: Scott
+  content: Do you have a specific inspiration for this style of title? It sounds a lot like Dickens in The Pickwick Papers.
+- uri: http://blog.singletoned.net
+  author: Ed Singleton
+  timestamp: Mon Feb 01 16:36:43 -0800 2010
+  content: |-
+    I had a similar idea myself, and started having a bash at implementing it: http://github.com/Singletoned/package.el (largely inspired by your ESK)
+    
+    Unfortunately I was somewhat hampered by not really knowing much lisp, and only occasionally putting much effort into it.  I certainly learned a lot from trying it, and I'm glad that someone better is giving it a serious go.
+    
+    My main motivation for it was the build up of packages in my ~/.emacs.d/elpa-to-submit folder.  Are you intending that anyone can submit packages (through pull requests I assumed), or that only the package author can?
+- uri: http://piyokun.googlepages.com
+  timestamp: Tue Feb 02 14:39:14 -0800 2010
+  author: piyo
+  content: Great stuff! Were there some lessons learned from the packaging system in Xemacs?
+- uri: http://technomancy.us
+  author: Phil
+  timestamp: Thu Feb 04 10:19:15 -0800 2010
+  content: |-
+    @Alex: right now version dependencies are just done on a &quot;must have at least&quot; level. If a package depends on a package that depends on a newer version of Emacs than you've got installed, package.el should refuse to install it. But the second package <i>must</i> indicate that it depends on a recent version of Emacs.
+
+    @dim: That would be super! The Starter Kit kind of does this, but it could be done much better by integrating with package.el. Why don't you give it a shot? It shouldn't be too hard.
+
+    @scott: My inspiration for the titles is Umberto Eco's excellent &quot;The Name of the Rose&quot;. This post in particular was inspired by Chapter Seven: &quot;In which, if it were to summarize the prodigious revelations of which it speaks, the title would have to be as long as the chapter itself, contrary to usage.&quot; It's a brilliant novel; I can't recommend it enough.
+
+    @Ed: Anyone may submit packages to ELPA, though it's only polite to notify the author first. But my hope is that there will be alternative package sources so not everything must go in ELPA.
+
+    @piyo: I must confess complete ignorance to XEmacs' packaging system, though I believe Tom (the original package.el author) read up on it a bit.

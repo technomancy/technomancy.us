@@ -1,12 +1,1 @@
-#!/usr/bin/env ruby
-
-require 'rubygems'
-require 'perro'
-
-server = Perro::Server.new(3001)
-
-server.static("/style.css", 'public/style.css', 'text/css')
-server.static("/:file", 'public')
-server.static("/", 'public/index.html')
-
-server.start
+cd public && python -m SimpleHTTPServer 3001

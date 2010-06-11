@@ -18,20 +18,15 @@ begin
 
   desc "Deploy blog files to remote server"
   remote_task :deploy => :default do
-    begin
-      # TODO: teach rsync to ignore cache
-      FileUtils.cd(File.dirname(__FILE__))
-      FileUtils.mv 'planet/cache', 'tmp/planet-cache' rescue nil
-      rsync '.', domain
-    ensure
-      FileUtils.mv 'tmp/planet-cache', 'planet/cache' rescue nil
-    end
+    # TODO: teach rsync to ignore cache
+    FileUtils.cd(File.dirname(__FILE__))
+    rsync '.', domain
   end
 
   desc "Copy comments from remote host to local copy of blog"
   remote_task(:comments) { reverse_rsync '.', "#{domain}/comments" }
 rescue LoadError
-  task(:comments) { "dummy task to satisfy deps when vlad is not present" }
+  task(:comments) { puts "dummy task to satisfy deps when vlad is not present" }
 end
 
 def parse(filename)
@@ -103,10 +98,8 @@ task :list do
 end
 
 task(:other) do
-  ['projects', 'colophon', 'resume', 'books', 'dynabook'].each { |s| render_file_with_template s, "templates/#{s}.html.erb", "public/#{s}.html" }
+  ['projects', 'colophon', 'resume', 'books', 'swank-clojure'].each { |s| render_file_with_template s, "templates/#{s}.html.erb", "public/#{s}.html" }
 end
-
-task(:planet) { system "mars planet/config.yml" }
 
 task :default => [:posts, :list, :feed, :other]
 
@@ -116,12 +109,11 @@ task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or 
 # Favicon
 # Footer that lists "around" posts
 # whitespace in code snippets
-# Restore old timestamps, then list posts by month
 # Make index page stand out a bit
 # add /blog/post/$ID redirect
 # drop caps?
+# move timestamps on list page
 # fix the JS on post 66
-# retire dev.technomancy.us; move content here
 # convert resume into LaTeX
 
 # HTML5:
@@ -131,3 +123,7 @@ task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or 
 #   use <footer>
 #   use <command> and <output> for examples
 #   Switch <acronym> to <abbr>
+
+# Posts:
+# * project naming?
+# * how to contribute

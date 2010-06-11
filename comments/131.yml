@@ -1,0 +1,26 @@
+--- 
+- uri: http://milo.com/
+  timestamp: Thu Nov 26 00:43:24 -0800 2009
+  author: John
+  content: |-
+    P.S. Just for reference sake, here is the faster version I mentioned to you on #clojure which batches chunks of 20 URLs per unit of work:
+    
+    http://pastie.org/715782
+- uri: Elisabeth constantine
+  author: ""
+  timestamp: Fri Nov 27 01:07:11 -0800 2009
+  content: ""
+- uri: http://tealeg.blogspot.com
+  timestamp: Fri Nov 27 04:47:49 -0800 2009
+  author: Geoffrey Teale
+  content: "Excellent.  I wish you'd written that post a week earlier, I just worked out all the leiningen-fu for myself :-D\r\n\
+    \r\n\
+    Still have to say a huge thank you to all involved in leiningen and clojars.  I am just returning to doing productive work in Clojure after many months away and I find that the ease of producing distributable programs is so much better than in the Clojure world I left behind.\r\n\
+    \r\n  "
+- uri: http://devender.wordpress.com
+  author: Devender
+  timestamp: Thu Dec 03 17:26:59 -0800 2009
+  content: |
+    Awesome tool!!
+    
+

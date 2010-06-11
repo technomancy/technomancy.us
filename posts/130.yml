@@ -64,7 +64,7 @@ content: |-
       <span class="esk-paren">(</span><span class="keyword">dorun</span> <span class="esk-paren">(</span><span class="builtin">map</span> #<span class="esk-paren">(</span><span class="builtin">send</span> %1 count-line %2<span class="esk-paren">)</span>
                   <span class="esk-paren">(</span><span class="builtin">cycle</span> agents<span class="esk-paren">)</span>
                   <span class="esk-paren">(</span><span class="builtin">line-seq</span> <span class="esk-paren">(</span>reader filename<span class="esk-paren">))))</span>
-      <span class="esk-paren">(</span><span class="keyword">doseq</span> [a agents] <span class="esk-paren">(</span>await a<span class="esk-paren">))</span>
+      <span class="esk-paren">(</span><span class="keyword">apply</span> await agents<span class="esk-paren">)</span>
       <span class="esk-paren">(</span><span class="builtin">apply</span> merge-with + <span class="esk-paren">(</span><span class="builtin">map</span> deref agents<span class="esk-paren">))))</span>
   </pre>
 

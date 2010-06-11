@@ -31,7 +31,7 @@
         <% parse("comments/#{page['id']}.yml").sort_by {|c| Time.stamp(c['timestamp']) }.each do |comment| %>
         <dt><%= comment['uri'].to_s == '' ? comment['author'] : "<a href='#{comment['uri']}' rel='nofollow'>#{comment['author']}</a>" %> 
         &ndash; <span class='timestamp'><%= Time.stamp comment['timestamp'] %></span></dt>
-        <dd><%= comment['content'] %></dd>
+        <dd><%= comment['content'].gsub(/[\r\n]/, "<br />") %></dd>
         <% end %>
       </dl>
       <form action='/comment.cgi' method='post'>
@@ -41,7 +41,7 @@
         <input type='hidden' name='post_id' value='<%= page['id'] %>' />
         <input type='hidden' name='spammers' id='spammers' value='are ok' />
 
-        <textarea name='content' rows='10' cols='60'></textarea>
+        <textarea name='content' rows='15' cols='60'></textarea>
         <p><input type='submit' value='Post a Comment' /></p>
         <p>HTML will be escaped for now. Comments are currently moderated; sorry.</p>
       </form>

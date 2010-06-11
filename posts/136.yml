@@ -1,0 +1,155 @@
+# -*- html -*-
+--- 
+timestamp: Sat 24 Apr 2010 10:44:44 PM PDT
+title: in which a year is reflected upon
+tags: peepcode, clojure
+id: 136
+content: |-
+  <p>It's been <a href="/124">a year</a> since
+      the <a href="http://peepcode.com/products/functional-programming-with-clojure">PeepCode
+      screencast on Clojure</a> was released. While it's aged
+      surprisingly well given the relative youth of the Clojure
+      language (1.0 hadn't even been released at the time), there are
+      a few things that could use some updates. I thought it would be
+      helpful for me to step
+      through <a href="http://github.com/technomancy/mire">Mire</a>,
+      the sample project that's built up in the screencast, and update
+      it to reflect the changes that have since occurred in the
+      Clojure ecosystem.</p>
+
+  <pre class="code">
+  <span class="esk-paren">(</span>defproject mire <span class="string">"0.13"</span>
+    <span class="builtin">:description</span> <span class="string">"A multiuser text adventure game/learning project."</span>
+    <span class="builtin">:main</span> mire.server
+    <span class="builtin">:dependencies</span> [[org.clojure/clojure <span class="string">"1.2.0-master-SNAPSHOT"</span>]
+                   [org.clojure/clojure-contrib <span class="string">"1.2.0-SNAPSHOT"</span>]]
+    <span class="builtin">:dev-dependencies</span> [[leiningen/lein-swank <span class="string">"1.2.0-SNAPSHOT"</span>]
+                       [leiningen-run <span class="string">"0.3"</span>]]<span class="esk-paren">)</span>
+  </pre>
+
+  <h4><a href="http://github.com/technomancy/mire/commit/8dd4a5dd">Commit
+      8dd4a5d</a>: Moving to Leiningen</h4>
+
+  <p>Probably the most obvious thing about the Mire project as it's
+    seen in the screencast that shows its age is its ad-hoc
+    build. (Step 12 of the screencast) At the time there weren't any
+    good ways to build and distribute Clojure projects, so Mire simply
+    contained a copy of Clojure and Contrib in its git repository and
+    included a shell script to perform compilation and
+    packaging. Apart from being just generally tacky, this actually
+    caused the repository to bloat up by 16MB due to the fact that git
+    is really lousy at storing binary files.</p>
+
+  <p>Kids these days have it so
+    easy&mdash;<a href="http://github.com/technomancy/leiningen">Leiningen</a>
+    is generally used for managing Clojure projects now. I'm not going
+    to go into detail about this here since it's covered well
+    elsewhere, namely in the readme as well as
+    the <a href="http://vimeo.com/8934942">Full Disclojure screencast
+    on project management</a>. (Warning: flash video; a downloadable
+    version is available if you create a Vimeo account.) There are
+    other alternatives, but this is certainly the most
+    straightforward. Leiningen gives you a basic skeleton to work
+    from (<kbd>lein new</kbd>), handles dependencies specified in
+    your project file, (<kbd>lein deps</kbd>) and creates jar files
+    for you, (<kbd>lein jar</kbd>) among other things.</p>
+
+  <h4><a href="http://github.com/technomancy/mire/commit/1326451b">Commit
+      1326451b</a>: The player and rooms namespaces: alter-var-root</h4>
+
+  <p>The main thing that's going on here is replacing a
+    non-toplevel <tt>def</tt> with a call
+    to <tt>alter-var-root</tt>. It's never a good idea to
+    call <tt>def</tt> from within a function. I tried to justify it by
+    the fact that in this case it was a function that was only meant
+    to be called at startup time as the docstring emphasized, (to
+    initialize the rooms map) but it still felt wrong.</p>
+
+  <p>The problem is that the rooms map must be loaded from a bunch of
+    files on disk, but the directory to load from isn't known until
+    the <tt>-main</tt> function is called. So some mutability is
+    called for here, but it's not really enough to justify a ref or an
+    atom since once the server starts it will never change. In the
+    updated version, <tt>alter-var-root</tt> replaces
+    the <tt>def</tt>. It takes a var (<tt>mire.rooms/rooms</tt> in
+    this case) along with a function to apply to the current value of
+    the var and uses the return value as the new root value of the
+    var. It's also possible to simulate change to a var
+    using <tt>binding</tt>, but this only affects the current thread,
+    and in this case we want the changes to be available to all
+    threads.</p>
+
+  <p>Justifiable use of <tt>alter-var-root</tt> is rare, but
+    startup-time mutability is one of those places it makes sense.</p>
+
+  <h4><a href="http://github.com/technomancy/mire/commit/0dbd3402">Commit
+      0dbd3402</a>: The commands namespace: contrib shuffle</h4>
+
+  <p>This one is pretty basic; it's mostly just adjusting to the new
+    layout of Clojure Contrib. A number of namespaces got
+    moved: <tt>clojure.contrib.duck-streams</tt>
+    became <tt>clojure.contrib.io</tt>, <tt>clojure.contrib.str-utils</tt>
+    became <tt>clojure.contrib.string</tt>, etc. In this case we
+    switched from calling <tt>clojure.contrib.str-utils/str-join</tt>
+    to <tt>clojure.contrib.string/join</tt>. Some of these namespaces
+    (most of <tt>io</tt> and some of <tt>seq</tt>) will be promoted out
+    of Contrib and into Clojure itself before the final 1.2.0
+    release.</p>
+
+  <p>The other thing worth noting here is that in the original version
+    of Mire there were a lot of unqualified calls to <tt>use</tt>,
+    which bring in <i>all</i> the vars from the specified
+    namespace. It's a lot more idiomatic now to either switch
+    to <tt>require</tt> with <tt>:as</tt> to alias the namespace to a
+    short name or to stick with <tt>use</tt> but to limit the list of
+    vars using the <tt>:only</tt> qualifier to avoid pulling every
+    single thing in, which is the approach taken here. This may seem
+    like a bit of up-front busywork, but makes it easier to track down
+    dependencies between namespaces and fix them in cases like the
+    Contrib upgrade where things get switched around.</p>
+
+  <h4><a href="http://github.com/technomancy/mire/commit/0a0fa0fa">Commit
+      0a0fa0fa</a>: Upgrade server namespace: the resources directory</h4>
+
+  <p>Here we see more careful <tt>use</tt> usage along with moving the
+    room data files from <tt>data/rooms/</tt>
+    to <tt>resources/rooms/</tt> following Leiningen conventions. The
+    resources dir is meant for files that aren't code but are still
+    used by the project, like HTML templates or data files like the
+    rooms that Mire uses. They will get included in the jar file when
+    the project is packaged.</p>
+
+  <h4><a href="http://github.com/technomancy/mire/commit/43ce1f4e">Commit
+      43ce1f4e</a>: The test suite: clojure.test and use-fixtures</h4>
+
+  <p>In the Clojure 1.1 release the <tt>test-is</tt> library got
+    promoted from Contrib into Clojure itself, so that's reflected
+    here. We also move them to a separate <tt>test</tt> directory to
+    reflect Leiningen convention. The tests for <tt>mire.rooms</tt>
+    now uses the <tt>use-fixtures</tt> function, which is a great way
+    to abstract out common setup to be shared among tests.</p>
+
+  <p>While OOP test frameworks use setup/teardown methods,
+    the <tt>use-fixtures</tt> feature of <tt>clojure.test</tt> takes
+    advantage of the fact that tests themselves are functions. A
+    fixture is simply a function that takes a function argument. In
+    our case the fixture just runs the function inside some bindings,
+    but other common uses of fixtures are to create data on disk in a
+    try/finally block and clean up when it finishes or to
+    conditionally run the tests only if a given network service is
+    accessible. There's a lot of flexibility with <tt>clojure.test</tt>
+    fixtures.</p>
+
+  <h4>What Isn't Here</h4>
+
+  <p>There have been a lot more new features introduced to Clojure
+    since Mire was released. We haven't
+    covered <a href="/132">transients</a>, <a href="http://clojure.org/protocols">protocols</a>,
+    <a href="http://clojure.org/datatypes">deftype</a>, or
+    the <a href="http://debasishg.blogspot.com/2010/04/thrush-in-clojure.html">thrush
+    combinators</a> mostly because these aren't introductory-level
+    topics, but also because they're the trendy new exciting topics
+    and have been covered well elsewhere. But I hope this has been
+    enough to modernize the Mire project and help extend the relevance
+    of the screencast and associated codebase. Thanks for tuning
+    in!</p>
