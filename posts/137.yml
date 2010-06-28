@@ -113,12 +113,20 @@ content: |-
     better than anything I've used in a mainstream browser, and its
     mouseless browsing support is excellent. It's also very stable as
     long as you don't have any garbage plugins like Adobe Flash
-    installed. Its only flaw is being based on Gecko rather than
+    installed. <strike>Its only flaw is being based on Gecko rather than
     Webkit. I've experimented a bit with mouseless extensions for
     Chromium, but the extension mechanism in that browser is crippled
     in comparison to what's possible in Mozilla, so while the speed
     boost was nice, this ended up being very frustrating in
-    practice.</p>
+    practice.</strike></p>
+
+  <p><b>Update</b>: I recant my complaints regarding the speed of
+    Gecko in light of
+    <a href="http://nightly.mozilla.org/">the latest Mozilla
+    nightlies</a>; they are absolutely zippy. I am no longer tempted
+    to go back to Chromium. You can use Firefox rather than Xulrunner
+    to launch Conkeror by doing <kbd>bin/firefox -app
+    ~/src/conkeror/application.ini</kbd>.</p>
 
   <p>Unfortunately I need to use skype for work. While I've been
     pretty impressed with its ability to use a very limited amount of
