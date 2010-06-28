@@ -2,12 +2,13 @@
 
     <div id='wrapper'>
       <h3>Posts</h3>
-      <ul>
-        <%# statefuuuuuuuuuuuuuuuuuuuuuulness! %>
+        <%# statefuuuuuuuuuuuuuuuuuuuuuulness! (this sucks) %>
         <% page.each do |post| %>
         <% @this_year = Time.parse(post['timestamp']).year %>
+        <% if @last_year and @last_year != @this_year %></ul><% end %>
         <% if @last_year.nil? or @last_year != @this_year %>
         <h4><%= Time.parse(post['timestamp']).year %></h4>
+        <ul>
         <% end %>
         <% @last_year = @this_year %>
 

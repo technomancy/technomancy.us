@@ -58,28 +58,28 @@ content: |-
       1326451b</a>: The player and rooms namespaces: alter-var-root</h4>
 
   <p>The main thing that's going on here is replacing a
-    non-toplevel <tt>def</tt> with a call
-    to <tt>alter-var-root</tt>. It's never a good idea to
-    call <tt>def</tt> from within a function. I tried to justify it by
+    non-toplevel <code>def</code> with a call
+    to <code>alter-var-root</code>. It's never a good idea to
+    call <code>def</code> from within a function. I tried to justify it by
     the fact that in this case it was a function that was only meant
     to be called at startup time as the docstring emphasized, (to
     initialize the rooms map) but it still felt wrong.</p>
 
   <p>The problem is that the rooms map must be loaded from a bunch of
     files on disk, but the directory to load from isn't known until
-    the <tt>-main</tt> function is called. So some mutability is
+    the <code>-main</code> function is called. So some mutability is
     called for here, but it's not really enough to justify a ref or an
     atom since once the server starts it will never change. In the
-    updated version, <tt>alter-var-root</tt> replaces
-    the <tt>def</tt>. It takes a var (<tt>mire.rooms/rooms</tt> in
+    updated version, <code>alter-var-root</code> replaces
+    the <code>def</code>. It takes a var (<code>mire.rooms/rooms</code> in
     this case) along with a function to apply to the current value of
     the var and uses the return value as the new root value of the
     var. It's also possible to simulate change to a var
-    using <tt>binding</tt>, but this only affects the current thread,
+    using <code>binding</code>, but this only affects the current thread,
     and in this case we want the changes to be available to all
     threads.</p>
 
-  <p>Justifiable use of <tt>alter-var-root</tt> is rare, but
+  <p>Justifiable use of <code>alter-var-root</code> is rare, but
     startup-time mutability is one of those places it makes sense.</p>
 
   <h4><a href="http://github.com/technomancy/mire/commit/0dbd3402">Commit
@@ -87,22 +87,22 @@ content: |-
 
   <p>This one is pretty basic; it's mostly just adjusting to the new
     layout of Clojure Contrib. A number of namespaces got
-    moved: <tt>clojure.contrib.duck-streams</tt>
-    became <tt>clojure.contrib.io</tt>, <tt>clojure.contrib.str-utils</tt>
-    became <tt>clojure.contrib.string</tt>, etc. In this case we
-    switched from calling <tt>clojure.contrib.str-utils/str-join</tt>
-    to <tt>clojure.contrib.string/join</tt>. Some of these namespaces
-    (most of <tt>io</tt> and some of <tt>seq</tt>) will be promoted out
+    moved: <code>clojure.contrib.duck-streams</code>
+    became <code>clojure.contrib.io</code>, <code>clojure.contrib.str-utils</code>
+    became <code>clojure.contrib.string</code>, etc. In this case we
+    switched from calling <code>clojure.contrib.str-utils/str-join</code>
+    to <code>clojure.contrib.string/join</code>. Some of these namespaces
+    (most of <code>io</code> and some of <code>seq</code>) will be promoted out
     of Contrib and into Clojure itself before the final 1.2.0
     release.</p>
 
   <p>The other thing worth noting here is that in the original version
-    of Mire there were a lot of unqualified calls to <tt>use</tt>,
+    of Mire there were a lot of unqualified calls to <code>use</code>,
     which bring in <i>all</i> the vars from the specified
     namespace. It's a lot more idiomatic now to either switch
-    to <tt>require</tt> with <tt>:as</tt> to alias the namespace to a
-    short name or to stick with <tt>use</tt> but to limit the list of
-    vars using the <tt>:only</tt> qualifier to avoid pulling every
+    to <code>require</code> with <code>:as</code> to alias the namespace to a
+    short name or to stick with <code>use</code> but to limit the list of
+    vars using the <code>:only</code> qualifier to avoid pulling every
     single thing in, which is the approach taken here. This may seem
     like a bit of up-front busywork, but makes it easier to track down
     dependencies between namespaces and fix them in cases like the
@@ -111,9 +111,9 @@ content: |-
   <h4><a href="http://github.com/technomancy/mire/commit/0a0fa0fa">Commit
       0a0fa0fa</a>: Upgrade server namespace: the resources directory</h4>
 
-  <p>Here we see more careful <tt>use</tt> usage along with moving the
-    room data files from <tt>data/rooms/</tt>
-    to <tt>resources/rooms/</tt> following Leiningen conventions. The
+  <p>Here we see more careful <code>use</code> usage along with moving the
+    room data files from <code>data/rooms/</code>
+    to <code>resources/rooms/</code> following Leiningen conventions. The
     resources dir is meant for files that aren't code but are still
     used by the project, like HTML templates or data files like the
     rooms that Mire uses. They will get included in the jar file when
@@ -122,22 +122,22 @@ content: |-
   <h4><a href="http://github.com/technomancy/mire/commit/43ce1f4e">Commit
       43ce1f4e</a>: The test suite: clojure.test and use-fixtures</h4>
 
-  <p>In the Clojure 1.1 release the <tt>test-is</tt> library got
+  <p>In the Clojure 1.1 release the <code>test-is</code> library got
     promoted from Contrib into Clojure itself, so that's reflected
-    here. We also move them to a separate <tt>test</tt> directory to
-    reflect Leiningen convention. The tests for <tt>mire.rooms</tt>
-    now uses the <tt>use-fixtures</tt> function, which is a great way
+    here. We also move them to a separate <code>test</code> directory to
+    reflect Leiningen convention. The tests for <code>mire.rooms</code>
+    now uses the <code>use-fixtures</code> function, which is a great way
     to abstract out common setup to be shared among tests.</p>
 
   <p>While OOP test frameworks use setup/teardown methods,
-    the <tt>use-fixtures</tt> feature of <tt>clojure.test</tt> takes
+    the <code>use-fixtures</code> feature of <code>clojure.test</code> takes
     advantage of the fact that tests themselves are functions. A
     fixture is simply a function that takes a function argument. In
     our case the fixture just runs the function inside some bindings,
     but other common uses of fixtures are to create data on disk in a
     try/finally block and clean up when it finishes or to
     conditionally run the tests only if a given network service is
-    accessible. There's a lot of flexibility with <tt>clojure.test</tt>
+    accessible. There's a lot of flexibility with <code>clojure.test</code>
     fixtures.</p>
 
   <h4>What Isn't Here</h4>

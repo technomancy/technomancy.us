@@ -68,6 +68,10 @@ ul.spaced li {
     text-align: center;
 }
 
+#footer img {
+    border: 0;
+}
+
 img.portrait {
     margin-top: -3em;
     margin-left: 3em;
