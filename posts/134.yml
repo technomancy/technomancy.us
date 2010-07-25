@@ -133,6 +133,9 @@ content: |-
     code is more or less identical to what the Java compiler would
     have output.</p>
 
+  <p><b>Update</b>: Duby has (thankfully) been renamed <a
+    href="http://mirah.org">Mirah</a>.</p>
+
   <h3>Progress</h3>
 
   <p>So far I've only put together a couple toy apps: Hello World, and
@@ -147,7 +150,7 @@ content: |-
     compiler source myself and get to the point where I can add
     features I need with minimal guidance.</p>
 
-  <p>Adapting the build process to Duby was surprisingly easy. You
+  <p>Adapting the Android build process to Duby was surprisingly easy. You
     <a href="http://github.com/technomancy/Garrett/blob/master/build.xml#L67">redeclare
       the compile task</a> to call the Duby compiler instead of javac,
       tell it to output its bytecode in the right directory, and the
