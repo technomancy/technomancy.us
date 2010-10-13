@@ -21,10 +21,9 @@ content: |-
   <span class="esk-paren">(</span>defproject mire <span class="string">"0.13"</span>
     <span class="builtin">:description</span> <span class="string">"A multiuser text adventure game/learning project."</span>
     <span class="builtin">:main</span> mire.server
-    <span class="builtin">:dependencies</span> [[org.clojure/clojure <span class="string">"1.2.0-master-SNAPSHOT"</span>]
-                   [org.clojure/clojure-contrib <span class="string">"1.2.0-SNAPSHOT"</span>]]
-    <span class="builtin">:dev-dependencies</span> [[leiningen/lein-swank <span class="string">"1.2.0-SNAPSHOT"</span>]
-                       [leiningen-run <span class="string">"0.3"</span>]]<span class="esk-paren">)</span>
+    <span class="builtin">:dependencies</span> [[org.clojure/clojure <span class="string">"1.2.0"</span>]
+                   [org.clojure/clojure-contrib <span class="string">"1.2.0"</span>]]
+    <span class="builtin">:dev-dependencies</span> [[swank-clojure <span class="string">"1.3.0-SNAPSHOT"</span>]])</span>
   </pre>
 
   <h4><a href="http://github.com/technomancy/mire/commit/8dd4a5dd">Commit
@@ -44,15 +43,16 @@ content: |-
     easy&mdash;<a href="http://github.com/technomancy/leiningen">Leiningen</a>
     is generally used for managing Clojure projects now. I'm not going
     to go into detail about this here since it's covered well
-    elsewhere, namely in the readme as well as
-    the <a href="http://vimeo.com/8934942">Full Disclojure screencast
-    on project management</a>. (Warning: flash video; a downloadable
-    version is available if you create a Vimeo account.) There are
-    other alternatives, but this is certainly the most
-    straightforward. Leiningen gives you a basic skeleton to work
-    from (<kbd>lein new</kbd>), handles dependencies specified in
-    your project file, (<kbd>lein deps</kbd>) and creates jar files
-    for you, (<kbd>lein jar</kbd>) among other things.</p>
+    elsewhere, namely in the readme
+    and <a href="http://github.com/technomancy/leiningen/blob/master/TUTORIAL.md">tutorial</a>
+    as well as the <a href="http://vimeo.com/8934942">Full Disclojure
+    screencast on project management</a>. (Warning: flash video; a
+    downloadable version is available if you create a Vimeo account.)
+    There are other alternatives, but this is certainly the most
+    straightforward. Leiningen gives you a basic skeleton to work from
+    (<kbd>lein new</kbd>), handles dependencies specified in your
+    project file, (<kbd>lein deps</kbd>) and creates jar files for
+    you, (<kbd>lein jar</kbd>) among other things.</p>
 
   <h4><a href="http://github.com/technomancy/mire/commit/1326451b">Commit
       1326451b</a>: The player and rooms namespaces: alter-var-root</h4>
@@ -80,7 +80,11 @@ content: |-
     threads.</p>
 
   <p>Justifiable use of <code>alter-var-root</code> is rare, but
-    startup-time mutability is one of those places it makes sense.</p>
+    startup-time mutability is one of those places it makes sense. For
+    a more idiomatic use of <code>alter-var-root</code>
+    see <a href="http://github.com/technomancy/robert-hooke">Robert
+    Hooke</a>
+    or <a href="http://github.com/Seajure/radagast">Radagast</a>.</p>
 
   <h4><a href="http://github.com/technomancy/mire/commit/0dbd3402">Commit
       0dbd3402</a>: The commands namespace: contrib shuffle</h4>

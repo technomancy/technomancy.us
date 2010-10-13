@@ -18,7 +18,7 @@ begin
 
   desc "Deploy blog files to remote server"
   remote_task :deploy => :default do
-    # TODO: teach rsync to ignore cache
+    raise "Don't deploy!" if $nodeploy
     FileUtils.cd(File.dirname(__FILE__))
     rsync '.', domain
   end
@@ -123,7 +123,3 @@ task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or 
 #   use <footer>
 #   use <command> and <output> for examples
 #   Switch <acronym> to <abbr>
-
-# Posts:
-# * project naming?
-# * how to contribute

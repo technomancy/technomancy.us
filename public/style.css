@@ -89,6 +89,10 @@ a:hover {
 
 a img { border: 0; }
 
+a.older, a.newer {
+    size: 80%;
+}
+
 pre, pre span, tt, kbd {
   font-family: Inconsolata, Consolas, monospace;
 }

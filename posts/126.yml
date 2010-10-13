@@ -14,11 +14,11 @@ content: |
     are a lot of moving parts, but bear with me; most of the
     installation is automated.</p>
 
-  <p><b>Spoiler Alert</b>: Using SLIME with Clojure is now much
-    easier than the instructions detailed below indicate. This page is
-    left up as it provides some background that may be helpful, but if
-    you just want to get going with
-    SLIME, <a href="/swank-clojure.html">use ELPA</a>.</p>
+  <p><b>Spoiler Alert</b>: Using SLIME with Clojure is now much easier
+    than the instructions detailed below indicate. This page is left
+    up as it provides some background that may be helpful, but if you
+    just want to get going with SLIME, <a
+    href="http://www.assembla.com/wiki/show/clojure/Getting_Started_with_Emacs">try the Getting Started page on the official wiki</a>.</p>
 
   <a name="pieces"></a>
   <h3>The Pieces</h3>
