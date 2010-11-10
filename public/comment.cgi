@@ -12,7 +12,7 @@ end
 
 new_comment['content'].gsub!("\r?\n", "<br />") # newlines
 
-if cgi.params['human'].to_s =~ /yes/i and cgi.params['post_id'].to_s != ''
+if cgi.params['human'].to_s =~ /human$/i and cgi.params['post_id'].to_s != ''
   filename = File.expand_path "../comments/#{cgi.params['post_id']}.yml"
 else
   filename = '/dev/null'
