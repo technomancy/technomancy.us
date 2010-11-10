@@ -6,7 +6,7 @@
     <title><%= page['title'] %> - Technomancy</title>
     <script src="/jquery.js" type="text/javascript"></script>
     <script type="text/javascript">
-      $(document).ready(function () { $('#human').attr('checked', true); });
+      /* $(document).ready(function () { $('#human').attr('checked', true); }); */
     </script>
 
     <link rel="alternate" href="/feed/atom.xml" title="Technomancy Feed" type="application/atom+xml"/>
@@ -43,10 +43,9 @@
 
         <textarea name='content' rows='15' cols='60'></textarea>
         <p><input type='submit' value='Post a Comment' />
-          <input type='checkbox' name='human' id='human' value='1' />
-          I am a human.
+          Are you a human? <input type='text' name='human' id='human' size="4" />
         </p>
-        <p>Please no HTML. Comments are currently moderated.</p>
+        <p>Please no HTML.</p>
       </form>
     </div>
 

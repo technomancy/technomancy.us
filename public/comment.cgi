@@ -6,17 +6,16 @@ require 'yaml'
 cgi = CGI.new
 
 new_comment = { 'timestamp' => Time.now.to_s }
-['author', 'uri', 'content'].each do |param|
+['author', 'uri', 'content', 'human'].each do |param|
   new_comment[param] = CGI.escapeHTML(cgi.params[param].to_s)
 end
 
 new_comment['content'].gsub!("\r?\n", "<br />") # newlines
 
-if cgi.params['human'].to_s != '1' or cgi.params['post_id'].to_s == ''
-  filename = '/dev/null'
-  new_comment['post_id'] = cgi.params['post_id']
-else
+if cgi.params['human'].to_s =~ /yes/i and cgi.params['post_id'].to_s != ''
   filename = File.expand_path "../comments/#{cgi.params['post_id']}.yml"
+else
+  filename = '/dev/null'
 end
 
 comments = YAML.load(File.read(filename)) || [] rescue []
