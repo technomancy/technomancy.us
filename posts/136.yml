@@ -52,7 +52,9 @@ content: |-
     straightforward. Leiningen gives you a basic skeleton to work from
     (<kbd>lein new</kbd>), handles dependencies specified in your
     project file, (<kbd>lein deps</kbd>) and creates jar files for
-    you, (<kbd>lein jar</kbd>) among other things.</p>
+    you, (<kbd>lein jar</kbd>) among other things. In the latest
+    version of leiningen, the <kbd>lein run</kbd> task can be used to
+    launch the server.</p>
 
   <h4><a href="http://github.com/technomancy/mire/commit/1326451b">Commit
       1326451b</a>: The player and rooms namespaces: alter-var-root</h4>
@@ -86,6 +88,14 @@ content: |-
     Hooke</a>
     or <a href="http://github.com/Seajure/radagast">Radagast</a>.</p>
 
+  <p><b>Update</b>: In retrospect, a ref really is suitable here,
+    since there's no reason the player's actions couldn't shift rooms
+    around in some way. So mutability could happen at runtime. Since
+    the mutability needs to be coordinated among players, a ref should
+    be used rather than an
+    atom. See <a href="https://github.com/technomancy/mire/commit/329056">commit
+    329056.</p>
+
   <h4><a href="http://github.com/technomancy/mire/commit/0dbd3402">Commit
       0dbd3402</a>: The commands namespace: contrib shuffle</h4>
 
@@ -95,10 +105,15 @@ content: |-
     became <code>clojure.contrib.io</code>, <code>clojure.contrib.str-utils</code>
     became <code>clojure.contrib.string</code>, etc. In this case we
     switched from calling <code>clojure.contrib.str-utils/str-join</code>
-    to <code>clojure.contrib.string/join</code>. Some of these namespaces
+    to <code>clojure.contrib.string/join</code>. <strike>Some of these namespaces
     (most of <code>io</code> and some of <code>seq</code>) will be promoted out
     of Contrib and into Clojure itself before the final 1.2.0
-    release.</p>
+    release</strike>.</p>
+
+  <p><b>Update</b>: Following the release of Clojure 1.2 I replaced
+    most of the contrib usage with the libraries that were promoted to
+    Clojure. The only remaining use of contrib is the server-sockets
+    library.</p>
 
   <p>The other thing worth noting here is that in the original version
     of Mire there were a lot of unqualified calls to <code>use</code>,
@@ -153,7 +168,13 @@ content: |-
     the <a href="http://debasishg.blogspot.com/2010/04/thrush-in-clojure.html">thrush
     combinators</a> mostly because these aren't introductory-level
     topics, but also because they're the trendy new exciting topics
-    and have been covered well elsewhere. But I hope this has been
+    and have been covered well elsewhere. <b>Update</b>: two other
+    potentially confusing topics that have gotten a thorough blog
+    treatment since this was written
+    are <a href="http://copperthoughts.com/p/clojure-io-p1/">I/O
+    courtesy of Isaac Hodes</a>
+    and <a href="http://blog.8thlight.com/articles/2010/12/6/clojure-libs-and-namespaces-require-use-import-and-ns">the
+    ns clause courtesy of Colin Jones</a>. I hope this has been
     enough to modernize the Mire project and help extend the relevance
     of the screencast and associated codebase. Thanks for tuning
     in!</p>
