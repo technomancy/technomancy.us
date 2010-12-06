@@ -30,6 +30,10 @@ content: |-
                    [org.apache.maven/maven-ant-tasks <span class="string">"2.0.10"</span>]]
     <span class="builtin">:dev-dependencies</span> [[org.clojure/swank-clojure <span class="string">"1.0"</span>]]<span class="esk-paren">)</span></pre>
 
+  <p><b>Update</b>: Leiningen now has
+    a <a href="https://github.com/technomancy/leiningen/blob/master/TUTORIAL.md">tutorial</a>
+    that is much more comprehensive than this.</p>
+
   <h3>Testing</h3>
 
   <p>This one's pretty straightforward: <kbd>lein test</kbd> searches
