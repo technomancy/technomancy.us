@@ -4,30 +4,17 @@ require 'cgi'
 require 'uri'
 require 'yaml'
 
-begin
-  require 'vlad'
-  set :domain, 'technomancy.us'
-  set :rsync_flags, ['-azP', "--exclude=.git*"]
-
-  def reverse_rsync local, remote
-    cmd = [rsync_cmd, rsync_flags, "#{domain}:#{remote}", local].flatten.compact
-
-    system(*cmd) or
-      raise Vlad::CommandFailedError, "execution failed: #{cmd.join ' '}"
-  end
-
-  desc "Deploy blog files to remote server"
-  remote_task :deploy => :default do
-    raise "Don't deploy!" if $nodeploy
-    FileUtils.cd(File.dirname(__FILE__))
-    rsync '.', domain
-  end
-
-  desc "Copy comments from remote host to local copy of blog"
-  remote_task(:comments) { reverse_rsync '.', "#{domain}/comments" }
-rescue LoadError
-  task(:comments) { puts "dummy task to satisfy deps when vlad is not present" }
+def rsync(src, target)
+  system "rsync -azP --exclude=.git* #{src} #{target}"
 end
+
+task :deploy do
+  raise "Don't deploy!" if $nodeploy
+  FileUtils.cd(File.dirname(__FILE__))
+  rsync '.', "technomancy.us:technomancy.us"
+end
+
+task(:comments) { rsync "technomancy.us:technomancy.us/comments/", "comments/" }
 
 def parse(filename)
   YAML.load(File.read(filename)) rescue {}
