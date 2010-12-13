@@ -121,3 +121,10 @@
     (reduce (partial merge-with +) (pmap count-line (line-seq (reader filename))))
     
     It would be interesting to see how this performs, but I don't have the time to play with Wide finder right now.  Still I'm working on a similar problem and if I'm able to optimize it I'll post some results.
+- uri: http://milo.com/
+  author: John
+  timestamp: Thu Nov 26 00:43:24 -0800 2009
+  content: |-
+    P.S. Just for reference sake, here is the faster version I mentioned to you on #clojure which batches chunks of 20 URLs per unit of work:
+    
+    http://pastie.org/715782
