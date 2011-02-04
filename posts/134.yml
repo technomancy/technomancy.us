@@ -60,6 +60,9 @@ content: |-
     blocking that on a network level. They do seem to be the
     least-user-hostile of all the US carriers.</p>
 
+  <p><b>Update</b>: Skype has released an Android version, which is
+    now what I use for all my voice needs.</p>
+
   <h3>Hacking It</h3>
 
   <p>Of course once you get past the formalities, the question that
@@ -80,7 +83,7 @@ content: |-
     can also use this to install dev builds of various apps before
     they have been uploaded to the Market.</p>
 
-  <p>The API seems pretty sane. A lot of thought has gone into the
+  <p>The API seems pretty sane. Clearly a lot of thought has gone into the
     notion of supporting a single front-and-center application while
     allowing others to run in the background without impacting battery
     life and performance too severely. I've played a bit with the
@@ -92,7 +95,7 @@ content: |-
 
   <h3>Language of Choice</h3>
 
-  <p>Since the Android VM is based on the JVM, there's a whole host of
+  <p>Since Dalvik (the Android VM) is based on the JVM, there's a whole host of
     languages that can run on it. Unfortunately, Dalvik is no
     Hotspot&mdash;it currently lacks JIT, and the GC is merely
     serviceable rather than astoundingly good like Hotspot's. The lack
@@ -110,6 +113,9 @@ content: |-
     less-traveled route with something
     called <a href="http://github.com/headius/duby">Duby</a>.</p>
 
+  <p><b>Update</b>: Duby has (thankfully) been renamed <a
+    href="http://mirah.org">Mirah</a>.</p>
+
   <p>Duby is a language created by Charles Nutter, the head of the
     JRuby project. JRuby is an amazing feat in part because Ruby's
     object model is vastly different from what's natively available on
@@ -124,17 +130,14 @@ content: |-
     statically-typed. While it has type inference, it's not
     Hindley-Milner-style, it's closer to Scala's. Locals get their
     types inferred, it's only arguments in method definitions that
-    need hints. So far I keep forgetting this nearly every time
-    I write a new method since it looks so close to Ruby otherwise,
-    but I'm sure I'll get the hang of it. Closures are implemented, so
-    you can iterate over collections with blocks. Duby is also unique
-    in that it literally has no runtime&mdash;its literals translate
-    directly to ArrayLists and HashMaps, so once you've compiled, the
-    code is more or less identical to what the Java compiler would
-    have output.</p>
-
-  <p><b>Update</b>: Duby has (thankfully) been renamed <a
-    href="http://mirah.org">Mirah</a>.</p>
+    need hints. So far I keep forgetting this nearly every time I
+    write a new method since it looks so close to Ruby otherwise, but
+    I'm sure I'll get the hang of it. Closures are compiled into
+    anonymous inner classes, and you can iterate over collections with
+    blocks. Duby is also unique in that it literally has no
+    runtime&mdash;its literals translate directly to ArrayLists and
+    HashMaps, so once you've compiled, the code is more or less
+    identical to what the Java compiler would have output.</p>
 
   <h3>Progress</h3>
 
