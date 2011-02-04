@@ -1,0 +1,75 @@
+--- 
+- uri: http://rassie.org
+  human: human
+  author: Nikolai
+  timestamp: Wed Jan 05 11:33:06 -0800 2011
+  content: For a long time, Emacs had no packaging and catalogization system. Now, we have about two dozen. Could you please talk to the others to just have one? From what I see, Emacsmirror has done a lot of work to keep all possible packages in sync in one place, while el-get makes it rather straightforward to combine several sources in one init.el and above all that make installation a bit less painful.
+- uri: ""
+  timestamp: Wed Jan 05 13:51:31 -0800 2011
+  author: Gregor
+  human: A human
+  content: "typo: you mis-spelled Ma*r*malade as &quot;Malmalade&quot; when first mentioned.  Thanks for the link."
+- uri: www.bennee.com/~alex
+  human: Human
+  author: Alex Bennee
+  timestamp: Thu Jan 06 00:29:37 -0800 2011
+  content: |-
+    I understand why the FSF want copyright assignment but surely in today's modern world their are easier ways. Will the FSF not accept a GPG signed email?
+    
+    I had to do something similar when registering Edit with Emacs on Google Chrome's web-store. In the end I scanned a signed page and emailed it to Google. That did the trick but does need a scanner so I had to do it at work.
+- uri: http://technomancy.us
+  timestamp: Thu Jan 06 09:24:44 -0800 2011
+  author: Phil
+  human: human
+  content: |-
+    Nikolai: I'm not sure what you mean. Apart from the XEmacs package system, package.el was the first elisp package manager to be written. I think el-get may have made sense for a while when ELPA was still awkward to submit code to, but now with Marmalade I don't see any point in making it easy to work with non-packaged code. Just package it up; it's really easy. As I understand it Emacsmirror is more about long-term archival than installation, so I don't see any duplication there.
+    
+    package.el is part of GNU Emacs now; it seems like efforts to develop external solutions would be better spent improving the official one.
+    
+    Gregor: Thanks; fixed.
+- uri: ""
+  human: human
+  author: Nikolai
+  timestamp: Thu Jan 06 10:13:13 -0800 2011
+  content: |-
+    Phil: I'll try to clarify below. BTW, my wget tells me that some kind of decentralized approach to packaging might be needed ;)
+    
+    $ wget http://marmalade-repo.org/ -nv
+    http://marmalade-repo.org/:
+    2011-01-06 18:30:13 ERROR 503: Service Temporarily Unavailable.
+    
+    My key point is that there should be one tool for one task. Currently, every available tool tries to do almost everything, but lacking in some ways: Emacsmirror provides way to create a clean &quot;git submodules&quot; configuration, but without embedding those into configuration. el-get replicates what Emacsmirror does on server-side with client-side recipes (without using Emacsmirror's data), but additionally includes means to actually enable a package automatically (require or autoloads). ELPA only provides packages, lacks auto-configuration and extensibility (packages not-yet-in-system? multi-file packages?).
+    
+    Without cooperation, too much work will be wasted. Example: Emacsmirror has already collected a huge metadata database at https://github.com/emacsmirror/epkgs. Such a database can probably be easily converted into a package.el-compatible repository. Installation-time data, like in el-get recipes, could be added to this database. Because it's a git repository, packaging process could be a collaboration instead of an individual process like ELPA currently (can't judge Marmalade, but if it's anything like Rubygems or CPAN, then it's an individual effort). Also, setting up a complete mirror is then a matter of a couple of hours. So if Emacsmirror creates such a package.el repository, where does that leave Marmalade, ELPA and FSF's repo? Considering uploading and maintaining effort, it might be better to help Emacsmirror do the work and drop those other repositories.
+    
+    This leaves us with package.el as package-installer and Emacsmirror as a (de)centralized metadata and source repository. el-get would then be the &quot;apt-get of the Emacs world&quot;, keeping packages up-to-date, byte-compiling and ensuring correct embedding into Emacs configuration. 
+    
+    Then, if this whole packaging thing gets big, moving packages out of the core might also be a possibility. But I guess I'm moving into lion's lair with this proposal :-)
+    
+    I hope I've made myself clear, even with this long text.
+- uri: http://technomancy.us
+  timestamp: Thu Jan 06 12:30:34 -0800 2011
+  author: Phil
+  human: human
+  content: |-
+    &gt; ELPA only provides packages, lacks auto-configuration and extensibility (packages not-yet-in-system? multi-file packages?).
+    
+    I'm not sure what you mean. What's auto-configuration? If you're referring to the ability to specify &quot;I want packages X, Y, and Z to be installed if they are not present&quot;, it's on the roadmap, but it's absolutely trivial to implement. Multi-file packages already work great. &quot;Packages that aren't yet in the system&quot; is solved by marmalade--when it's so easy to upload packages, there's no excuse for not putting them in the system.
+    
+    &gt; Because it's a git repository, packaging process could be a collaboration instead of an individual process like ELPA currently
+    
+    You seem to have some misconceptions. ELPA is an individual process because it's currently manually-handled by email, but this has nothing to do with package.el except historically. Marmalade makes it easy for multiple maintainers to collaborate on packaging.
+    
+    It would probably be a good idea to look into some sort of automated import from Emacsmirror in order to bootstrap a package.el source with a bunch of packages. But there's still work to be done making Marmalade more stable and adding a few more features to package.el that I think automated import should be lower priority. Though of course if it's something you feel strongly about then don't let me stop you.
+    
+    &gt; Then, if this whole packaging thing gets big, moving packages out of the core might also be a possibility
+    
+    This was actually one of the main reasons behind including package.el in the first place, so it's absolutely not controversial. The maintainers of gnus and org-mode have expressed interest in moving over.
+- uri: http://tuxicity.se
+  human: human
+  author: Johan Andersson
+  timestamp: Sat Jan 08 02:41:00 -0800 2011
+  content: |-
+    Marmalade is great news!  It's great that there's an alternative packaging version, using a tar file. Using source code comments to specify meta data sucks.
+    
+    One big thing missing from package.el if you ask me is that you can only submit packages that have a single file. Phil, you who have worked a bit on package.el, do you know if there's any plan to support multiple files?

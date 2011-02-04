@@ -54,3 +54,6 @@ content: |-
       per-user level, prerelease version number support, and
       extraction of some built-in Emacs libraries as
       packages. Suggestions, bug reports, and patches welcome!</p>
+
+    <p><b>Update</b>: package.el has been <a href="http://bit.ly/pkg-el">
+    integrated into Emacs 24</a>.</p>
