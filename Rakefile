@@ -95,18 +95,9 @@ task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or 
 # TODO:
 # Favicon
 # Footer that lists "around" posts
-# whitespace in code snippets
 # Make index page stand out a bit
 # add /blog/post/$ID redirect
 # drop caps?
 # move timestamps on list page
 # fix the JS on post 66
 # convert resume into LaTeX
-
-# HTML5:
-#   use <article> for entries
-#   use <header> for titles
-#   use <time> for timestamps
-#   use <footer>
-#   use <command> and <output> for examples
-#   Switch <acronym> to <abbr>

@@ -1,42 +1,42 @@
 --- 
-- timestamp: Fri Oct 24 19:56:03 -0700 2008
-  uri: http://piyokun.googlepages.com
+- uri: http://piyokun.googlepages.com
   author: piyo
+  timestamp: Fri Oct 24 19:56:03 -0700 2008
   content: +1, Insightful<br /><br />I think your examples show some people like to get a menu (reach for the mouse) and pick and choose, while others like to start the dialog from their end (M-x) and ask about the special of the day. OMG mystery meat. :-)<br /><br />Isn't Textmate over there the new Emacs? &gt;:-]<br /><br />On the Windows side (yes I'm from there), either I came too late to the porting party or the Emacs UI is just not much of a problem, since Windows UI itself it just so non-unixy I just throw up my hands and exclaim &quot;Think Different&quot;.:-/ The recent change in Emacs 22.x to allow file copies from Windows Explorer to a directory shown by a Dired Buffer (via &quot;drag and drop&quot;) seemed to be an anti-improvement IMHO, but I'm sure someone appreciates it. Still I like reaching for Eclipse or VS200x for the &quot;intellisense&quot; visualization. It just works and sometimes I'm in that mood to hit Control-Spacebar. 14 years and I still haven't set this up in my Emacs (I assume, without hesitation, that it is possible).<br /><br />One thing I would like to know is if Emacs Customize should really, really be avoided. My Customize vs hand-pref ratio in my .emacs is probably 20%:80%, and I feel its convenient for what it does, except for the UI which is really awful. The font face and color selection is just hit and miss. Someone, please, post a &quot;Emacs Customize considered harmful&quot; or &quot;E.C. is full of lose&quot;..
-- timestamp: Sat Oct 25 11:17:13 -0700 2008
-  uri: http://bytetastic.com
+- uri: http://bytetastic.com
   author: Audun Wilhelmsen
+  timestamp: Sat Oct 25 11:17:13 -0700 2008
   content: Interesting points, but they're both invalid when compared to TextMate. Yes, you have tabs with TextMate, but you have a shortcut to open (with a few keystrokes) any file in a project (cmd+T). And it's just as easy (or easier) to modify the behaviour of the app through the Bundle editor.<br /><br />I'd really like to see compelling reasons to switch from TextMate to emacs, if only to suggest improvements for TextMate or other code text-editors.<br /><br />The big problem I have with Emacs is that it is hard to get into for novices.. I've tried myself at a few occasions. TextMate (among others) makes it easy for novices to get into, and allow you to discover each functionality incrementally.
-- timestamp: Sun Oct 26 20:12:39 -0700 2008
-  uri: http://technomancy.us
+- uri: http://technomancy.us
   author: phil
+  timestamp: Sun Oct 26 20:12:39 -0700 2008
   content: |-
     Audun: I think you're missing the point; it's not "Program X is missing feature Y", it's "People expect programs to work a certain way and don't realize when something better is available". That said, there is at least one big flaw with what you've said.<br /><br />
     &gt; <i>And it's just as easy (or easier) to modify the behaviour of the app through the Bundle editor</i>.<br /><br />
     The problem with this is that you can't extend it using the same tools that it was written in. The fact that the author says, "look, here&mdash;we have a way for you extend the program, but it's not the way <b>I</b> extend the program" means there are a lot of things you just can't do. I've tried to get folks to support <a href='http://augment.rubyforge.org'>Augment</a> in Textmate, and it's simply not possible because the required functionality is just not exposed. That whole notion is rather offensive to begin with; it puts the author in a high holy place that is inaccessible to the users. Users should demand better of the programs they use.<br /><br />
     Piyo: In my experience, I haven't found anything customize is good for, though some have said it's good for modifying font faces. (I just use color-theme.) My problem with it is that everything it does can be done better by writing real code instead of having code written for you. It lets you alter the behaviour of libraries without looking at the code for those libraries, but why should you be hesitant to look at the code to begin with?<br /><br />
     Just my thoughts though; maybe there's something there I'm missing.
-- timestamp: Mon Oct 27 19:17:52 -0700 2008
-  uri: http://gweezlebur.com
+- uri: http://gweezlebur.com
   author: Michael
+  timestamp: Mon Oct 27 19:17:52 -0700 2008
   content: Has anyone found a Firefox or Safari extension to do iswitchb-style tab switching?  I was sure there would be such a thing, but I'm drawing a blank.
-- timestamp: Tue Oct 28 10:40:59 -0700 2008
-  uri: http://livollmers.net
+- uri: http://livollmers.net
   author: Alex
+  timestamp: Tue Oct 28 10:40:59 -0700 2008
   content: The funny thing about Emacs not being Mac-like enough is that the default text widgets in the windowing system support things like C-a, C-e, and C-k. There's more Emacs in OS X than most folks realize.
-- timestamp: Tue Oct 28 12:41:23 -0700 2008
-  uri: http://www.carcosa.net/jason/
+- uri: http://www.carcosa.net/jason/
   author: Jason F. McBrayer
+  timestamp: Tue Oct 28 12:41:23 -0700 2008
   content: "Very interesting.  One thing I will note is that Macintosh users /will/ flock towards a minibuffer-like mechanism for selecting their files when it is presented to them in a sufficiently Mac-like way:  witness the success of Quicksilver."
-- timestamp: Thu Oct 30 10:50:55 -0700 2008
-  uri: http://technomancy.us
+- uri: http://technomancy.us
   author: Phil
+  timestamp: Thu Oct 30 10:50:55 -0700 2008
   content: "Michael: It's not a Firefox extension (any more), but <a href='http://conkeror.org'>Conkeror</a> gives you that kind of interface. I use it for all my browsing, only switching to FF when I need Firebug."
-- timestamp: Wed Dec 17 09:57:21 -0800 2008
-  uri: ""
+- uri: ""
   author: Ian Ragsdale
+  timestamp: Wed Dec 17 09:57:21 -0800 2008
   content: "&gt; The fact that the author says, &quot;look, here\xE2\x80\x94we have a way for you extend the program, but it's not the way I extend the program&quot; means there are a lot of things you just can't do.\r<br />\r<br />I actually don't think that's a good characterization of how TextMate and bundles interact.  Yes, there is a core engine that provides some functionality, but I'd say that 90% of the useful features that TM comes with are implemented as bundles.  The fact is that the general author uses bundles for most functionality, so a really surprising amount of functionality is available to them."
-- timestamp: Thu Apr 16 07:19:15 -0700 2009
-  uri: ""
+- uri: ""
   author: GB
+  timestamp: Thu Apr 16 07:19:15 -0700 2009
   content: I don't think the tab example is convincing.  While I agree switching buffers is easier than hunting down tabs, I do miss tabs from Emacs (I sometimes use ElScreen.)  Tabs would be good for holding window configurations and providing a mental map of your tasks.  One tab holds a number of windows, arranged in a particular way, which you need to work on, say, a project; another can be used for email, with some other open windows.  So while you still use C-xb to switch between buffers, tabs help you to separate groups of buffers and windows for different tasks.  They give you a mental map of associated buffers.<br /><br />(I know there are libraries to save and restore window configurations, but they are not intuitive to use; or you could use frames, but they don't give  the user the same sort of visual information.)<br /><br />The Emacs developers implemented file open dialogs, which no-one in their right mind would use instead of the minibuffer (or dired).  So why not tabs?  When they answer the question, &quot;can I get a tabbed interface in Emacs?&quot; with &quot;we don't need the likes of you around here&quot;, they may not understand that people may not think that &quot;1 tab=1 buffer&quot;, but they may really think that &quot;1 tab=1 window configuration&quot; or even &quot;1 tab=1 component in my workflow&quot;.  And then they are missing a real need.
