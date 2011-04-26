@@ -18,7 +18,7 @@ content: |
     than the instructions detailed below indicate. This page is left
     up as it provides some background that may be helpful, but if you
     just want to get going with SLIME, <a
-    href="http://www.assembla.com/wiki/show/clojure/Getting_Started_with_Emacs">try the Getting Started page on the official wiki</a>.</p>
+    href="http://dev.clojure.org/display/doc/Getting+Started+with+Emacs">try the Getting Started page on the official wiki</a>.</p>
 
   <a name="pieces"></a>
   <h3>The Pieces</h3>
