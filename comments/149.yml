@@ -1,0 +1,57 @@
+--- 
+- uri: http://techylinguist.com
+  human: human
+  author: Daniel
+  timestamp: Fri May 20 08:29:13 -0700 2011
+  content: |-
+    Great work, Phil. So now we don't need another dev-dependency and everything gets started with a single command.
+    
+    A serious victory for veterans and new-comers alike. Thanks for all your hard work.
+- uri: ""
+  timestamp: Fri May 27 16:21:15 -0700 2011
+  author: Simon Hawkin
+  human: human
+  content: |-
+    Phil, thanks a lot for all your work!
+    
+    Now, I have just tried it and it gave me an error: 
+      /bin/bash: lein: command not found
+    
+    Obviously, something is running a shell without reading .profile or .bashrc or something like that. I copied lein to /usr/sbin (I am on a MacOs now) and restarted it. 
+    
+    Now it complains about function first which does not exist in elisp. Replaced first with car and second with cadr and restarted. 
+    
+    Now it does not seem to finish launching swank, and I launched slime-connect manually. The default port did not work, but *Process list* tells me that lein jack-in was passed number 44916 which I passed on to the slime-connect and it worked.
+    
+    What did I do wrong?
+    
+    Thanks!
+- uri: http://technomancy.us
+  human: human
+  author: Phil
+  timestamp: Tue May 31 15:10:57 -0700 2011
+  content: |-
+    The path thing is a well-known problem with using GUI Emacs on Macs. There's technically a fix, but it involves editing a plist.xml file; it's probably better to just keep things on the default system path.
+    
+    &quot;first&quot; is defined in cl.el, which is required as the first thing in clojure-mode; I have no idea how it would be possible for that to be missing. Perhaps you're on a fork like Aquamacs? This has only been tested on GNU Emacs.
+- uri: ""
+  timestamp: Fri Jun 03 10:03:41 -0700 2011
+  author: frustrated
+  human: human
+  content: "It's still not simple enough.  Lots of errors when I follow the sequence of your video. "
+- uri: http://technomancy.us
+  human: human
+  author: Phil
+  timestamp: Sun 05 Jun 2011 02:00:02 PM PDT
+  content: Thanks for submitting such a useful, informative bug report, bro.
+- uri: ""
+  human: human
+  author: rohan
+  timestamp: Wed Jun 08 22:32:14 -0700 2011
+  content: |
+    Thanks for this, works beautifully, and makes everything a bit simpler, esp. with the version conflicts between slime and swank. 
+    
+    I was using lein swank with slime-connect (which I use with other lisps still).
+    
+    Unfortunately it did not fix the bug I discovered, actually it has a more final consequence now.  I will file a bug report with swank-clojure
+
