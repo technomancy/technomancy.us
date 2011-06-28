@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cardo'), url('cardo.ttf') format('truetype');
+}
+
 * {
     font-family: 'Cardo', "Book Antiqua", "URW Palladio L", serif;
     letter-spacing: 0.05em;

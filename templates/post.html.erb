@@ -11,8 +11,6 @@
 
     <link rel="alternate" href="/feed/atom.xml" title="Technomancy Feed" 
           type="application/atom+xml"/>
-    <link href='http://fonts.googleapis.com/css?family=Cardo'
-          rel='stylesheet' type="text/css">
     <link rel="index" href='/list' />
     <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %><link rel="next" href='/<%= page['id'].to_i + 1 %>' /><% end %>
     <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><link rel="prev" href='/<%= page['id'].to_i - 1 %>' /><% end %>
