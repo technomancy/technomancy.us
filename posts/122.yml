@@ -18,6 +18,11 @@ content: |-
     only one either; one of the most common questions in
     the #clojure channel is how to configure SLIME.</p>
 
+  <p><b>Update</b>: This is very out-of-date. The <a
+    href="https://github.com/technomancy/swank-clojure#readme">Swank
+    Clojure readme</a> is the canonical source of getting started 
+    instructions.</p>
+
   <p>I've worked on a bit of code to alleviate the confusion. There's
     nothing about the problem that's particularly tricky; it's just
     that the necessary code is changing so fast that using a package
