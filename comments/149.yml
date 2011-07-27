@@ -55,3 +55,29 @@
     
     Unfortunately it did not fix the bug I discovered, actually it has a more final consequence now.  I will file a bug report with swank-clojure
 
+- uri: ""
+  timestamp: Tue Jul 19 15:46:12 -0700 2011
+  author: spacemanaki
+  human: human
+  content: |-
+    Thanks so much for all your work on Emacs and Clojure! This worked for me but I hit a small snag: it seems that Swing code gets locked up somehow. Is this a known issue? I found this thread from 2008: http://groups.google.com/group/clojure/browse_thread/thread/6c195c35ae9a7eb8
+    
+    I was trying the ants.clj demo. When I compile the whole file with C-c C-k everything compiles and the Swing window opens up, but everything's frozen. I think that it's not just the UI code since when I print out the `world` in the SLIME REPL it looks like nothing's moving, but I could be wrong...
+    
+    When I do the same thing after running Clojure as an *inferior-lisp*, the demo works, and it works from the plain clj REPL too.
+    
+    If this is a known issue, it's not that big a deal but does anyone know a workaround for playing with Swing code using SLIME? If it's not a known issue, I can submit some more details as an issue on Github if it would help.
+    
+    I'm on Mac OS X, but I tried it on Ubuntu 11.04 and saw the same behavior. Using GNU Emacs in both cases, and also using the (truly excellent) emacs-starter-kit.
+    
+    Anyway, thanks again, awesome work.
+- uri: ""
+  human: human
+  author: spacemanaki
+  timestamp: Tue Jul 19 20:54:41 -0700 2011
+  content: |-
+    Hey, hopefully the other comment went through and is awaiting moderation so this one will have some context.
+    
+    I tried using swank-clojure 1.3.2 and it worked, there was no issue with locked threads in Swing code. The ant demo worked as expected.
+    
+    Thanks again!
