@@ -54,3 +54,9 @@ content: |-
     version of Leiningen. It's probably best to remove swank-clojure
     from :dev-dependencies in project.clj entirely and have each user
     who wants to use swank install it as a local plugin instead.</p>
+
+  <p>If you have issues, please post to
+    the <a href="http://groups.google.com/group/swank-clojure">swank-clojure
+      mailing list</a> or
+    open <a href="https://github.com/technomancy/swank-clojure/issues">a
+      github issue. Blog comments are a lousy place for bug reports.</p>
