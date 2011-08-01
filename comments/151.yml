@@ -1,0 +1,16 @@
+--- 
+- uri: http://pwhite.org
+  human: Human
+  author: Patrick
+  timestamp: Fri Jul 29 19:33:38 -0700 2011
+  content: Why do you build Emacs from source yourself?
+- uri: http://technomancy.us
+  timestamp: Fri Jul 29 21:42:10 -0700 2011
+  author: Phil
+  human: human
+  content: "Patrick: I need an Emacs checkout so I can test out my contributions to package.el, plus I am interested in trying new features like lexical scoping and concurrency before they land on trunk."
+- uri: http://pwhite.org
+  human: human
+  author: Patrick
+  timestamp: Sat Jul 30 04:06:55 -0700 2011
+  content: Neat.
