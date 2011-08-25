@@ -1,6 +1,6 @@
 --- 
 timestamp: 2008-04-01 08:50:09
-title: new project
+title: in which a new project is annonuced
 tags: projects
 id: 107
 content: "<p>By looking at my commit logs it will be clear that I haven't really done much with <a href='http://bus-scheme.rubyforge.org'>Bus Scheme</a> recently. I was having a lot of fun with the project early on, but as of late my enthusiasm has abated. I could chalk it up to the fact that Scheme is such a simple language that I'm running out of things to do. But I think the real problem is that it's too easy. Where's the glory to be had in a Scheme interpreter? The entire spec only runs about fifty pages, and it's been done before! The urge for a challenge is sadly left unmet. Plus as is common knowledge, nobody actually uses Scheme in the real world. [<a href='#fn107'>*</a>] It just wasn't working out for me in spite of myself.</p>\n\

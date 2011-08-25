@@ -71,10 +71,10 @@ content: |-
     like an interesting twist to language design, and everything I
     read about their compiler seems to indicate it's very cutting-edge
     and well-designed. Factor was also the only language presented I
-    want to learn that isn't hosted; that is, it compiles straight to
-    the metal. The demo focused on showing some the ways that Factor
-    retains an astonishing amount of flexibility and dynamicity even
-    though it compiles to very fast machine code. The Emacs
+    want to learn that isn't hosted on an existing VM. The demo
+    focused on showing some the ways that Factor retains an
+    astonishing amount of flexibility and dynamicity even though it
+    compiles to very fast machine code. The Emacs
     integration <a href="http://factor-language.blogspot.com/2009/01/screencast-editing-factor-code-with.html">via
     FUEL</a> also impressed me.</p>
 

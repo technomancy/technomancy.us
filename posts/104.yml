@@ -1,6 +1,6 @@
 --- 
 timestamp: 2008-02-18 10:36:59
-title: getting started with bus scheme
+title: in which you may get started with bus scheme
 id: 104
 content: " <p>So a number of folks have asked me how they should get started with Bus Scheme.[<a href='#fn1'>1</a>]. I've mostly just said silly things like, \"Umm... good question. Maybe read/watch <a href='http://mitpress.mit.edu/sicp/'>SICP</a>?\", which is silly because it doesn't have much to do with the <i>Bus</i> part of Bus Scheme, not because <i>The Structure and Interpretation of Computer Programs</i> is silly.</p>
   <p>There's a poster in <a href='http://www.powells.com/'>my favourite bookstore</a> that has Dante's <i>Comedy</i>, the <i>Iliad</i>, and a few other classics captioned with something like \"Might as well start them now; you're going to have to read them eventually anyway.\" I hold the same notion regarding SICP and perhaps <i>The Little Schemer</i>, but I could see how it'd be helpful to have an introduction to Scheme from a Rubyist's perspective since reading a book like that can be large-ish mental investment.</p>

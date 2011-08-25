@@ -129,11 +129,14 @@ content: |-
     break</a>) it's because I just don't want to be a bottleneck
     keeping their awesome work from getting in.</p>
 
-  <p>In these cases I like to ask that changes don't get merged to
-    master until they've been reviewed by at least one person other
-    than the author. If you're a committer that's applying patches
-    someone else sent in, then you're doing the review, otherwise just
-    try to get some help from IRC or the project's mailing list to
-    review your patch before it makes it to master.</p>
+  <p><strike>In these cases I like to ask that changes don't get
+    merged to master until they've been reviewed by at least one
+    person other than the author. If you're a committer that's
+    applying patches someone else sent in, then you're doing the
+    review, otherwise just try to get some help from IRC or the
+    project's mailing list to review your patch before it makes it to
+    master.</strike><b>Update</b>: I've backed out of this policy as
+    it really isn't necessary. Committers should just use their
+    discretion when deciding whether to push to master or a branch.</p>
 
   <p>All that said, keep the patches coming! I love getting them.</p>

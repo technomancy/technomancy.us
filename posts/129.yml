@@ -27,7 +27,7 @@ content: |-
       erevision</kbd> feature, which is fantastic for code
       reviews. But it still feels a bit restrictive and out of the
       regular groove. We also use 3G a lot, and unfortunately port
-      forwarding is not permitted by AT&amp;T, our ISP.</p>
+      forwarding is not permitted by most 3G ISPs.</p>
 
   <img src="/i/rudel.png" alt="rudel" />
 
@@ -88,3 +88,6 @@ content: |-
   <p>Once you've got a Gobby server running, <kbd>M-x
       rudel-join-session</kbd> should get you connected, and <kbd>C-c
       c s</kbd> will let you subscribe to a new document. Have fun!</p>
+
+  <p><b>Update</b>: A few months after writing this post we switched
+    to using shared <tt>tmux</tt> sessions for our collaboration.</p>

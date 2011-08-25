@@ -59,7 +59,8 @@ content: |-
   <pre class="code">(<span class="keyword">require</span> '<span class="constant">package</span>)
   (add-to-list 'package-archives
                '(<span class="string">"marmalade"</span> . 
-                 <span class="string">"http://marmalade-repo.org/packages/"</span>) t) </pre>
+                 <span class="string">"http://marmalade-repo.org/packages/"</span>) t)
+  (package-initialize)</pre>
 
   <p>If you are using Emacs 23 you
     can <a href="http://bit.ly/pkg-el">download package.el from Emacs
