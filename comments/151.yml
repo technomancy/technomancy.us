@@ -14,3 +14,19 @@
   author: Patrick
   timestamp: Sat Jul 30 04:06:55 -0700 2011
   content: Neat.
+- uri: ""
+  timestamp: Mon Aug 01 11:18:51 -0700 2011
+  author: Aaron
+  human: human
+  content: |-
+    One would hope a next generation solution like GNU Stow would have these features.
+    
+    Unfortunately, the sysadmins -- the class of people who usually motivate these decisions -- use virtualization and/or large clusters to deploy different versions of the software.  It's a sysadmin world, we developer's just live in it.
+- uri: https://github.com/jli
+  human: human
+  author: John
+  timestamp: Sun Aug 21 09:21:01 -0700 2011
+  content: |-
+    Have you heard of NixOS? It's a &quot;purely functional&quot; distribution with interesting properties. I've been meaning to give it a go.
+    
+    http://nixos.org/nixos/

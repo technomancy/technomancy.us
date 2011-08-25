@@ -76,6 +76,10 @@ content: |-
     their developer-centric problems. This plays to the strengths of
     each system, and everybody wins.</p>
 
+  <p><b>Update</b>: Leiningen has
+    been <a href="http://packages.qa.debian.org/l/leiningen.html">accepted
+      into Debian</a>.</p>
+
   <hr />
 
   <p>[<a name="fn1">1</a>] Except Emacs; that's the only thing I still

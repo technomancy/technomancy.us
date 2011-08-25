@@ -1,6 +1,13 @@
 --- 
 - uri: http://www.kartar.net
-  timestamp: Mon Jul 18 22:43:45 -0700 2011
-  author: James Turnbull
   human: human
+  author: James Turnbull
+  timestamp: Mon Jul 18 22:43:45 -0700 2011
   content: You can also use Puppet if you wish - http://vagrantup.com/docs/provisioners/puppet.html.
+- uri: http://www.atlanticdynamic.com
+  human: human
+  author: Rob Terhaar
+  timestamp: Sat Aug 13 21:32:54 -0700 2011
+  content: |-
+    Here's a quick Puppet mockup to install virtualbox/vargant instead of using Bash:
+    https://gist.github.com/1144587
