@@ -12,7 +12,7 @@ end
 
 new_comment['content'].gsub!("\r?\n", "<br />") # newlines
 
-raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuuuck" if cgi.params['uri'] =~ /bestfinance/
+raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /bestfinance/
 
 if(cgi.params['human'].to_s =~ /human$/i and
    cgi.params['post_id'].to_s != '')
