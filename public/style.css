@@ -181,3 +181,18 @@ code {
     }
     .keyword { color: blue; }
     .literal { color: purple; }
+
+    .tuareg-font-lock-governing {
+        /* tuareg-font-lock-governing-face */
+        color: #0000ff;
+        font-weight: bold;
+    }
+    .tuareg-font-lock-operator {
+        /* tuareg-font-lock-operator-face */
+        color: #a52a2a;
+    }
+    .warning {
+        /* font-lock-warning-face */
+        color: #ff0000;
+        font-weight: bold;
+    }
