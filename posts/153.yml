@@ -1,0 +1,125 @@
+# -*- html -*-
+--- 
+timestamp: Tue 27 Sep 2011 09:12:54 PM PDT
+title: in which version two turns the inside out
+tags: projects, emacs
+id: 153
+content: |-
+  <p>I just got back last week from
+    the <a href="https://thestrangeloop.com/">Strange Loop
+    conference</a> in St. Louis. The conference showcased some really
+    quality keynotes and session talks, but I had been invited to give
+    a workshop teaching Emacs, which was a blast. The workshop was
+    three hours long, but I still felt like I was zooming
+    through. <a href="http://p.hagelb.org/getting-cozy-with-emacs.org.html">My
+    outline</a> is available, though it may not be all that useful
+    unless you were there.</p>
+
+  <img src="i/cozy-with-emacs.jpg" alt="getting cozy" align="right" />
+
+  <p>The talk focused on the task of crafting your own set of
+    dotfiles. Naturally I did talk some about
+    the <a href="https://github.com/technomancy/emacs-starter-kit">Emacs
+    Starter Kit</a>, though my approach there has changed fairly
+    radically. I've been developing version 2 of the Starter Kit
+    since the beginning of the summer, but now I think it's time to
+    make the release official and give it wider exposure.</p>
+
+  <h4>The Emacs Starter Kit, version 2</h4>
+
+  <p>Version 2 of the Starter Kit turns things inside out. The
+    original version was very prescriptive; you used it by cloning a
+    git repo to use as your entire <tt>~/.emacs.d</tt> directory, and
+    you fit your own customizations inside the structure it
+    provided. This was mostly due to the fact that when it was
+    released the packaging story for elisp was very immature. Use of
+    package.el was not very widespread, so the Starter Kit had to
+    include a copy as well as bundle a bunch of libraries that had not
+    been packaged yet. As it turned out, I think the Starter Kit had a
+    role in helping popularize package.el.</p>
+
+  <p>A lot has changed since 2008&mdash;primarily
+    that <a href="/133">package.el has been included in Emacs</a> and
+    <a href="http://marmalade-repo.org">Marmalade</a>
+    has <a href="/144">picked up lots of steam</a>, becoming the
+    de-facto community package source with over 250 packages. It's now
+    feasible for the Starter Kit to be distributed as just another
+    package, leaving you free to structure your dotfiles however you
+    like. All it takes is setting yourself up to get packages from
+    Marmalade:</p>
+
+  <pre class="code"><span class="esk-paren">(</span><span class="keyword">require</span> '<span class="constant">package</span><span class="esk-paren">)</span>
+  <span class="esk-paren">(</span>add-to-list 'package-archives
+               '<span class="esk-paren">(</span><span class="string">"marmalade"</span> . <span class="string">"http://marmalade-repo.org/packages/"</span><span class="esk-paren">))</span>
+  <span class="esk-paren">(</span>package-initialize<span class="esk-paren">)</span></pre>
+
+  <img src="/i/langley-rocket.jpg" alt="rocket, man" align="left" />
+
+  <p>Place that in <tt>~/.emacs.d/init.el</tt> and evaluate it with
+    <kbd>M-x eval-buffer</kbd>. From there you can run <kbd>M-x
+    package-refresh-contents</kbd> to pull in the latest package lists
+    (analogous to <kbd>apt-get update</kbd>) followed by <kbd>M-x
+    package-install starter-kit</kbd>. And then you're set.</p>
+
+  <p>However, it's unlikely that the starter-kit is the only package
+    you're interested in. Rather than picking packages by hand, I'm a
+    fan of keeping a list of all the packages you use in your
+    dotfiles. That way when you move to a new machine, you won't have
+    to remember what packages you've come to depend upon; checking out
+    your dotfiles on a new machine will pull in everything you've
+    specified. Here's my list along with some code to handle it:</p>
+
+  <pre class="code"><span class="esk-paren">(</span><span class="keyword">when</span> <span class="esk-paren">(</span>not package-archive-contents<span class="esk-paren">)</span>
+    <span class="esk-paren">(</span>package-refresh-contents<span class="esk-paren">))</span>
+
+  <span class="esk-paren">(</span><span class="keyword">defvar</span> <span class="variable-name">my-packages</span> '<span class="esk-paren">(</span>starter-kit starter-kit-lisp starter-kit-eshell
+                                    starter-kit-bindings scpaste
+                                    clojure-mode clojure-test-mode
+                                    markdown-mode yaml-mode tuareg
+                                    marmalade oddmuse scpaste<span class="esk-paren">))</span>
+
+  <span class="esk-paren">(</span><span class="keyword">dolist</span> <span class="esk-paren">(</span>p my-packages<span class="esk-paren">)</span>
+    <span class="esk-paren">(</span><span class="keyword">when</span> <span class="esk-paren">(</span>not <span class="esk-paren">(</span>package-installed-p p<span class="esk-paren">))</span>
+      <span class="esk-paren">(</span>package-install p<span class="esk-paren">)))</span></pre>
+
+  <h4>What's Changed</h4>
+
+  <p>Being a 2.0 release, you can't expect 100% backwards compatibility
+    with the old Starter Kit. In particular, it is much more
+    modular. The base of the Starter Kit simply gives you better
+    default settings and a few new commands. There are separate
+    modules supporting various languages like Ruby, Lisp (Clojure,
+    Emacs Lisp, Scheme, and Common Lisp), and Javascript, though right
+    now the Lisp one is the most polished. If anyone is interested in
+    helping maintain alternate language modules, please contact
+    me <a href="https://github.com/technomancy">on
+    Github</a>. Key bindings have also been spun out into their own module
+    since they don't follow Emacs binding conventions strictly.</p>
+
+  <p>There is also no more <tt>elpa-to-submit</tt> directory; if you
+    rely on packages that aren't on Marmalade yet, it's up to you to
+    either check them into your own dotfiles or better yet upload them
+    yourself. There's also no more explicit <tt>recentf</tt> support
+    since a new feature called <tt>ido-use-virtual-buffers</tt> allows
+    recent files to show up in the regular <kbd>C-x b</kbd> buffer
+    switcher, simplifying things. The addition of
+    the <a href="https://github.com/technomancy/ido-ubiquitous">ido-ubiquitous</a>
+    package makes it so regular completion gets enhanced with ido
+    magic, so functionality like <tt>ido-imenu</tt> is no longer
+    needed.</p>
+
+  <p>The other breakage is that the Starter Kit is now intended only
+    for use with Emacs 24 onward. Yes, technically Emacs 24 has not
+    yet been released, but it's in active pretest and is readily
+    available for most platforms.[<a href="#fn1">1</a>]. I've been
+    using it since 23 was released and have had no trouble with it.</p>
+
+  <hr />
+
+  <p>[<a name="fn1">1</a>] It's not hard to
+    compile <a href="http://github.com/emacsmirror/emacs">from
+    source</a>, but precompiled versions are readily available for
+    <a href="http://emacs.naquadah.org/">Debian-based
+    systems</a>, <a href="http://emacsformacosx.com/builds">Mac OS
+    X</a>, and
+    <a href="http://code.google.com/p/emacs-for-windows/updates/list">Windows</a>.</p>
