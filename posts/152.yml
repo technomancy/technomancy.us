@@ -128,16 +128,15 @@ content: |-
     assumed that you'll use either <tt>apt-get</tt> as the main way to
     pull these in or run <tt>make install</tt> from source. As
     I've <a href="/152">blogged about recently</a>, <tt>apt-get</tt>
-    is a bit of a drag for libraries that change more frequently or
-    are more obscure. It looks
+    is a bit of a drag for libraries that are obscure or change
+    frequently. It looks
     like <a href="http://oasis.forge.ocamlcore.org/documentation.html">Oasis</a>
     is making it easier to build projects
     while <a href="http://oasis.ocamlcore.org/dev/browse">ODB</a> is
     the beginning of a rich library dependency system, though it's
     still got a long way to go. My needs have been simple enough that
     I've been able to stick with the standard library for my current
-    project, but it's great to see progress in this
-    direction.</p>
+    project, but it's great to see progress in this direction.</p>
 
   <p>Anyway, it's always a bit disorienting to toss yourself into a
     new environment like this. But OCaml has proven to be quite a
