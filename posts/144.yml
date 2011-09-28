@@ -62,10 +62,11 @@ content: |-
                  <span class="string">"http://marmalade-repo.org/packages/"</span>) t)
   (package-initialize)</pre>
 
-  <p>If you are using Emacs 23 you
-    can <a href="http://bit.ly/pkg-el">download package.el from Emacs
-    trunk</a>. The version from tromey.com doesn't support multiple
-    archive sources.</p>
+  <p>You'll need to run <kbd>M-x package-refresh-contents</kbd>
+    manually to download the latest package list. If you are using
+    Emacs 23 you can <a href="http://bit.ly/pkg-el23">download a
+    compatible package.el</a>. The version from tromey.com doesn't
+    support multiple archive sources.</p>
 
   <p>Moving forward I'm planning on uploading the packages I maintain
     over to Marmalade. It offers a much faster turnaround time
