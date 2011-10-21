@@ -1,17 +1,17 @@
 --- 
-- timestamp: Fri Dec 05 21:52:20 -0800 2008
-  uri: a@example.com
+- uri: a@example.com
   author: visitor
+  timestamp: Fri Dec 05 21:52:20 -0800 2008
   content: "I recommend showcasing the anything.el package: http://www.emacswiki.org/emacs/Anything\r<br />\r<br />\r<br />New users usually don't know it, though it's power could be very appealing to them. Some call it the Quicksilver of Emacs.\r<br />"
-- timestamp: Sat Dec 06 00:51:23 -0800 2008
-  uri: http://6brand.com
+- uri: http://6brand.com
   author: Jack Danger Canty
+  timestamp: Sat Dec 06 00:51:23 -0800 2008
   content: Thanks for doing this Phil!  I just finished the emacs tutorial to get the basics and your starter kit looks like it'll be a real godsend.  Can't wait for the screencast!
-- timestamp: Mon Apr 13 01:01:48 -0700 2009
-  uri: ""
+- uri: ""
   author: Bill
+  timestamp: Mon Apr 13 01:01:48 -0700 2009
   content: "I am new to Emacs, and recently viewed the Peepcode screencast.\r<br />\r<br />I am using a recent build of Carbon Emacs running on Mac OS X 10.5.6.  Perhaps I have a set-up problem, but I have 2 issues I don't know enough to resolve on my own.\r<br />\r<br />1) Elisp functions that call external web browsers no longer seem to work.  If I launch Emacs without the starter-kit, type a full URL into the scratch buffer, move the cursor back to the beginning of the URL, then type &quot;M-x browse-url-at-point RET&quot;, my browser launches, showing the expected web page.  After I add the emacs-starter-kit to my home directory and create the linkage with .emacs.d and re-launch emacs, the previously-successful browser launch no longer works.\r<br />\r<br />2) The file emacs-starter-kit/elpa-to-submit/nxhtml/nxhtml-loaddefs.el contains references to a non-existant file &quot;../related/php-mode-2008-10-23&quot;.  When I change the references to &quot;../related/php-mode.el&quot; and re-start emacs and load a PHP file, the major mode switches to PHP/nxhtml.  However, because of issue #1, none of the PHP documentation commands (&quot;C-c RET&quot;, for example) work properly.\r<br />\r<br />Thanks for making time to help me resolve these issues.\r<br />\r<br />--Bill"
-- timestamp: Wed 27 May 2009 04:37:24 PM PDT
-  uri: "http://technomancy.us"
+- uri: http://technomancy.us
   author: Phil
+  timestamp: Wed 27 May 2009 04:37:24 PM PDT
   content: "Bill: I pushed out a fix for that problem a few weeks ago; didn't realize that you couldn't launch a browser from the command line on OS X. Should be OK now."
