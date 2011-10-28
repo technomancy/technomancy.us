@@ -137,6 +137,10 @@ code {
         /* font-lock-comment-face */
         color: #7f9f7f;
     }
+    .constant {
+        /* font-lock-constant-face */
+        color: #008b8b;
+      }
     .comment-delimiter {
         /* font-lock-comment-delimiter-face */
         color: #708070;
