@@ -1,0 +1,26 @@
+--- 
+- uri: ""
+  human: human
+  author: Brett
+  timestamp: Fri Oct 28 12:13:39 -0700 2011
+  content: |-
+    Great post, thanks.
+    
+    You forgot to mention &quot;lein plugin install clj-stacktrace 0.2.3&quot; in the stacktrace section.
+- uri: ""
+  timestamp: Fri Oct 28 12:42:56 -0700 2011
+  author: Brett
+  human: human
+  content: |-
+    The clj-stacktrace docs say,
+    
+    &quot;The :repl-options settings will cause clj-stacktrace to be used in the repl and swank.&quot;
+    
+    But exceptions inside of Slime (using swank-clojure) are still the &quot;old-style&quot; tracebacks, and they seem the same even if I manually (use 'clojure.stacktrace) and print the *e using their provided functions.
+    
+    Is there no way to get the pretty colored/sorted stacktaces *inside* of a Slime REPL/exception popup?
+- uri: http://technomancy.us
+  human: human
+  author: Phil
+  timestamp: Fri Oct 28 13:44:31 -0700 2011
+  content: "Brett: Thanks for the reminder about the clj-stacktrace plugin. Unfortunately right now there's no clj-stacktrace integration for swank-clojure, though I would love to implement that at some point."
