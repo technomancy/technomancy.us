@@ -48,15 +48,14 @@ content: |-
   <p>The web framework <a href="http://webnoir.org">Noir</a> uses
     clj-stacktrace for its HTML error pages in development mode. To
     use it in your project's repl as well as
-    in <code>clojure.test</code> error reporting, place this
-    in <tt>~/.lein/init.clj</tt>:</p>
+    in <code>clojure.test</code> error reporting, place this code
+    in <tt>~/.lein/init.clj</tt> after running <kbd>$ lein plugin
+    install clj-stacktrace 0.2.3</kbd>:</p>
 
   <pre class="code"><span class="esk-paren">(</span><span class="variable-name">require</span> 'leiningen.hooks.clj-stacktrace-test<span class="esk-paren">)</span>
 
   <span class="esk-paren">(</span><span class="keyword">def</span> <span class="function-name">settings</span> {<span class="constant">:repl-options</span> [<span class="constant">:init</span> <span class="esk-paren">(</span><span class="variable-name">require</span> 'clj-stacktrace.repl<span class="esk-paren">)</span>
                                 <span class="constant">:caught</span> 'clj-stacktrace.repl/pst+]}<span class="esk-paren">)</span></pre>
-
-  <p><kbd>$ lein plugin install clj-stacktrace 0.2.3</kbd></p>
 
   <h4><a href="https://github.com/scgilardi/slingshot">slingshot</a></h4>
 
@@ -106,7 +105,7 @@ content: |-
     likely to want to be able to use the <kbd>difftest</kbd> task
     across all your projects:</p>
 
-  <p><kbd>$ lein plugin install lein-difftest 1.3.3</kbd></p>
+  <p><kbd>$ lein plugin install lein-difftest 1.3.6</kbd></p>
 
   <h4><a href="https://github.com/joegallo/robert-bruce">robert-bruce</a></h4>
 

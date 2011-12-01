@@ -21,22 +21,23 @@ content: |-
     makes the point that generally being bad is not correlated with
     being nationwide.</p>
 
-  <blockquote>"I'm Bad, I'm Nationwide" is a ZZ Top song. Hopefully
+  <blockquote>
+    <p>"I'm Bad, I'm Nationwide" is a ZZ Top song. Hopefully
     you can figure out what it's about, but just in case, the singer's
-    point is that he is bad, and he is nationwide. [...]</blockquote>
+    point is that he is bad, and he is nationwide. [...]</p>
 
-  <blockquote>It's good to be bad. It's good to be nationwide. It's
+    <p>It's good to be bad. It's good to be nationwide. It's
     even better to be worldwide. How can we apply the lessons of ZZ
-    Top in the workplace?</blockquote>
+    Top in the workplace?</p>
 
-  <blockquote>Obviously if you walk into your boss' office, jump on
+    <p>Obviously if you walk into your boss' office, jump on
     his or her desk, pull down your pants, and perform toilet
     functions all over the place, that would be bad. But it would not
     be nationwide, and it would not encourage becoming nationwide. In
     fact, it would not really be bad, it would just be stupid. But
     this silly example highlights a deeper paradox: that which is bad
     is usually local, and that which is nationwide is usually
-    good.</blockquote>
+    good.</p></blockquote>
 
   <p>Giles goes on to talk about how the bad/nationwide balancing act
     applies to a career in software development, which is interesting,
@@ -80,8 +81,8 @@ content: |-
     is <a href="http://twitter.com/technomancy/status/10994115673">this
     post I made on Twitter a few months back</a>:</p>
 
-  <blockquote>Q: What's the difference between Ant and Maven? A: The
-    creator of Ant has apologized.</blockquote>
+  <blockquote><p>Q: What's the difference between Ant and Maven? A: The
+      creator of Ant has apologized.</p></blockquote>
 
   <p>This turned out to be just the right mix of nasty and clever
     to really take off; hundreds and hundreds of people passed it on, and
@@ -113,7 +114,7 @@ content: |-
     the lucky stiff</a>. He qualified not just by his off-kilter visual style
     but by his aversion to what he scoffed at as "best practices".</p>
 
-  <blockquote>Perhaps this is why I have trouble swallowing unit
+  <blockquote><p>Perhaps this is why I have trouble swallowing unit
     testing or extreme programming or other best practices as the
     law. I guess there’s a place for these tricks (the work place,)
     but they do not speak to the pure form of hacking for hacking’s
@@ -122,9 +123,10 @@ content: |-
     picture before it has been painted. Hacking, at heart, will
     continue to be something of spontaneous order, something of
     anarchy, and the landscape of hacking is something which comes
-    from human action but is not of human design.</blockquote>
+      from human action but is not of human design.</p>
+
   <p><a href="http://web.archive.org/web/20080512050317/hackety.org/2007/12/24/thisHackWasNotProperlyPlanned.html">&#8213;
-      This Hack was not Properly Planned</a></p>
+      This Hack was not Properly Planned</a></p></blockquote>
 
   <p>This may not sound particularly controversial, but in the context
     of the test-driven-fanatic Ruby community it was a pretty weighty

@@ -11,7 +11,7 @@
 }
 
 body { 
-    padding: 1.5em 0 0 0;
+    padding: 1.5em 0;
 }
 
 h1 {
@@ -27,6 +27,12 @@ h1 a {
     text-decoration: none;
 }
 
+blockquote {
+    background-color: #eee;
+    margin: 1em;
+    padding: 1em;
+}
+
 #entry {
     font-size: 13pt;
 }
@@ -39,6 +45,7 @@ h1 a {
     text-align: justify;
     border-top: 1px grey solid;
     font-size: 11pt;
+    margin: 2em;
     padding: 3em;
 }
 
@@ -67,7 +74,7 @@ ul.spaced li {
 }
 
 #footer {
-    margin-top: 2em;
+    margin: 2em 0 7em 0;
     border-top: 1px grey solid;
 }
 

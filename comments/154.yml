@@ -1,16 +1,16 @@
 --- 
 - uri: ""
-  human: human
-  author: Brett
   timestamp: Fri Oct 28 12:13:39 -0700 2011
+  author: Brett
+  human: human
   content: |-
     Great post, thanks.
     
     You forgot to mention &quot;lein plugin install clj-stacktrace 0.2.3&quot; in the stacktrace section.
 - uri: ""
-  timestamp: Fri Oct 28 12:42:56 -0700 2011
-  author: Brett
   human: human
+  author: Brett
+  timestamp: Fri Oct 28 12:42:56 -0700 2011
   content: |-
     The clj-stacktrace docs say,
     
@@ -20,7 +20,26 @@
     
     Is there no way to get the pretty colored/sorted stacktaces *inside* of a Slime REPL/exception popup?
 - uri: http://technomancy.us
-  human: human
-  author: Phil
   timestamp: Fri Oct 28 13:44:31 -0700 2011
+  author: Phil
+  human: human
   content: "Brett: Thanks for the reminder about the clj-stacktrace plugin. Unfortunately right now there's no clj-stacktrace integration for swank-clojure, though I would love to implement that at some point."
+- uri: http://fogus.me
+  human: human
+  author: fogus
+  timestamp: Fri Oct 28 19:28:23 -0700 2011
+  content: |
+    My Trammel library has a total of zero users.  It's as obscure as they get.  :-)
+    
+    Nice post.
+
+- uri: ""
+  timestamp: Fri Oct 28 20:37:20 -0700 2011
+  author: Timo
+  human: human
+  content: Maybe you should move the &quot;lein plugin install clj-stacktrace 0.2.3&quot; line above the changes to ~/.lein/init.clj? If you follow the instructions directly, the plugin installation will fail, since init.clj will depend on an uninstalled library.
+- uri: http://technomancy.us
+  timestamp: Sat 29 Oct 2011 01:17:01 PM PDT
+  author: Phil
+  human: human
+  content: "Timo: Good point; thanks for catching that. I already had it installed so I didn't notice."
