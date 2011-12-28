@@ -34,20 +34,20 @@ content: |-
       Lisp, lists are composable by attaching a new head to an
       existing list. The list structure is very flexible and has a
       convenient syntax, but vectors, hash-tables, and sets are much
-      more performant for many uses. So folks generally prototype
-      applications using lists since they're simple and convenient,
-      and then switch over to more performant structures once they
-      have a better idea of the structure of the program. The problem
-      is that most of the fast structures don't have literal syntax,
-      and they don't have the same properties of composability, so
-      rewiring a program to use hash tables instead of associative
-      lists can be a pretty significant change in most lisps. Clojure
-      has convenient literal syntax for all its basic data structures,
-      and they have the property of being composable in the same way
-      lists are, so hardly any change is necessary to switch between
-      them. They also offer lots of internal structure sharing so that
-      creating new ones based on existing (immutable) ones is very
-      cheap.</li>
+      more efficient for many uses. So in Common Lisp folks generally
+      prototype applications using lists since they're simple and
+      convenient, and then switch over to more efficient structures
+      once they have a better idea of the structure of the program.
+      The problem is that most of the fast structures don't have
+      literal syntax, and they don't have the same properties of
+      composability, so rewiring a program to use hash tables instead
+      of associative lists can be a pretty significant change in most
+      lisps. Clojure has convenient literal syntax for all its basic
+      data structures, and they have the property of being composable
+      in the same way lists are, so hardly any change is necessary to
+      switch between them. They also offer lots of internal structure
+      sharing so that creating new ones based on existing (immutable)
+      ones is very cheap.</li>
 
     <li>Clojure's approach to concurrency centers on using immutable
       data structures, which makes most code safe for parallel
