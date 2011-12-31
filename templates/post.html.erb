@@ -36,6 +36,7 @@
         <dd><%= comment['content'].gsub(/[\r\n]/, "<br />") %></dd>
         <% end %>
       </dl>
+      <% if page['id'] > 150 %>
       <form action='/comment.cgi' method='post'>
         <p><input type='text' name='author' /> Name</p>
         <p><input type='text' name='uri' /> URL</p>
@@ -49,6 +50,9 @@
         </p>
         <p>Comments are manually moderated, sorry. Please no HTML.</p>
       </form>
+      <% else %>
+      <p>Comments are disabled on older posts.</p>
+      <% end %>
     </div>
 
 <%= including "footer" %>

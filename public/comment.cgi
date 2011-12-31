@@ -3,6 +3,8 @@
 require 'cgi'
 require 'yaml'
 
+raise "Spammers suck" if cgi.params['post_id'].to_i < 151
+
 cgi = CGI.new
 
 new_comment = { 'timestamp' => Time.now.to_s }
@@ -12,8 +14,8 @@ end
 
 new_comment['content'].gsub!("\r?\n", "<br />") # newlines
 
-raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /bestfinance/
-raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /goodfinance/
+raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /bestfinance/
+raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /goodfinance/
 
 if(cgi.params['human'].to_s =~ /human$/i and
    cgi.params['post_id'].to_s != '')
