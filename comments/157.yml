@@ -1,0 +1,20 @@
+--- 
+- uri: ""
+  human: ""
+  author: piyo
+  timestamp: Sat Jan 28 17:44:58 -0800 2012
+  content: |-
+    Insightful interview, thanks for sharing.
+    
+    I am also into reducing mouse usage, but most of my tweaking goes to my Windows work environment. (If you ever have to use that, then look to AutoHotKey-L and Launchy).
+    
+    I just recently learned that pressing Alt-F1 and Alt-F2 in Ubuntu 10.04 LTS Gnome pulls down the menu and runs a launcher, so I will be looking at your suggestions for inspiration.
+    
+    I would be interested in reading a brief overview about Nix from you. I gave it a go on Lucid Lynx but I gave up after successfully installing a minor package (zsync). Do you have your own list of package install &quot;recipes&quot; enabled by Nix? Or are your recipes shared with Nixpkgs?
+- uri: "http://technomancy.us"
+  timestamp: Mon 30 Jan 2012 03:37:28 PM PST
+  author: Phil
+  human: "yes"
+  content: |-
+    Definitely planning on posting more about Nix soon! I am using it for
+    Mozilla, Emacs, tmux, ocaml, OpenJDK 7, and Leiningen so far.
