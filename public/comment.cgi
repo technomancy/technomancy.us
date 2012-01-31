@@ -3,9 +3,9 @@
 require 'cgi'
 require 'yaml'
 
-raise "Spammers suck" if cgi.params['post_id'].to_i < 151
-
 cgi = CGI.new
+
+raise "Spammers suck" if cgi.params['post_id'].first.to_i < 151
 
 new_comment = { 'timestamp' => Time.now.to_s }
 ['author', 'uri', 'content', 'human'].each do |param|
@@ -17,7 +17,7 @@ new_comment['content'].gsub!("\r?\n", "<br />") # newlines
 raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /bestfinance/
 raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /goodfinance/
 
-if(cgi.params['human'].to_s =~ /human$/i and
+if(cgi.params['evil'].to_s =~ /y/i and
    cgi.params['post_id'].to_s != '')
   filename = File.expand_path "../comments/#{cgi.params['post_id']}.yml"
 else
