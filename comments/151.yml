@@ -1,32 +1,42 @@
 --- 
 - uri: http://pwhite.org
-  timestamp: Fri Jul 29 19:33:38 -0700 2011
-  author: Patrick
   human: Human
+  author: Patrick
+  timestamp: Fri Jul 29 19:33:38 -0700 2011
   content: Why do you build Emacs from source yourself?
 - uri: http://technomancy.us
-  human: human
-  author: Phil
   timestamp: Fri Jul 29 21:42:10 -0700 2011
+  author: Phil
+  human: human
   content: "Patrick: I need an Emacs checkout so I can test out my contributions to package.el, plus I am interested in trying new features like lexical scoping and concurrency before they land on trunk."
 - uri: http://pwhite.org
-  timestamp: Sat Jul 30 04:06:55 -0700 2011
-  author: Patrick
   human: human
+  author: Patrick
+  timestamp: Sat Jul 30 04:06:55 -0700 2011
   content: Neat.
 - uri: ""
-  human: human
-  author: Aaron
   timestamp: Mon Aug 01 11:18:51 -0700 2011
+  author: Aaron
+  human: human
   content: |-
     One would hope a next generation solution like GNU Stow would have these features.
     
     Unfortunately, the sysadmins -- the class of people who usually motivate these decisions -- use virtualization and/or large clusters to deploy different versions of the software.  It's a sysadmin world, we developer's just live in it.
 - uri: https://github.com/jli
-  timestamp: Sun Aug 21 09:21:01 -0700 2011
-  author: John
   human: human
+  author: John
+  timestamp: Sun Aug 21 09:21:01 -0700 2011
   content: |-
     Have you heard of NixOS? It's a &quot;purely functional&quot; distribution with interesting properties. I've been meaning to give it a go.
     
     http://nixos.org/nixos/
+- uri: ""
+  human: ""
+  author: Ramon
+  timestamp: Tue May 01 11:54:12 -0700 2012
+  content: What keyboard layout do you use?
+- uri: http://technomancy.us
+  human: human
+  author: Phil
+  timestamp: Tue 08 May 2012 04:42:23 PM PDT
+  content: Ramon: I use dvorak.

@@ -106,8 +106,16 @@ content: |-
 
   <pre class="code"><span class="constant">:aliases</span> {<span class="string">"reflect"</span> [<span class="string">"assoc"</span> <span class="string">":warn-on-reflection"</span> <span class="string">"true"</span> <span class="string">"compile"</span>]}</pre>
 
-  <p>This allows you to invoke <kbd>lein reflect</kbd> to get a list of
-    all your reflection warnings.</p>
+  <p>This allows you to invoke <kbd>lein reflect</kbd> to get a list
+    of all your reflection warnings. Note that in this
+    case <kbd>assoc</kbd> refers to the task that comes from
+    the <a href="https://github.com/technomancy/lein-assoc">lein-assoc</a>
+    plugin, not the <kbd>clojure.core/assoc</kbd> function. Each
+    string in the alias vector is interpreted the same way as if it
+    were a direct command-line argument to the <kbd>lein</kbd> script,
+    which is why strings must be used. In this case reading it into
+    keywords and booleans happens inside the <kbd>assoc</kbd>
+    task.</p>
 
   <p>And that's one of the neat things about having tasks as functions.</p>
 
@@ -136,7 +144,7 @@ content: |-
     It's not perfect, but it should provide you with a starting point
     for your transition:</p>
 
-  <pre>$ lein plugin install lein-precate 0.2.0
+  <pre>$ lein plugin install lein-precate 0.3.0
   $ cat project.clj # the original 1.x-compatible version:
   (defproject clojure-http-client "1.1.1-SNAPSHOT"
     :description "An HTTP client for Clojure."
@@ -185,3 +193,9 @@ content: |-
     it ready at latest by
     the <a href="http://clojurewest.org/">Clojure/West
     conference</a>. Enjoy!</p>
+
+  <p><b>Update</b>: Leiningen
+      2.0.0-preview3 <a href="https://groups.google.com/group/clojure/browse_thread/thread/91079a531ee1f1c8">has
+      been released</a>! See
+      the <a href="https://github.com/technomancy/leiningen/wiki/Upgrading">upgrade
+      guide</a>.</p>

@@ -1,0 +1,38 @@
+--- 
+- uri: http://blog.fogus.me
+  timestamp: Fri Apr 27 05:30:23 -0700 2012
+  author: fogus
+  human: ""
+  content: "Very nice post, but I am very interested in your renaming of the classical &quot;funcall stinks&quot; argument:
+    \r\n\
+    &gt; Jim Crow functional programming
+    \r\n\
+    This assumes that the designers of CL were attempting to create a functional language and somehow failed at it. Having first class functions has nothing to do with the need to be explicit when choosing to use one. Functions in CL are absolutely first-class, but there are other considerations at play in the choice to go with a Lisp-1 scheme (pun intended) versus a Lisp-2. "
+- uri: ""
+  human: ""
+  author: He Who Writeth To You
+  timestamp: Fri Apr 27 06:45:48 -0700 2012
+  content: "''Common Lisp fans claim that lisp-2s have first-class functions, but the way they are kept separate from other first-class values in their own namespace ghetto brings to mind claims of &quot;separate but equal&quot;\xE2\x80\x94at best it is Jim Crow functional programming''
+    \r\n\
+    Clojurescript fans claim that they are using a lisp-1, but the way properties and methods are kept separate from each other with the annoying difference of a &quot;-&quot; character brings to mind claims of &quot;separate but equal&quot; -- at best it is Jim Crow lisp-1
+    \r\n\
+    :D"
+- uri: http://agentultra.com
+  timestamp: Fri Apr 27 07:31:33 -0700 2012
+  author: James King
+  human: ""
+  content: Well there is a serious attempt at porting Emacs to Common Lisp (http://tromey.com/blog/?p=709). From there your interop story will be much more simple.
+- uri: http://norstrulde.org
+  human: ""
+  author: Eric
+  timestamp: Fri Apr 27 07:59:18 -0700 2012
+  content: |-
+    It's good to see others reading Equal Rights for Functional Objects. That's a good one that I recently finished reading myself.
+    
+    Here's one quibble:
+    
+    &gt; Baker's paper implements the egal function in terms of this question; it's an equality predicate that defines object identity as a transitive closure of immutable attributes of an object. So without immutability, egal always returns false.
+    
+    My impression was that without immutability, egal is equivalent to eq. It can return true but not in every case you would like it to.
+    
+    An interesting case is an immutable list that has a mutable cell as an element. If two such lists, different according to eq, have the same (egal) elements including, in the sense of eq, the same cell, then those lists would be egal. That seems intuitively right to me. They are operationally equivalent because mutation affects both lists in the same way.
