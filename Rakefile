@@ -26,7 +26,11 @@ class Time
   end
 
   def self.stamp(time)
-    Time.parse(time).to_s
+    if time.is_a? Time
+      time.to_s
+    else
+      Time.parse(time).to_s
+    end
   end
 end
 
@@ -90,7 +94,7 @@ end
 
 task :default => [:posts, :list, :feed, :other]
 
-task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or l =~ /^\s*#/ }.size }
+task(:stats){ puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or l =~ /^\s*#/ }.size }
 
 # TODO:
 # Footer that lists "around" posts
