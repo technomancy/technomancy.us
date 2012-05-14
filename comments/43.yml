@@ -7,10 +7,10 @@
   uri: ""
   author: Fingal
   content: |-
-    I'd love to know how to do reasonably hip things with eshell,  but I'm at the level where all I can see is that normal lisp syntax (parens,  single quotes) doesn't quite work,  and I can't figure out how to invoke lisp functions on the results of primitive shell commands.  The manuals I've looked at haven't been any help.  <br />
-    <br />
-    I suppose I should look at this as an interesting puzzle,  imagine myself as Richard Feynman at Los Alamos receiving eshell in the mail from a friend back home.  Right.<br />
-    <br />
+    I'd love to know how to do reasonably hip things with eshell,  but I'm at the level where all I can see is that normal lisp syntax (parens,  single quotes) doesn't quite work,  and I can't figure out how to invoke lisp functions on the results of primitive shell commands.  The manuals I've looked at haven't been any help.  <br />
+    <br />
+    I suppose I should look at this as an interesting puzzle,  imagine myself as Richard Feynman at Los Alamos receiving eshell in the mail from a friend back home.  Right.<br />
+    <br />
     So is there actually a manual or info,  or help text somewhere that indicates how to stick things together using eshell?  If so,  perhaps you could point me at it?
 - timestamp: "Tue Oct 30 14: 59: 15 -0700 2007"
   uri: http://hcl-club.lu

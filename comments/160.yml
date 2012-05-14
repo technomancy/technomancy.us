@@ -1,0 +1,25 @@
+--- 
+- uri: ""
+  timestamp: Wed May 09 06:23:11 -0700 2012
+  author: Telman Yusupov
+  human: ""
+  content: Thank you for the review, Phil. What about support for external monitors and battery life?
+- uri: ""
+  human: ""
+  author: mefesto
+  timestamp: Wed May 09 07:31:23 -0700 2012
+  content: How's the battery life?
+- uri: http://technomancy.us
+  human: yes
+  author: Phil
+  timestamp: Wed 09 May 2012 09:55:31 AM PDT
+  content: |-
+    It drives my 28-inch external display just fine over the
+    micro-HDMI port, but I don't know if it can drive both that and
+    the VGA port at the same time. For battery life, powertop
+    estimates put it at about 4 hours at normal indoor brightness, but
+    since I haven't used it unplugged continuously for that long I'm
+    not sure I should trust it. I did have to add a few kernel options
+    to improve the power-saving, in particular the rc6 setting
+    <a href="https://wiki.ubuntu.com/Kernel/PowerManagement/PowerSavingTweaks">
+    described on the Ubuntu wiki</a>.

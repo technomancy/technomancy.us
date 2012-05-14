@@ -3,8 +3,8 @@
   uri: http://technomancy.us
   author: Phil
   content: |-
-    Thanks Noah. It was working for me when I piped the output to /etc/hosts2,  but shame on me for not testing it all the way through. I also escaped the space,  but my blogging software must have munched it.<br />
-    <br />
+    Thanks Noah. It was working for me when I piped the output to /etc/hosts2,  but shame on me for not testing it all the way through. I also escaped the space,  but my blogging software must have munched it.<br />
+    <br />
     Perhaps the pithiness of the original could be retained if it were ported to Ruby.
 - timestamp: "Fri Jul 20 12: 22: 32 -0700 2007"
   uri: ""
@@ -14,26 +14,26 @@
   uri: ""
   author: Fnor
   content: |-
-    Yes,  I do agree for the redirect!<br />
+    Yes,  I do agree for the redirect!<br />
     And thanks for the portability information.
 - timestamp: "Fri Jul 20 08: 17: 54 -0700 2007"
   uri: ""
   author: Noah Slater
   content: |-
-    This example has two major errors.<br />
-    <br />
-    Firstly,  you need to quote the argument to sed or you will get a &quot;sed:  -e expression #1,  char 21:  unterminated `s' command&quot; error.<br />
-    <br />
-    Secondly,  you cannot use sed to read from a while while concurrently writing to the same file. You need to use a temporary file in this instance.<br />
-    <br />
-    A working script would look something like: <br />
-    <br />
-    temporary_file=$(tempfile)<br />
-    if [ $? -ne 0 ]; then<br />
-        echo &quot;Could not create temporary file.&quot;;<br />
-    else<br />
-        sed &quot;s/localhost/localhost lolcathost/&quot; /etc/hosts &gt; $temporary_file;<br />
-        mv $temporary_file /etc/hosts<br />
+    This example has two major errors.<br />
+    <br />
+    Firstly,  you need to quote the argument to sed or you will get a &quot;sed:  -e expression #1,  char 21:  unterminated `s' command&quot; error.<br />
+    <br />
+    Secondly,  you cannot use sed to read from a while while concurrently writing to the same file. You need to use a temporary file in this instance.<br />
+    <br />
+    A working script would look something like: <br />
+    <br />
+    temporary_file=$(tempfile)<br />
+    if [ $? -ne 0 ]; then<br />
+        echo &quot;Could not create temporary file.&quot;;<br />
+    else<br />
+        sed &quot;s/localhost/localhost lolcathost/&quot; /etc/hosts &gt; $temporary_file;<br />
+        mv $temporary_file /etc/hosts<br />
     fi
 - timestamp: "Fri Jul 20 11: 45: 25 -0700 2007"
   uri: ""
@@ -51,8 +51,8 @@
   uri: http://lolcathost
   author: Phil
   content: |-
-    Noted re:  redirects. There's a lot of things this blog software should do. =)<br />
-    <br />
+    Noted re:  redirects. There's a lot of things this blog software should do. =)<br />
+    <br />
     Updated the example; thanks.
 - timestamp: "Fri Jul 20 11: 46: 22 -0700 2007"
   uri: ""

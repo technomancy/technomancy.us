@@ -3,8 +3,8 @@
   uri: http://42squared.com
   author: hornbeck
   content: |-
-    Phil, <br />
-    <br />
+    Phil, <br />
+    <br />
     I wanted you to know that I took your code and built it on rubinius and started adding to it.  If you would like me to share what I have or if you have any objections please let me know.  I am hornbeck on irc and am normally in #rubinius,  #merb,  #caboose
 - timestamp: "Sun Dec 09 09: 25: 27 -0800 2007"
   uri: http://brainspl.at
@@ -26,6 +26,6 @@
   uri: http://technomancy.us
   author: Phil
   content: |-
-    Garry:  I might do that. What I meant there is that I'd like to be able to host my own repositories,  but that may just be infeasible with my current hosting solution.<br />
-    <br />
+    Garry:  I might do that. What I meant there is that I'd like to be able to host my own repositories,  but that may just be infeasible with my current hosting solution.<br />
+    <br />
     Ezra:  What a coincidence; you just hired someone who knows a lot about Ruby and has implemented Scheme like five times. I'm sure he could cook up something more appropriate; this is really just a toy for me. Though if you find it useful/fun that's great.
