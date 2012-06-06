@@ -18,41 +18,43 @@
   </head>
 
   <body>
-    <h1><a href='/list'><img src='/i/technomancy.png' alt='Technomancy' /></a>
-    <a href='/<%= page['id'] %>'><%= page['title'] %></a></h1>
+    <div id="container">
+      <div id="logo">
+        <a href='/list'><img src='/i/technomancy.png' alt='Technomancy' /></a>
+      </div>
+      <h1><a href='/<%= page['id'] %>'><%= page['title'] %></a></h1>
 
-    <div id='entry'><%= page['content'] %>
-    <p class='timestamp'>
-      <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><a href='/<%= page['id'].to_i - 1 %>'>&laquo; older</a> |<% end %>
-      <a href='/<%= page['id'] %>'><%= Time.stamp page['timestamp'] %></a>
-      <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %>| <a href='/<%= page['id'].to_i + 1 %>'>newer &raquo;</a><% end %></p>
-    </div>
+      <div id='entry'><%= page['content'] %>
+        <p class='timestamp'>
+          <% if File.exist? "posts/#{page['id'].to_i - 1}.yml" %><a href='/<%= page['id'].to_i - 1 %>'>&laquo; older</a> |<% end %>
+          <a href='/<%= page['id'] %>'><%= Time.stamp page['timestamp'] %></a>
+          <% if File.exist? "posts/#{page['id'].to_i + 1}.yml" %>| <a href='/<%= page['id'].to_i + 1 %>'>newer &raquo;</a><% end %></p>
+      </div>
 
-    <div id='comments'>
-      <dl>
-        <% parse("comments/#{page['id']}.yml").sort_by {|c| Time.stamp(c['timestamp']) }.each do |comment| %>
-        <dt><%= comment['uri'].to_s == '' ? comment['author'] : "<a href='#{comment['uri']}' rel='nofollow'>#{comment['author']}</a>" %> 
-        &ndash; <span class='timestamp'><%= Time.stamp comment['timestamp'] %></span></dt>
-        <dd><%= comment['content'].gsub(/[\r\n]/, "<br />") %></dd>
-        <% end %>
-      </dl>
-      <% if page['id'] > 150 %>
-      <form action='/comment.cgi' method='post'>
-        <p><input type='text' name='author' /> Name</p>
-        <p><input type='text' name='uri' /> URL</p>
+      <div id='comments'>
+        <dl>
+          <% parse("comments/#{page['id']}.yml").sort_by {|c| Time.stamp(c['timestamp']) }.each do |comment| %>
+          <dt><%= comment['uri'].to_s == '' ? comment['author'] : "<a href='#{comment['uri']}' rel='nofollow'>#{comment['author']}</a>" %> 
+            &ndash; <span class='timestamp'><%= Time.stamp comment['timestamp'] %></span></dt>
+          <dd><%= comment['content'].gsub(/[\r\n]/, "<br />") %></dd>
+          <% end %>
+        </dl>
+        <% if page['id'] > 150 %>
+        <form action='/comment.cgi' method='post'>
+          <p><input type='text' name='author' /> Name</p>
+          <p><input type='text' name='uri' /> URL</p>
         
-        <input type='hidden' name='post_id' value='<%= page['id'] %>' />
+          <input type='hidden' name='post_id' value='<%= page['id'] %>' />
 
-        <textarea name='content' rows='15' cols='60'></textarea>
-        <p><input type='submit' value='Post a Comment' />
-          Are spammers evil? (yes or no)
-          <input type='text' name='evil' id='evil' size="6" />
-        </p>
-        <p>Comments are manually moderated, sorry. Please no HTML.</p>
-      </form>
-      <% else %>
-      <p>Comments are disabled on older posts.</p>
-      <% end %>
-    </div>
-
+          <textarea id="comment-entry" name='content'></textarea>
+          <p><input type='submit' value='Post' />
+            Are spammers evil? (yes or no)
+            <input type='text' name='evil' id='evil' size="6" />
+          </p>
+          <p>Comments are manually moderated, sorry. Please no HTML.</p>
+        </form>
+        <% else %>
+        <p>Comments are disabled on older posts.</p>
+        <% end %>
+      </div>
 <%= including "footer" %>

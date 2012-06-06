@@ -1,25 +1,29 @@
 @font-face {
-  font-family: 'Cardo';
+  font-family: 'Cabin';
   font-style: normal;
-  font-weight: normal;
-  src: local('Cardo'), url('cardo.ttf') format('truetype');
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url('cabin.ttf') format('truetype');
 }
 
 * {
-    font-family: 'Cardo', "Book Antiqua", "URW Palladio L", serif;
-    letter-spacing: 0.05em;
+    font-family: 'Cabin', "Book Antiqua", "URW Palladio L", sans-serif;
 }
 
 body { 
     padding: 1.5em 0;
 }
 
-h1 {
-    margin: 1em;
+div#container {
+    width: 900px;
+    margin: 0 auto;
 }
 
-h1 img {
-    margin: -0.8em 1em 1em 0;
+h1 {
+    margin: 1.5em 0 1.5em 3em;
+}
+
+div#logo {
+    margin: -3em 0 0 -5em;
     float: left;
 }
 
@@ -30,11 +34,11 @@ h1 a {
 blockquote {
     background-color: #eee;
     margin: 1em;
-    padding: 1em;
+    padding: 0.3em 1em;
 }
 
-#entry {
-    font-size: 13pt;
+#entry, #wrapper {
+    font-size: 15pt;
 }
 
 #entry img {
@@ -45,19 +49,23 @@ blockquote {
     text-align: justify;
     border-top: 1px grey solid;
     font-size: 11pt;
-    margin: 2em;
     padding: 3em;
 }
 
 #comments dd {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+#comment-entry {
+    width: 40em;
+    height: 10em;
 }
 
 #entry, #comments, #entries, #wrapper, #books, #resume {
     width: 40em;
     margin-left: 5em;
     text-align: justify;
-    line-height: 165%;
+    line-height: 1.6em;
 }
 
 #entries li {
