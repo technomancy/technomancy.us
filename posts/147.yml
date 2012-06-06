@@ -50,3 +50,8 @@ content: |-
     "snapshots" repository, while stable versions will go to the
     "releases" repository. Hopefully this is useful for teams
     collaborating on multiple projects in private.</p>
+
+  <p><b>Update</b>: Don't store your repository credentials in
+    plaintext on your drive. Leiningen 2 features transparent GPG
+    support if you store them in <tt>~/.lein/credentials.clj.gpg</tt>,
+    which you should use instead.</p>

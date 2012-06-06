@@ -1,6 +1,6 @@
 --- 
 - uri: http://technomancy.us
-  timestamp: Thu Mar 01 18:01:50 -0800 2012
-  author: Phil
   human: ""
+  author: Phil
+  timestamp: Thu Mar 01 18:01:50 -0800 2012
   content: Somehow I forgot to mention that the repl task has been totally rewritten in Leiningen 2; it features readline-ish input without rlwrap and has great completion.

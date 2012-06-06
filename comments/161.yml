@@ -1,0 +1,27 @@
+--- 
+- uri: ""
+  human: ""
+  author: Dmitri
+  timestamp: Sat May 19 09:57:00 -0700 2012
+  content: Thank you so much for the lein-gnome! I was looking forward for such thing since the clojurescript release. I hope many gnome extensions will be developed in cljs thanks to this project.
+- uri: ""
+  timestamp: Tue May 22 05:22:26 -0700 2012
+  author: plotern
+  human: ""
+  content: |
+    Except that the user experience of both Unix and EMACS is *awful*.
+    
+    Those two approaches lead to programmer-friendly apps rather than user-friendly apps.
+    
+    And believe it or not, the biggest problem when implementing extensibility in an application is usually *limiting* what the extensions can do, not the opposite - you still have to provide privacy, security, etc to the dumb user.
+
+- uri: http://sachachua.com
+  human: ""
+  author: Sacha Chua
+  timestamp: Thu May 31 12:06:03 -0700 2012
+  content: This is one of the things I love about Emacs. Thanks for explaining it so clearly!
+- uri: http://technomancy.us
+  author: Phil
+  timestamp: Tue 05 Jun 2012 09:01:50 PM PDT
+  content: |-
+    plotern: I'm only talking about what's usable to me; I don't make any claim to understand the mind of nontechnical users. I want software that treats me like an adult.

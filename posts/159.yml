@@ -97,7 +97,7 @@ content: |-
     <code>egal</code> function in terms of this question; it's an
     equality predicate that defines object identity as a transitive
     closure of immutable attributes of an object. So without
-    immutability, <code>egal</code> always returns false.</p>
+    immutability, <code>egal</code> can't do any better than <code>eq</code>.</p>
 
   <p>Of course, with a compiler that targets Emacs Lisp, you can work
     around this by implementing your own immutable types. But this
@@ -113,9 +113,9 @@ content: |-
     ongoing effort to
     get <a href="http://www.emacswiki.org/emacs/GuileEmacs">Emacs Lisp
     running on the Guile VM</a>. As it comes from a Scheme background,
-    Guile provides the immutable data types we need. <b>Update</b>:
+    Guile provides the immutable data types we need. (<b>Update</b>:
     the immutable types offered in Guile do not actually come from the
-    Scheme standard, but they are present nonetheless. However, Emacs
+    Scheme standard, but they are present nonetheless.) However, Emacs
     Lisp is very different from Scheme, and the Guile implementors
     have an enormous task ahead of them to get even the basics
     working; the amount of work needed to achieve compatibility with

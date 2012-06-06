@@ -45,9 +45,9 @@ content: |-
     to go into detail about this here since it's covered well
     elsewhere, namely in the readme
     and <a href="http://github.com/technomancy/leiningen/blob/master/TUTORIAL.md">tutorial</a>
-    as well as the <a href="http://vimeo.com/8934942">Full Disclojure
-    screencast on project management</a>. (Warning: flash video; a
-    downloadable version is available if you create a Vimeo account.)
+    as well as
+    the <a href="http://blip.tv/clojure/phil-hagelberg-making-leiningen-work-for-you-4733496">Leiningen
+    presentation at the Clojure Conj</a>.
     There are other alternatives, but this is certainly the most
     straightforward. Leiningen gives you a basic skeleton to work from
     (<kbd>lein new</kbd>), handles dependencies specified in your
@@ -178,3 +178,7 @@ content: |-
     enough to modernize the Mire project and help extend the relevance
     of the screencast and associated codebase. Thanks for tuning
     in!</p>
+
+  <p><b>Update</b>: <a href="https://github.com/technomancy/mire/commit/87daea26b866d7">the
+      latest commit</a> updates the codebase for Clojure 1.4.0 by
+      removing the last vestige of the old monolithic contrib.</p>

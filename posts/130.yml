@@ -15,7 +15,7 @@ content: |-
     he posted a follow-up in Clojure using refs.</p>
 
   <p>While his version is interesting for someone just getting into
-    the language because it uses refs (probably the sexiest piece of
+    the language because it uses refs (probably the shiniest piece of
     the language), I think a map/reduce approach is a little more
     idiomatic since it can be done with no explicit state change.</p>
 
@@ -31,22 +31,26 @@ content: |-
     simplicity. I'm leaving it up because I think it's a fun romp in
     the land of higher-order functions; if you think having
     higher-order functions means "I can pass a block
-    to <code>Array#map</code> in Ruby" then you're in for a treat.</p>
+    to <code>Array#map</code> in Ruby" then you're in for a treat. If
+    you are looking for a hard-core walkthrough of high-performance
+    coding, your best bet
+    is <a href="http://meshy.org/2009/12/13/widefinder-2-with-clojure.html">Alex
+    Osborne's blog post</a> on Wide Finder.</p>
 
   <pre class="code">
-  <span class="esk-paren">(</span><span class="keyword">ns</span> wide-finder
+  <span class="esk-paren">(</span><span class="keyword">ns</span> wide.finder
     <span class="string">"A basic map/reduce approach to the wide finder using agents.
     Optimized for being idiomatic and readable rather than speed."</span>
-    <span class="esk-paren">(</span><span class="builtin">:use</span> [clojure.contrib.duck-streams <span class="builtin">:only</span> [reader]]<span class="esk-paren">))</span>
+    <span class="esk-paren">(</span><span class="builtin">:use</span> [clojure.java.io <span class="builtin">:only</span> [reader]]<span class="esk-paren">))</span>
   </pre>
 
   <p>Every Clojure file opens with a call to the <code>ns</code>
-    macro. This defines a namespace (<code>wide-finder</code>) and
+    macro. This defines a namespace (<code>wide.finder</code>) and
     states any dependencies it may have on other namespaces, in this
     case the <code>reader</code> function from
-    the <code>duck-streams</code> contrib library. Omitting
+    the <code>clojure.java.io</code> namespace. Omitting
     the <code>:only</code> clause would cause it to make all
-    the <code>duck-streams</code> vars available in this namespace,
+    the <code>io</code> vars available in this namespace,
     but it's usually better to be explicit about what you need.</p>
 
   <p>We'll start with the entry point. The <code>find-widely</code>
