@@ -144,3 +144,7 @@ content: |-
     with <a href="http://mirror.ocamlcore.org/ocaml-tutorial.org/">this
     OCaml Tutorial</a> which also links off to many other helpful
     resources. Have fun!</p>
+
+  <p><b>Update</b>: As of version 4.5, dmenu has implemented fuzzy
+    matching, making erythrina interesting mostly for educational
+    purposes.</p>
