@@ -1,0 +1,26 @@
+--- 
+- uri: ""
+  timestamp: Sun Jul 01 14:13:53 -0700 2012
+  author: Ryan
+  human: ""
+  content: What about having a single emacs daemon running and having everyone connect to it with emacsclient? Would that allow everyone to edit at once (like Google Docs)? Obviously I've never tried editing the same Emacs buffer simultaneously from different terminals. I wonder how well it would work.
+- uri: http://technomancy.us
+  human: ""
+  author: Phil
+  timestamp: Sun Jul 01 14:49:43 -0700 2012
+  content: "Ryan: that would certainly allow everyone to edit at the same time, but it's usually not what you want. If you have a discussion going on, you want a single point to focus on. It's really hard to track what's happening if you have multiple independent edits happening simultaneously. While it's technically feasible, the concurrency issues reside in the human mind rather than in the software in this case. =)"
+- uri: www.bennee.com/~alex
+  timestamp: Mon Jul 02 01:45:18 -0700 2012
+  author: Alex Bennee
+  human: ""
+  content: Obviously I love Emacs but I wonder if a web-based IDE (like the recently launched Cloud 9) offers a faster entry in for this sort of coding session? Of course even better would be some sort of open access where everyone could follow but in their editor of choice!
+- uri: www.claysnow.co.uk
+  human: ""
+  author: Seb
+  timestamp: Mon Jul 02 01:59:21 -0700 2012
+  content: "You could also look at Cyber Dojo (which doesn't have Clojure - yet) as, but is an excellent tool for working in a group setting: http://www.cyber-dojo.com/"
+- uri: http://noorul.com
+  timestamp: Mon Jul 16 00:18:15 -0700 2012
+  author: Noorul
+  human: ""
+  content: Is that possible to connect to a remote emacs daemon using emacsclient?
