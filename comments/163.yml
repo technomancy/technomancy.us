@@ -1,0 +1,11 @@
+--- 
+- uri: http://orthogonal.me/
+  timestamp: Tue Aug 21 22:50:30 -0700 2012
+  author: Glen Stampoultzis
+  human: ""
+  content: Many thanks to you and Tim for working on this project.  I'll probably be holding off for a little while but I appreciate a good alternative to SLIME.  It was always a bit of a square peg in a round hole.
+- uri: ""
+  human: ""
+  author: georgek
+  timestamp: Tue Aug 21 23:43:09 -0700 2012
+  content: Switched to nREPL a couple of weeks ago, and while yes it's not SLIME, it does feel a lot nicer to use. I'm very happy with it so far.
