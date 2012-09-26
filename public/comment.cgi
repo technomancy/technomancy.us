@@ -16,6 +16,7 @@ new_comment['content'].gsub!("\r?\n", "<br />") # newlines
 
 raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /bestfinance/
 raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /goodfinance/
+raise "You suuuuuuuuuuuuuuuuuuuuuuuuuuck" if new_comment['uri'] =~ /^(http|$)/
 
 if(cgi.params['evil'].to_s =~ /y/i and
    cgi.params['post_id'].to_s != '')
