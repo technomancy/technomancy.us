@@ -1,0 +1,15 @@
+# -*- html -*-
+--- 
+timestamp: Wed 26 Sep 2012 08:41:26 AM PDT
+title: in which laziness mostly predominates
+tags: clojure, heroku, interview
+id: 164
+content: |-
+  <p>The last few days have been a whirlwind with the
+    fantastic <a href="https://thestrangeloop.com/">StrangeLoop</a>
+    conference, such that I forgot to mention that my interview with
+    Chas Emerick of the Mostly Lazy podcast
+    was <a href="http://mostlylazy.com/2012/09/21/episode-8-phil-hagelberg-empowering-userspace-in-heroku-leiningen-and-emacs/">posted
+    recently</a>. In it we rant about user-serviceable hardware, my
+    recent reading list, extensible systems, the latest developments
+    in <a href="http://leiningen.org">Leiningen</a>, and more.</p>
