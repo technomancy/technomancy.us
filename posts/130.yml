@@ -26,15 +26,16 @@ content: |-
     especially with regard to reading from disk;
     my intent here is simply to explain the functional approach.</p>
 
-  <p><b>Update</b>: Commenters have posted a version that totally
-    smokes my agent-based implementation in terms of performance and
-    simplicity. I'm leaving it up because I think it's a fun romp in
-    the land of higher-order functions; if you think having
-    higher-order functions means "I can pass a block
-    to <code>Array#map</code> in Ruby" then you're in for a treat. If
-    you are looking for a hard-core walkthrough of high-performance
-    coding, your best bet
-    is <a href="http://meshy.org/2009/12/13/widefinder-2-with-clojure.html">Alex
+  <p><b>Update</b>: Commenters have posted <a
+    href="http://pastie.org/pastes/717940">a version that totally
+    smokes my agent-based implementation</a> in terms of performance
+    and simplicity. I'm leaving mine up because I think it's a fun romp
+    in the land of higher-order functions; if you think having
+    higher-order functions means "I can pass a block to
+    <code>Array#map</code> in Ruby" then you're in for a treat. If you
+    are looking for a hard-core walkthrough of high-performance
+    coding, your best bet is <a
+    href="http://meshy.org/2009/12/13/widefinder-2-with-clojure.html">Alex
     Osborne's blog post</a> on Wide Finder.</p>
 
   <pre class="code">

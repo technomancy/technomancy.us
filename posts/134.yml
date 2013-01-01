@@ -23,7 +23,7 @@ content: |-
     is only used in exceptional cases, switching to the inverse
     situation on the phone is a bit odd, but not as disorienting as
     you'd expect. Like any handheld keyboard, the Nexus's is bad for
-    writing anything longer than a tweet, but it's certainly no worse
+    writing anything longer than a chat, but it's certainly no worse
     than the hardware keyboard on the
     old <a href="http://www.amazon.com/Sharp-SL-5500-Zaurus-PDA/dp/B000063D6E">Zaurus</a>
     I toy around with occasionally or the one on my Kindle. The built-in apps work great, and
@@ -120,7 +120,7 @@ content: |-
     JRuby project. JRuby is an amazing feat in part because Ruby's
     object model is vastly different from what's natively available on
     the Java platform. By an astounding effort they've managed to put
-    together a first-class Ruby implementation, but it does beg the
+    together a first-class Ruby implementation, but it does raise the
     question: what would a modern language look like that
     went <i>with</i> the grain of its host instead of violently
     against it? Duby is an attempt to answer that question.</p>

@@ -14,8 +14,6 @@ task :deploy do
   rsync '.', "technomancy.us:technomancy.us"
 end
 
-task(:comments) { rsync "technomancy.us:technomancy.us/comments/", "comments/" }
-
 def parse(filename)
   YAML.load(File.read(filename)) rescue {}
 end
@@ -94,7 +92,7 @@ end
 
 task :default => [:posts, :list, :feed, :other]
 
-task(:stats){ puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or l =~ /^\s*#/ }.size }
+task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or l =~ /^\s*#/ }.size }
 
 # TODO:
 # Footer that lists "around" posts

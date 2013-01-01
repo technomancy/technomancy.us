@@ -27,6 +27,9 @@ content: |-
     indicator that they take backwards-compatibility seriously.
   </p>
 
+  <p><b>Update</b>: Leiningen 2 supports this out of the box using
+    profiles, so the <tt>lein-multi</tt> plugin is deprecated.</p>
+
   <p><code>[lein-multi "1.0.0"]</code></p>
 
   <h4><a href="https://github.com/mmcgrana/clj-stacktrace">clj-stacktrace</a></h4>
@@ -45,9 +48,7 @@ content: |-
     filter out frames that are deemed irrelevant on a per-project
     basis.</p>
 
-  <p>The web framework <a href="http://webnoir.org">Noir</a> uses
-    clj-stacktrace for its HTML error pages in development mode. To
-    use it in your project's repl as well as
+  <p>To use it in your project's repl as well as
     in <code>clojure.test</code> error reporting, place this code
     in <tt>~/.lein/init.clj</tt> after running <kbd>$ lein plugin
     install clj-stacktrace 0.2.4</kbd>:</p>
@@ -87,6 +88,14 @@ content: |-
     <span class="esk-paren">(</span><span class="builtin">catch</span> <span class="constant">:fatal?</span> {<span class="constant">:keys</span> [exit-code]}
       <span class="esk-paren">(</span><span class="preprocessor">System/exit</span> exit-code<span class="esk-paren">)))</span></pre>
 
+  <p><b>Update</b>: The equivalent of the exception-throwing side of
+    Slingshot has been included in Clojure 1.4 using
+    the <code>ex-info</code> and <code>ex-data</code> functions, so
+    unless you are targeting old versions of Clojure you should use
+    those instead. Nothing has been added on the exception handling
+    side though, so Slingshot's <code>try+</code> macro is still very
+    useful.</p>
+
   <p><code>[slingshot "0.8.0"]</code></p>
 
   <h4><a href="https://github.com/brentonashworth/lein-difftest">lein-difftest</a></h4>
@@ -106,6 +115,9 @@ content: |-
     across all your projects:</p>
 
   <p><kbd>$ lein plugin install lein-difftest 1.3.7</kbd></p>
+
+  <p><b>Update</b>: Use version 2.0.0 of <tt>lein-difftest</tt> for
+    compatibility with Leiningen 2.x.</p>
 
   <h4><a href="https://github.com/joegallo/robert-bruce">robert-bruce</a></h4>
 

@@ -55,6 +55,11 @@ content: |-
     from :dev-dependencies in project.clj entirely and have each user
     who wants to use swank install it as a local plugin instead.</p>
 
+  <p><b>Update</b>: swank-clojure is now deprecated; you are
+    encouraged to
+    use <a href="https://github.com/kingtim/nrepl.el">nrepl.el</a>
+    instead, which is much simpler to install and use.</p>
+
   <p>If you have issues, please post to
     the <a href="http://groups.google.com/group/swank-clojure">swank-clojure
       mailing list</a> or

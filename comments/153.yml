@@ -1,16 +1,16 @@
 --- 
 - uri: www.codesounding.org
-  human: human
-  author: robermann
   timestamp: Thu Sep 29 09:31:42 -0700 2011
+  author: robermann
+  human: human
   content: |-
     I followed your steps and installed Emacs 24 + clojure-mode on Windows 7, with a little hack. Here my installation's notes, maybe someone else could find this helpful: https://sourceforge.net/apps/wordpress/codesounding/2011/09/29/installing-emacs-24-and-clojure-mode-on-windows-7-step-by-step/
     
     (Sorry if I'm re-posting twice this message, but just now I noted the question &quot;Are you a human or a bot?&quot; - not sure of the answer, but I'll try it :-))
 - uri: puuhonua.org/touch
-  timestamp: Thu Sep 29 13:28:22 -0700 2011
-  author: Touch Puuhonua
   human: a human
+  author: Touch Puuhonua
+  timestamp: Thu Sep 29 13:28:22 -0700 2011
   content: |-
     I'm running emacs 24.0.90.1
     
@@ -25,19 +25,19 @@
     
       Symbol's value as variable is void: package-archives
 - uri: ""
-  human: human
-  author: ptc
   timestamp: Thu Sep 29 16:08:21 -0700 2011
+  author: ptc
+  human: human
   content: Cool! I really enjoy the work you've done on this. I'm going to have to upgrade soon. Maybe I'll try to contribute back into the python stuff.
 - uri: http://technomancy.us
-  timestamp: Thu Sep 29 21:04:08 -0700 2011
-  author: Phil
   human: human
+  author: Phil
+  timestamp: Thu Sep 29 21:04:08 -0700 2011
   content: "Touch Puuhonua: You must have an old version of package.el from tromey.com somewhere on your load path. If you remove it, you should start using the built-in one."
 - uri: ""
-  human: human
-  author: Josh
   timestamp: Fri Sep 30 00:52:01 -0700 2011
+  author: Josh
+  human: human
   content: |-
     Just upgraded to emacs 24 w/ starter-kit 2.0.2. I'm a little confused as to the point of &lt;user&gt;.el now. In v1 of the starter-kit, it called package-initialize then &lt;user&gt;.el, so you had all the elpa packages on the load path and could require them. This doesn't work with v2. If I call package-initialize in init.el as suggested above, this will load the installed elpa packages, one of which is the starter-kit, which calls &lt;user&gt;.el - but that this point there are (may be) other packages that haven't yet been added to the load-path as package-initialize hasn't finished loaded all packages yet. So in &lt;user&gt;.el you can't require some packages. You'd need to add them to the load path first, which is somewhat redundant as package-initialize does this for us. I'm got around this issue right now by moving all my old v1 &lt;user&gt;.el code in to init.el after package-initialize has returned. 
     
@@ -45,35 +45,35 @@
     
     Tbanks for the great packages!
 - uri: http://kencausey.com/
-  timestamp: Fri Sep 30 13:27:56 -0700 2011
-  author: Ken Causey
   human: human
+  author: Ken Causey
+  timestamp: Fri Sep 30 13:27:56 -0700 2011
   content: |-
     Your my-packages list includes scpaste twice.
     
     Also,  wouldn't paredit be a good inclusion?
 - uri: ""
-  human: human
-  author: Konrad Hinsen
   timestamp: Mon Oct 03 00:36:38 -0700 2011
+  author: Konrad Hinsen
+  human: human
   content: This looks fine, but I have an issue with the interaction of starter-kit and the package manager. All my initialization files (in the user directory) are processed during the activation of the starter-kit package. Which means that I can't refer to packages that have not been loaded and activated before. But it seems that I can't control the order of package activation either, so I am stuck. Is there any way to make sure that starter-kit is activated last? Or at least have my initialization files run after all packages are there?
 - uri: http://technomancy.us
-  timestamp: Mon Oct 03 14:14:30 -0700 2011
-  author: Phil
   human: human
+  author: Phil
+  timestamp: Mon Oct 03 14:14:30 -0700 2011
   content: |-
     Josh, Konrad: yes, one of the side-effects of moving the Starter Kit to a package is that the load order gets shifted around. The good news is that user.el is a lot less important than it was under v1 since you can edit init.el directly. But there are limitations. I recommend setting up eval-after-load blocks in user.el if you need to run code that depends on a package.
     
     Ken: good catch, thanks. Paredit isn't explicitly listed because the Starter Kit pulls it in.
 - uri: http://kencausey.com/
-  human: human
-  author: Ken Causey
   timestamp: Tue Oct 04 07:45:37 -0700 2011
+  author: Ken Causey
+  human: human
   content: "Phil: Oops, I didn't consider that starter-kit might be loading other packages, now I have some duplication in my packages list. ;)"
 - uri: ""
-  timestamp: Tue Oct 04 13:23:32 -0700 2011
-  author: Konrad Hinsen
   human: human
+  author: Konrad Hinsen
+  timestamp: Tue Oct 04 13:23:32 -0700 2011
   content: |
     Thanks Phil, that got me a bit further. But eval-after-load is not a universal solution, unless I am overlooking something.
     
@@ -84,9 +84,9 @@
     Alternatively, would it be possible to provide a function in the starter kit that runs all the user and machine specific configuration files? I'd then call that explicitly at the end of my init.el and everything should work like before.
 
 - uri: ""
-  human: human
-  author: Russ
   timestamp: Sun Oct 23 13:56:51 -0700 2011
+  author: Russ
+  human: human
   content: |-
     I got it working, but there are a bunch of stuff that is missing now.  How do I get back the functionality that was in 1.x?
     
@@ -94,9 +94,9 @@
     
     An example:  Before, Ctrl-Home and Ctrl-End would move the cursor to the beginning or end of the buffer.  Now it doesn't.  I have starter-kit-bindings installed, but it didn't help, so now I don't know what to do.
 - uri: http://technomancy.us
-  timestamp: Wed Oct 26 22:04:31 -0700 2011
-  author: Phil
   human: human
+  author: Phil
+  timestamp: Wed Oct 26 22:04:31 -0700 2011
   content: |-
     Russ: if you have bindings you like from version 1 you can just copy them from <a href="https://github.com/technomancy/emacs-starter-kit/blob/master/starter-kit-bindings.el">starter-kit-bindings.el</a> into your init.el. Though I'm not sure where C-home/end comes from. I recommend using M-&lt; and M-&gt; instead.
     

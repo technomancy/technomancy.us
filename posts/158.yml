@@ -119,6 +119,12 @@ content: |-
 
   <p>And that's one of the neat things about having tasks as functions.</p>
 
+  <h4>Repl</h4>
+
+  <p>The <kbd>repl</kbd> task has been rewritten from the ground-up by
+    Colin Jones. The new version supports a JVM-native readline
+    implementation as well as thorough completion and nREPL support.</p>
+
   <h4>Preview</h4>
 
   <p>By this point I'm sure you're thinking to yourself, "Gosh, that

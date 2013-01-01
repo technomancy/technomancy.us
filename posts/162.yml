@@ -48,7 +48,12 @@ content: |-
     join an in-process session started by the host, and control can be
     passed around as discussion progresses. If someone has an idea for
     how to address a certain problem, they can just try it out
-    straight away.</p>
+    straight away. While there are more complicated setups that can
+    allow for each user to edit independently, we've found that is
+    usually not what you want. If you have a discussion going on, you
+    want a single point to focus on. It's really hard to track what's
+    happening if you have multiple independent edits happening
+    simultaneously.</p>
 
   <p>Usually skill levels vary widely in group settings like this, so
     it's important for the facilitator to be able to gauge them,

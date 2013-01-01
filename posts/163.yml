@@ -83,3 +83,10 @@ content: |-
     you're looking for a simpler way to get
     started, <a href="https://github.com/kingtim/nrepl.el">give
     nrepl.el a try</a>.</p>
+
+  <p><b>Update</b>: Jeffrey Chu, original author of swank-clojure,
+    writes: <i>As creator of swank-clojure, I'm a little sad to see it
+    die. But I'm very happy to see that it's being replaced by
+    something designed/maintainable instead of hacked about just to
+    scratch an itch. Thanks for keeping it alive all this time and I
+    look forward to the great work coming out of nrepl.el.</i></p>
