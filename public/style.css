@@ -37,6 +37,25 @@ blockquote {
     padding: 0.3em 1em;
 }
 
+#bigleft, #bigright {
+    position: fixed;
+    top: 10em;
+    font-size: 28pt;
+}
+
+#bigleft a, #bigright a {
+    color: #ddd;
+}
+
+#bigleft a:hover, #bigright a:hover {
+    color: #31674b;
+    text-decoration: none;
+}
+
+#bigright {
+    left: 1220px;
+}
+
 #entry, #wrapper {
     font-size: 15pt;
 }
