@@ -234,3 +234,26 @@ code {
         color: #ff0000;
         font-weight: bold;
     }
+
+      .nxml-attribute-local-name {
+        /* nxml-attribute-local-name */
+        color: #a0522d;
+      }
+      .nxml-attribute-value {
+        /* nxml-attribute-value */
+        color: #8b2252;
+      }
+      .nxml-attribute-value-delimiter {
+        /* nxml-attribute-value-delimiter */
+        color: #8b2252;
+      }
+      .nxml-element-local-name {
+        /* nxml-element-local-name */
+        color: #0000ff;
+      }
+      .nxml-processing-instruction-delimiter {
+      }
+      .nxml-processing-instruction-target {
+        /* nxml-processing-instruction-target */
+        color: #a020f0;
+      }

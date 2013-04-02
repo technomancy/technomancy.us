@@ -82,6 +82,13 @@ content: |-
     Clojure, Leiningen, and Emacs, but there's no reason it couldn't
     be extended for Vim or other languages.</p>
 
+  <p><b>Update</b>: I
+    have <a href="https://syme.herokuapp.com">another project called
+      Syme</a> which handles setting up pair/swarm nodes on EC2. In
+    most cases this is a lot simpler than running the tmux session on
+    your own machine, though it may not always be feasible depending
+    on the quality of the network.</p>
+
   <p>There are a few things to watch for here. First of all, we've
     only tried this with groups of up to 12 participants. Group
     dynamics break down when things get larger, so you may want to

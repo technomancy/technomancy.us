@@ -201,7 +201,7 @@ content: |-
     conference</a>. Enjoy!</p>
 
   <p><b>Update</b>: Leiningen
-      2.0.0-preview3 <a href="https://groups.google.com/group/clojure/browse_thread/thread/91079a531ee1f1c8">has
+      2.0.0 <a href="https://github.com/technomancy/leiningen/blob/2.0.0/NEWS.md">has
       been released</a>! See
       the <a href="https://github.com/technomancy/leiningen/wiki/Upgrading">upgrade
       guide</a>.</p>

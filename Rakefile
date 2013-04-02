@@ -1,17 +1,11 @@
 require 'erb'
 require 'time'
-require 'cgi'
 require 'uri'
 require 'yaml'
 
-def rsync(src, target)
-  system "rsync -azP --exclude=.git* #{src} #{target}"
-end
-
 task :deploy do
-  raise "Don't deploy!" if $nodeploy
   FileUtils.cd(File.dirname(__FILE__))
-  rsync '.', "technomancy.us:technomancy.us"
+  system "rsync -azP --exclude=.git* . technomancy.us:technomancy.us"
 end
 
 def parse(filename)
@@ -75,8 +69,7 @@ end
 desc "Render Atom feed"
 task :feed do
   pages = Dir.glob('posts/*.yml').sort_by{ |f| f.match(/(\d+)/)[1].to_i }[-16 .. -1].reverse.map{ |f| parse(f) }
-  render_file_with_template(pages, 'templates/atom.erb',
-                            'public/feed/atom.xml')
+  render_file_with_template(pages, 'templates/atom.erb', 'public/feed/atom.xml')
 end
 
 desc "Render list of posts"
@@ -91,12 +84,3 @@ task(:other) do
 end
 
 task :default => [:posts, :list, :feed, :other]
-
-task(:stats) { puts File.read(__FILE__).split("\n").reject{ |l| l =~ /^\s*$/ or l =~ /^\s*#/ }.size }
-
-# TODO:
-# Footer that lists "around" posts
-# Make index page stand out a bit
-# move timestamps on list page
-# fix the JS on post 66
-# convert resume into LaTeX

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<% require 'cgi' %>
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <title>Technomancy</title>
   <id>tag:technomancy.us,2007:blog/</id>
@@ -10,8 +11,8 @@
   <entry xml:base="http://technomancy.us">
     <author><name>Phil Hagelberg</name></author>
     <id>tag:technomancy.us,2007:<%= URI.escape post['title'] %></id>
-    <published><%= Time.parse(post['timestamp']).to_s %></published>
-    <updated><%= Time.parse(post['timestamp']).to_s %></updated>
+    <published><%= Time.stamp(post['timestamp']) %></published>
+    <updated><%= Time.stamp(post['timestamp']) %></updated>
 
     <link href="http://technomancy.us/<%= post['id'] %>" rel="alternate" type="text/html"/>
     <title><%= CGI.escapeHTML post['title'] %></title>
