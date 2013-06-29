@@ -83,3 +83,8 @@ content: |-
     runtime, which means things are about to
     get <a href="https://github.com/technomancy/lein-gnome">very
     interesting</a>.</p>
+
+  <p><b>Update</b>: I've switched from Gnome
+    to <a href="http://xmonad.org">XMonad</a> myself, but Jamie Brandon
+    has <a href="https://github.com/jamii/lein-gnome">continued
+      development of lein-gnome</a> in his own fork.</p>
