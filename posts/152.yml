@@ -148,3 +148,7 @@ content: |-
   <p><b>Update</b>: As of version 4.5, dmenu has implemented fuzzy
     matching, making erythrina interesting mostly for educational
     purposes.</p>
+
+  <p><b>Update</b>: I've posted <a href="/170">further reflections on
+    OCaml and how the ecosystem has changed in the time since this was
+    written.</a></p>
