@@ -17,7 +17,7 @@ content: |-
     nasty <tt>java</tt> command-line invocations to launch the
     process.</p>
 
-  <img src="/i/uw.jpg" alt="UW" align="right" />
+  <img src="/i/uw.jpg" alt="UW" class="right" />
 
   <p>As time went on I did what I could to try to improve the
     situation. <a href="https://github.com/technomancy/clojure-mode/blob/47caba15ff31f339e74378fd3c05bcffa7091550/clojure-mode.el#L627">Early</a> <a href="https://github.com/technomancy/emacs-starter-kit/blob/63797f61aa7019e2cc5f0e79793f8bdd4b50ad21/starter-kit-lisp.el#L39">attempts</a>

@@ -62,7 +62,14 @@ blockquote {
 
 #entry img {
     margin: 1em;
+    margin-left: 0;
 }
+
+img.right {
+    float: right;
+    margin-left: 1em;
+}
+
 
 #comments {
     text-align: justify;
