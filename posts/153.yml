@@ -15,7 +15,7 @@ content: |-
     outline</a> is available, though it may not be all that useful
     unless you were there.</p>
 
-  <img src="i/cozy-with-emacs.jpg" alt="getting cozy" align="right" />
+  <img src="i/cozy-with-emacs.jpg" alt="getting cozy" class="right" />
 
   <p>The talk focused on the task of crafting your own set of
     dotfiles. Naturally I did talk some about

@@ -90,4 +90,12 @@ content: |-
       c s</kbd> will let you subscribe to a new document. Have fun!</p>
 
   <p><b>Update</b>: A few months after writing this post we switched
-    to using shared <tt>tmux</tt> sessions for our collaboration.</p>
+    to using shared <tt>tmux</tt> sessions for our collaboration. At
+    the time of this writing Rudel wasn't 100% reliable, but we also
+    found the requirement to share one buffer at a time to be fairly
+    awkward. The cross-editor aspect is theoretically nice, but no one
+    has implemented the protocol for Vim yet. The fact that you can't
+    share shell buffers or repl buffers is a pretty serious
+    drag. There are some downsides with tmux, but whenever you have
+    two people comfortable with the same editor it's a pretty
+    compelling way to work.</p>

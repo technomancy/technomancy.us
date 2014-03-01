@@ -61,7 +61,7 @@ content: |-
     <span class="esk-paren">(</span><span class="type">is</span> <span class="esk-paren">(</span>stubbed?<span class="esk-paren">)))</span>
   </pre>
   <a href="http://achewood.com/index.php?date=03142006">
-    <img src="/i/ramses.gif" align="right" 
+    <img src="/i/ramses.gif" class="right" 
          alt="The Man with the Blood on his Hands" /></a>
 
   <p>This test passes because <tt>stubbed?</tt> gets replaced

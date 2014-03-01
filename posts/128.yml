@@ -23,7 +23,7 @@ content: |-
     with setting up an event loop or a menu bar or any of that
     nonsense.</p>
 
-  <img src="/i/chu-small.png" alt="chu" align="right" />
+  <img src="/i/chu-small.png" alt="chu" class="right" />
 
   <p>The problem is that while Processing is a great toolkit for
     drawing, it's is actually a pretty poor language when it comes to

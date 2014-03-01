@@ -33,7 +33,7 @@ content: |-
     of <a href="http://hyperboleandahalf.blogspot.com/2010/04/alot-is-better-than-you-at-everything.html">the
     mythical Alot beast</a> has a blend here named after her.</p>
 
-  <img src="i/milstead.jpg" alt="milstead views" align="right" />
+  <img src="i/milstead.jpg" alt="milstead views" class="right" />
 
   <h4><a href="http://www.milsteadandco.com/">Milstead & Co.</a></h4>
 
@@ -96,11 +96,12 @@ content: |-
       often be found working here in the afternoon.</dd>
 
     <dt><a href="http://www.seattlecoffeeworks.com/">Seattle Coffee Works</a></dt>
-    <dd>I've only been here a couple times, but I was floored by
-      their Yirgacheffe both times. They serve their pour-overs at a
+    <dd>I've only been here a couple times, but I was floored by their
+      Yirgacheffe both times. They serve their pour-overs at a
       separate "slow bar" where the baristas are happy to geek out
-      over their creations if you show interest. Again, this one's
-      too far away (Pike St.) to make me a regular.</dd>
+      over their creations if you show interest. Again, this one's too
+      far away (Pike St.) to make me a regular. <b>Update</b>: they've
+      got a location in Ballard too.</dd>
 
     <dt><a href="http://www.greenbeancoffee.org/">Green Bean</a></dt>
     <dd>This one is actually a non-profit which supports a number of

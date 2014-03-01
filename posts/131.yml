@@ -4,7 +4,7 @@ title: in which projects may be more easily compiled and distributed
 tags: "clojure leiningen projects"
 id: 131
 content: |-
-  <a href="http://www.flickr.com/photos/31151628@N03/4010921064/"><img src="i/leiningen.jpg" alt="leiningen portrait" align="right" /></a>
+  <a href="http://www.flickr.com/photos/31151628@N03/4010921064/"><img src="i/leiningen.jpg" alt="leiningen portrait" class="right" /></a>
   <p>So build tools have been a long-standing pain point when working
     on Clojure projects. Most projects have used JVM-centric tools
     like ant or maven, which are far more complicated than what you

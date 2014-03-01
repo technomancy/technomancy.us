@@ -20,7 +20,7 @@ content: |-
     packaged for Debian</a> with lots of help from the Java
     Maintainers team.</p>
 
-  <img src="/i/rice.jpg" alt="debian rice" align="right" />
+  <img src="/i/rice.jpg" alt="debian rice" class="right" />
 
   <p>It's interesting to get a look inside the sausage factory of
     packaging. The biggest hurdle for me as I was learning the ropes

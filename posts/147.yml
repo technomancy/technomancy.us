@@ -13,7 +13,7 @@ content: |-
     out really well</a> for Clojure as far as the timing was
     concerned&mdash;it allowed the ecosystem to grow quickly.</p>
 
-  <img src="/i/chain-stump.jpg" alt="scenery" align="right" />
+  <img src="/i/chain-stump.jpg" alt="scenery" class="right" />
 
   <p>But
     Clojars <a href="http://mobile.twitter.com/cemerick/status/45923604000555008">doesn't

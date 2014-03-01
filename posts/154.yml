@@ -34,7 +34,7 @@ content: |-
 
   <h4><a href="https://github.com/mmcgrana/clj-stacktrace">clj-stacktrace</a></h4>
 
-  <img src="i/clj-stacktrace.png" alt="stack trace" align="right" />
+  <img src="i/clj-stacktrace.png" alt="stack trace" class="right" />
 
   <p>The most common complaint I hear about developing in Clojure is
     the fact that its error messages often obscure the true cause of

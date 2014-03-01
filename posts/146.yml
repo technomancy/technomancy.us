@@ -15,7 +15,7 @@ content: |-
     what has worked for us.</p>
 
   <img src="/i/seajure-chinese-democracy.jpg" 
-       alt="chinese democracy" align="right" />
+       alt="hacking on chinese democracy" class="right" />
 
   <p>One thing I knew I wanted from the start was for meetings to be
     very code-centric. The Seattle Ruby group used to have talks

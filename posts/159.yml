@@ -24,7 +24,7 @@ content: |-
     and <a href="http://en.wikipedia.org/wiki/Genera_(operating_system)">Lisp
     Machines</a> of yore.</p>
 
-  <img src="http://p.hagelb.org/duck-hand.png" align="right"
+  <img src="http://p.hagelb.org/duck-hand.png" class="right"
        alt="why? why do you need a reason?" 
        title="why? why do you need a reason?" />
 

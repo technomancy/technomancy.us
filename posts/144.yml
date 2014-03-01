@@ -24,7 +24,7 @@ content: |-
   <img src="/i/corn.jpg" 
        alt="some corn or something, I dunno man. unrelated."
        title="some corn or something, I dunno man. unrelated."
-       align="right" />
+       class="right" />
 
   <p>On the other hand, I was able to add support for multiple package
     sources to package.el before it was included in Emacs. This allows

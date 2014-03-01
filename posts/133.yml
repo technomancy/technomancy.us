@@ -14,7 +14,7 @@ content: |-
     getting it ready.</p>
 
   <img src="/i/flight-museum.jpg" alt="museum of flight bridge"
-       align="right" />
+       class="right" />
 
   <p>Including something like package.el into Emacs is a big job, and
     it's something that can only happen gradually. Emacs comes with a

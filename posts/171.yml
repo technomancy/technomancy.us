@@ -72,7 +72,9 @@ content: |-
     easy; I just need to read through the appropriate chapters
     in <a href="http://learnyousomeerlang.com">Learn You Some
     Erlang</a>. In addition I'd like to get logging in place; it would
-    be useful to be able to plot temperatures over time.</p>
+    be useful to be able to plot temperatures over
+    time. <b>Update</b>: it's now a proper OTP app with temperature
+    logs in place.</p>
 
   <p>I'm having a lot of fun with it, and I'm loving how I can just
     walk out to the shed and have it toasty right upon entry. It feels

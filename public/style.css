@@ -65,7 +65,7 @@ blockquote {
     margin-left: 0;
 }
 
-img.right {
+#entry img.right {
     float: right;
     margin-left: 1em;
 }
