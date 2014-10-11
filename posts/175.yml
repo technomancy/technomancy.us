@@ -20,7 +20,7 @@ content: |-
     subjective reactions to how it's gone implementing my first
     project. There are a number of gripes, but if I may offer a
     spoiler, in the end Racket provides satisfactory ways of addressing all of
-    them in ways that aren't obvious up-front as well as bringing
+    them that aren't obvious up-front, and brings
     valuable new perspectives to the table.</p>
 
   <hr />
@@ -55,6 +55,7 @@ content: |-
   </span><span class="comment-delimiter">;   </span><span class="comment">key: 'b
   </span></pre>
 
+  <!-- I probably knew this, but I was surprised when I read it -->
   <p>It turns out Racket implicitly quotes everything inside the hash
     table. So OK, maybe that's a little nicer since you don't need to
     quote the symbol keys in the hash table:</p>
@@ -87,20 +88,21 @@ content: |-
     but now that immutability is the default, it just gets in the
     way. Luckily you can set the <tt>#:transparent</tt> option when
     defining structs, and this will likely become the default in the
-    future.</p>
+    future.</p>                 <!--Really?  I didn't know that.-->
 
   <p>One place where Racket has a clear advantage is that you'll never
     get nil back from an accessor. Both in hash tables and structs, if
     a field doesn't exist, you'll get an error immediately rather than
     allowing bogus data to percolate through your call chain and blow
     up in an unrelated place. (Though of course with hash tables you
-    can specify your own value for the not found case.)  In any case,
+    can specify your own value for the "not found" case.)  In any case,
     less "garbage in, garbage out" is a welcome change for me as a
     human who frequently makes mistakes.</p>
 
-  <p>What about updates though? Mutable struct fields have setter
+  <p>What about updates, though? Mutable struct fields have setter
     functions auto-generated, but inexplicably the nondestructive
-    equivalents for immutable fields are missing. Instead
+    equivalents for immutable fields are missing. <!--damn, I didn't know that, either!-->
+                                                  Instead
     the <tt>struct-copy</tt> macro is recommended. Here we change
     the <tt>b</tt> field of an <tt>abc</tt> struct instance we've
     defined:</p>
@@ -155,12 +157,15 @@ content: |-
     is not variadic&mdash;if you provide a fourth argument it will be
     used as a "not found" value rather than as an argument to the
     updater function. <tt>(dict-update fs 'c - 400)</tt> won't
-    work. However, unlike Clojure, Racket can do reverse partial
+    work. However, unlike Clojure, Racket can do reverse partial <!--damn, you're a nerd :-) -->
     application, so <tt>(rcurry - 400)</tt> does the job, which is
     nicer than spelling out the lambda form fully.</p>
 
   <p>Another gotcha is that <tt>dict-update</tt> doesn't appear to
-    have a nested equivalent. But that's easy to add:</p>
+    have a nested equivalent.  <!--Can you give an example of
+dict-update being used (before you define it)?  I don't know what a
+"nested" dict-update is (I really don't use Clojure). -->
+                              But that's easy to add:</p>
 
   <pre class="code"><span class="racket-paren">(</span><span class="keyword">define</span> <span class="racket-paren">(</span><span class="function-name">dict-update-in</span> d ks f . args<span class="racket-paren">)</span>
     <span class="racket-paren">(</span><span class="keyword">if</span> <span class="racket-paren">(</span>empty? <span class="racket-paren">(</span>rest ks<span class="racket-paren">))</span>
@@ -176,6 +181,9 @@ content: |-
 
   <p>The <tt>fstruct</tt> macro has one more trick up its sleeve. The
     structs it generates are applicable just like Clojure maps:</p>
+    <!-- OK, so fstruct rocks. Have you submitted it to
+greghendershott?  Perhaps it could fit in with rackjure.  If he's
+already got some equivalent, then you should mention that. -->
 
   <pre class="code"><span class="racket-paren">(</span><span class="keyword">define</span> <span class="variable-name">fs2</span> <span class="racket-paren">(</span>fabc <span class="racket-selfeval">123</span> <span class="racket-paren">(</span>fabc <span class="racket-selfeval">234</span> <span class="racket-selfeval">345</span> <span class="racket-paren">(</span>fabc <span class="racket-selfeval">987</span> <span class="racket-selfeval">654</span> <span class="racket-selfeval">321</span><span class="racket-paren">))</span> <span class="racket-selfeval">0</span><span class="racket-paren">))</span>
 
@@ -199,7 +207,7 @@ content: |-
     as I can, the outer layer requires tracking state and changes to
     it. Racket provides the <tt>box</tt> type for this, which is
     equivalent to the <tt>atom</tt> of Clojure. Unfortunately while it
-    provides the same CAS atomicity guarantees, it only exposes this
+    provides the same CAS atomicity guarantees, it only exposes this <!--uh .... what's "CAS"?  "Compare and Swap"?  Spell it out.-->
     via the low-level <tt>box-cas!</tt> function. Oh well,
     functional <tt>swap!</tt> which operates in terms of the old value
     is easy to implement on our own or steal from Rackjure as long as
@@ -235,7 +243,9 @@ content: |-
     contracts to functions scattered all over the codebase, I attach
     them only to the box that contains the <tt>state</tt> struct, and
     any time there's a type bug it's usually immediately apparent what
-    caused the trouble. While it would be possible to gain more
+    caused the trouble.
+    <!-- This is very interesting.  Can you provide more detail? -->
+                        While it would be possible to gain more
     certainty about correctness at compile time by
     using <a href="http://docs.racket-lang.org/ts-guide/index.html">Typed
     Racket</a>, contracts let me define the shape of the data in a
