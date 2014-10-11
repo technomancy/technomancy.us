@@ -83,4 +83,4 @@ content: |
     for Emacs Lisp. The pieces are all coming together in my head,  so it
     seems the thing to do at this point would be to finish it,  port it
     to CL,  and then start porting the Rubinius specs to it.</p>
-tags: projects, ruby, lisp, insane
+  <p><b>Update</b>: this was not actually a good idea.</p>

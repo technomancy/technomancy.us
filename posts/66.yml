@@ -368,11 +368,11 @@ content: |
   
   <p><b>Update</b>:  IE,  Konqueror,  and Safari are now supported.</p>
   
-  <p>Other than that,  the remaining work is quite trivial. Spread
-  the word. Several people I've mentioned this to have responded with
-  something along the lines of,  "Oh... I really need something that can
-  do that!" This provided the motivation for me to dust off the old
-  repository and get cracking.</p>
+  <p>Other than that, the remaining work is quite trivial. Several
+  people I've mentioned this to have responded with something along
+  the lines of, "Oh... I really need something that can do that!" This
+  provided the motivation for me to dust off the old repository and
+  get cracking.</p>
   
   <p>The biggest thing about developing in Javascript that really annoys
   me is that it's very difficult to do without using the mouse. Ever

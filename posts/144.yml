@@ -78,6 +78,16 @@ content: |-
     to be more modular. (The new Starter Kit only targets Emacs 24 and
     up, so at this point it's intended for the adventurous.) Happy hacking!</p>
 
+  <p><b>Update</b>: I can no longer in good conscience recommend the
+    use of package.el since at the time of this writing there are no
+    community repositories which offer installation over SSL or signed
+    packages. I have switched over to
+    using <a href="https://github.com/dimitri/el-get/pull/1856">el-get</a>
+    with <tt>(setq el-get-allow-insecure nil)</tt>. This will
+    blacklist all recipes that attempt to install over a non-encrypted
+    connection.
+  </p>
+
   <hr />
 
   <p>[<a name="fn1">1</a>] The main reason being that I could never

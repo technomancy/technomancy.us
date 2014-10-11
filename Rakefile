@@ -39,7 +39,7 @@ def render_files_with_template(glob, template_file)
     page = parse(file)
     puts "Rendering #{file}."
     rendered_filename = yield(page)
-    next if up_to_date? file, template_file, rendered_filename and ENV['force'].nil?
+    next if up_to_date? file, template_file, rendered_filename and !ENV['force']
     File.open(rendered_filename, 'w') { |f| f.puts template.result(binding) }
   end
 end
@@ -51,12 +51,14 @@ def render_file_with_template(page, template_file, rendered_filename)
 end
 
 def including(template, locals = {})
-  ERB.new(File.read(File.dirname(__FILE__) + "/templates/#{template}.html.erb")).result(binding)
+  ERB.new(File.read(File.dirname(__FILE__) +
+                    "/templates/#{template}.html.erb")).result(binding)
 end
 
 desc "Render posts to static files"
 task :posts do
-  render_files_with_template('posts/*.yml', 'templates/post.html.erb') { |page| "public/#{page['id']}.html" }
+  render_files_with_template('posts/*.yml',
+                             'templates/post.html.erb') { |page| "public/#{page['id']}.html" }
 end
 
 desc "Render a single post"

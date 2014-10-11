@@ -31,7 +31,7 @@ content: |
     abstraction to map over each element in a vector in a functional
     manner, sometimes performance concerns force you to use a more
     imperative-style loop instead. With the chunking in place, the map
-    approach is even more performant than the less-idiomatic loop, so
+    approach is even faster than the less-idiomatic loop, so
     there's one fewer reason to stray from the functional
     approach. It's really encouraging to see that Rich is making this
     a priority&mdash;he wants to make sure that you never get

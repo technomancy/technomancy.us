@@ -9,7 +9,7 @@ content: |
         programming.</p>
   
   <img src='/i/die_roboter.jpg' 
-       alt='die roboter' title='die roboter' align='right' />
+       alt='die roboter' title='die roboter' class='right' />
   
   
   <p>I've got the motor hooked up and running,  "mocking out" the control
