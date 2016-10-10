@@ -95,7 +95,7 @@ content: |-
   1.0 released</a>. If you'd like to say hi or drop a line, there's
   a #leiningen channel on freenode as well as a <a
   href="http://groups.google.com/group/leiningen">mailing
-  list</a>. If you found this useful, you should take a look at the <a href="http://peepcode.com/products/functional-programming-with-clojure">Clojure PeepCode screencast</a>.</p>
+  list</a>. If you found this useful, you should take a look at the <a href="https://www.pluralsight.com/courses/functional-programming-clojure">Clojure PluralSight screencast</a>.</p>
 
   <p style="font-size: 80%">Logo
   by <a href="http://lorenbroach.blogspot.com/">Loren Broach</a>.</p>

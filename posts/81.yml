@@ -63,7 +63,7 @@ content: |
     (altering the behaviour of Arrays,  for instance) the Turtle Factor
     hits a bit of trouble: </p>
   
-  <img src='/i/shredder.gif' alt='shredder' align='right' />
+  <img src='/i/shredder.gif' alt='shredder' class='right' />
   
   <p>Ideally,  Ruby would give programs access (in Ruby) to every level
     of the language,  which would be much easier to do (according to Avi)

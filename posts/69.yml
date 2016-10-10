@@ -15,17 +15,15 @@ content: |
     but that's mostly been about extending Firefox/Conkeror and only
     marginally related to What I Do.</p>
   
-  <p>I'm sure most of this was due to the fact that I spent most of the
-    month looking for work or waiting for projects to get started. I
-    tried to keep busy with personal projects and whatnot,  but when I
-    finally did start on a Rails job at the beginning of this month,  it
-    was a bit distressing how rusty I felt. Part of this was also due to
-    picking up both RSpec and the new Restful style,  which was a bit
-    disorienting. (Though Geoffrey's
-    excellent <a
-    href='http://peepcode.com/articles/2006/10/08/restful-rails'>PeepCode</a>
-    screencast helped a lot with that; give it a spin if you're having
-    trouble.)</p>
+  <p>I'm sure most of this was due to the fact that I spent most of
+    the month looking for work or waiting for projects to get
+    started. I tried to keep busy with personal projects and whatnot,
+    but when I finally did start on a Rails job at the beginning of
+    this month, it was a bit distressing how rusty I felt. Part of
+    this was also due to picking up both RSpec and the new Restful
+    style, which was a bit disorienting. (Though Geoffrey's excellent
+    PeepCode screencast helped a lot with that; give it a spin if
+    you're having trouble.)</p>
   
   <p>I'm thinking I should take this as a bit of a warning to practice
     Pragmatic-Programmer-style continual learning. It was a pretty

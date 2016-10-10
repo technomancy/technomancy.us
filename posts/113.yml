@@ -45,7 +45,7 @@ content: "<p>When
   connection, since that kept the likelihood of conflicts low.</p>
 
 <img src='/i/subway.png' alt='all aboard the git subway' 
-     title='all aboard the git subway' align='right' />
+     title='all aboard the git subway' class='right' />
 
 <p>Fast-forward to September or so of last year. I was just learning
   about <kbd>git</kbd> and how its rebase operation works. I got the

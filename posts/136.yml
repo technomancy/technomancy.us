@@ -6,12 +6,12 @@ tags: peepcode, clojure
 id: 136
 content: |-
   <p>It's been <a href="/124">a year</a> since
-      the <a href="http://peepcode.com/products/functional-programming-with-clojure">PeepCode
-      screencast on Clojure</a> was released. While it's aged
-      surprisingly well given the relative youth of the Clojure
-      language (1.0 hadn't even been released at the time), there are
-      a few things that could use some updates. I thought it would be
-      helpful for me to step
+      the <a href="https://www.pluralsight.com/courses/functional-programming-clojure">PeepCode
+      screencast on Clojure</a> (now distributed under PluralSight)
+      was released. While it's aged surprisingly well given the
+      relative youth of the Clojure language (1.0 hadn't even been
+      released at the time), there are a few things that could use
+      some updates. I thought it would be helpful for me to step
       through <a href="http://github.com/technomancy/mire">Mire</a>,
       the sample project that's built up in the screencast, and update
       it to reflect the changes that have since occurred in the

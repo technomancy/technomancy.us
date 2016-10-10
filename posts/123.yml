@@ -21,7 +21,7 @@ content: |-
     dependencies, but much more confusing to users; they expect 2.1.0
     to be the actual release.</p>
 
-  <img src='/i/moss.jpg' alt='moss' align='right' />
+  <img src='/i/moss.jpg' alt='moss' class='right' />
 
   <p>So during RubyConf, I worked
     with <a href='http://alexvollmer.com'>Alex Vollmer</a>

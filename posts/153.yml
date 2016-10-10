@@ -40,7 +40,7 @@ content: |-
 
   <p>A lot has changed since 2008&mdash;primarily
     that <a href="/133">package.el has been included in Emacs</a> and
-    <a href="http://marmalade-repo.org">Marmalade</a>
+    <a href="https://marmalade-repo.org">Marmalade</a>
     has <a href="/144">picked up lots of steam</a>, becoming the
     de-facto community package source with over 250 packages. It's now
     feasible for the Starter Kit to be distributed as just another
@@ -50,7 +50,7 @@ content: |-
 
   <pre class="code"><span class="esk-paren">(</span><span class="keyword">require</span> '<span class="constant">package</span><span class="esk-paren">)</span>
   <span class="esk-paren">(</span>add-to-list 'package-archives
-               '<span class="esk-paren">(</span><span class="string">"marmalade"</span> . <span class="string">"http://marmalade-repo.org/packages/"</span><span class="esk-paren">))</span>
+               '<span class="esk-paren">(</span><span class="string">"marmalade"</span> . <span class="string">"https://marmalade-repo.org/packages/"</span><span class="esk-paren">))</span>
   <span class="esk-paren">(</span>package-initialize<span class="esk-paren">)</span></pre>
 
   <img src="/i/langley-rocket.jpg" alt="rocket, man" align="left" />

@@ -20,7 +20,7 @@ content: "<blockquote style='font-style: italic'>Now these points of data make a
   that plugin then you miss out on that goodness. Hopefully Gnash will
   be able to run it soon.</p>
 
-  <img src='/i/cake.jpg' alt='the cake: not a lie' align='right' />
+  <img src='/i/cake.jpg' alt='the cake: not a lie' class='right' />
 
   <p>Anyway, it's great to have something public and at the same time
   useful, especially after the how my <a

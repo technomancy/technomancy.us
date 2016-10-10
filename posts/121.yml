@@ -28,7 +28,7 @@ content: |-
       it's trivial to add hints that provide type-safety along with
       Java-native speeds.</li>
 
-    <img src='/i/cons.png' alt='cons' align='right' />
+    <img src='/i/cons.png' alt='cons' class='right' />
 
     <li>The basic data structures Clojure provides are brilliant. In
       Lisp, lists are composable by attaching a new head to an

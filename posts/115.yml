@@ -19,7 +19,7 @@ content: |-
     frame of mind.</p>
 
   <a href='http://m.assetbar.com/achewood/uua3cZ7cb'>
-    <img src='/i/ray.gif' alt='ray' title='smug' align='right' /></a>
+    <img src='/i/ray.gif' alt='ray' title='smug' class='right' /></a>
 
   <p>One of the complaints you see leveled over and over is that Emacs
     on OS X doesn't feel "Mac-like". This is asserted as if it's a

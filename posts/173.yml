@@ -17,6 +17,10 @@ content: |-
     the <a href="https://github.com/technomancy/atreus">Atreus</a> is
     the result.</p>
 
+  <p><b>Update:</b> I have started 
+    <a href="http://atreus.technomancy.us">selling kits</a> if you
+    want to build your own.</p>
+
   <img src="/i/atreus.jpg" alt="atreus keyboard" />
 
   <p>Since I already have an Ergodox, I thought about what kind of
@@ -122,8 +126,8 @@ content: |-
   <p>The second layer is accessible with the <kbd>fn</kbd> key.</p>
 
   <pre>   !     @     {     }    |        ||      pgdn   7     8     9    *
-     #     $     (     )    `        ||      pgup   4     5     6    }
-     %     ^     [     ]    ~        ||       \     1     2     3    ?
+     #     $     (     )    `        ||      pgup   4     5     6    +
+     %     ^     [     ]    ~        ||       &amp;     1     2     3    \
     L2  paste  super shift bksp ctrl ||  alt space fn     .     0    =</pre>
 
   <p>It does go more smoothly with a few behavioural adjustments. For
@@ -162,13 +166,8 @@ content: |-
     this, but it costs a fair bit more, and you can't just bring in
     your own materials.</p>
 
-  <p><b>Update:</b> I have started 
-    <a href="http://atreus.technomancy.us">selling kits</a> if you
-    want to build one without having to track down all the parts
-    yourself.</p>
-
   <p>Obviously there's no keyboard that's perfect for everyone. I
-    still think the Ergodox is a more balanced design, but
+    still think the Ergodox may be a more balanced design, but
     this feels like the right set of trade-offs for a board that
     doesn't sit in one place. If anyone else tries their hand at
     putting one together I'd love to hear how it goes; it should be a

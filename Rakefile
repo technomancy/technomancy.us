@@ -82,7 +82,7 @@ task :list do
 end
 
 task(:other) do
-  ['projects', 'colophon', 'resume', 'books'].each { |s| render_file_with_template s, "templates/#{s}.html.erb", "public/#{s}.html" }
+  ['projects', 'showcase', 'khanacademy', 'colophon', 'resume', 'books'].each { |s| render_file_with_template s, "templates/#{s}.html.erb", "public/#{s}.html" }
 end
 
 task(:server) { system "cd public; python -m SimpleHTTPServer 3001" }

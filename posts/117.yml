@@ -18,7 +18,7 @@ content: |-
   <a href="http://www.flickr.com/photos/technomancy/3015637388/"
      title="img_2850.jpg by Technomancy, on Flickr">
     <img src="http://farm4.static.flickr.com/3277/3015637388_fb48da9faa_m.jpg"
-         width="240" height="180" alt="Omni Hotel" align='right' /></a>
+         width="240" height="180" alt="Omni Hotel" class='right' /></a>
          
   <p>But the big theme for the year was concurrency. A number of talks
     were given on the topic of going distributed, map/reduce-type

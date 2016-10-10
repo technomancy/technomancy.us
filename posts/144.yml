@@ -48,7 +48,7 @@ content: |-
     but it turns out maintaining a package source consisting of a
     bunch of static files is not a lot of fun and can be error
     prone. Luckily Nathan Wizenbaum has cooked
-    up <a href="http://marmalade-repo.org">Marmalade</a>, a community
+    up <a href="https://marmalade-repo.org">Marmalade</a>, a community
     package source that allows users to upload their own packages much
     like <a href="http://clojars.org">Clojars</a>
     or <a href="http://rubygems.org">Rubygems.org</a>. While it hasn't
@@ -59,7 +59,7 @@ content: |-
   <pre class="code">(<span class="keyword">require</span> '<span class="constant">package</span>)
   (add-to-list 'package-archives
                '(<span class="string">"marmalade"</span> . 
-                 <span class="string">"http://marmalade-repo.org/packages/"</span>) t)
+                 <span class="string">"https://marmalade-repo.org/packages/"</span>) t)
   (package-initialize)</pre>
 
   <p>You'll need to run <kbd>M-x package-refresh-contents</kbd>

@@ -14,7 +14,7 @@ content:
   persistence. (When all you have is a hammer...) So using CouchDB
   with a functional language is a breath of fresh air.</p>
 
-  <img src='/i/relax.png' alt='relax.el' align='right' />
+  <img src='/i/relax.png' alt='relax.el' class='right' />
 
   <p>Putting together a CouchDB adapter in Clojure is really a matter
   of no more than a page worth of code once you've got

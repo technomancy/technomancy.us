@@ -8,14 +8,13 @@ content: |-
     the <a href='/115'>recent upswing in interest in Emacs</a> by
     working on things to help folks get started easily. I'm proud to
     announce that I'm working with the illustrious Geoffrey Grosenbach
-    on a <a href='http://peepcode.com'>Peepcode screencast</a> about
-    learning Emacs and Lisp. Peepcode is well-known especially in the
-    Ruby community for producing high-quality, hour-long, informative
-    commercial screencasts. I'm doing the writing and coding for it, and
-    Geoff will bring his trademark charm with voiceovers and slick
-    recording.</p>
+    on a Peepcode screencast about learning Emacs and Lisp. Peepcode
+    is well-known especially in the Ruby community for producing
+    high-quality, hour-long, informative commercial screencasts. I'm
+    doing the writing and coding for it, and Geoff will bring his
+    trademark charm with voiceovers and slick recording.</p>
 
-  <img src='/i/emacs.png' alt='emacs logo' align='right' />
+  <img src='/i/emacs.png' alt='emacs logo' class='right' />
 
   <p>Geoff makes it look easy, but creating a professional screencast
     is actually tons of work. I'm nearly half-way through writing the
@@ -46,3 +45,10 @@ content: |-
     Geoff <a href='http://nubyonrails.com/articles/emacs-emacs'>posted
     a short screencast</a> on getting around Emacs and his first
     impressions. It should serve as a nice teaser.</p>
+
+  <p><b>Update</b>: Please don't use the Emacs Starter Kit; the
+    approach of bundling together unrelated functionality has a number
+    of inherent problems, and it's much better addressed by small,
+    focused packages. Check out <a
+    href="https://github.com/technomancy/better-defaults">better-defaults</a>
+    for a better solution.</p>

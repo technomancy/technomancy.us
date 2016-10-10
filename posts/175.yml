@@ -1,6 +1,6 @@
 # -*- html -*-
 ---
-timestamp: 2014-10-11 08:49:54
+timestamp: 2014-10-13 20:50:41
 title: in which preconceptions are unavoidable
 id: 175
 content: |-
@@ -19,8 +19,8 @@ content: |-
     pronounced as it would be with many languages, but these are my
     subjective reactions to how it's gone implementing my first
     project. There are a number of gripes, but if I may offer a
-    spoiler, in the end Racket provides satisfactory ways of addressing all of
-    them in ways that aren't obvious up-front as well as bringing
+    spoiler, in the end Racket provides satisfactory ways of
+    addressing all of them that aren't obvious up-front, and brings
     valuable new perspectives to the table.</p>
 
   <hr />
@@ -89,16 +89,17 @@ content: |-
     defining structs, and this will likely become the default in the
     future.</p>
 
-  <p>One place where Racket has a clear advantage is that you'll never
-    get nil back from an accessor. Both in hash tables and structs, if
-    a field doesn't exist, you'll get an error immediately rather than
-    allowing bogus data to percolate through your call chain and blow
-    up in an unrelated place. (Though of course with hash tables you
-    can specify your own value for the not found case.)  In any case,
-    less "garbage in, garbage out" is a welcome change for me as a
-    human who frequently makes mistakes.</p>
+  <p>One place where Racket has a clear advantage over Clojure is that
+    you'll never get nil back from an accessor. Both in hash tables
+    and structs, if a field doesn't exist, you'll get an error
+    immediately rather than allowing bogus data to percolate through
+    your call chain and blow up in an unrelated place. (Though of
+    course with hash tables you can specify your own value for the
+    "not found" case.)  In any case, less "garbage in, garbage out" is
+    a welcome change for me as a human who frequently makes
+    mistakes.</p>
 
-  <p>What about updates though? Mutable struct fields have setter
+  <p>What about updates, though? Mutable struct fields have setter
     functions auto-generated, but inexplicably the nondestructive
     equivalents for immutable fields are missing. Instead
     the <tt>struct-copy</tt> macro is recommended. Here we change
@@ -144,7 +145,7 @@ content: |-
     my <a href="https://github.com/technomancy/cooper/blob/master/cooper/fstruct.rkt">fstruct</a>
     macro:</p>
 
-  <pre class="code"><span class="racket-paren">(</span>fstruct fabc <span class="racket-paren">(</span>a b c<span class="racket-paren">))</span>
+  <pre class="code"><span class="racket-paren">(</span>fstruct fabc <span class="racket-paren">(</span>a b c<span class="racket-paren">))</span> <span class="comment-delimiter">; </span><span class="comment">define a struct type with three fields</span>
   <span class="racket-paren">(</span><span class="keyword">define</span> <span class="variable-name">fs</span> <span class="racket-paren">(</span>fabc <span class="racket-selfeval">123</span> <span class="racket-selfeval">234</span> <span class="racket-paren">(</span><span class="builtin">+</span> <span class="racket-selfeval">345</span> <span class="racket-selfeval">456</span><span class="racket-paren">)))</span>
 
   <span class="racket-paren">(</span>dict-ref fs <span class="racket-selfeval">'a</span><span class="racket-paren">)</span> <span class="comment-delimiter">; </span><span class="comment">-&gt; 123
@@ -160,7 +161,20 @@ content: |-
     nicer than spelling out the lambda form fully.</p>
 
   <p>Another gotcha is that <tt>dict-update</tt> doesn't appear to
-    have a nested equivalent. But that's easy to add:</p>
+    have a nested equivalent. For instance; it would be nice to be
+    able to pass an updater function and a "key path" to a specific
+    value in a tree of dictionaries:</p>
+
+  <pre class="code"><span class="racket-paren">(</span><span class="keyword">define</span> <span class="variable-name">inner</span> <span class="racket-paren">(</span>fabc '<span class="racket-paren">(</span>a b c<span class="racket-paren">)</span> <span class="racket-selfeval">0</span> <span class="racket-selfeval">0</span><span class="racket-paren">))</span>
+  <span class="racket-paren">(</span><span class="keyword">define</span> <span class="variable-name">ht-nest</span> `#hash<span class="racket-paren">((</span>key1 . ,inner<span class="racket-paren">)</span>
+                         <span class="racket-paren">(</span>key2 . <span class="racket-selfeval">#f</span><span class="racket-paren">)))</span>
+  <span class="racket-paren">(</span><span class="keyword">define</span> <span class="variable-name">outer</span> <span class="racket-paren">(</span>fabc <span class="racket-selfeval">0</span> ht-nest '<span class="racket-paren">(</span><span class="racket-selfeval">1</span> <span class="racket-selfeval">2</span> <span class="racket-selfeval">3</span><span class="racket-paren">)))</span>
+
+  <span class="racket-paren">(</span><span class="keyword">define</span> <span class="variable-name">updated</span> <span class="racket-paren">(</span>dict-update-in outer '<span class="racket-paren">(</span>b key1 a<span class="racket-paren">)</span> <span class="builtin">append</span> '<span class="racket-paren">(</span>d e f<span class="racket-paren">)))</span>
+
+  <span class="racket-paren">(</span>dict-ref-in updated '<span class="racket-paren">(</span>b key1 a<span class="racket-paren">))</span> <span class="comment-delimiter">; </span><span class="comment">-&gt; '(a b c d e f)</span></pre>
+
+    <p>So that is easy to add:</p>
 
   <pre class="code"><span class="racket-paren">(</span><span class="keyword">define</span> <span class="racket-paren">(</span><span class="function-name">dict-update-in</span> d ks f . args<span class="racket-paren">)</span>
     <span class="racket-paren">(</span><span class="keyword">if</span> <span class="racket-paren">(</span>empty? <span class="racket-paren">(</span>rest ks<span class="racket-paren">))</span>
@@ -199,15 +213,15 @@ content: |-
     as I can, the outer layer requires tracking state and changes to
     it. Racket provides the <tt>box</tt> type for this, which is
     equivalent to the <tt>atom</tt> of Clojure. Unfortunately while it
-    provides the same CAS atomicity guarantees, it only exposes this
+    provides the same compare-and-swap atomicity guarantees, it only exposes this
     via the low-level <tt>box-cas!</tt> function. Oh well,
     functional <tt>swap!</tt> which operates in terms of the old value
-    is easy to implement on our own or steal from Rackjure as long as
-    you don't care about retries:</p>
+    is easy to implement on our own or steal from Rackjure:</p>
 
   <pre class="code"><span class="racket-paren">(</span><span class="keyword">define</span> <span class="racket-paren">(</span><span class="function-name">swap!</span> <span class="builtin">box</span> f . args<span class="racket-paren">)</span>
     <span class="racket-paren">(</span><span class="keyword">let</span> <span class="racket-paren">[(</span>old <span class="racket-paren">(</span><span class="builtin">unbox</span> <span class="builtin">box</span><span class="racket-paren">))]</span>
-      <span class="racket-paren">(</span><span class="builtin">box-cas!</span> <span class="builtin">box</span> old <span class="racket-paren">(</span><span class="builtin">apply</span> f old args<span class="racket-paren">))))</span>
+      <span class="racket-paren">(</span><span class="keyword">or</span> <span class="racket-paren">(</span><span class="builtin">box-cas!</span> <span class="builtin">box</span> old <span class="racket-paren">(</span><span class="builtin">apply</span> f old args<span class="racket-paren">))</span>
+          <span class="racket-paren">(</span><span class="builtin">apply</span> swap! <span class="builtin">box</span> f args<span class="racket-paren">))))</span>
 
   <span class="racket-paren">(</span><span class="keyword">define</span> <span class="variable-name">b</span> <span class="racket-paren">(</span><span class="builtin">box</span> <span class="racket-selfeval">56</span><span class="racket-paren">))</span>
 
@@ -235,7 +249,31 @@ content: |-
     contracts to functions scattered all over the codebase, I attach
     them only to the box that contains the <tt>state</tt> struct, and
     any time there's a type bug it's usually immediately apparent what
-    caused the trouble. While it would be possible to gain more
+    caused the trouble. For instance, I have a contract that states
+    that the "corners" field of each button must be a list of four
+    natural numbers, but I've made a change which causes one of them
+    to be negative:</p>
+
+  <pre class="code">now: broke its contract
+     promised: natural-number/c
+     produced: -23
+     in: the 3rd element of
+         the corners field of
+         an element of
+         the buttons field of
+         the values of
+         the cards field of
+         the stack field of
+         the content of
+         (box/c (struct/dc state
+                           (card string?)
+                           (stack (struct/dc stack ...))))</pre>
+
+  <p>It's pretty clear here that I've made a miscalculation in the
+    button coordinates. If you use DrRacket, the IDE that ships with
+    Racket, you get a <a href="/i/drracket-error.png">very slick
+    visual trace</a> leading you directly to the point at which the
+    contract was violated. While it would be possible to gain more
     certainty about correctness at compile time by
     using <a href="http://docs.racket-lang.org/ts-guide/index.html">Typed
     Racket</a>, contracts let me define the shape of the data in a
@@ -255,10 +293,12 @@ content: |-
 
   <hr />
 
-  <p>[<a name="fn1">1</a>] It's possible to perform evaluation inside hash literal
-    syntax by using backticks: <tt>`#hash((a . ,(+ 5 6 7))</tt> does
-    what you expect. It's better than nothing, but that's a lot of
-    noise to express a simple concept.</p>
+  <p>[<a name="fn1">1</a>] It's possible to perform evaluation inside
+    hash literal syntax by using backticks: <tt>`#hash((a . ,(+ 5 6
+    7))</tt> does what you expect. It's better than nothing, but
+    that's a lot of noise to express a simple concept. In practice,
+    you don't really use the literal notation in programs; you just
+    call the <tt>hash</tt> function.</p>
 
   <p>[<a name="fn2">2</a>] I've blogged about <a href="/159">why egal
     is such a great equality predicate</a>. Racket ships with a

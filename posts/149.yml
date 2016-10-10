@@ -37,7 +37,7 @@ content: |-
 
   <ol>
     <li>Install <a href="http://github.com/technomancy/clojure-mode">clojure-mode</a>
-      via <a href="http://marmalade-repo.org">Marmalade</a> or from git.</li>
+      via <a href="https://marmalade-repo.org">Marmalade</a> or from git.</li>
     <li><kbd>lein plugin install swank-clojure 1.3.1</kbd></li>
     <li>Invoke <kbd>M-x clojure-jack-in</kbd> from a project</li>
   </ol>

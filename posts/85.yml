@@ -33,7 +33,7 @@ content: |-
   
   </ul>
   
-  <img src='/i/rats-cup.jpg' alt='KTHXBAI' align='right' />
+  <img src='/i/rats-cup.jpg' alt='KTHXBAI' class='right' />
   
   <p>So I'd love to dig into the meat of Helma,  but I'll have to wait until I can find a new project that would be suitable for it. It seems that due to its flexibility it would allow you to put together the initial stages of a project very quickly,  but I suppose the jury is still out on keeping the project maintainable. It is more ad-hoc and allows for more deviation from convention,  so that might cause maintainability to suffer. Still,  I'm looking forward to being able to give it a shot.</p>
 tags: javascript

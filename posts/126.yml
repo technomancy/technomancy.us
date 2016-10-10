@@ -59,7 +59,7 @@ content: |
     Starter Kit</a> you've already got ELPA. (If you're new to Emacs,
     you might want to use the Starter Kit anyway as a base for your
     own customizations; also check out
-    the <a href='http://peepcode.com/products/meet-emacs'>PeepCode
+    the <a href='https://www.pluralsight.com/courses/meet-emacs'>PeepCode
     screencast</a>.) Use <kbd>M-x package-list-packages</kbd> to pull
     up the package list. Move down to <code>clojure-mode</code> and
     press <kbd>i</kbd> to mark it for installation, then
