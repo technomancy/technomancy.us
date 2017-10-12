@@ -1,12 +1,19 @@
 @font-face {
-    font-family: 'Cabin';
+    font-family: 'Interface';
+    font-style: italic, oblique;
+    font-weight: 200;
+    src: local('Interface-RegularItalic'), url('Interface-RegularItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Interface';
     font-style: normal;
-    font-weight: 400;
-    src: local('Cabin Regular'), local('Cabin-Regular'), url('cabin.ttf') format('truetype');
+    font-weight: 200;
+    src: local('Interface-Regular'), url('Interface-Regular.ttf') format('truetype');
 }
 
 * {
-    font-family: 'Cabin', "Book Antiqua", "URW Palladio L", sans-serif;
+    font-family: 'Interface', "Book Antiqua", "URW Palladio L", sans-serif;
 }
 
 body {
@@ -14,7 +21,7 @@ body {
 }
 
 div#container {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -91,7 +98,7 @@ blockquote {
     width: 40em;
     margin-left: 5em;
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.8em;
 }
 
 #entries li {
@@ -154,6 +161,7 @@ kbd {
     background: #eee;
     padding: 1em;
     font-family: Inconsolata, Consolas, monospace;
+    line-height: 1.5em;
 }
 
 code {
