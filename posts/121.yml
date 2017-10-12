@@ -25,13 +25,12 @@ content: |-
       of the manifold shortcomings of Java&trade; the language. When
       the normal speed is not enough, ("No no; Light Speed is too
       slow. We need to go to Ludicrous Speed." if I may mix metaphors)
-      it's trivial to add hints that provide type-safety along with
-      Java-native speeds.</li>
+      it's trivial to add hints that provide Java-native speeds.</li>
 
     <img src='/i/cons.png' alt='cons' class='right' />
 
     <li>The basic data structures Clojure provides are brilliant. In
-      Lisp, lists are composable by attaching a new head to an
+      Lisp, lists are composed by attaching a new head to an
       existing list. The list structure is very flexible and has a
       convenient syntax, but vectors, hash-tables, and sets are much
       more efficient for many uses. So in Common Lisp folks generally
@@ -39,8 +38,8 @@ content: |-
       convenient, and then switch over to more efficient structures
       once they have a better idea of the structure of the program.
       The problem is that most of the fast structures don't have
-      literal syntax, and they don't have the same properties of
-      composability, so rewiring a program to use hash tables instead
+      convenient literal syntax, and they don't use same APIs,
+      so rewiring a program to use hash tables instead
       of associative lists can be a pretty significant change in most
       lisps. Clojure has convenient literal syntax for all its basic
       data structures, and they have the property of being composable
