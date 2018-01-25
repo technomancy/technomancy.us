@@ -12,5 +12,5 @@ content: |-
    f.rindex('/') + 2].to_i) > 0
    sanitized = f.gsub('(',  '\(').gsub(')',  '\)')
   
-   `vorbiscomment -a #{sanitized} -t "tracknumber=#{tracknum}"`
+   &#96;vorbiscomment -a #{sanitized} -t "tracknumber=#{tracknum}"&#96;
    end </pre> <p>Syntax:  allofogg.rb FILES [EXTENSION]</p>

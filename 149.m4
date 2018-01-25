@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-*- html -*-->
+define(__timestamp, Mon 16 May 2011 09:02:23 PM PDT)dnl
+define(__title, `in which radical simplification ensues')dnl
+define(__id, 149)dnl
+include(header.html)
+<p>While Emacs support has come a long
+  way <a href="http://groups.google.com/group/clojure/tree/browse_frm/month/2009-01/d42e6fca3af34c41?rnum=11&_done=%2Fgroup%2Fclojure%2Fbrowse_frm%2Fmonth%2F2009-01%3F#doc_56e09db3f292020a">since
+  I first got started with Clojure</a>, I'm reminded every time I
+  help newbies get set up that there are still way too many moving
+  parts. This is in part due to the fact that things center around
+  <a href="http://common-lisp.net/project/slime/">SLIME</a>, a tool
+  which was originally developed to work with Common Lisp. SLIME
+  doesn't have stable releases; the developers expect everyone to
+  run from CVS trunk (I wish I were joking), so I had to do some
+  ad-hoc packaging just in order to prevent constant breakage. But
+  synchronizing compatible versions between two separate package
+  managers on two separate runtimes is a headache.</p>
+
+<p>I've cooked up something much simpler for the next swank-clojure release:</p>
+
+<video width="640" height="416" controls>
+  <source src="v/slime-in-60-seconds.mp4"  type='video/mp4; codecs="avc1.42E01E"' />
+  <source src="v/slime-in-60-seconds.webm" type='video/webm; codecs="vp8"' />
+  <source src="v/slime-in-60-seconds.ogv"  type='video/ogg; codecs="theora"' />
+</video>
+
+<p>[<a href="v/slime-in-60-seconds.mp4">download video</a>]</p>
+
+<p>This makes it possible for a single piece of elisp to bootstrap
+  an entire SLIME environment. It's also set up so it can be
+  extensible&mdash;if a project like <a href="148">Slamhound</a>
+  wants to distribute an elisp library, it will be able to be loaded
+  automatically upon connecting SLIME. The number of steps is
+  reduced to three:</p>
+
+<ol>
+  <li>Install <a href="http://github.com/technomancy/clojure-mode">clojure-mode</a>
+    via <a href="https://marmalade-repo.org">Marmalade</a> or from git.</li>
+  <li><kbd>lein plugin install swank-clojure 1.3.1</kbd></li>
+  <li>Invoke <kbd>M-x clojure-jack-in</kbd> from a project</li>
+</ol>
+
+<p>The video uses swank-clojure 1.4.0-SNAPSHOT, which
+  includes <a href="http://georgejahad.com/clojure/swank-cdt.html">some
+  new debugging features</a>, but the most stable release (1.3.1 as
+  noted above) will also work. Hopefully this eases a few headaches!</p>
+
+<p><b>Update</b>: Right now there are known issues with having
+  multiple versions of swank-clojure present, both
+  in <tt>lib/dev</tt> and <tt>~/.lein/plugins</tt>, so check to make
+  sure they aren't conflicting. This will be fixed in the next
+  version of Leiningen. It's probably best to remove swank-clojure
+  from :dev-dependencies in project.clj entirely and have each user
+  who wants to use swank install it as a local plugin instead.</p>
+
+<p><b>Update</b>: swank-clojure is now deprecated; you are
+  encouraged to
+  use <a href="https://github.com/kingtim/nrepl.el">nrepl.el</a>
+  instead, which is much simpler to install and use.</p>
+
+<p>If you have issues, please post to
+  the <a href="http://groups.google.com/group/swank-clojure">swank-clojure
+    mailing list</a> or
+  open <a href="https://github.com/technomancy/swank-clojure/issues">a
+    github issue. Blog comments are a lousy place for bug reports.</p>
+include(footer.html)

@@ -12,22 +12,22 @@ content: |
     need to install the <kbd>wmctrl</kbd> utility: </p>
   
   <pre class="code">
-  screenid=<span class="string">`wmctrl -l | grep screen | cut -f 1 -d " "`</span>.chomp.hex
+  screenid=<span class="string">&#96;wmctrl -l | grep screen | cut -f 1 -d " "&#96;</span>.chomp.hex
   
   <span class="keyword">if</span> screenid != 0
-    puts focused=<span class="string">`xdpyinfo | grep focus | cut -c 16-24`</span>.chomp.hex
+    puts focused=<span class="string">&#96;xdpyinfo | grep focus | cut -c 16-24&#96;</span>.chomp.hex
     <span class="keyword">if</span> screenid == focused
-      <span class="string">`wmctrl -i -r </span><span class="variable-name">#{screenid}</span><span class="string"> -t 9`</span>
+      <span class="string">&#96;wmctrl -i -r </span><span class="variable-name">#{screenid}</span><span class="string"> -t 9&#96;</span>
     <span class="keyword">else</span>
-      <span class="string">`wmctrl -i -R </span><span class="variable-name">#{screenid}</span><span class="string">`</span>
+      <span class="string">&#96;wmctrl -i -R </span><span class="variable-name">#{screenid}</span><span class="string">&#96;</span>
     <span class="keyword">end</span>
   <span class="keyword">else</span>
-    <span class="string">`urxvt +sb -fn terminus-16 -bg white -e screen -A -h 10000 -xRR &amp;`</span>
+    <span class="string">&#96;urxvt +sb -fn terminus-16 -bg white -e screen -A -h 10000 -xRR &amp;&#96;</span>
     <span class="comment-delimiter"># </span><span class="comment">replace "-bg white" with "-tr -sh 90 -tint white" for transparency
   </span><span class="keyword">end</span>
   </pre>
   
-  <p>I bind this to <kbd>M-`</kbd> in Sawfish and have some
+  <p>I bind this to <kbd>M-&#96;</kbd> in Sawfish and have some
     window-matching rules that govern the sizing and placement of the
     terminal window as it appears. I'm sure similar results could be
     achieved in other decently flexible window managers.</p>

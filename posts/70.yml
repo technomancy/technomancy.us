@@ -65,7 +65,7 @@ content: |
   </span>  
     <span class="keyword">def</span> <span class="function-name">aggregate_commands</span>(*commands)
       commands.inject(0) <span class="keyword">do</span> |aggregate,  command|
-        aggregate | bit_place(<span class="type">COMMAND_BITS</span>.index(command))
+        aggregate | bit_place(<span class="type">COMMAND_BITS</span>.index (command))
       <span class="keyword">end</span>
     <span class="keyword">end</span>
   

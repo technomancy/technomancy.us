@@ -1,1 +1,0 @@
-(("posts/" . ((after-save-hook . (blog-render-post)))))

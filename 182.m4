@@ -1,0 +1,153 @@
+<!DOCTYPE html> <!-*- html -*-->
+define(__timestamp, 2017-02-12T23:15:07Z)dnl
+define(__title, `in which four pieces are placed in a row')dnl
+define(__id, 182)dnl
+include(header.html)
+<p>The other day my son and I were at a friend's house, and we were
+  just on our way home. As we were leaving he saw they had the game
+  <a href="https://en.wikipedia.org/wiki/Connect_Four">Connect 4</a>
+  and asked if we could play. Since we were on our way I told him,
+  "We can't play the game now, but when we get home, we
+  can <em>program</em> the game, and then play that." I wasn't sure
+  exactly how this would work out, but I thought we'd have some fun
+  on the way.</p>
+
+<p>This isn't the first time I've <a href="/179">adapted a physical
+    game to a program with my kids</a>. But since then I've
+    done <a href="https://gitlab.com/technomancy/liquid-runner">most</a>
+    <a href="https://gitlab.com/technomancy/cardinality">of</a>
+    <a href="https://gitlab.com/technomancy/mazes/blob/master/main.lua">my</a> 
+    <a href="https://gitlab.com/technomancy/bussard">games</a> using
+    <a href="https://love2d.org">LÖVE</a>, the 2D Lua game framework
+    along
+    with <a href="https://gitlab.com/technomancy/polywell">Polywell</a>,
+    a text editor and development tool that runs in it. Polywell is
+    roughly a port of Emacs, and I've found that the foundation it
+    provides of buffers, modes, and keymaps is useful for all kinds
+    of games. As a bonus, you can use the text editing features of
+    Polywell to code the game from <em>within</em> the game itself,
+    which makes experimentation and reloading seamless.</p>
+
+<p>My son and I sat down and knocked out an implementation of
+  Connect 4 pretty quickly using Polywell, and I thought it would be
+  interesting to step through how it works since it can serve as a
+  very succinct explanation for how to use Polywell.</p>
+
+<h4>State and Drawing</h4>
+<pre class="code"><span class="keyword"><span class="region">local</span></span><span class="region"> </span><span class="variable-name"><span class="region">e</span></span><span class="region"> = </span><span class="builtin"><span class="region">require</span></span><span class="region">(</span><span class="string"><span class="region">"polywell"</span></span><span class="region">)
+
+</span><span class="keyword"><span class="region">local</span></span><span class="region"> </span><span class="variable-name"><span class="region">board</span></span><span class="region"> = { {}, {}, {}, {}, {}, {}, {} }
+</span><span class="keyword"><span class="region">local</span></span><span class="region"> </span><span class="variable-name"><span class="region">colors</span></span><span class="region"> = {red={255,50,50},yellow={255,238,0}}
+</span><span class="keyword"><span class="region">local</span></span><span class="region"> </span><span class="variable-name"><span class="region">turn</span></span><span class="region"> = </span><span class="string"><span class="region">"yellow"</span></span><span class="region">
+</span></pre>
+
+<p>We start out by loading <tt>"polywell"</tt> and putting it in
+  the <tt>e</tt> local (<em>e</em> for <em>editor</em>). Most of the
+  game state is in the <tt>board</tt> table[<a href="#fn1">1</a>], which has an empty
+  table for each column in it. The Connect 4 board has seven columns
+  in which pieces can be dropped. It's a bit unusual, but we
+  represent columns as lists of pieces from the bottom up, because
+  the tokens are subject to gravity and fall to the bottom of the
+  column they're placed in. Finally we set up <tt>colors</tt>
+  which maps each player's color name to an RGB triplet and store
+  the final bit of state (the current turn) in the <tt>turn</tt>
+  local. So far so good!</p>
+
+<pre class="code"><span class="keyword"><span class="region">local</span></span><span class="region"> </span><span class="function-name"><span class="region">draw</span></span><span class="region"> = </span><span class="keyword"><span class="region">function</span></span><span class="region">()
+   </span><span class="keyword"><span class="region">for</span></span><span class="region"> </span><span class="variable-name"><span class="region">col</span></span><span class="region">=1,7 </span><span class="keyword"><span class="region">do</span></span><span class="region">
+      </span><span class="keyword"><span class="region">for</span></span><span class="region"> </span><span class="variable-name"><span class="region">n</span></span><span class="region">,</span><span class="variable-name"><span class="region">color</span></span><span class="region"> </span><span class="keyword"><span class="region">in</span></span><span class="region"> </span><span class="builtin"><span class="region">ipairs</span></span><span class="region">(board[col]) </span><span class="keyword"><span class="region">do</span></span><span class="region">
+         </span><span class="keyword"><span class="region">local</span></span><span class="region"> </span><span class="variable-name"><span class="region">x</span></span><span class="region">,</span><span class="variable-name"><span class="region">y</span></span><span class="region"> = col * 75, 800 - n*75
+         love.graphics.setColor(colors[color])
+         love.graphics.circle(</span><span class="string"><span class="region">"fill"</span></span><span class="region">, x, y, 30)
+      </span><span class="keyword"><span class="region">end</span></span><span class="region">
+   </span><span class="keyword"><span class="region">end</span></span><span class="region">
+</span><span class="keyword"><span class="region">end</span></span><span class="region"></span></pre>
+
+<p>Our <tt>draw</tt> function is very natural once you understand
+  the unusual structure of the <tt>board</tt>; we simply loop over
+  each column with an inner loop over each piece in the column. The
+  piece is represented by <tt>n</tt>, its numeric position within
+  the list of pieces, and its <tt>color</tt>. We
+  calculate <tt>x</tt> and <tt>y</tt> from the <tt>col</tt>
+  and <tt>n</tt> respectively and draw a colored circle for each
+  piece from the bottom of the column upwards. This is basically the
+  only place we use the LÖVE framework directly.</p>
+
+<h4>Modes and Bindings</h4>
+<pre class="code"><span class="region">e.define_mode(</span><span class="string"><span class="region">"connect4"</span></span><span class="region">, </span><span class="constant"><span class="region">nil</span></span><span class="region">, {draw=draw, read_only=</span><span class="constant"><span class="region">true</span></span><span class="region">})</span></pre>
+
+<p>Using Polywell's <tt>define_mode</tt> function we create a
+  <tt>"connect4"</tt> mode which will contain all the key bindings for the
+  game. Modes in Polywell are assumed to be textual unless otherwise
+  specified, but since our game is graphical we pass <tt>nil</tt> as
+  the second argument because our mode does not inherit from any
+  existing mode. For our third argument, we pass in our
+  previously-defined <tt>draw</tt> function as the
+  mode's <tt>draw</tt> property, overriding the default draw which
+  simply displays the current mode's text. We also mark it
+  as <tt>read_only</tt> to avoid accidentally inserting any text
+  into the buffer.</p>
+
+<pre class="code"><span class="region">e.bind(</span><span class="string"><span class="region">"connect4"</span></span><span class="region">, </span><span class="string"><span class="region">"escape"</span></span><span class="region">, </span><span class="keyword"><span class="region">function</span></span><span class="region">() e.change_buffer(</span><span class="string"><span class="region">"*console*"</span></span><span class="region">) </span><span class="keyword"><span class="region">end</span></span><span class="region">)
+e.bind(</span><span class="string"><span class="region">"connect4"</span></span><span class="region">, </span><span class="string"><span class="region">"backspace"</span></span><span class="region">, </span><span class="keyword"><span class="region">function</span></span><span class="region">()
+          </span><span class="keyword"><span class="region">for</span></span><span class="region"> </span><span class="variable-name"><span class="region">i</span></span><span class="region">=1,7 </span><span class="keyword"><span class="region">do</span></span><span class="region"> lume.clear(board[i]) </span><span class="keyword"><span class="region">end</span></span><span class="region">
+</span><span class="keyword"><span class="region">end</span></span><span class="region">)</span></pre>
+
+<p>Polywell's <tt>bind</tt> function allows us to attach a function
+  to be called when a specific keystroke is pressed in a specific
+  mode. In this case we say that <tt>escape</tt> will switch back to
+  the Lua console while <tt>backspace</tt> will just clear each column in
+  the <tt>board</tt>.</p>
+
+<pre class="code"><span class="keyword"><span class="region">for</span></span><span class="region"> </span><span class="variable-name"><span class="region">key</span></span><span class="region">=1,7 </span><span class="keyword"><span class="region">do</span></span><span class="region">
+   e.bind(</span><span class="string"><span class="region">"connect4"</span></span><span class="region">, </span><span class="builtin"><span class="region">tostring</span></span><span class="region">(key), </span><span class="keyword"><span class="region">function</span></span><span class="region">()
+             </span><span class="keyword"><span class="region">local</span></span><span class="region"> </span><span class="variable-name"><span class="region">column</span></span><span class="region"> = board[key]
+             </span><span class="keyword"><span class="region">if</span></span><span class="region">(#column &gt;= 6) </span><span class="keyword"><span class="region">then</span></span><span class="region"> </span><span class="keyword"><span class="region">return</span></span><span class="region"> </span><span class="keyword"><span class="region">end</span></span><span class="region">
+             </span><span class="builtin"><span class="region">table</span></span><span class="region">.</span><span class="builtin"><span class="region">insert</span></span><span class="region">(column, turn)
+             turn = turn == </span><span class="string"><span class="region">"red"</span></span><span class="region"> </span><span class="keyword"><span class="region">and</span></span><span class="region"> </span><span class="string"><span class="region">"yellow"</span></span><span class="region"> </span><span class="keyword"><span class="region">or</span></span><span class="region"> </span><span class="string"><span class="region">"red"</span></span><span class="region">
+</span></span><span class="region">   </span><span class="keyword"><span class="region">end</span></span><span class="region">)
+</span><span class="keyword"><span class="region">end</span></span><span class="region"></span></pre>
+
+<p>Almost done! Here's where the meat of the game is. We loop from 1
+  to 7, which is the number of columns in the game. For each column,
+  we <tt>bind</tt> that number key to a function which grabs the
+  corresponding <tt>column</tt> table from the <tt>board</tt>. It
+  checks to make sure the <tt>column</tt> isn't full (each one can
+  only hold 6 pieces) and if not it inserts the color of the current
+  player into the column with <tt>table.insert</tt>. Then it
+  changes the <tt>turn</tt> to the next player.</p>
+
+<pre class="code"><span class="region">e.open(</span><span class="constant"><span class="region">nil</span></span><span class="region">, </span><span class="string"><span class="region">"*connect4*"</span></span><span class="region">, </span><span class="string"><span class="region">"connect4"</span></span><span class="region">)</span></pre>
+
+<p>Finally it uses the <tt>open</tt> function to create a new buffer
+  named <tt>"*connect4*"</tt> with <tt>"connect4"</tt> mode
+  active. The first argument is <tt>nil</tt> because this buffer is
+  not attached to the filesystem; it's a free-floating thing that
+  doesn't get loaded or saved. You could leave this line out and
+  Polywell would simply boot to a Lua console where you could
+  invoke <tt>connect4</tt> mode manually from there.</p>
+
+<p>And that's it! 27 lines is all it took, and me and my son were
+  off to the races playing the game. While we were writing it I kept
+  him involved by asking each step of the way what we should do
+  next. Once I wrote the <tt>draw</tt> function we were able to test
+  it out by editing the <tt>board</tt> table directly using Lua code
+  in the console. Our first pass of the number key function simply
+  called <tt>table.insert</tt>, so once we tried it out he was able
+  to point out which features were still missing, and I could ask
+  leading questions which helped him piece together roughly what was
+  needed to address those things.</p>
+
+<p>Of course there's a lot more that Polywell can do, but it doesn't
+  take much code to get a simple game going. Try it for yourself;
+  you might have a lot of fun.</p>
+
+<hr>
+
+<p>[<a name="fn1">1</a>] Lua tables can be a bit confusing since
+  they're a single data structure that can act both sequentially (as
+  with <tt>board</tt> here which is basically used as a vector/array) or
+  associatively (as with <tt>colors</tt> which acts like a map). The
+  thing to remember is that the sequential/associative property is
+  not inherent in the table but rather part of how it's used.</p>
+include(footer.html)

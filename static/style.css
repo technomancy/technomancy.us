@@ -1,0 +1,155 @@
+div#logo {
+    margin: -5em 0 0 -9em;
+    float: left;
+}
+
+h2.title {
+    margin-top: 1em;
+}
+
+h2.title a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container a {
+    text-decoration: none;
+    color: #31674b;
+}
+
+h2.title a:hover, .container a:hover {
+    text-decoration: underline;
+    color: #11472b;
+}
+
+.container p {
+    font-size: 135%;
+    text-align: justify;
+}
+
+.container img {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 1em;
+}
+
+pre, pre span, tt, kbd {
+    font-family: Inconsolata, Consolas, monospace;
+}
+
+.code, .irc {
+    padding: 1em;
+    font-family: Inconsolata, Consolas, monospace;
+    line-height: 1.5em;
+}
+
+.footnotes {
+    padding-top: 1em;
+    font-size: 88%;
+}
+
+#khomut {
+    font-size: 200%;
+    text-align: center;
+}
+
+/* page-specific things */
+#resume h3 { margin-left: -1em; }
+#resume dt { font-style: italic; }
+
+/* htmlize styles for code snippets */
+
+.comment {
+    /* font-lock-comment-face */
+    color: #7f9f7f;
+}
+.constant {
+    /* font-lock-constant-face */
+    color: #008b8b;
+}
+.comment-delimiter {
+    /* font-lock-comment-delimiter-face */
+    color: #708070;
+}
+.function-name {
+    /* font-lock-function-name-face */
+    color: #9f8ff0;
+}
+.keyword {
+    /* font-lock-keyword-face */
+    color: #a020f0;
+}
+.negation-char {
+    /* font-lock-negation-char-face */
+    color: #f0dfaf;
+    font-weight: bold;
+}
+.string {
+    /* font-lock-string-face */
+    color: #cc9393;
+}
+.type {
+    /* font-lock-type-face */
+    color: #9f0fdf;
+    font-weight: bold;
+}
+.variable-name {
+    /* font-lock-variable-name-face */
+    color: #308f3f;
+}
+.builtin {
+    /* font-lock-builtin-face */
+    color: #da70d6;
+}
+.doc {
+    /* font-lock-doc-face */
+    color: #bc8f8f;
+}
+.paren, .esk-paren {
+    /* paren-face */
+    color: #8c8c8c;
+}
+.keyword { color: blue; }
+.literal { color: purple; }
+
+.tuareg-font-lock-governing {
+    /* tuareg-font-lock-governing-face */
+    color: #0000ff;
+    font-weight: bold;
+}
+.tuareg-font-lock-operator {
+    /* tuareg-font-lock-operator-face */
+    color: #a52a2a;
+}
+.warning {
+    /* font-lock-warning-face */
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.nxml-attribute-local-name {
+    /* nxml-attribute-local-name */
+    color: #a0522d;
+}
+.nxml-attribute-value {
+    /* nxml-attribute-value */
+    color: #8b2252;
+}
+.nxml-attribute-value-delimiter {
+    /* nxml-attribute-value-delimiter */
+    color: #8b2252;
+}
+.nxml-element-local-name {
+    /* nxml-element-local-name */
+    color: #0000ff;
+}
+.nxml-processing-instruction-delimiter {
+}
+.nxml-processing-instruction-target {
+    /* nxml-processing-instruction-target */
+    color: #a020f0;
+}

@@ -33,7 +33,7 @@ content: |-
   button.signal_connect(<span class="string">'clicked'</span>) <span class="keyword">do</span>
     <span class="keyword">if</span> <span class="variable-name">$started</span>
       button.image = <span class="type">Gtk</span>: : <span class="type">Image</span>.new(<span class="string">"</span><span class="variable-name">#{File.dirname(__FILE__)}</span><span class="string">/mong_mono.png"</span>)
-      <span class="string">`mongrel_rails stop -c </span><span class="variable-name">#{RAILS_ROOT}</span><span class="string">`</span>
+      <span class="string">&#96;mongrel_rails stop -c </span><span class="variable-name">#{RAILS_ROOT}</span><span class="string">&#96;</span>
       <span class="variable-name">$started</span> = <span class="variable-name">false</span>
     <span class="keyword">else</span>
       button.image = <span class="type">Gtk</span>: : <span class="type">Image</span>.new(<span class="string">"</span><span class="variable-name">#{File.dirname(__FILE__)}</span><span class="string">/mong.png"</span>)

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>__title - Technomancy</title>
+  <meta name="author" content="Phil Hagelberg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="alternate" href="/atom.xml" type="application/atom+xml">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/skeleton.css">
+
+  <link rel="icon" type="image/png" href="/favicon.ico">
+
+  <link rel="index" href='/list' />
+  ifdef(`__timestamp', `ifdef(`__first',,`<link rel="prev" href="/decr(__id)">')')
+  ifdef(`__timestamp', `ifdef(`__last',,`<link rel="next" href="/incr(__id)">')')
+</head>
+<body>
+
+  <div class="container">
+    <div id="logo">
+      <a href='/list'><img src='/i/technomancy.png' alt='Technomancy' /></a>
+    </div>
+
+    <div class="row">
+      <h2 class="title"><a href="/__id">__title</a></h2>
+    </div>
