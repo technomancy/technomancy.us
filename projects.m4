@@ -81,6 +81,9 @@ include(header.html)
     <dt><a href='https://sonic-pi.net'>Sonic Pi</a> (Ruby)</dt>
     <dd>Live-coding music synthesizer.</dd>
 
+    <dt><a href="https://tic.computer">TIC-80</a> (C)</dt>
+    <dd>A fantasy computer for making games.</dd>
+
     <dt><a href="http://rubyhitsquad.com/Vlad_the_Deployer.html">Vlad
     the Deployer</a> (Ruby)</dt>
     <dd>Pragmatic deployment automation, without mercy.</dd>
@@ -119,6 +122,10 @@ include(header.html)
     <dd>A tool for building Android applications with
     Mirah. Maintainership has passed to Brendan Ribera and Alex Parrott.</dd>
 
+    <dt><a href="https://gitlab.com/technomancy/polywell">Polywell</a> (Lua)</dt>
+    <dd>A fully programmable text editor and repl environment for
+      embedding in games.</dd>
+
     <dt><a href="https://github.com/technomancy/orb">Orb</a> (Lua)</dt>
     <dd>A mock-unix operating system.</dd>
 
@@ -139,7 +146,7 @@ include(header.html)
       files. Maintainership has passed to Sung Pae.</dd>
 
     <dt><a href='https://gitlab.com/technomancy/smolforth'>Smolforth</a> (Lua, Forth)</dt>
-    <dd>A Forth implementation designed for embedding in games.</dd>
+    <dd>An implementation of the Forth programming language designed for embedding in games.</dd>
 
     <dt><a href='https://syme.herokuapp.com'>Syme</a> (Clojure)</dt>
     <dd>Manages disposable EC2 nodes for collaborating on GitHub

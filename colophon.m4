@@ -58,5 +58,27 @@ include(header.html)
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
       Commons Attribution-ShareAlike 3.0 License</a> unless otherwise specified.</p>
 
+  <!--
+  <h5>Computing history</h5>
+      <ul>
+        <li>Toilet Duck:   Performa 6214. $500, 1997 - 2001</li>
+        <li>Prometheus:    Power Mac 8600. ~$350, 2001 - 2003</li>
+        <li>Bahamut:       Power Mac G3 B&W 400. ~$300, 2002 - 2003</li>
+        <li>wraith:        Compaq Armada 1700, $300. 2003 - 2004</li>
+        <li>penguinomicon: eMachines 500 Celeron, $0. 2004 - 2005</li>
+        <li>durendal:      Dell Latitude C400. $50, 2005</li>
+        <li>technomancer:  Custom AMD 2400 box. ~$500, 2005 - 2006</li>
+        <li>herugrim:      Toshiba Satellite Pro 700, 2005</li>
+        <li>memex:         Dell Latitude C400, $600, 2005 - 2006</li>
+        <li>vannevar:      Thinkpad T61p, $2100, 2007</li>
+        <li>dynabook:      Thinkpad X61 Tablet, $2200, 2007 - 2009</li>
+        <li>enigma:        Thinkpad X200s. $1200, 2009 - 2016</li>
+        <li>altair (work): ThinkServer v2200. $700, 2011 - 2012</li>
+        <li>zuse:          Samsung Series 9, $1400, 2012 - 2012</li>
+        <li>z3:            Novena, $1200, 2015 - present</li>
+        <li>whirlwind:     Thinkpad X301, $149, 2016 - present</li>
+        <li>alto (work):   Thinkpad X260, $1200, 2016 - present</li>
+      </ul> -->
+
 </div>
 include(footer.html)

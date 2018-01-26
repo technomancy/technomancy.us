@@ -60,7 +60,6 @@ include(header.html)
 
   <div id='contributions'>
     <a name='contributions'></a><h3>Free Software Contributions</h3>
-    <!-- TODO: generate this list automatically from the projects list -->
 
     <dl>
       <dt>Contributed to:</dt>
@@ -78,6 +77,7 @@ include(header.html)
         <a href="http://microscheme.org/">Microscheme</a>,
         <a href='http://github.com/whymirror/hpricot'>Hpricot</a>,
         <a href='http://www.mirah.org'>Mirah</a>,
+        <a href="https://tic.computer">TIC-80</a>,
         <a href='https://github.com/technomancy/magit'>Magit</a>, and more
       </dd>
 
