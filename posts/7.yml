@@ -1,6 +1,0 @@
---- 
-timestamp: 2005-10-15 09:07:49
-title: rubyconf day 2
-tags: ruby, projects, conf
-id: 7
-content: "<p>Check out <a href='http://rubyforge.org/projects/rplanet/'>rplanet</a>!</p> <p>No,  seriously:  check it out:  <kbd>svn co svn://dev.technomancy.us/rplanet</kbd>. </p>"
