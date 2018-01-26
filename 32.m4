@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-02-20T10:49:24Z)dnl
 define(__title, `planetarium')dnl
 define(__id, 32)dnl

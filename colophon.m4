@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__title, `Colophon')dnl
 include(header.html)
 

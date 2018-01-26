@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue 19 May 2009 05:20:29 PM PDT)dnl
 define(__title, `in which a tool helps with relaxation')dnl
 define(__id, 125)dnl

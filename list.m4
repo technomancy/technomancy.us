@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__title, `All posts')dnl
 include(header.html)
 <h4>2018</h4>

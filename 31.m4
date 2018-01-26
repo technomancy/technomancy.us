@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-02-17T17:18:18Z)dnl
 define(__title, `friar matz and father mccarthy')dnl
 define(__id, 31)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-07-19T20:33:13Z)dnl
 define(__title, `exception im notifier')dnl
 define(__id, 53)dnl

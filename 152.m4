@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sun 14 Aug 2011 09:37:00 PM EDT)dnl
 define(__title, `in which static types are friends, not foes')dnl
 define(__id, 152)dnl

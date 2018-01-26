@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2014-02-26T08:13:51Z)dnl
 define(__title, `in which keyboard science goes further')dnl
 define(__id, 173)dnl

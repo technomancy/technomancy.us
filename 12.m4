@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-10-31T09:53:12Z)dnl
 define(__title, `the little things in life')dnl
 define(__id, 12)dnl

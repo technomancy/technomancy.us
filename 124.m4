@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Fri 24 Apr 2009 09:30:08 PM PDT)dnl
 define(__title, `in which codes are peeped at, in clojure')dnl
 define(__id, 124)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-03-14T22:04:56Z)dnl
 define(__title, `in which a newly shaven yak is presented')dnl
 define(__id, 106)dnl

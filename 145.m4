@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sun 30 Jan 2011 11:17:52 PM PST)dnl
 define(__title, `in which a peek is given, sneakily')dnl
 define(__id, 145)dnl

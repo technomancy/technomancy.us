@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2014-11-24T08:22:23Z)dnl
 define(__title, `in which a shingle is hung out')dnl
 define(__id, 176)dnl

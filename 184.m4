@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2017-10-23T19:04:13Z)dnl
 define(__title, `in which a path is charted through the coming apocalypse')dnl
 define(__id, 184)dnl

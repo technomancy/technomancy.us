@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2013-04-12T08:56:45Z)dnl
 define(__title, `in which everything is ephemeral')dnl
 define(__id, 166)dnl

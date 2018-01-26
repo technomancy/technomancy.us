@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-02-05T15:39:44Z)dnl
 define(__title, `rav')dnl
 define(__id, 28)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-10-17T12:54:33Z)dnl
 define(__title, `home again')dnl
 define(__id, 9)dnl

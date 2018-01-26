@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Fri 13 Nov 2009 08:29:30 PM PST)dnl
 define(__title, `in which things are mapped, but also reduced')dnl
 define(__id, 130)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-03-22T11:36:40Z)dnl
 define(__title, `new rails,  now with a rake gotcha')dnl
 define(__id, 41)dnl

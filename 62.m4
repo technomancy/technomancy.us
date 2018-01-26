@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-09-13T10:09:32Z)dnl
 define(__title, `mostly just pokage')dnl
 define(__id, 62)dnl

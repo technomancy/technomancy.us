@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Mon Nov 10 15:24:03 2008)dnl
 define(__title, `in which the rubyconf attended is the eighth')dnl
 define(__id, 117)dnl

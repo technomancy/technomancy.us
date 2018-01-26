@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-03-03T12:53:44Z)dnl
 define(__title, `code smell')dnl
 define(__id, 36)dnl

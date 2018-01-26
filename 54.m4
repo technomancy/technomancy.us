@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-07-26T13:15:10Z)dnl
 define(__title, `arorem hacks')dnl
 define(__id, 54)dnl

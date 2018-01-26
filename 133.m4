@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sun 31 Jan 2010 06:10:28 PM PST)dnl
 define(__title, `in which, were a title to be summarized from the content, it would be altogether too similar to many of the titles used for past articles, possibly to the point of indistinguishability')dnl
 define(__id, 133)dnl

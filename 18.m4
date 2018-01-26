@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-11-17T11:35:23Z)dnl
 define(__title, `petals around the rose in 17 lines of Ruby')dnl
 define(__id, 18)dnl

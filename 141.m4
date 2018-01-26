@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue 28 Sep 2010 09:18:59 PM PDT)dnl
 define(__title, `in which public speaking is foreshadowed')dnl
 define(__id, 141)dnl

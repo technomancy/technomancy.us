@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sat 21 Mar 2009 11:12:49 PM PDT)dnl
 define(__title, `in which is recounted a tale of versions')dnl
 define(__id, 123)dnl

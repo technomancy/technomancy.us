@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sat 06 Jun 2009 10:27:32 PM PDT)dnl
 define(__title, `in which a brotherhood gathers')dnl
 define(__id, 127)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sat 30 Apr 2011 11:05:12 PM PDT)dnl
 define(__title, `in which a violent metaphor features prominently')dnl
 define(__id, 148)dnl

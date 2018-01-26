@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2014-10-13T20:50:41Z)dnl
 define(__title, `in which preconceptions are unavoidable')dnl
 define(__id, 175)dnl

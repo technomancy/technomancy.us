@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2013-07-17T21:54:49Z)dnl
 define(__title, `in which the reader is invited to engage in comparative lispology')dnl
 define(__id, 169)dnl

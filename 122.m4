@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Mon 02 Feb 2009 08:41:09 PM PST)dnl
 define(__title, `in which slime and mire and other sludges come into play')dnl
 define(__id, 122)dnl

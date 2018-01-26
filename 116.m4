@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-10-26T20:31:51Z)dnl
 define(__title, `in which a scheme will be expounded upon')dnl
 define(__id, 116)dnl

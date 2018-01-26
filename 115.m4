@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Thu Oct 24 17:19:01 2008)dnl
 define(__title, `in which a subject is attempted to be approached objectively, though such a thing is actually impossible')dnl
 define(__id, 115)dnl

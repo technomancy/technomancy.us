@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue Nov 06 22:33:17 -0800 2007)dnl
 define(__title, `strike force:  assemble!')dnl
 define(__id, 97)dnl

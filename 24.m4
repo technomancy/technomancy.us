@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-01-19T21:40:00Z)dnl
 define(__title, `what we need more of is elks')dnl
 define(__id, 24)dnl

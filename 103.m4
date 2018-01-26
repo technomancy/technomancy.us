@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-02-17T19:42:31Z)dnl
 define(__title, `in which logos are lame')dnl
 define(__id, 103)dnl

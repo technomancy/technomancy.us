@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Wed 25 Nov 2009 10:28:10 PM PST)dnl
 define(__title, `in which projects may be more easily compiled and distributed')dnl
 define(__id, 131)dnl

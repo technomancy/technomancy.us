@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-10-06T08:35:09Z)dnl
 define(__title, `a terminal is a terrible thing to waste')dnl
 define(__id, 4)dnl

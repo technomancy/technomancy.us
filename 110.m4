@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-06-04T09:32:42Z)dnl
 define(__title, `in which the events of and surrounding cabooseconf are recapitulated')dnl
 define(__id, 110)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-02-10T15:02:46Z)dnl
 define(__title, `i still don't understand dwemthy's array')dnl
 define(__id, 30)dnl

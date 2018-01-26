@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Mon 28 Feb 2011 09:08:38 PM PST)dnl
 define(__title, `in which the local meeting celebrates a year')dnl
 define(__id, 146)dnl

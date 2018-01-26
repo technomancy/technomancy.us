@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-06-21T21:14:18Z)dnl
 define(__title, `after railsday')dnl
 define(__id, 48)dnl

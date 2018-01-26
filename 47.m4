@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-06-17T22:36:40Z)dnl
 define(__title, `18 hours of rails + 6 hours of sleep = 24 hours of awesome')dnl
 define(__id, 47)dnl

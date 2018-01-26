@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-06-25T08:56:00Z)dnl
 define(__title, `in which the cake is found to be delicious and moist')dnl
 define(__id, 111)dnl

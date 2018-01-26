@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-03-08T17:01:07Z)dnl
 define(__title, `brain breaks')dnl
 define(__id, 39)dnl

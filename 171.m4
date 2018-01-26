@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2013-11-24T15:05:43Z)dnl
 define(__title, `in which hardware heats things up')dnl
 define(__id, 171)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-03-24T14:50:40Z)dnl
 define(__title, `whatever do they teach in schools these days')dnl
 define(__id, 42)dnl

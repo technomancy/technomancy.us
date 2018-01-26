@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sun 07 Feb 2010 09:35:24 PM PST)dnl
 define(__title, `in which telephone seems like entirely the wrong word')dnl
 define(__id, 134)dnl

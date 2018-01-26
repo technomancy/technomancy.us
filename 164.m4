@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Wed 26 Sep 2012 08:41:26 AM PDT)dnl
 define(__title, `in which laziness mostly predominates')dnl
 define(__id, 164)dnl

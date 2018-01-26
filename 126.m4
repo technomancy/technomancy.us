@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Wed 27 May 2009 17:35:46 PM PDT)dnl
 define(__title, `in which are found tricks of the trade concerning clojure authorship')dnl
 define(__id, 126)dnl

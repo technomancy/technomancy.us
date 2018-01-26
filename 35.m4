@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-03-01T10:29:41Z)dnl
 define(__title, `quicker rails testing')dnl
 define(__id, 35)dnl

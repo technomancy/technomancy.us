@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Fri 28 Oct 2011 10:21:54 AM PDT)dnl
 define(__title, `in which the lesser-known are brought to the forefront')dnl
 define(__id, 154)dnl

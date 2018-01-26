@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2013-05-15T18:09:44Z)dnl
 define(__title, `in which a turtle moves things forward')dnl
 define(__id, 167)dnl

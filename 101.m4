@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-01-06T19:49:21Z)dnl
 define(__title, `in which the blog undergoes an octo-redux')dnl
 define(__id, 101)dnl

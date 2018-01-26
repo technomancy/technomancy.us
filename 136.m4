@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sat 24 Apr 2010 10:44:44 PM PDT)dnl
 define(__title, `in which a year is reflected upon')dnl
 define(__id, 136)dnl

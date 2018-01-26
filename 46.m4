@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-06-03T16:27:30Z)dnl
 define(__title, `metalicious')dnl
 define(__id, 46)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2013-04-01T20:42:59Z)dnl
 define(__title, `in which we cater to those with an allergic reaction to parentheses')dnl
 define(__id, 165)dnl

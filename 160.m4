@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue 08 May 2012 09:25:14 PM PDT)dnl
 define(__title, `in which korean hardware pleases')dnl
 define(__id, 160)dnl

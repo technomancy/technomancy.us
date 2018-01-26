@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-05-13T23:31:01Z)dnl
 define(__title, `in which light is shed upon some previously unexplored frontiers')dnl
 define(__id, 109)dnl

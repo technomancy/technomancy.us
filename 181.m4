@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2016-08-29T19:56:54Z)dnl
 define(__title, `in which a surprising affinity is pondered')dnl
 define(__id, 181)dnl

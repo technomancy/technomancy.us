@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Mon 30 Aug 2010 06:23:38 PM PDT)dnl
 define(__title, `in which the lessons of ZZ Top are applied to the marketplace')dnl
 define(__id, 140)dnl

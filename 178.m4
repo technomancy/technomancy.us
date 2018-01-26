@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2015-12-31T22:11:48Z)dnl
 define(__title, `in which year one comes to a close')dnl
 define(__id, 178)dnl
@@ -26,7 +26,7 @@ include(header.html)
   you have a hard time even wrapping your head around</a>.</p>
 
 <a href="https://www.flickr.com/photos/technomancy/21429068813">
-  <img src="i/dump-clouds.jpg" at="Clouds at the dump"></a>
+  <img src="i/dump-clouds.jpg" alt="Clouds at the dump"></a>
 
 <p>The Charis Project, which we are working under, doesn't really
   have projects for which it makes sense for me to be directly involved

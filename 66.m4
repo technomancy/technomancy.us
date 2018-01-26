@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-12-29 13:12:56)dnl
 define(__title, `how i learned to stop worrying and love^H^H^H^H tolerate ecmascript')dnl
 define(__id, 66)dnl

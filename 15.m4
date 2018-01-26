@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-11-08T14:50:22Z)dnl
 define(__title, `google maps in two or more lines of code')dnl
 define(__id, 15)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue 21 Aug 2012 10:50:47 PM PDT)dnl
 define(__title, `in which we retire a workhorse')dnl
 define(__id, 163)dnl

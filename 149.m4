@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Mon 16 May 2011 09:02:23 PM PDT)dnl
 define(__title, `in which radical simplification ensues')dnl
 define(__id, 149)dnl

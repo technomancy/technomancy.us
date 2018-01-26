@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sun Mar 02 14:11:01 -0800 2008)dnl
 define(__title, `in which the benefits of contribution are discussed')dnl
 define(__id, 105)dnl

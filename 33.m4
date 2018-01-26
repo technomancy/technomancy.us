@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-02-22T10:03:29Z)dnl
 define(__title, `metabiz')dnl
 define(__id, 33)dnl

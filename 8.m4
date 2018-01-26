@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-10-15T22:10:09Z)dnl
 define(__title, `ruby is becoming lisp....')dnl
 define(__id, 8)dnl

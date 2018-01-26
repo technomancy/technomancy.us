@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-04-01T08:50:09Z)dnl
 define(__title, `in which a new project is annonuced')dnl
 define(__id, 107)dnl

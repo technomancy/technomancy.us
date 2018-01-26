@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-08-23T14:44:17Z)dnl
 define(__title, `caboose tumling')dnl
 define(__id, 60)dnl

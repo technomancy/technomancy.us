@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-09-08T13:15:21Z)dnl
 define(__title, `any sufficiently advanced technology is indistinguishable from magic')dnl
 define(__id, 61)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-04-03T10:11:18Z)dnl
 define(__title, `dual booting')dnl
 define(__id, 43)dnl

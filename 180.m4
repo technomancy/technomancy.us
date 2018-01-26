@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2016-07-20T17:48:45Z)dnl
 define(__title, `in which a spacefaring text editor holds up against an onslaught')dnl
 define(__id, 180)dnl

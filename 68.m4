@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2007-02-10T15:06:10Z)dnl
 define(__title, `js invasion')dnl
 define(__id, 68)dnl

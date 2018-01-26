@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-07-28T23:12:21Z)dnl
 define(__title, `the afternoon&apos;s hack')dnl
 define(__id, 55)dnl

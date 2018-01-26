@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-02-23T16:34:05Z)dnl
 define(__title, `non-free be gone')dnl
 define(__id, 34)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-09-23T10:07:01Z)dnl
 define(__title, `in which an opportunity for exceptional confusion presents itself')dnl
 define(__id, 114)dnl

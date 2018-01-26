@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sat 24 Jul 2010 10:45:24 PM PDT)dnl
 define(__title, `in which we watch while a veritable tower of babel is constructed')dnl
 define(__id, 139)dnl

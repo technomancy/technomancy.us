@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-11-23T11:48:19Z)dnl
 define(__title, `music dilemma')dnl
 define(__id, 19)dnl

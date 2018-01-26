@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-06-23T23:50:34Z)dnl
 define(__title, `i really need to find some of that obedience lacquer')dnl
 define(__id, 49)dnl

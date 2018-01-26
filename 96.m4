@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue Nov 06 17:31:25 -0800 2007)dnl
 define(__title, `post-rubyconf07')dnl
 define(__id, 96)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-02-01T22:55:17Z)dnl
 define(__title, `in which the port number is traditionally eighty')dnl
 define(__id, 102)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2014-12-16T13:20:33Z)dnl
 define(__title, `in which we take a deep breath before the upcoming plunge')dnl
 define(__id, 177)dnl

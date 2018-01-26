@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-12-10T22:59:12Z)dnl
 define(__title, `fred brooks says')dnl
 define(__id, 21)dnl

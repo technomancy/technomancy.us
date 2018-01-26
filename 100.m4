@@ -1,4 +1,3 @@
-<!DOCTYPE html> <!-*- html -*-->
 define(__timestamp, 2007-12-31T01:50:09Z)dnl
 define(__title, `in which a birth is announced')dnl
 define(__id, 100)dnl

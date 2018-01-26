@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-03-08T12:00:19Z)dnl
 define(__title, `orientation')dnl
 define(__id, 38)dnl

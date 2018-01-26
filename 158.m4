@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue 28 Feb 2012 16:57:50 PM PST)dnl
 define(__title, `in which we coin a term which is the opposite of deprecate')dnl
 define(__id, 158)dnl

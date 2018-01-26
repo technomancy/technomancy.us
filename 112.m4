@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-06-30T23:58:00Z)dnl
 define(__title, `in which more is done with less')dnl
 define(__id, 112)dnl

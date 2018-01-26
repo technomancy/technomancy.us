@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__title, `Books')dnl
 include(header.html)
 <div id='wrapper'>

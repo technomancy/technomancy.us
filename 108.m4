@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-01-04T23:47:28Z)dnl
 define(__title, `in which a number of tools factor')dnl
 define(__id, 108)dnl

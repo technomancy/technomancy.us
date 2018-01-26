@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2017-05-14T21:01:31Z)dnl
 define(__title, `in which actors simulate a protocol')dnl
 define(__id, 183)dnl

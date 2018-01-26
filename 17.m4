@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-11-17T09:02:34Z)dnl
 define(__title, `trust no one')dnl
 define(__id, 17)dnl

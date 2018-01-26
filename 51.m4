@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-06-29T16:22:41Z)dnl
 define(__title, `level up')dnl
 define(__id, 51)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-11-10 15:12:36)dnl
 define(__title, `quaker terms')dnl
 define(__id, 65)dnl

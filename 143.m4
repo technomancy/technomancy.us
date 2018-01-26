@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue 09 Nov 2010 09:43:43 PM PST)dnl
 define(__title, `in which the perils of the gilardi scenario are overcome')dnl
 define(__id, 143)dnl

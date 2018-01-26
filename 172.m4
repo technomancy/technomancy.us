@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2013-12-21T13:35:45Z)dnl
 define(__title, `in which a collection of keys are gathered and put to good use')dnl
 define(__id, 172)dnl

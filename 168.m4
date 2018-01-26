@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2013-06-29T14:04:08Z)dnl
 define(__title, `in which metaprogramming crosses several runtime boundaries')dnl
 define(__id, 168)dnl

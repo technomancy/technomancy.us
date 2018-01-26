@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-04-24T20:32:32Z)dnl
 define(__title, `arbis and kaizen')dnl
 define(__id, 44)dnl

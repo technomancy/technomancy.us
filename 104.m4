@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-02-18T10:36:59Z)dnl
 define(__title, `in which you may get started with bus scheme')dnl
 define(__id, 104)dnl

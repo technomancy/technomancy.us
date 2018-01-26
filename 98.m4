@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sun Dec 09 07:23:42 -0800 2007)dnl
 define(__title, `bus scheme')dnl
 define(__id, 98)dnl

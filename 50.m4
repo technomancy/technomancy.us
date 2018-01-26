@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-06-26T14:50:21Z)dnl
 define(__title, `just when you thought we'd forgotten all about Camping')dnl
 define(__id, 50)dnl

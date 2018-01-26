@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Wed 29 Jun 2011 08:42:38 AM PDT)dnl
 define(__title, `in which systems are captured')dnl
 define(__id, 150)dnl

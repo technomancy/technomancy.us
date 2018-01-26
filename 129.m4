@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Sat 03 Oct 2009 03:37:47 PM PDT)dnl
 define(__title, `in which the effects of distance are reduced')dnl
 define(__id, 129)dnl

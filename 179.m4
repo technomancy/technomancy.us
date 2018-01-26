@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2016-06-05T15:13:54Z)dnl
 define(__title, `in which four cards make a gang')dnl
 define(__id, 179)dnl

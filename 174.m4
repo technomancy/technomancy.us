@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2014-10-07T22:25:46Z)dnl
 define(__title, `in which cards are stacked')dnl
 define(__id, 174)dnl

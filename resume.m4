@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__title, `R&eacute;sum&eacute;')dnl
 include(header.html)
 

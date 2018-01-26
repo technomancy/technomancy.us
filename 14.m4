@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-11-03T12:16:39Z)dnl
 define(__title, `coding tunes')dnl
 define(__id, 14)dnl

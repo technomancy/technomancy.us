@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Thu 26 Jan 2012 07:58:25 PM PST)dnl
 define(__title, `in which an interview is posted')dnl
 define(__id, 157)dnl

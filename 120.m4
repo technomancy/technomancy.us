@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue Dec 23 18:36:57 2008)dnl
 define(__title, `in which a peepcode is released')dnl
 define(__id, 120)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2018-01-12T19:53:51Z)dnl
 define(__title, `in which the cost of structured data is reduced')dnl
 define(__id, 185) define(__last)dnl

@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-08-09T08:57:15Z)dnl
 define(__title, `things i didn&apos;t do')dnl
 define(__id, 56)dnl

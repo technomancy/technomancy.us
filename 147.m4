@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Thu 31 Mar 2011 08:03:55 PM PDT)dnl
 define(__title, `in which secrets are kept')dnl
 define(__id, 147)dnl

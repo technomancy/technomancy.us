@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-01-30T11:35:23Z)dnl
 define(__title, `fun app of the day')dnl
 define(__id, 26)dnl

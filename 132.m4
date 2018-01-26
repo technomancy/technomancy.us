@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue 22 Dec 2009 03:14:16 PM PST)dnl
 define(__title, `in which persistence proves a propitious property')dnl
 define(__id, 132)dnl

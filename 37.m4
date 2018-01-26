@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-03-06T20:35:47Z)dnl
 define(__title, `just call me captain planet')dnl
 define(__id, 37)dnl

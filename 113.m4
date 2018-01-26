@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2008-07-30T12:34:15Z)dnl
 define(__title, `in which another mode of collaboration is set forth')dnl
 define(__id, 113)dnl

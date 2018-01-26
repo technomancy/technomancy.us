@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Mon Dec 17 00:52:14 -0800 2007)dnl
 define(__title, `another one rides the bus')dnl
 define(__id, 99)dnl

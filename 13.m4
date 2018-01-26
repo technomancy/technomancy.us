@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-11-02T08:32:35Z)dnl
 define(__title, `fancy ultra fresh')dnl
 define(__id, 13)dnl

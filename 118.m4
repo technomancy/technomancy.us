@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Thu Nov 27 11:10:32 2008)dnl
 define(__title, `in which a hypothetical death occurs in order that a real one may be avoided')dnl
 define(__id, 118)dnl

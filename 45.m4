@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2006-05-07T00:08:18Z)dnl
 define(__title, `dustin brushes his teeth with lasers and combs his hair with the future')dnl
 define(__id, 45)dnl

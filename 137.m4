@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, Tue 11 May 2010 09:20:17 PM PDT)dnl
 define(__title, `in which is divulged more detail than is generally interesting')dnl
 define(__id, 137)dnl

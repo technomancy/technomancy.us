@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2005-12-05T09:28:35Z)dnl
 define(__title, `there aught to be a law against you coming around')dnl
 define(__id, 20)dnl

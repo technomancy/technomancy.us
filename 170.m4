@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2013-10-14T07:35:57Z)dnl
 define(__title, `in which we return to the realm of the bactrian')dnl
 define(__id, 170)dnl

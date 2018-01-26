@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-*- html -*-->
+dnl -*- html -*-
 define(__timestamp, 2017-02-12T23:15:07Z)dnl
 define(__title, `in which four pieces are placed in a row')dnl
 define(__id, 182)dnl
