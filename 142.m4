@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sat 30 Oct 2010 10:15:28 PM PDT)dnl
+define(__timestamp, 2010-10-31T05:15:28Z)dnl
 define(__title, `in which the conjference is recapitulated')dnl
 define(__id, 142)dnl
 include(header.html)

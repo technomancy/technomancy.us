@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, 2006-11-10 15:12:36)dnl
+define(__timestamp, 2006-11-10T23:12:36Z)dnl
 define(__title, `quaker terms')dnl
 define(__id, 65)dnl
 include(header.html)

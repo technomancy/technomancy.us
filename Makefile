@@ -14,5 +14,3 @@ clean: ; rm out/*
 server: all ; cd out; python -m SimpleHTTPServer 3001
 
 upload: all; rsync -azPL out/ technomancy.us:technomancy.us/new/
-
-# TODO: fix non-iso-8601 timestamps

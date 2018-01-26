@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Mon 28 Jun 2010 12:35:28 AM PDT)dnl
+define(__timestamp, 2010-06-28T07:35:28Z)dnl
 define(__title, `in which readers are pointed elsewhere')dnl
 define(__id, 138)dnl
 include(header.html)

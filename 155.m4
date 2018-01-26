@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Wed 30 Nov 2011 11:15:11 PM PST)dnl
+define(__timestamp, 2011-12-01T07:15:11Z)dnl
 define(__title, `in which version two seems a treacherous stage')dnl
 define(__id, 155)dnl
 include(header.html)

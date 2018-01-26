@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sat 06 Jun 2009 10:27:32 PM PDT)dnl
+define(__timestamp, 2009-06-07T05:27:32Z)dnl
 define(__title, `in which a brotherhood gathers')dnl
 define(__id, 127)dnl
 include(header.html)

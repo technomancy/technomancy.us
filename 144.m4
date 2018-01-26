@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Thu 30 Dec 2010 20:32:42 AM PST)dnl
+define(__timestamp, 2010-12-30T16:32:42Z)dnl
 define(__title, `in which the author sighs and realizes he publishes very few posts which do not contain the word package')dnl
 define(__id, 144)dnl
 include(header.html)

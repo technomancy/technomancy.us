@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Fri 27 Apr 2012 05:45:01 AM UTC)dnl
+define(__timestamp, 2012-04-27T05:45:01Z)dnl
 define(__title, `in which we plot an escape from the quagmire of equality')dnl
 define(__id, 159)dnl
 include(header.html)

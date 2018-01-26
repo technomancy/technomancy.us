@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Thu 31 Mar 2011 08:03:55 PM PDT)dnl
+define(__timestamp, 2011-04-01T03:03:55Z)dnl
 define(__title, `in which secrets are kept')dnl
 define(__id, 147)dnl
 include(header.html)

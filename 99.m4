@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Mon Dec 17 00:52:14 -0800 2007)dnl
+define(__timestamp, 2007-12-17T08:52:14Z)dnl
 define(__title, `another one rides the bus')dnl
 define(__id, 99)dnl
 include(header.html)

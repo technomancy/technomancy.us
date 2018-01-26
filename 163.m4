@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Tue 21 Aug 2012 10:50:47 PM PDT)dnl
+define(__timestamp, 2012-08-21T17:50:47Z)dnl
 define(__title, `in which we retire a workhorse')dnl
 define(__id, 163)dnl
 include(header.html)

@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Fri 30 Dec 2011 06:25:58 PM PST)dnl
+define(__timestamp, 2011-12-31T02:25:58Z)dnl
 define(__title, `in which local hacking locations are surveyed')dnl
 define(__id, 156)dnl
 include(header.html)

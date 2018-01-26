@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Fri Dec 5 22:06:52 2008)dnl
+define(__timestamp, 2008-12-06T06:06:52Z)dnl
 define(__title, `in which is revealed a rather ambitious undertaking')dnl
 define(__id, 119)dnl
 include(header.html)

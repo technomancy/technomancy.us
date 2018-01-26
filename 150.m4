@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Wed 29 Jun 2011 08:42:38 AM PDT)dnl
+define(__timestamp, 2011-06-29T15:42:38Z)dnl
 define(__title, `in which systems are captured')dnl
 define(__id, 150)dnl
 include(header.html)

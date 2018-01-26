@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sun 30 Jan 2011 11:17:52 PM PST)dnl
+define(__timestamp, 2011-01-31T07:17:52Z)dnl
 define(__title, `in which a peek is given, sneakily')dnl
 define(__id, 145)dnl
 include(header.html)

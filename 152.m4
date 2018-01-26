@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sun 14 Aug 2011 09:37:00 PM EDT)dnl
+define(__timestamp, 2011-08-15T01:37:00Z)dnl
 define(__title, `in which static types are friends, not foes')dnl
 define(__id, 152)dnl
 include(header.html)

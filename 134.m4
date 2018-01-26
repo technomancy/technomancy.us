@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sun 07 Feb 2010 09:35:24 PM PST)dnl
+define(__timestamp, 2010-02-08T05:35:24Z)dnl
 define(__title, `in which telephone seems like entirely the wrong word')dnl
 define(__id, 134)dnl
 include(header.html)

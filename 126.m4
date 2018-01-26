@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Wed 27 May 2009 17:35:46 PM PDT)dnl
+define(__timestamp, 2009-05-28T00:35:46Z)dnl
 define(__title, `in which are found tricks of the trade concerning clojure authorship')dnl
 define(__id, 126)dnl
 include(header.html)

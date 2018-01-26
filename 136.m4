@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sat 24 Apr 2010 10:44:44 PM PDT)dnl
+define(__timestamp, 2010-04-25T05:44:44Z)dnl
 define(__title, `in which a year is reflected upon')dnl
 define(__id, 136)dnl
 include(header.html)

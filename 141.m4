@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Tue 28 Sep 2010 09:18:59 PM PDT)dnl
+define(__timestamp, 2010-09-29T04:18:59Z)dnl
 define(__title, `in which public speaking is foreshadowed')dnl
 define(__id, 141)dnl
 include(header.html)

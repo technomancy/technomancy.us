@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Mon 29 Mar 2010 07:58:00 PM PDT)dnl
+define(__timestamp, 2010-03-30T02:58:00Z)dnl
 define(__title, `in which the maintainer's perspective is considered')dnl
 define(__id, 135)dnl
 include(header.html)

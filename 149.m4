@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Mon 16 May 2011 09:02:23 PM PDT)dnl
+define(__timestamp, 2011-05-17T04:02:23Z)dnl
 define(__title, `in which radical simplification ensues')dnl
 define(__id, 149)dnl
 include(header.html)

@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Thu 26 Jan 2012 07:58:25 PM PST)dnl
+define(__timestamp, 2012-01-27T03:58:25Z)dnl
 define(__title, `in which an interview is posted')dnl
 define(__id, 157)dnl
 include(header.html)

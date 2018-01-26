@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Mon 31 Aug 2009 09:24:34 PM PDT)dnl
+define(__timestamp, 2009-09-01T04:24:34Z)dnl
 define(__title, `in which it is time for something that is almost completely different')dnl
 define(__id, 128)dnl
 include(header.html)

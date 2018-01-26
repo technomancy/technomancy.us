@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Fri 24 Apr 2009 09:30:08 PM PDT)dnl
+define(__timestamp, 2009-04-25T04:30:08Z)dnl
 define(__title, `in which codes are peeped at, in clojure')dnl
 define(__id, 124)dnl
 include(header.html)

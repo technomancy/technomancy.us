@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Tue 27 Sep 2011 09:12:54 PM PDT)dnl
+define(__timestamp, 2011-09-28T04:12:54Z)dnl
 define(__title, `in which version two turns the inside out')dnl
 define(__id, 153)dnl
 include(header.html)

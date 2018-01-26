@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Fri 29 Jul 2011 12:27:51 PM PDT)dnl
+define(__timestamp, 2011-07-29T19:27:51Z)dnl
 define(__title, `in which an operating system makes trade-offs')dnl
 define(__id, 151)dnl
 include(header.html)

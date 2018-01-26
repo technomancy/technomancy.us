@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sat Oct 13 00: 00: 01 -0700 2007)dnl
+define(__timestamp, 2007-10-13T07:00:01Z)dnl
 define(__title, `a gadget')dnl
 define(__id, 84)dnl
 include(header.html)

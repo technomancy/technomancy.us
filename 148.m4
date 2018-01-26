@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sat 30 Apr 2011 11:05:12 PM PDT)dnl
+define(__timestamp, 2011-05-01T06:05:12Z)dnl
 define(__title, `in which a violent metaphor features prominently')dnl
 define(__id, 148)dnl
 include(header.html)

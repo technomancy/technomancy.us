@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Tue Nov 06 22:33:17 -0800 2007)dnl
+define(__timestamp, 2007-11-07T06:33:17Z)dnl
 define(__title, `strike force:  assemble!')dnl
 define(__id, 97)dnl
 include(header.html)

@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sat Jan 3 14:08:56 2009)dnl
+define(__timestamp, 2009-01-03T22:08:56Z)dnl
 define(__title, `in which new paradigms are explored, clojure is reached, and impressions are still cursory')dnl
 define(__id, 121)dnl
 include(header.html)

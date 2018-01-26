@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Mon 30 Aug 2010 06:23:38 PM PDT)dnl
+define(__timestamp, 2010-08-31T01:23:38Z)dnl
 define(__title, `in which the lessons of ZZ Top are applied to the marketplace')dnl
 define(__id, 140)dnl
 include(header.html)

@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Wed 16 May 2012 09:07:43 AM PDT)dnl
+define(__timestamp, 2012-05-16T16:07:43Z)dnl
 define(__title, `in which three programming methods are compared')dnl
 define(__id, 161)dnl
 include(header.html)

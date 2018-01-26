@@ -60,23 +60,23 @@ include(header.html)
   for), the fact that classes can be constructed in a light-weight,
   anonymous way makes it much less onerous than it could be. This
   code sets up all mutable state in
-  a <a href="https://docs.racket-lang.org/reference/boxes.html?q=box#%28def._%28%28quote._~23~25kernel%29._box%29%29"><tt>box</tt></a>
-  which you use in the way you'd use a <tt>ref</tt> in ML or
+  a <a href="https://docs.racket-lang.org/reference/boxes.html?q=box#%28def._%28%28quote._~23~25kernel%29._box%29%29"><code>box</code></a>
+  which you use in the way you'd use a <code>ref</code> in ML or
   Clojure: a mutable wrapper around an immutable data structure.</p>
 
 <p>The world map I'm using
   is <a href="https://commons.wikimedia.org/wiki/File:BlankMap-World_gray.svg">an
   SVG of the Robinson projection</a> from Wikipedia. If you look
-  closely there's a call to bind <tt>doc</tt> that
-  calls <a href="https://docs.racket-lang.org/reference/port-lib.html#(def._((lib._racket%2Fport..rkt)._call-with-input-string))"><tt>call-with-input-file</tt></a>
-  with <a href="https://docs.racket-lang.org/xml/index.html?q=read-xml#%28def._%28%28lib._xml%2Fmain..rkt%29._read-xml%2Fdocument%29%29"><tt>read-xml/document</tt></a> which loads up the whole map
+  closely there's a call to bind <code>doc</code> that
+  calls <a href="https://docs.racket-lang.org/reference/port-lib.html#(def._((lib._racket%2Fport..rkt)._call-with-input-string))"><code>call-with-input-file</code></a>
+  with <a href="https://docs.racket-lang.org/xml/index.html?q=read-xml#%28def._%28%28lib._xml%2Fmain..rkt%29._read-xml%2Fdocument%29%29"><code>read-xml/document</code></a> which loads up the whole map
   file's SVG; just about as easily as you could ask for.</p>
 
-<p>The data you get back from <tt>read-xml/document</tt> is in fact
+<p>The data you get back from <code>read-xml/document</code> is in fact
   a <a href="https://docs.racket-lang.org/xml/#%28def._%28%28lib._xml%2Fmain..rkt%29._document%29%29">document</a>
-  struct, which contains an <tt>element</tt> struct
-  containing <tt>attribute</tt> structs and lists of
-  more <tt>element</tt> structs. All very sensible, but maybe not
+  struct, which contains an <code>element</code> struct
+  containing <code>attribute</code> structs and lists of
+  more <code>element</code> structs. All very sensible, but maybe not
   what you would expect in other dynamic languages like Clojure or
   Lua where free-form maps reign supreme. Racket really wants
   structure to be known up-front when possible, which is one of the
@@ -84,10 +84,10 @@ include(header.html)
   go wrong.</p>
 
 <p>Here's how we handle keyboard input; we're displaying a map with
-  one country highlighted, and <tt>key</tt> here tells us what
+  one country highlighted, and <code>key</code> here tells us what
   the user pressed to categorize the highlighted country. If that
-  key is in the <tt>categories</tt> hash then we put it
-  into <tt>categorizations</tt>.</p>
+  key is in the <code>categories</code> hash then we put it
+  into <code>categorizations</code>.</p>
 
 <pre class="code">(<span class="keyword">define</span> <span class="variable-name">categories</span> #hash((select . <span class="string">"eeeeff"</span>)
                          (<span class="racket-selfeval">#\1</span> . <span class="string">"993322"</span>)
@@ -109,14 +109,14 @@ include(header.html)
 
 <p>Finally once we have a list of categorizations, we need to apply
   it to the map document and display. We apply
-  a <a href="https://docs.racket-lang.org/reference/for.html?q=for%2Ffold#%28form._%28%28lib._racket%2Fprivate%2Fbase..rkt%29._for%2Ffold%29%29"><tt>fold</tt></a>
+  a <a href="https://docs.racket-lang.org/reference/for.html?q=for%2Ffold#%28form._%28%28lib._racket%2Fprivate%2Fbase..rkt%29._for%2Ffold%29%29"><code>fold</code></a>
   reduction over the XML document struct and the list of country
-  categorizations (plus <tt>'select</tt> for the country that's
+  categorizations (plus <code>'select</code> for the country that's
   selected to be categorized next) to get back a "modified" document
   struct where the proper elements have the style attributes applied
   for the given categorization, then we turn it into an image and
   hand it
-  to <a href="https://docs.racket-lang.org/pict/Rendering.html?q=draw-pict#%28def._%28%28lib._pict%2Fmain..rkt%29._draw-pict%29%29"><tt>draw-pict</tt></a>:</p>
+  to <a href="https://docs.racket-lang.org/pict/Rendering.html?q=draw-pict#%28def._%28%28lib._pict%2Fmain..rkt%29._draw-pict%29%29"><code>draw-pict</code></a>:</p>
 
 <pre class="code">(<span class="keyword">define</span> (<span class="function-name">update</span> original-doc categorizations)
   (<span class="keyword">for/fold</span> ([doc original-doc])
@@ -129,10 +129,10 @@ include(header.html)
          [<span class="variable-name">xml</span> (<span class="builtin">call-with-output-string</span> (<span class="builtin">curry</span> write-xml newdoc))])
     (draw-pict (<span class="builtin">call-with-input-string</span> xml svg-port-&gt;pict) context <span class="racket-selfeval">0</span> <span class="racket-selfeval">0</span>)))</pre>
 
-<p>The problem is in that pesky <tt>set-style</tt> function. All it
-  has to do is reach deep down into the <tt>document</tt> struct to
-  find the <tt>n</tt>th <tt>path</tt> element (the one associated
-  with a given country), and change its <tt>'style</tt>
+<p>The problem is in that pesky <code>set-style</code> function. All it
+  has to do is reach deep down into the <code>document</code> struct to
+  find the <code>n</code>th <code>path</code> element (the one associated
+  with a given country), and change its <code>'style</code>
   attribute. It ought to be a simple task. Unfortunately this
   function ends up being anything but simple:</p>
 
@@ -173,8 +173,8 @@ include(header.html)
 <p>The reason for this is that while structs are immutable, they
   don't support functional updates. Whenever you're working with
   immutable data structures, you want to be able to say "give me a
-  new version of this data, but with field <tt>x</tt> replaced by
-  the value of <tt>(f (lookup x))</tt>". Racket
+  new version of this data, but with field <code>x</code> replaced by
+  the value of <code>(f (lookup x))</code>". Racket
   can <a href="https://docs.racket-lang.org/reference/dicts.html?q=dict-update#%28def._%28%28lib._racket%2Fdict..rkt%29._dict-update%29%29">do
   this with dictionaries</a> but not with structs<sup><a href="#fn2">2</a></sup>.  If you want a
   modified version you have to create a fresh
@@ -182,21 +182,21 @@ include(header.html)
 
 <h4>Lenses to the rescue?</h4>
 
-<img src="/i/first-lensman.jpg" alt="first lensman" align="left">
+<img src="/i/first-lensman.jpg" alt="first lensman" class="left">
 
-<p>When I brought this up in the <tt>#racket</tt> channel on
+<p>When I brought this up in the <code>#racket</code> channel on
   Freenode, I was helpfully pointed to the 3rd-party
   <a href="https://docs.racket-lang.org/lens/lens-guide.html">Lens</a>
   library. Lenses are a general-purpose way of composing arbitrarily
   nested lookups and updates. Unfortunately at this time
   there's <a href="https://github.com/jackfirth/lens/issues/290">a
-  flaw</a> preventing them from working with <tt>xml</tt> structs, so
+  flaw</a> preventing them from working with <code>xml</code> structs, so
   it seemed I was out of luck.</p>
 
 <p>But then I was pointed
   to <a href="https://docs.racket-lang.org/pollen/second-tutorial.html?q=xexpr#%28part._.X-expressions%29">X-expressions</a>
   as an alternative to
-  structs. The <a href="https://docs.racket-lang.org/xml/index.html?q=xexpr#%28def._%28%28lib._xml%2Fmain..rkt%29._xml-~3exexpr%29%29"><tt>xml->xexpr</tt></a>
+  structs. The <a href="https://docs.racket-lang.org/xml/index.html?q=xexpr#%28def._%28%28lib._xml%2Fmain..rkt%29._xml-~3exexpr%29%29"><code>xml->xexpr</code></a>
   function turns the structs into a deeply-nested list tree with
   symbols and strings in it. The tag is the first item in the list,
   followed by an associative list of attributes, then the element's
@@ -204,15 +204,15 @@ include(header.html)
   structure of the data, it does work around the lens issue.</p>
 
 <p>For this to work, we need to compose a new lens based on the
-  "path" we want to use to drill down into the <tt>n</tt>th country
-  and its <tt>style</tt>
-  attribute. The <a href="https://docs.racket-lang.org/lens/lens-reference.html#%28def._%28%28lib._lens%2Fcommon..rkt%29._lens-compose%29%29"><tt>lens-compose</tt></a>
+  "path" we want to use to drill down into the <code>n</code>th country
+  and its <code>style</code>
+  attribute. The <a href="https://docs.racket-lang.org/lens/lens-reference.html#%28def._%28%28lib._lens%2Fcommon..rkt%29._lens-compose%29%29"><code>lens-compose</code></a>
   function lets us do that. Note that the order here might be
   backwards from what you'd expect; it works deepest-first (the way
-  <a href="https://docs.racket-lang.org/reference/procedures.html#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._compose%29%29"><tt>compose</tt></a>
+  <a href="https://docs.racket-lang.org/reference/procedures.html#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._compose%29%29"><code>compose</code></a>
   works for functions). Also note that defining one lens gives us
   the ability to both get nested values
-  (with <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fcommon..rkt%29._lens-view%29%29"><tt>lens-view</tt></a>) <em>and</em> update them.</p>
+  (with <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fcommon..rkt%29._lens-view%29%29"><code>lens-view</code></a>) <em>and</em> update them.</p>
 
 <pre class="code">(<span class="keyword">define</span> (<span class="function-name">style-lens</span> n)
   (lens-compose (dict-ref-lens <span class="racket-selfeval">'style</span>)
@@ -220,18 +220,18 @@ include(header.html)
                 (list-ref-lens (<span class="builtin">add1</span> (<span class="builtin">*</span> n <span class="racket-selfeval">2</span>)))
                 (list-ref-lens <span class="racket-selfeval">10</span>)))</pre>
 
-<p>Our <tt>&lt;path&gt;</tt> XML elements are under the 10th item of
-  the root xexpr, (hence the <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fdata%2Flist..rkt%29._list-ref-lens%29%29"><tt>list-ref-lens</tt></a> with 10) and
+<p>Our <code>&lt;path&gt;</code> XML elements are under the 10th item of
+  the root xexpr, (hence the <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fdata%2Flist..rkt%29._list-ref-lens%29%29"><code>list-ref-lens</code></a> with 10) and
   they are interspersed with whitespace, so we have to
-  double <tt>n</tt> to find the <tt>&lt;path&gt;</tt> we
-  want. The <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fdata%2Flist..rkt%29._second-lens%29%29"><tt>second-lens</tt></a> call gets us to that element's
-  attribute alist, and <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fdata%2Fdict..rkt%29._dict-ref-lens%29%29"><tt>dict-ref-lens</tt></a> lets us zoom in on
-  the <tt>'style</tt> key out of that alist.</p>
+  double <code>n</code> to find the <code>&lt;path&gt;</code> we
+  want. The <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fdata%2Flist..rkt%29._second-lens%29%29"><code>second-lens</code></a> call gets us to that element's
+  attribute alist, and <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fdata%2Fdict..rkt%29._dict-ref-lens%29%29"><code>dict-ref-lens</code></a> lets us zoom in on
+  the <code>'style</code> key out of that alist.</p>
 
 <p>Once we have our lens, it's just a matter of
-  replacing <tt>set-style</tt> with a call
-  to <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fcommon..rkt%29._lens-set%29%29"><tt>lens-set</tt></a>
-  in our <tt>update</tt> function we had above, and then we're
+  replacing <code>set-style</code> with a call
+  to <a href="https://docs.racket-lang.org/lens/lens-reference.html?q=lens-view#%28def._%28%28lib._lens%2Fcommon..rkt%29._lens-set%29%29"><code>lens-set</code></a>
+  in our <code>update</code> function we had above, and then we're
   off:</p>
 
 <pre class="code">(<span class="keyword">define</span> (<span class="function-name">update</span> doc categorizations)
@@ -245,7 +245,7 @@ include(header.html)
 <p>Often times the trade-off between freeform maps/hashes vs
   structured data feels like one of convenience vs long-term
   maintainability. While it's unfortunate that they can't be used
-  with the <tt>xml</tt> structs<sup><a href="#fn4">4</a></sup>,
+  with the <code>xml</code> structs<sup><a href="#fn4">4</a></sup>,
   lenses provide a way to get the best of both worlds, at least in
   some situations.</p>
 
@@ -263,11 +263,11 @@ include(header.html)
 <p>[<a name="fn2">2</a>] If you're defining your own structs, you
   can make
   them <a href="https://github.com/technomancy/cooper/blob/master/cooper/fstruct.rkt#L26">implement
-  the dictionary interface</a>, but with the <tt>xml</tt> library we
+  the dictionary interface</a>, but with the <code>xml</code> library we
   have to use the struct definitions provided us.</p>
 
 <p>[<a name="fn3">3</a>] Technically you can use
-  the <a href="https://docs.racket-lang.org/reference/struct-copy.html"><tt>struct-copy</tt></a>
+  the <a href="https://docs.racket-lang.org/reference/struct-copy.html"><code>struct-copy</code></a>
   function, but it's not that much better. The field names must be
   provided at compile-time, and it's no more efficient as it copies
   the entire contents instead of sharing internal structure. And it

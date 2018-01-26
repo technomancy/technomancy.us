@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Thu Nov 27 11:10:32 2008)dnl
+define(__timestamp, 2008-11-27T19:10:32Z)dnl
 define(__title, `in which a hypothetical death occurs in order that a real one may be avoided')dnl
 define(__id, 118)dnl
 include(header.html)

@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Wed 25 Nov 2009 10:28:10 PM PST)dnl
+define(__timestamp, 2009-11-26T06:28:10Z)dnl
 define(__title, `in which projects may be more easily compiled and distributed')dnl
 define(__id, 131)dnl
 include(header.html)

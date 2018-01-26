@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Mon 28 Feb 2011 09:08:38 PM PST)dnl
+define(__timestamp, 2011-03-01T05:08:38Z)dnl
 define(__title, `in which the local meeting celebrates a year')dnl
 define(__id, 146)dnl
 include(header.html)

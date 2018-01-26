@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Tue Nov 06 17:31:25 -0800 2007)dnl
+define(__timestamp, 2007-11-07T01:31:25Z)dnl
 define(__title, `post-rubyconf07')dnl
 define(__id, 96)dnl
 include(header.html)

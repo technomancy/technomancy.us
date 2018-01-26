@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Tue 19 May 2009 05:20:29 PM PDT)dnl
+define(__timestamp, 2009-05-20T00:20:29Z)dnl
 define(__title, `in which a tool helps with relaxation')dnl
 define(__id, 125)dnl
 include(header.html)

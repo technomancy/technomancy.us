@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Sat 30 Jun 2012 09:43:18 PM PDT)dnl
+define(__timestamp, 2012-07-01T04:43:18Z)dnl
 define(__title, `in which the facts are laid out concerning swarm coding')dnl
 define(__id, 162)dnl
 include(header.html)

@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Fri 28 Oct 2011 10:21:54 AM PDT)dnl
+define(__timestamp, 2011-10-28T17:21:54Z)dnl
 define(__title, `in which the lesser-known are brought to the forefront')dnl
 define(__id, 154)dnl
 include(header.html)

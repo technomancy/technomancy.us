@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Fri 13 Nov 2009 08:29:30 PM PST)dnl
+define(__timestamp, 2009-11-14T04:29:30Z)dnl
 define(__title, `in which things are mapped, but also reduced')dnl
 define(__id, 130)dnl
 include(header.html)

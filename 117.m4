@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Mon Nov 10 15:24:03 2008)dnl
+define(__timestamp, 2008-11-10T23:24:03Z)dnl
 define(__title, `in which the rubyconf attended is the eighth')dnl
 define(__id, 117)dnl
 include(header.html)

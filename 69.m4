@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Jan 12 10:30:01 -0700 2007)dnl
+define(__timestamp, 2007-01-12T17:30:01Z)dnl
 define(__title, `must be what it feels like to get old')dnl
 define(__id, 69)dnl
 include(header.html)

@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, Tue 28 Feb 2012 16:57:50 PM PST)dnl
+define(__timestamp, 2012-02-29T00:57:50Z)dnl
 define(__title, `in which we coin a term which is the opposite of deprecate')dnl
 define(__id, 158)dnl
 include(header.html)
