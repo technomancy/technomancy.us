@@ -1,17 +1,18 @@
-
-  ifdef(`__timestamp', `<p class="timestamp">
+ifdef(`__feed', `</content></entry>',
+` ifdef(`__timestamp', `<p class="timestamp">
   ifdef(`__first',,`<a href="/decr(__id)">&laquo; older</a> |')
   <a href="/__id">__timestamp</a>
   ifdef(`__last',,`| <a href="/incr(__id)">newer &raquo;</a></p>')')
     <p id="khomut">๛</p>
 
-    <div id='footer' class="row">
-      <p><a href='/list'>All posts</a> | 
-        <a href='/resume'>R&eacute;sum&eacute;</a> |
-        <a href='/projects'>Projects</a> | 
-        <a href='/colophon'>Colophon</a> |
+    <div id="footer" class="row">
+      <p><a href="/list">All posts</a> |
+        <a href="/resume">R&eacute;sum&eacute;</a> |
+        <a href="/projects">Projects</a> |
+        <a href="/colophon">Colophon</a> |
         Technomancy is &copy; 2004 &ndash; 2018 Phil Hagelberg</p>
     </div>
     </div>
   </body>
 </html>
+')

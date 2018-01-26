@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("https://technomancy.us/anonymous-pro.ttf");
+}
+
 div#logo {
     margin: -5em 0 0 -9em;
     float: left;
@@ -22,7 +27,7 @@ h2.title a:hover, .container a:hover {
     color: #11472b;
 }
 
-.container p {
+.container p, #resume p, #resume dl, #resume ul, #wrapper ul, #list ul {
     font-size: 135%;
     text-align: justify;
 }
@@ -37,13 +42,17 @@ h2.title a:hover, .container a:hover {
     margin-left: 1em;
 }
 
+.container img.left {
+    float: left;
+}
+
 pre, pre span, tt, kbd {
-    font-family: Inconsolata, Consolas, monospace;
+    font-family: "Anonymous Pro", Inconsolata, Consolas, monospace;
 }
 
 .code, .irc {
     padding: 1em;
-    font-family: Inconsolata, Consolas, monospace;
+    font-family: "Anonymous Pro", Inconsolata, Consolas, monospace;
     line-height: 1.5em;
 }
 
