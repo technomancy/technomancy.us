@@ -1,7 +1,7 @@
 dnl -*- html -*-
 define(__timestamp, 2018-01-12T19:53:51Z)dnl
 define(__title, `in which the cost of structured data is reduced')dnl
-define(__id, 185) define(__last)dnl
+define(__id, 185)dnl
 include(header.html)
 <p>Last year I got the wonderful opportunity to
   attend <a href="https://con.racket-lang.org/">RacketCon</a> as it
