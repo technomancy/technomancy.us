@@ -1,7 +1,7 @@
 dnl -*- html -*-
 define(__timestamp, 2018-05-03T03:08:16Z)dnl
 define(__title, `in which a game jam is recounted')dnl
-define(__id, 187) define(__last) dnl
+define(__id, 187) dnl
 include(header.html)
 <p>This past weekend I just finished competing in
   the <a href="https://itch.io/jam/lisp-game-jam-2018/">Lisp Game Jam
@@ -191,6 +191,8 @@ include(header.html)
   some interesting technical features, but I will save that for part 2
   of this post. Thanks for reading, and please enjoy playing
   <a href="https://technomancy.itch.io/exo-encounter-667">EXO_encounter 667</a>.</p>
+
+<p><strong>Update</strong>: <a href="/188">part 2</a> is published.</p>
 
 <hr>
 
