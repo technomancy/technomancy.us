@@ -18,12 +18,15 @@ h2.title a {
 }
 
 .container a {
-    text-decoration: none;
     color: #31674b;
+    text-decoration: underline;
+}
+
+.container sup a {
+    text-decoration: none;
 }
 
 h2.title a:hover, .container a:hover {
-    text-decoration: underline;
     color: #11472b;
 }
 
@@ -70,6 +73,8 @@ pre, pre span, tt, kbd {
 #resume h3 { margin-left: -1em; }
 #resume dt { font-style: italic; }
 
+span.spoiler { background-color: black; color: black; }
+
 /* htmlize styles for code snippets */
 
 .comment {
@@ -104,7 +109,6 @@ pre, pre span, tt, kbd {
 .type {
     /* font-lock-type-face */
     color: #9f0fdf;
-    font-weight: bold;
 }
 .variable-name {
     /* font-lock-variable-name-face */
