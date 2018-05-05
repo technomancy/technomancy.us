@@ -2,7 +2,6 @@ Options +MultiViews -ExecCGI
 
 RewriteEngine on
 RewriteRule blog/post/(.*)$ /$1 [R=301,L]
-RewriteRule feed/atom.xml$ /atom.xml$1 [R=301,L]
 
 php_flag engine off
 

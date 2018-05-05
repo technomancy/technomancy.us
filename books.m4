@@ -16,18 +16,24 @@ include(header.html)
 <li>Mason & Dixon by Thomas Pynchon</li>
 <li>The Wave in the Mind by Ursula K. Le Guin</li>
 <li>Shadow and Claw by Gene Wolfe</li>
+<li>Death's End by Cixin Liu</li>
 </ul>
 
 <h2>Currently reading</h2>
 <ul>
-<li>The Three Body Problem by Cixin Liu</li>
+<li>A Brief History of Time by Stephen Hawking</li>
+<li>Tao Te Ching by Lao Tzu, translated by Jonathan Star</li>
 <li>The Subversion of Christianity by Jacques Ellul</li>
 <li>The Pizza Book by Aaron Quint and Michael Bernstein</li>
 <li>Debt: the first 5000 years by David Graeber</li>
 </ul>
 
-<h2>Have read (since June 2003)</h2>
+<h2>Have read (chronologically since June 2003)</h2>
 <ul>
+<li>The Dark Forest by Cixin Liu</li>
+<li>Chuang Tzu</li>
+<li>Jesus, Interrupted by Bart Erhman</li>
+<li>The Three Body Problem by Cixin Liu</li>
 <li>The Restaurant at the End of the Universe by Douglas Adams</li>
 <li>The God of Small Things by Arundhati Roy</li>
 <li>Tao Te Ching by Lau Tzu, translated by Ursula K. Le Guin</li>

@@ -2,9 +2,9 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <title>Technomancy</title>
   <id>tag:technomancy.us,2007:blog/</id>
-  <link href="https://technomancy.us/atom" rel="self" type="application/atom+xml"/>
+  <link href="https://technomancy.us/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://technomancy.us/" rel="alternate" type="text/html"/>
-  <updated>syscmd(date -Iseconds -u)Z</updated>
+  <updated>syscmd(date -Iseconds -u | tr -d \\n)</updated>
 
 define(__feed)dnl
 define(`fordown',`ifelse($#,0,``$0'',`ifelse(eval($2>=$3),1,

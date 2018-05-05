@@ -14,9 +14,6 @@ include(header.html)
     <dt><a href='http://clojure.org'>Clojure</a> (Clojure)</dt>
     <dd>A modern functional lisp language with advanced concurrency features.</dd>
 
-    <dt><a href='http://conkeror.org'>Conkeror</a> (Javascript)</dt>
-    <dd>A no-compromises, keyboard-driven, extensible web browser.</dd>
-
     <dt><a href='https://github.com/technomancy/clojure-mode'>Clojure Mode</a> (ELisp)</dt>
     <dd>The Emacs mode for the Clojure language.</dd>
 
@@ -25,6 +22,9 @@ include(header.html)
 
     <dt><a href='http://www.emacswiki.org/cgi-bin/wiki/ErtTestLibrary'>ERT</a> (ELisp)</dt>
     <dd>A testing tool for Emacs Lisp libraries. Now part of Emacs.</dd>
+
+    <dt><a href='https://github.com/bakpakin/Fennel'>Fennel</a> (Lua, Fennel)</dt>
+    <dd>A lisp compiler which targets Lua output.</dd>
 
     <dt><a href='https://github.com/whymirror/hpricot'>Hpricot</a> (Ruby)</dt>
     <dd>A delicious HTML parser.</dd>
@@ -46,7 +46,7 @@ include(header.html)
     <dd>A compiler for a subset of Scheme targeting AVR microcontrollers.</dd>
 
     <dt><a href="https://github.com/headius/mirah">Mirah</a> (Ruby, Mirah)</dt>
-    <dd>A low-level programming language targeting the JVM. Formerly known as Duby.</dd>
+    <dd>A low-level programming language targeting the JVM.</dd>
 
     <dt><a href='http://tromey.com/elpa'>package.el</a> (ELisp)</dt>
     <dd>The Emacs Lisp Package Archive; a package manager for
@@ -110,6 +110,11 @@ include(header.html)
     <dt><a href='http://leiningen.org'>Leiningen</a> (Clojure)</dt>
     <dd>Project automation for Clojure designed to not set your hair on
       fire. Installed hundreds of thousands of times.</dd>
+
+    <dt><a href="https://technomancy.itch.io/exo-encounter-667">EXO_encounter 667</a> (Fennel)</dt>
+    <dd>A top-down puzzle/adventure game featuring lasers and robots. Winner of
+    the <a href="https://itch.io/jam/lisp-game-jam-2018/results">Lisp Game Jam
+        Spring 2018</a>.</dd>
 
     <dt><a href='https://github.com/technomancy/mire'>Mire</a> (Clojure)</dt>
     <dd>A multiplayer text adventure engine. Used as a sample program
@@ -209,6 +214,10 @@ include(header.html)
 
   <h4><a name="deprecated">Deprecated</a></h4>
   <dl>
+    <dt><a href='http://conkeror.org'>Conkeror</a> (Javascript)</dt>
+    <dd>A no-compromises, keyboard-driven, extensible web
+      browser. Incompatible with newer versions of the Mozilla runtime.</dd>
+
     <dt><a href='https://github.com/technomancy/emacs-starter-kit'>Emacs Starter Kit</a> (ELisp)</dt>
     <dd>A set of dotfiles that provides better defaults and bundles other useful
       libraries for Emacs users. Used by thousands of developers. Deprecated in favour
@@ -217,7 +226,7 @@ include(header.html)
     <dt><a href='https://github.com/technomancy/swank-clojure'>Swank Clojure</a> (Clojure)</dt>
     <dd>An adapter allowing <a href='http://common-lisp.net/project/slime/'>SLIME</a>
       to be used with Clojure. Deprecated in favour of
-      <a href="https://github.com/kingtim/nrepl.el">nrepl.el</a>.</dd>
+      <a href="https://github.com/sanel/monroe">Monroe</a>.</dd>
 
     <dt><a href='https://github.com/technomancy/clojure-http-client'>Clojure HTTP Client</a> (Clojure)</dt>
     <dd>An HTTP client for the Clojure language. Deprecated in favor of

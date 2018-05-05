@@ -14,8 +14,9 @@ include(header.html)
       <dt>Languages</dt>
       <dd>Proficient in
         <a href='http://clojure.org'>Clojure</a>,
-        <a href='https://www.gnu.org/software/emacs/'>Emacs Lisp</a>, and
-        <a href='http://lua.org'>Lua</a>.
+        <a href='https://www.gnu.org/software/emacs/'>Emacs Lisp</a>,
+        <a href='http://lua.org'>Lua</a>, and
+        <a href='https://github.com/bakpakin/Fennel'>Fennel</a>.
         Experience with
         <a href='http://erlang.org'>Erlang</a>,
         <a href='http://racket-lang.org'>Racket</a>,
@@ -41,7 +42,7 @@ include(header.html)
              2015 - Lua
              2016 - l2l Lisp
              2017 - smolforth
-             2018 - m4
+             2018 - m4, Fennel
              ???? - Factor, Datalog, Logo, Elixir, J, Self, Haskell, Julia
           -->
       </dd>
