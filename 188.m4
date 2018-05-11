@@ -50,7 +50,7 @@ include(header.html)
   and layering), but it can automatically integrate with bump if you
   set properties on a layer or object to flag it as <tt>collidable</tt>.</p>
 
-<p>The documentation for this library unfortunately leaves quite a bit
+<p>The documentation for the Tiled library unfortunately leaves quite a bit
   to be desired; it's one of those projects that just dumps a list of
   all functions with a line or two describing what each one does and
   considers that "the documentation". Fortunately the source is pretty
@@ -146,6 +146,12 @@ include(header.html)
         (inferior-lisp-proc)
         (format <span class="string">"(lume.hotswap \"%s\")\n"</span>
                 (substring (file-name-nondirectory (buffer-file-name)) 0 -4)))))<span class="whitespace-line">)</span></pre>
+
+<p><strong>Update</strong>: I added first-class support for reloads
+  to <a href="https://gitlab.com/technomancy/fennel-mode">fennel-mode</a>,
+  though you will still need the stdin hack described above when using
+  it inside LÖVE. <!-- 
+I <a href="/189">wrote more about reloading</a>.--></p>
 
 <p>The other gotcha is that currently an error will crash your whole
   game. I really wanted to add an error handler which would allow you

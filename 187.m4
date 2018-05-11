@@ -171,7 +171,11 @@ include(header.html)
   third-party libraries like the Tiled renderer. I wasn't sure how it
   would work to use Fennel for this, but looking back on it I find it
   remarkable how seamless it felt. The language just got out of
-  the way and let me focus on the task at hand; I barely noticed it.</p>
+  the way and let me focus on the task at hand; I barely noticed
+  it. <strong>Update</strong>: surprisingly, you
+  can <a href="https://gitlab.com/technomancy/exo-encounter-667/blob/master/.luacheckrc">run
+    the Lua linter</a> on the output of the Fennel compiler and still
+  get helpful results!</p>
 
 <p>In the last hour I got my wife to playtest the game, which yielded
   some interesting insights. (Why can the rovers move forward but not

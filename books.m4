@@ -21,8 +21,7 @@ include(header.html)
 
 <h2>Currently reading</h2>
 <ul>
-<li>A Brief History of Time by Stephen Hawking</li>
-<li>Tao Te Ching by Lao Tzu, translated by Jonathan Star</li>
+<li>Gifts by Ursula K. Le Guin</li>
 <li>The Subversion of Christianity by Jacques Ellul</li>
 <li>The Pizza Book by Aaron Quint and Michael Bernstein</li>
 <li>Debt: the first 5000 years by David Graeber</li>
@@ -30,6 +29,8 @@ include(header.html)
 
 <h2>Have read (chronologically since June 2003)</h2>
 <ul>
+<li>A Brief History of Time by Stephen Hawking</li>
+<li>Tao Te Ching by Lao Tzu, translated by Jonathan Star</li>
 <li>The Dark Forest by Cixin Liu</li>
 <li>Chuang Tzu</li>
 <li>Jesus, Interrupted by Bart Erhman</li>

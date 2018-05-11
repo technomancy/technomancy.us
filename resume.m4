@@ -95,12 +95,11 @@ include(header.html)
       <dt>Created:</dt>
       <dd>
         <a href='http://github.com/technomancy/leiningen'>Leiningen</a>,
-        <a href='http://github.com/technomancy/emacs-starter-kit'>Emacs
-        Starter Kit</a>,
+        <a href='http://github.com/technomancy/emacs-starter-kit'>Emacs Starter Kit</a>,
         <a href='https://github.com/technomancy/atreus'>Atreus</a>,
         <a href="https://gitlab.com/technomancy/bussard">Bussard</a>,
+        <a href="https://technomancy.itch.io/exo-encounter-667">EXO_encounter 667</a>,
         <a href='https://github.com/technomancy/grenchman'>Grenchman</a>,
-        <a href='http://rinari.rubyforge.org'>Rinari</a>,
         <a href='http://github.com/technomancy/slamhound'>Slamhound</a>,
         <a href='https://syme.herokuapp.com'>Syme</a>,
         <a href='http://bus-scheme.rubyforge.org'>Bus Scheme</a>,
@@ -116,12 +115,12 @@ include(header.html)
   <div>
     <a name='work'></a><h3>Work Experience</h3>
 
-    <p><a href="https://circleci.com">CircleCI</a>, San Francisco, CA [December 2016 - present]</p>
+    <p><a href="https://circleci.com">CircleCI</a>, San Francisco, CA <span class="date">December 2016 - present</span></p>
     <ul>
       <li>Staff Engineer</li>
     </ul>
 
-    <p><a href="https://atreus.technomancy.us">Atreus Keyboards</a>, Mae Sot, Thailand [December 2014 - present]</p>
+    <p><a href="https://atreus.technomancy.us">Atreus Keyboards</a>, Mae Sot, Thailand <span class="date">December 2014 - present</span></p>
     <ul>
         <li>Created and <a href="https://github.com/technomancy/atreus/blob/master/assembly/assembly.tex">documented</a> a design for a small keyboard to be constructed from readily-available DIY parts.</li>
         <li>Wrote a <a href="https://github.com/technomancy/atreus-firmware">USB keyboard firmware</a> from scratch for the ATMega32u4 chip.</li>
@@ -129,14 +128,14 @@ include(header.html)
         <li>Started and ran a small business selling and supporting kits and fully-assembled keyboards to a worldwide customer base.</li>
     </ul>
 
-    <p><a href='http://heroku.com'>Heroku</a>, San Francisco, CA [October 2011 - December 2014]</p>
+    <p><a href='http://heroku.com'>Heroku</a>, San Francisco, CA <span class="date">October 2011 - December 2014</span></p>
     <ul>
       <li>Maintained the <a href="https://github.com/heroku/logplex">log pipeline infrastructure</a> in Erlang for routing app output.</i>
       <li>Handled the <a href="https://github.com/heroku/heroku-buildpack-clojure">adapter for building Clojure applications</a> on the Heroku platform.</li>
       <li>Maintained <a href="https://devcenter.heroku.com/articles/git">git-based deployment pipeline</a> for applications running on Heroku.</li>
     </ul>
 
-    <p><a href='http://sonian.net'>Sonian</a>, Newton, MA [April 2009 - September 2011]</p>
+    <p><a href='http://sonian.net'>Sonian</a>, Newton, MA <span class="date">April 2009 - September 2011</span></p>
     <ul>
       <li>Helped design and implement a document parsing, indexing, and archival pipeline in Clojure which functioned at petabyte level.</li>
       <li>Developed <a href="https://leiningen.org">Leiningen</a> project automation tool originally for our in-house needs, which got
