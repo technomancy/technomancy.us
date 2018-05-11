@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Anonymous Pro";
-  src: url("https://technomancy.us/anonymous-pro.ttf");
+  src: url("/anonymous-pro.ttf");
 }
 
 div#logo {
@@ -72,6 +72,10 @@ pre, pre span, tt, kbd {
 /* page-specific things */
 #resume h3 { margin-left: -1em; }
 #resume dt { font-style: italic; }
+#resume span.date {
+    color: #777;
+    font-size: 80%;
+}
 
 span.spoiler { background-color: black; color: black; }
 
