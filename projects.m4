@@ -169,6 +169,13 @@ include(header.html)
   <h4><a name="presentations">Presentations</a></h4>
   <dl>
     <!-- date, city &mdash; title -->
+    <dt>June 2018, Olympia, WA &mdash;
+      <a href="https://www.meetup.com/ssdevelopers/events/251014938/">Tales
+        from a Game Jam</a></dt>
+    <dd>A review of the creation
+      of <a href="https://technomancy.itch.io/exo-encounter-667">EXO_encounter
+        667</a> and competing in the the Lisp Game Jam with Fennel.</dd>
+
     <dt>November 2012, Raleigh, NC &mdash;
       <a href="https://www.youtube.com/watch?v=sBSUIKMdQ4w">The
       Continuing Adventures of Leiningen</a></dt>
@@ -178,7 +185,7 @@ include(header.html)
     <dt>March 2012, San Jose, CA &mdash;
       <a href='https://github.com/strangeloop/clojurewest2012-slides/blob/master/Hagelberg-SwarmCoding.org'>Swarm Coding</a></dt>
     <dd>A presentation given at Clojure/West 2012 on running group-coding
-      sessions geared towards exploration and learning.</dd>
+      user group sessions geared towards exploration and learning.</dd>
 
     <dt>September 2011, St. Louis, MO &mdash;
       <a href="http://p.hagelb.org/getting-cozy-with-emacs.org.html">Getting

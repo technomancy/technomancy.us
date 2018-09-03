@@ -1,9 +1,10 @@
 dnl -*- html -*-
+dnl (setq-local indent-line-function 'ignore)
 define(__title, `Books')dnl
 include(header.html)
 <div id='wrapper'>
 
-<h2>Want to read</h2>
+<!-- <h2>Want to read</h2>
 <ul>
 <li>The Ramayana, Indian epic</li>
 <li>The Soul of a New Machine by Tracy Kidder</li>
@@ -16,19 +17,22 @@ include(header.html)
 <li>Mason & Dixon by Thomas Pynchon</li>
 <li>The Wave in the Mind by Ursula K. Le Guin</li>
 <li>Shadow and Claw by Gene Wolfe</li>
-<li>Death's End by Cixin Liu</li>
-</ul>
+</ul> -->
 
 <h2>Currently reading</h2>
 <ul>
-<li>Gifts by Ursula K. Le Guin</li>
-<li>The Subversion of Christianity by Jacques Ellul</li>
-<li>The Pizza Book by Aaron Quint and Michael Bernstein</li>
+<li>Lavinia by Ursula Le Guin</li>
+<li>The Way of Chuang Tzu, translated by Thomas Merton</li>
 <li>Debt: the first 5000 years by David Graeber</li>
 </ul>
 
 <h2>Have read (chronologically since June 2003)</h2>
 <ul>
+<li>The Stars, my Destination by Alfred Bester</li>
+<li>Foundation by Isaac Asimov</li>
+<li>Death's End by Cixin Liu</li>
+<li>The Pizza Book by Aaron Quint and Michael Bernstein</li>
+<li>Gifts by Ursula K. Le Guin</li>
 <li>A Brief History of Time by Stephen Hawking</li>
 <li>Tao Te Ching by Lao Tzu, translated by Jonathan Star</li>
 <li>The Dark Forest by Cixin Liu</li>

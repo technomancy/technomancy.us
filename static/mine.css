@@ -72,6 +72,7 @@ pre, pre span, tt, kbd {
 /* page-specific things */
 #resume h3 { margin-left: -1em; }
 #resume dt { font-style: italic; }
+#resume li { margin-left: 1em; }
 #resume span.date {
     color: #777;
     font-size: 80%;

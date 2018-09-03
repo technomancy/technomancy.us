@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, 2018-05-1T02:11:41)dnl
+define(__timestamp, 2018-05-10T02:11:41)dnl
 define(__title, `in which interactive development saves the day')dnl
 define(__id, 189) define(__last) dnl
 include(header.html)
@@ -141,6 +141,12 @@ include(header.html)
   noteworthy for allowing this kind of thing to be done in a graceful
   way, so that's worth appreciating and hopefully learning from.</p>
 
+<p><strong>Update</strong>: Charl Botha wrote up a great
+  <a href="https://vxlabs.com/2018/05/18/interactive-programming-with-fennel-lua-lisp-emacs-and-lisp-game-jam-winner-exo_encounter-667">blog
+  post</a> that goes into more detail about setting up the live reload
+  functionality with Emacs.
+</p>
+
 <hr>
 <div class="footnotes">
 
@@ -170,3 +176,4 @@ include(header.html)
     are consistent with its recommendations despite Lua being an
     imperative language.</p>
 </div>
+include(footer.html)

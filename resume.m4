@@ -53,7 +53,6 @@ include(header.html)
         <a href='http://gnupg.org'>GPG</a>,
         <a href='https://github.com/technomancy/leiningen'>Leiningen</a>,
         <a href='http://www.debian.org/distrib/packages'>Debian packaging</a>,
-        <a href='http://nixos.org/nix'>Nix</a>,
         <a href='http://kicad-pcb.org'>KiCAD</a>,
         <a href='https://love2d.org'>LÖVE</a>, and more.</dd>
     </dl>
@@ -175,9 +174,6 @@ include(header.html)
       the Seattle Clojure group and led meetings from 2010-2014.</p>
 
     <p>Native English speaker, conversant in Indonesian/Malaysian. Beginner-level Thai.</p>
-
-    <p>Graduate of the <a href='http://www.biola.edu/academics/torrey'>Torrey
-      Honors Institute</a>.</p>
 
     <p><a href='http://www.biola.edu'>Bachelor of Science degree</a>
       in Computer Science, Magna Cum Laude.</p>
