@@ -12,17 +12,26 @@ include(header.html)
 
   <dl style="font-size: 125%">
     <dt>2009</dt>
-    <dd>Upgraded from a Thinkpad X61 tablet to a Thinkpad X200s;
-      running Ubuntu and GNOME 3.</dd>
+    <dd>Started working from home on an <a href="/i/codelab1.jpg">IKEA
+        Jerker</a> standing desk. Upgraded from
+      a <a href="https://www.thinkwiki.org/wiki/Category:X61_Tablet">Thinkpad
+        X61</a> tablet to
+      a <a href="https://www.thinkwiki.org/wiki/Category:X200s">Thinkpad
+        X200s</a>; running Ubuntu and GNOME 3.</dd>
 
     <dt>2010</dt>
     <dd>Started using a Nexus One mobile device. Posted
-      <a href="/137">a detailed overview</a> of what I use on my blog.</dd>
+      <a href="/137">a detailed overview</a> of what I use on my
+      blog. Started using
+      a <a href="https://www.alimed.com/kinesis-freestyle-solo-keyboard.html">Kinesis
+      Freestlye Solo keyboard</a>, which was nicer than the MS Natural
+      4000 keyboard I had before but was still a bit
+      unsatisfying.</dd>
 
     <dt>2011</dt>
     <dd>Switched from Ubuntu to Debian Stable, mostly out of
-      frustration that Ubuntu sinks a lot of resources into redundant
-      projects like Unity. Started
+      frustration that Ubuntu had been sinking a lot of resources into
+      redundant projects like Unity. Started
       using <a href="https://xmonad.org">XMonad</a> for tiling window
       management.</dd>
 
@@ -35,7 +44,8 @@ include(header.html)
         keyboard was so frustrating to use.</dd>
 
     <dt>2013</dt>
-    <dd>Built an Ergodox keyboard from a kit. Upgraded mobile to
+    <dd>Built an <a href="https://www.ergodox.io/">Ergodox
+      keyboard</a> from a kit. Upgraded mobile to the unremarkable
       Galaxy Nexus.</dd>
 
     <dt>2014</dt>
@@ -43,14 +53,23 @@ include(header.html)
       an <a href="https://atreus.technomancy.us">Atreus</a>
       keyboard; started using it nearly exclusively.</dd>
 
+    <dt>2015</dt>
+    <dd>Got
+        a <a href="https://www.crowdsupply.com/sutajio-kosagi/novena">Novena</a>
+        but didn't end up using it much over the Thinkpad. Had
+        a <a href="/i/codelab2.jpg">custom bamboo standing desk</a>
+        built for me.</dd>
+
     <dt>2016</dt>
     <dd>"Upgraded" mobile to Galaxy S5 which turned out to be mostly
-      disappointing. Started using XFCE. Upgraded Thinkpad to X301
-      which is slow but wonderful in every other regard. Got a
-      Thinkpad X260 for work, but hated it because of the
-      low-resolution, dim screen, so mostly ended up using it at the
-      desk with an external display or two. Stopped
-      using <tt>package.el</tt> for Emacs libraries; switched to
+      disappointing. Started using XFCE. Upgraded
+      to <a href="https://www.thinkwiki.org/wiki/Category:X301">Thinkpad
+      X301</a> which is slow but wonderful in every other regard. Got
+      a <a href="https://www.thinkwiki.org/wiki/Category:X260">Thinkpad
+      X260</a> for work, but hated it because of the low-resolution,
+      dim screen, so mostly ended up using it at the desk with an
+      external display or two. Stopped using <tt>package.el</tt> for
+      Emacs libraries; switched to
       using <a href="https://github.com/technomancy/dotfiles/tree/master/.emacs.d/lib">git
       subtree</a> for dependencies instead.</dd>
 
@@ -58,22 +77,28 @@ include(header.html)
     <dd>Stopped using <a href="https://conkeror.org">Conkeror</a> as
       my primary browser due to upstream support being discontinued;
       switched back to Firefox. Hated it due to lack of Emacs key
-      bindings but lacked any viable alternative. Used AwesomeWM briefly but
-      soon <a href="/184">switched to EXWM</a> to allow me to continue
-      using Firefox with Emacs key bindings. Bought
+      bindings but lacked any viable alternative. Used AwesomeWM
+      briefly but soon <a href="/184">switched to EXWM</a> to allow me
+      to continue using Firefox with Emacs key bindings. Bought
       a <a href="https://en.wikipedia.org/wiki/Chromebook_Pixel">Chromebook
       Pixel 1</a> because it has a great aspect ratio, but the
       glossiness of the screen was truly rage-inducing, so this lasted
-      only a couple weeks. Constructed a standing desk out of
-      galvanized iron pipe.</dd>
+      only a couple weeks. Constructed <a href="/i/codelab4.jpg">a
+      standing desk out of galvanized iron pipe</a>. Won a pair
+      of <a href="https://www.massdrop.com/buy/akg-k7xx-massdrop-first-edition-headphones">AKG
+        K7XX headphones</a> at a raffle at the Living Computer Museum
+      which turned out to have excellent sound and be very comfortable.</dd>
 
     <dt>2018</dt>
-    <dd>Upgraded mobile to Nexus 5 running LineageOS, which is
-      significantly better than the Galaxy S5, but only keeping the bare
-      minimum on it; it's used mostly for email
+    <dd>Upgraded mobile to Nexus 5
+      running <a href="https://lineageos.org/">LineageOS</a>, which is
+      significantly better than the Galaxy S5, but it's still mostly
+      used only for reading email
       and <a href="https://icosahedron.website/@technomancy">fediverse</a>.
       Got a pair of <a href="https://tomu.im/">Tomu</a> devices to use
-      for 2FA which work really well.
+      for 2FA which work really well. Built
+      an <a href="https://atreus.technomancy.us/deck">Atreus Deck</a>
+      mini-laptop.
     </dd>
   </dl>
 
@@ -92,7 +117,7 @@ include(header.html)
     an <a href="https://geoff.greer.fm/2017/07/16/thinkpad-x62/">X62</a>
     is the only option.</p>
 
-  <img src="/i/codelab3-desk.jpg" alt="desk with three displays" />
+  <img src="/i/codelab3-small.jpg" alt="desk with three displays" />
 
   <!--
   <h5>Computing history</h5>
