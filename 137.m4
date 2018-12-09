@@ -14,6 +14,9 @@ include(header.html)
   real <a href="http://phil.hagelberg.usesthis.com/">interview posted
     on usesthis.com</a> in 2012.</p>
 
+<p><b>Update</b>: I started keeping <a href="/gear">a changelog of my
+    gear</a>.</p>
+
 <h4>What hardware do you use?</h4>
 
 <p>I use a Thinkpad X200s primarily. It's hard to find a machine
