@@ -9,7 +9,6 @@ include(header.html)
 <li>The Ramayana, Indian epic</li>
 <li>The Soul of a New Machine by Tracy Kidder</li>
 <li>Crime and Punishment by Fyodor Dostoyevsky</li>
-<li>Fear and Trembling by Søren Kierkegaard</li>
 <li>The Futurological Congress by Stanisław Lem</li>
 <li>Catch 22 by Joseph Heller</li>
 <li>The Elements of Typographic Style by Robert Bringhurst</li>
@@ -17,17 +16,23 @@ include(header.html)
 <li>Mason & Dixon by Thomas Pynchon</li>
 <li>The Wave in the Mind by Ursula K. Le Guin</li>
 <li>Shadow and Claw by Gene Wolfe</li>
+<li>Meditations by Marcus Aurelius</li>
 </ul> -->
 
 <h2>Currently reading</h2>
 <ul>
-<li>Lavinia by Ursula Le Guin</li>
-<li>The Way of Chuang Tzu, translated by Thomas Merton</li>
-<li>Debt: the first 5000 years by David Graeber</li>
+  <li>The Dispossessed by Ursula K. Le Guin</li>
+  <li>The Cyberiad by Stanisław Lem</li>
+  <li>The Knowledge: How to rebuild Civilization in the Aftermath of a
+    Cataclysm by Lewis Dartnell</li>
 </ul>
 
 <h2>Have read (chronologically since June 2003)</h2>
 <ul>
+<li>The Last Hero by Terry Pratchett</li>
+<li>Neuromancer by William Gibson</li>
+<li>Lavinia by Ursula Le Guin</li>
+<li>The Way of Chuang Tzu, translated by Thomas Merton</li>
 <li>The Stars, my Destination by Alfred Bester</li>
 <li>Foundation by Isaac Asimov</li>
 <li>Death's End by Cixin Liu</li>

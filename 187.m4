@@ -40,7 +40,7 @@ include(header.html)
   Lua output and stays very close to Lua semantics, which means it's
   very easy to use tools and libraries from the Lua world. I can't
   speak to how it would hold up in a larger codebase (the game ended
-  up being only 663 lines of code), but I felt that for this project
+  up being only 667 lines of code), but I felt that for this project
   using Fennel with LÖVE and a couple helper libraries put me on
   nearly the perfect level of abstraction. I ran into one minor
   problem with Fennel where the line numbering of the output wasn't

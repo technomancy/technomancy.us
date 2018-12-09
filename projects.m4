@@ -24,7 +24,7 @@ include(header.html)
     <dd>A testing tool for Emacs Lisp libraries. Now part of Emacs.</dd>
 
     <dt><a href='https://github.com/bakpakin/Fennel'>Fennel</a> (Lua, Fennel)</dt>
-    <dd>A lisp compiler which targets Lua output.</dd>
+    <dd>A lisp programming language which runs on the Lua runtime.</dd>
 
     <dt><a href='https://github.com/whymirror/hpricot'>Hpricot</a> (Ruby)</dt>
     <dd>A delicious HTML parser.</dd>
@@ -127,7 +127,7 @@ include(header.html)
     <dd>A tool for building Android applications with
     Mirah. Maintainership has passed to Brendan Ribera and Alex Parrott.</dd>
 
-    <dt><a href="https://gitlab.com/technomancy/polywell">Polywell</a> (Lua)</dt>
+    <dt><a href="https://gitlab.com/technomancy/polywell">Polywell</a> (Fennel, Lua)</dt>
     <dd>A fully programmable text editor and repl environment for
       embedding in games.</dd>
 
