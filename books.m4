@@ -1,6 +1,7 @@
 dnl -*- html -*-
 dnl (setq-local indent-line-function 'ignore)
 define(__title, `Books')dnl
+define(__id, `books')dnl
 include(header.html)
 <div id='wrapper'>
 
@@ -21,14 +22,23 @@ include(header.html)
 
 <h2>Currently reading</h2>
 <ul>
-  <li>The Dispossessed by Ursula K. Le Guin</li>
-  <li>The Cyberiad by Stanisław Lem</li>
-  <li>The Knowledge: How to rebuild Civilization in the Aftermath of a
-    Cataclysm by Lewis Dartnell</li>
+  <li>The Color of Magic by Terry Pratchett</li>
+  <li>Reality is Broken by Jane McGonigal</li>
 </ul>
 
 <h2>Have read (chronologically since June 2003)</h2>
 <ul>
+<li>Spinning Silver by Naomi Novik</li>
+<li>City of Brass by S.A. Chakraborty</li>
+<li>Big and Small Computing by John Ohno</li>
+<li>Friends with Boys by Faith Erin Hicks</li>
+<li>The Divided Earth by Faith Erin Hicks</li>
+<li>The Stone Heart by Faith Erin Hicks</li>
+<li>The Nameless City by Faith Erin Hicks</li>
+<li>The Knowledge: How to rebuild Civilization in the Aftermath of a
+    Cataclysm by Lewis Dartnell</li>
+<li>The Dispossessed by Ursula K. Le Guin</li>
+<li>The Cyberiad by Stanisław Lem</li>
 <li>The Last Hero by Terry Pratchett</li>
 <li>Neuromancer by William Gibson</li>
 <li>Lavinia by Ursula Le Guin</li>

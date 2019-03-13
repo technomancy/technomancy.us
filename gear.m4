@@ -1,5 +1,6 @@
 dnl -*- html -*-
 define(__title, `Gear')dnl
+define(__id, `gear')dnl
 include(header.html)
 
 <div id='wrapper'>
@@ -96,7 +97,9 @@ include(header.html)
       used only for reading email
       and <a href="https://icosahedron.website/@technomancy">fediverse</a>.
       Got a pair of <a href="https://tomu.im/">Tomu</a> devices to use
-      for 2FA which work really well. Built
+      for 2FA which work really well. Got
+      a <a href="https://glowforge.com">Glowforge</a> laser cutter,
+      which is amazing. Built
       an <a href="https://atreus.technomancy.us/deck">Atreus Deck</a>
       mini-laptop.
     </dd>

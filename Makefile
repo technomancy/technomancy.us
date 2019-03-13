@@ -1,9 +1,10 @@
-LATEST=190
+LATEST=189
 SRC := $(wildcard *.m4 | grep -v feed.m4)
 OUTPUTS := $(patsubst %.m4,out/%.html,$(SRC))
 
 all: $(OUTPUTS) out/atom.xml out/style.css out/i
 
+out/index.html: Makefile $(LATEST).m4
 out/%.html: %.m4 header.html footer.html ; m4 -D__latest=$(LATEST) $< > $@
 out/atom.xml: feed.m4 ; m4 -D__latest=$(LATEST) $< > $@
 out/style.css: static/*.css ; cat $^ > $@

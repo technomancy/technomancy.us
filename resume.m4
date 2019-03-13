@@ -1,5 +1,6 @@
 dnl -*- html -*-
 define(__title, `R&eacute;sum&eacute;')dnl
+define(__id, `resume')dnl
 include(header.html)
 
 <div id='resume'>
@@ -106,7 +107,8 @@ include(header.html)
       </dd>
     </dl>
 
-    <!-- Suggested the new name "Jenkins" for the Hudson project. -->
+    <!-- Suggested the new name "Jenkins" for the Hudson project:
+         https://news.ycombinator.com/item?id=1954946 -->
 
     <p style='clear: both'><a href='/projects'>Details</a></p>
   </div>

@@ -1,5 +1,6 @@
 dnl -*- html -*-
 define(__title, `Colophon')dnl
+define(__id, `colophon')dnl
 include(header.html)
 
 <div id='wrapper'>
@@ -47,6 +48,9 @@ include(header.html)
     <li><a href="http://mostlylazy.com/2012/09/21/episode-8">Mostly Lazy podcast</a> (2012) by Chas Emerick</li>
     <li><a href="http://blog.fogus.me/2010/06/28/take-8-phil-hagelberg/">(take ...)</a> (2010) by Michael Fogus</li>
   </ul>
+
+  <p>I've given <a href="/talks">various talks and presentations</a>
+    over the years.</p>
 
   <p>Posts are typed using the Dvorak keyboard layout into Emacs on a
     <a href="http://www.thinkwiki.org/wiki/Category:X301">Thinkpad
