@@ -1,4 +1,4 @@
-upload: slides.pdf outline.html index.html links.txt
+upload: links.html outline.html index.html links.txt
 	rsync -r $^ technomancy.us:technomancy.us/public/talks/lisp-microcontroller/
 
 outline.html: outline.md; pandoc -o outline.html outline.md
