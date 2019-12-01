@@ -1,4 +1,4 @@
-LATEST=190
+LATEST=191
 SRC := $(wildcard *.m4 | grep -v feed.m4)
 OUTPUTS := $(patsubst %.m4,out/%.html,$(SRC))
 
