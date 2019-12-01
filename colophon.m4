@@ -29,7 +29,7 @@ include(header.html)
     and <tt>#clojure</tt> channels. I also post my shorter thoughts
     to <a href="https://icosahedron.website/@technomancy">my Mastodon
     account</a> on
-    the <a href="https://en.wikipedia.org/wiki/Fediverse">Fediverse</a>.</p>
+    the <a rel="me" href="https://en.wikipedia.org/wiki/Fediverse">Fediverse</a>.</p>
 
   <p>If you wish to comment on a post or otherwise contact me, feel
     free to email me using my given name at this domain. Insightful

@@ -32,7 +32,8 @@ include(header.html)
     <dt>2011</dt>
     <dd>Switched from Ubuntu to Debian Stable, mostly out of
       frustration that Ubuntu had been sinking a lot of resources into
-      redundant projects like Unity. Started
+      redundant projects like Unity and betraying user trust by
+      integrating Amazon services into the desktop. Started
       using <a href="https://xmonad.org">XMonad</a> for tiling window
       management.</dd>
 

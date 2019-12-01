@@ -54,6 +54,9 @@ include(header.html)
       Emacs. I maintained this for a time before it was merged into
       Emacs 24.</dd>
 
+    <dt><a href='https://pleroma.social'>Pleroma</a> (Elixir)</dt>
+    <dd>A social networking server for the Fediverse.</dd>
+
     <dt><a href='https://github.com/quil/quil'>Quil</a> (Clojure)</dt>
     <dd>A graphics library for artistic exploration.</dd>
 
@@ -117,10 +120,6 @@ include(header.html)
     the <a href="https://itch.io/jam/lisp-game-jam-2018/results">Lisp Game Jam
         Spring 2018</a>.</dd>
 
-    <dt><a href='https://github.com/technomancy/mire'>Mire</a> (Clojure)</dt>
-    <dd>A multiplayer text adventure engine. Used as a sample program
-      for the PeepCode screencast on Clojure.</dd>
-
     <dt><a href='https://github.com/technomancy/orestes'>Orestes</a> (Forth, C)</dt>
     <dd>A Forth implementation for microcontrollers.</dd>
 
@@ -132,7 +131,7 @@ include(header.html)
     <dd>A fully programmable text editor and repl environment for
       embedding in games.</dd>
 
-    <dt><a href="https://github.com/technomancy/orb">Orb</a> (Lua)</dt>
+    <dt><a href="https://github.com/technomancy/orb">Orb</a> (Lua)</TD>
     <dd>A mock-unix operating system.</dd>
 
     <dt><a href="https://github.com/technomancy/prometheus">Prometheus</a> (Erlang) </dt>
@@ -158,6 +157,11 @@ include(header.html)
     <dd>Manages disposable EC2 nodes for collaborating on GitHub
       projects via ssh and tmux. Maintainership has passed to Chris
       Bilson.</dd>
+
+    <dt><a href="https://technomancy.itch.io/this-is-my-mech">This is my Mech</a>, with Emma Bukacek (Fennel)</dt>
+    <dd>A short game about a group of mech pilots working
+      together. <a href="https://itch.io/jam/lisp-game-jam-2019/results">Winner
+      of the 2019 Lisp Game Jam</a>.</dd>
 
     <dt>Miscellaneous Emacs Libraries</dt>
     <dd><a href='http://www.emacswiki.org/cgi-bin/wiki/FindFileInProject'>find-file-in-project</a>,
@@ -194,7 +198,10 @@ include(header.html)
 
     <dt><a href='https://github.com/technomancy/erythrina'>Erythrina</a> (OCaml)</dt>
     <dd>A desktop program for choosing among a list of options in a
-      composable manner. New features in dmenu 4.5 obsolete this program.</dd>
+      composable manner. New features in dmenu 4.5 obsolete this
+      program, but I
+      recommend <a href="https://github.com/davatorium/rofi">rofi</a>
+      instead.</dd>
 
     <dt><a href='http://augment.rubyforge.org'>Augment</a> (Ruby)</dt>
     <dd>A framework for gathering metadata from code and displaying

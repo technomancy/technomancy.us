@@ -22,6 +22,7 @@ include(header.html)
         <a href='http://erlang.org'>Erlang</a>,
         <a href='http://racket-lang.org'>Racket</a>,
         <a href='http://caml.inria.fr/'>OCaml</a>,
+        <a href='https://elixir-lang.org'>Elixir</a>,
         <a href='https://github.com/technomancy/orestes'>Forth</a>,
         <a href='http://www.mirah.org'>Mirah</a>, and
         <a href='http://bus-scheme.rubyforge.org'>Scheme</a>.
@@ -35,8 +36,8 @@ include(header.html)
              2007 - Javascript
              2008 - Scheme
              2009 - Clojure, Processing
-             2010 - Duby
-             2011 - Mirah, OCaml
+             2010 - Duby/Mirah
+             2011 - OCaml
              2012 - Nix, Scratch
              2013 - Racket, OCaml
              2014 - Erlang, Forth, C
@@ -44,7 +45,8 @@ include(header.html)
              2016 - l2l Lisp
              2017 - smolforth
              2018 - m4, Fennel
-             ???? - Factor, Datalog, Logo, Elixir, J, Self, Haskell, Julia
+             2019 - Elixir
+             ???? - Factor, Datalog, Logo, J, Self, Haskell, Julia
           -->
       </dd>
 
@@ -66,12 +68,13 @@ include(header.html)
       <dt>Contributed to:</dt>
       <dd>
         <a href='http://gnu.org/software/emacs'>GNU Emacs</a>,
+        <a href='https://fennel-lang.org'>Fennel</a>,
         <a href='http://clojure.org'>Clojure</a>,
         <a href='http://ruby-lang.org'>Ruby</a>,
         <a href='http://rubini.us'>Rubinius</a>,
         <a href='http://jruby.org'>JRuby</a>,
         <a href='http://rubyonrails.org'>Rails</a>,
-        <a href='http://conkeror.org'>Conkeror</a>,
+        <a href='https://pleroma.social'>Pleroma</a>,
         <a href='http://rubyforge.org/projects/rubygems'>RubyGems</a>,
         <a href='http://rubyforge.org/projects/rack'>Rack</a>,
         <a href='http://sonic-pi.org'>Sonic Pi</a>,

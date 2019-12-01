@@ -22,19 +22,33 @@ include(header.html)
 
 <h2>Currently reading</h2>
 <ul>
-  <li>The Color of Magic by Terry Pratchett</li>
-  <li>Reality is Broken by Jane McGonigal</li>
+  <li>What is the name of this Book by Raymond Smullyan</li>
+  <li>People's History of the United States by Howard Zinn</li>
 </ul>
 
 <h2>Have read (chronologically since June 2003)</h2>
 <ul>
+<li>Long Way to a Small, Angry Planet by Becky Chambers</li>
+<li>Testaments by Margaret Atwood</li>
+<li>Walkaway by Cory Doctorow</li>
+<li>City of Illusions by Ursula K. Le Guin</li>
+<li>Secret History of the American Empire by John Perkins</li>
+<li>The Tao of Pooh by Benjamin Hoff</li>
+<li>Leaving the Fold by Marlene Winell</li>
+<li>Astrophysics for People in a Hurry by Neil Degrasse Tyson</li>
+<li>Hopscotch by Julio Cortázar</li>
+<li>Stories of Your Life and Others Ted Chiang</li>
+<li>Labyrinths by Jorge Luis Borges</li>
+<li>Planet of Exile by Ursula K. Le Guin</li>
+<li>Kingdom of Copper by S.A. Chakraborty</li>
+<li>The Color of Magic by Terry Pratchett</li>
 <li>Spinning Silver by Naomi Novik</li>
 <li>City of Brass by S.A. Chakraborty</li>
 <li>Big and Small Computing by John Ohno</li>
 <li>Friends with Boys by Faith Erin Hicks</li>
 <li>The Divided Earth by Faith Erin Hicks</li>
 <li>The Stone Heart by Faith Erin Hicks</li>
-<li>The Nameless City by Faith Erin Hicks</li>
+<li>The Nameless City by Faith Erin Hicks</li> <!-- 2019 -->
 <li>The Knowledge: How to rebuild Civilization in the Aftermath of a
     Cataclysm by Lewis Dartnell</li>
 <li>The Dispossessed by Ursula K. Le Guin</li>
@@ -55,7 +69,7 @@ include(header.html)
 <li>Jesus, Interrupted by Bart Erhman</li>
 <li>The Three Body Problem by Cixin Liu</li>
 <li>The Restaurant at the End of the Universe by Douglas Adams</li>
-<li>The God of Small Things by Arundhati Roy</li>
+<li>The God of Small Things by Arundhati Roy</li> <!-- 2018 -->
 <li>Tao Te Ching by Lau Tzu, translated by Ursula K. Le Guin</li>
 <li>The Hitchhiker's Guide to the Galaxy by Douglas Adams</li>
 <li>The Other Wind by Ursula K. Le Guin</li>
@@ -74,7 +88,7 @@ include(header.html)
 <li>The Martian by Andy Weir</li>
 <li>The Wind's Twelve Quarters by Ursula K. Le Guin</li>
 <li>Strong and Weak by Andy Crouch</li>
-<li>Squirrel Girl #1-4 by Ryan North and Erica Henderson</li>
+<li>Squirrel Girl #1-4 by Ryan North and Erica Henderson</li> <!-- 2017 -->
 <li>Did God Kill Jesus by Tony Young</li>
 <li>The Tombs of Atuan by Ursula K. Le Guin</li>
 <li>The Princess Bride by William Goldman</li>
@@ -89,7 +103,7 @@ include(header.html)
 <li>Raven's Ladder by Jeffrey Overstreet</li>
 <li>Cyndere's Midnight by Jeffrey Overstreet</li>
 <li>Auralia's Colors by Jeffrey Overstreet</li>
-<li>With by Skye Jethani</li>
+<li>With by Skye Jethani</li> <!-- 2016 -->
 <li>Surely You're Joking, Mr. Feynman by Richard Feynman</li>
 <li>The Subversion of Christianity by Jacques Ellul</li>
 <li><a href="https://store.kobobooks.com/en-us/ebook/constellation-games">Constellation Games</a> by Leonard Richardson</li>
@@ -104,7 +118,7 @@ include(header.html)
 <li>Rediscovering Christianity by Vincent Donovan</li>
 <li>Ventus by Karl Schroder</li>
 <li>Hard Boiled Wonderland and the End of the World by Haruki Murakami</li>
-<li>The Other Wind by Ursula LeGuin</li>
+<li>The Other Wind by Ursula LeGuin</li> <!-- 2015 -->
 <li><a href="https://www.kickstarter.com/projects/weiner/augie-and-the-green-knight-a-childrens-adventure-b">Augie and the Green Knight</a> by Zach Wiener</li>
 <li>Culture Shock: Thailand by Robert and Nanthapa Cooper</li>
 <li>A Path Appears by Nicholas Kristoff and Sheryl WuDunn</li>
@@ -415,7 +429,7 @@ include(header.html)
 <li>The Lion, the Witch, and the Wardrobe by C.S. Lewis</li>
 <li>The Magician's Nephew by C.S. Lewis</li>
 <li>Julius Caesar by William Shakespeare</li>
-<li>The Man who was Thursday by G.K. Chesterton </li>
+<li>The Man who was Thursday by G.K. Chesterton </li> <!-- 2002 -->
 </ul>
 </div>
 include(footer.html)
