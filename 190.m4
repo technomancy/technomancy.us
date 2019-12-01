@@ -1,7 +1,7 @@
 dnl -*- html -*-
-define(__timestamp, 2019-05-07T19:52:41)dnl
+define(__timestamp, 2019-05-08T02:52:41Z)dnl
 define(__title, `in which another game is jammed')dnl
-define(__id, 190) define(__last) dnl
+define(__id, 190) dnl
 include(header.html)
 
 <p>All the <a href="https://technomancy.itch.io/bussard">games</a>

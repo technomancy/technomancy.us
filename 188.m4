@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, 2018-05-05T17:05:03)dnl
+define(__timestamp, 2018-05-06T02:05:03Z)dnl
 define(__title, `in which a game jam is recounted further')dnl
 define(__id, 188) dnl
 include(header.html)

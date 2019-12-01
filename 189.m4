@@ -1,5 +1,5 @@
 dnl -*- html -*-
-define(__timestamp, 2018-05-10T02:11:41)dnl
+define(__timestamp, 2018-05-10T02:11:41Z)dnl
 define(__title, `in which interactive development saves the day')dnl
 define(__id, 189) define(__last) dnl
 include(header.html)
