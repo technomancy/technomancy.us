@@ -6,10 +6,29 @@ include(header.html)
 <div id="wrapper">
   <dl>
     <!-- date, city &mdash; title -->
+    <dt>July 2019, <a href="https://con.racket-lang.org/2019">Racket
+        Con</a>, Salt Lake City, Utah &mdash;
+      <a href="/talks/in-production">In Production: Creating Physical
+        Objects with Racket</a>
+      [<a href="https://www.youtube.com/watch?v=xSjk2PdQm5k&t=95m20s">video</a>
+        (starts at 1:35:00)]</dt>
+    <dd>A talk about using Racket to produce physical objects
+      including circuit boards, laser-cut enclosures, and
+      microcontroller firmware.</dd>
+
+    <dt>June 2019, <a href="https://buzzconf.org">BuzzConf</a> Buenos
+      Aires, Argentina &mdash;
+      <a href="/talks/lisp-microcontroller">Lisp on a Microcontroller</a>
+      [<a href="/talks/buzzconf-2019.mkv">video</a>]</dt>
+    <dd>A talk about using Fennel on the ESP32 device to avoid common
+      pitfalls of "smart" devices and empower end users.</dd>
+
     <dt>March 2019, <a href="https://conf.fennel-lang.org/2019">Fennel Conf</a>
       Portland, OR &mdash;
-      Interactive Development in 80kb of RAM</dt>
-    <dd>Coming soon.</dd>
+      <a href="/talks/fennel-nodemcu">Interactive Development in 80kb of RAM</a>
+      [<a href="https://conf.fennel-lang.org/v/fennelconf-2019-hagelberg.mp4">video</a>]
+    </dt>
+    <dd>A talk covering the use of Fennel on cheap nodemcu ESP8266 microcontrollers.</dd>
 
     <dt>June 2018, <a href="https://ssdug.org">South Sound Developer Group</a>,
       Olympia, WA &mdash;
@@ -21,14 +40,14 @@ include(header.html)
 
     <dt>November 2012, <a href="http://2012.clojure-conj.org/">Clojure Conj</a>
       Raleigh, NC &mdash;
-      <a href="https://www.youtube.com/watch?v=sBSUIKMdQ4w">The
-      Continuing Adventures of Leiningen</a></dt>
+      The Continuing Adventures of Leiningen
+      [<a href="/talks/conj-lein2.mkv">video</a>]</dt>
     <dd>A presentation given at Clojure Conj 2012 under the influence
       of a severe flu about the development and features of Leiningen 2.</dd>
 
     <dt>March 2012, <a href="http://clojurewest.org/">Clojure/West</a>
       San Jose, CA &mdash;
-      <a href='https://github.com/strangeloop/clojurewest2012-slides/blob/master/Hagelberg-SwarmCoding.org'>Swarm Coding</a></dt>
+      Swarm Coding [<a href="/talks/swarm-coding.mp4">video</a>]</dt>
     <dd>A presentation given on running group-coding
       user group sessions geared towards exploration and learning.</dd>
 
@@ -40,7 +59,8 @@ include(header.html)
 
     <dt>November 2010, <a href="http://clojure-conj.org/">Clojure Conj</a>,
       Raleigh, NC &mdash;
-      <a href="http://clojure.blip.tv/file/4715293/">Making Leiningen work for You</a></dt>
+      Making Leiningen work for You
+      [<a href="/talks/conj-lein.mov">video</a>]</dt>
     <dd>A presentation at the first Clojure Conj on Leiningen, the
       project automation tool.</dd>
 
@@ -61,7 +81,7 @@ include(header.html)
 
     <dt>November 2007, <a href="http://rubyconf.org/">RubyConf</a>,
       Charlotte, NC &mdash;
-      <a href='/93'>Tightening the Feedback Loop</a> [<a href="/misc/feedback_loop.avi">video</a>]</dt>
+      <a href='/93'>Tightening the Feedback Loop</a> [<a href="/talks/feedback_loop.avi">video</a>]</dt>
     <dd>A presentation given on measuring and improving programming habits.</dd>
   </dl>
 </div>
