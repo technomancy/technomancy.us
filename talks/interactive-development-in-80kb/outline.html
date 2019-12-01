@@ -1,0 +1,211 @@
+<h1 id="lisp-on-nodemcu-talk-outline">Lisp on NodeMCU talk outline</h1>
+<h2 id="intro">Intro</h2>
+<ul>
+<li>Going to be speaking about these lil devices and how they make uc dev much more pleasant.</li>
+<li>Microcontrollers are everywhere!</li>
+<li>historically 2 approaches: Arduino and Raspberry Pi (broadly speaking)</li>
+<li>Arduinos:</li>
+<li>simple (no OS)</li>
+<li>basically only runs C or C++ (not strictly true but close enough)</li>
+<li>low specs (single-digit kb of ram is typical, single-digit MHz CPUs)</li>
+<li>difficult networking</li>
+<li>lots of pins</li>
+<li>Raspberry Pi</li>
+<li>powerful (GB of RAM, GHz CPU)</li>
+<li>runs any linux software</li>
+<li>super complex OS</li>
+<li>wifi/ethernet is easy</li>
+<li>usually overkill</li>
+<li><p>historically expensive, Pi Zero changes that</p></li>
+<li>Arduino: you can understand everything that's happening on your device</li>
+<li>but it can't be online</li>
+<li>Pi you can go online and do basically anything</li>
+<li><p>at the expense of comprehensibility</p></li>
+<li><p>What if you could have something in between?</p></li>
+</ul>
+<h2 id="esp8266">ESP8266</h2>
+<ul>
+<li>main feature is wifi</li>
+<li>originally designed to add wifi to a board like Arduino over UART</li>
+<li>Hayes AT command set</li>
+<li>basically no english documentation?</li>
+<li>astonishingly cheap</li>
+<li>english speaking community discovered it was a general-purpose CPU</li>
+</ul>
+<h3 id="specs">Specs</h3>
+<p>Point out the difference between the module and the dev board</p>
+<ul>
+<li>32-bit 80MHz RISC Xtensa chip</li>
+<li>80kb user RAM</li>
+<li>SPI, I2C, UART</li>
+<li>Varying amounts of flash storage; usually at least 4MB</li>
+<li>around $1 for the module</li>
+<li>cannot be programmed by a conventional PC</li>
+</ul>
+<h3 id="dev-boards">dev boards</h3>
+<ul>
+<li>dev board mounts the module into a breadboard-friendly form factor</li>
+<li>16 gpio pins</li>
+<li>USB micro</li>
+<li>reset button</li>
+<li>there are actually several of these, some of them don't even have USB</li>
+<li>when you plug it in, you get a lua repl over the &quot;serial port&quot; (actually USB)</li>
+</ul>
+<h3 id="lua">Lua</h3>
+<ul>
+<li>so you've got all that flash and more ram than most arduinos</li>
+<li>you could just port the arduino toolchain to it, and that's been done</li>
+<li>but with that much memory, you can do a lot better!</li>
+<li><p>80kb isn't enough to run most programming languages, but it can run Lua!</p></li>
+<li>famously small, embeddable language</li>
+<li>reference implementation (VM, compiler, repl, standard library) is 180kb</li>
+<li>oh, and it's fast</li>
+<li>relentlessly simple semantics</li>
+<li>if you know any other imperative lang w closures you can learn in an afternoon</li>
+<li>the hardest part is unlearning your OOP habits</li>
+<li>very small standard library</li>
+<li>filesystem functions have no concept of directories</li>
+<li>sounds crazy but it's actually OK because neither does C99 or the esp8266!</li>
+<li>&quot;embeddable&quot; has two meanings</li>
+<li>usually means &quot;embedded in a larger C program&quot;</li>
+<li><p>but here it means &quot;runs in very limited resources&quot;</p></li>
+</ul>
+<h3 id="least-favorite-things-about-lua">least-favorite things about Lua</h3>
+<p>Lua has a few small annoyances; most of these have workarounds:</p>
+<ul>
+<li>easy to accidentally set a global</li>
+<li>easy to accidentally attempt to read a global</li>
+<li>easy to call a function with the wrong number of arguments</li>
+<li>statements vs expressions</li>
+</ul>
+<h2 id="fennel">Fennel</h2>
+<ul>
+<li>So Lua is a very nice language. it's simple and well-understood.</li>
+<li>it's small, so its flaws are small too.</li>
+<li>but ... I like lisps!</li>
+<li>no statement/expression distinction</li>
+<li>if expression, not and/or chain</li>
+<li>predictable, regular syntax (code is data)</li>
+<li>macro system</li>
+<li><p>no accidental globals</p></li>
+<li>what is the cost of a compiler?</li>
+<li>depends on the semantic distance between the two languages</li>
+<li>with no semantic distance, the mental overhead is negligible</li>
+<li><p>change syntax all you want!</p></li>
+<li>also has these bonuses</li>
+<li>pattern matching/destructuring</li>
+<li>clearer difference between sequential vs k/v tables</li>
+<li>lua uses curly brackets for all</li>
+<li>fennel looks more like json with square brackets for sequential</li>
+<li>locals default to immutability</li>
+<li><p>optional arity checks</p></li>
+</ul>
+<h2 id="interactive-development">interactive development!</h2>
+<ul>
+<li>so why is the repl such a big deal?</li>
+<li>traditional microcontroller development has <em>miserable</em> feedback loops</li>
+<li>edit, recompile, upload, run, stare at it</li>
+<li>often with arduinos, your only hint as to the state of the chip is LEDs</li>
+<li>deciphering different patterns of blinking</li>
+<li>the tighter your feedback loop, the faster you can fix problems</li>
+<li>achieve a state of flow</li>
+<li>not only can you tell what's going on, you can call functions directly</li>
+<li>or redefine functions without restarting</li>
+<li>on a non-networked chip, this isn't too bad; there's very little state</li>
+<li>how much state can you fit in 2.5kb anyway?</li>
+<li>restart, re-establish your state, easy</li>
+<li>throw networking in and it gets more complicated; lots of state!</li>
+<li>you can change code <em>without</em> closing a socket</li>
+<li>gold standard here is Erlang</li>
+<li>hello, mike. hello, joe.</li>
+</ul>
+<h2 id="nodemcu">nodemcu</h2>
+<ul>
+<li>one firmware option available for esp8266</li>
+<li>a port of Lua to this platform</li>
+<li>plus APIs exposing the available hardware</li>
+<li>without getting TOO philosophical, is this an operating system?</li>
+<li>based on eLua, a fork of 5.1 optimized for limited resources</li>
+<li>nodemcu itself typically consumes 35kb (early versions it was 65kb!)</li>
+</ul>
+<h3 id="differences-from-standard-lua">differences from standard lua</h3>
+<ul>
+<li>certain modules are omitted: io, os, debug, math (yes math)</li>
+<li>other HW-specific things added in: tmr, wifi, net, i2c, etc</li>
+<li>plus some higher-level things: mdns, http (client and server), mqtt, sjson</li>
+<li>built-in modules are read-only tables so they can be stored in flash, not RAM</li>
+<li>no execution can take over 15 ms, or your wifi connection can be interrupted</li>
+<li>errors or exhausting memory typically results in reboot</li>
+<li>callbacks, callbacks everywhere</li>
+</ul>
+<h3 id="tasks">tasks</h3>
+<ul>
+<li>all lua execution happens inside a task</li>
+<li>tasks get queued up with three different priority orders</li>
+<li>high priority: hardware stuff (typically not your code)</li>
+<li>medium priority: timer/event/io</li>
+<li>low priority: everything else</li>
+<li>coroutine resuming cannot cross task boundaries?</li>
+</ul>
+<h3 id="onboard-compiler">onboard compiler</h3>
+<ul>
+<li>attempted to load the compiler onto the device</li>
+<li>failed to load; too many locals (50 limit vs 200)</li>
+<li>can bump the limit when compiling by hand</li>
+<li>got the compiler uploaded but ran out of RAM when loading it</li>
+<li>stripped out all the macro features, it loaded but left under 20kb free</li>
+</ul>
+<h3 id="takver-repl">takver repl</h3>
+<ul>
+<li>two operational modes of fennel: immediate vs aot</li>
+<li>when you're not developing, you do aot compilation and ship the compiled output</li>
+<li>when you're in development, you've always got a Real Computer at hand</li>
+<li>run the compiler on the PC, evaluate it on the device</li>
+<li>requires a change to the Fennel compiler (allow evaluation to be overridden)</li>
+</ul>
+<h3 id="micropeng-case-study">micropeng: case study</h3>
+<ul>
+<li>an IRC bot</li>
+<li>IRC is a lovely simple protocol</li>
+<li>raw sockets, plain text</li>
+<li>IRC library is 58 lines</li>
+<li>coding against both luasocket (for the PC) and the nodemcu net module</li>
+<li>the eval command is gone, but the gpio command is new</li>
+<li>possible expansions:</li>
+<li>sense when a door is opened/closed</li>
+<li>heat regulator</li>
+</ul>
+<h2 id="vs-traditional-iot">vs traditional IOT</h2>
+<ul>
+<li>mainstream IOT means &quot;tiny device on your network, the rest in our data center&quot;</li>
+<li>even if you own the device it doesn't mean anything; it's useless on its own</li>
+<li>importance of owning your own data</li>
+<li>subscription model is great for companies</li>
+<li>but leaves you with a useless brick when your subscription ends</li>
+<li>whether you ended it by choice or not</li>
+<li>unfortunately NAT ruins everything</li>
+</ul>
+<h3 id="building">Building</h3>
+<ul>
+<li>Because storage space is extremely limited, not all modules can be included</li>
+<li>adding modules costs flash AND ram space, so don't do it unless needed</li>
+<li>you can omit floating point to save ram</li>
+<li>cloud builder lets you avoid installing the toolchain locally</li>
+<li>(but the toolchain isn't really that bad)</li>
+<li>flashing requires a program called esptool</li>
+<li><p>but you don't need to flash unless you're changing the modules</p></li>
+<li>save memory with LSF</li>
+<li>remember what I said about read-only tables in flash?</li>
+<li>you can do that for your own code too!</li>
+<li><p>only do it once you've worked the bugs out of a given module</p></li>
+</ul>
+<h2 id="demo-time">DEMO TIME</h2>
+<ul>
+<li>M-x serial-term /dev/TTYUSB0</li>
+<li>takver repl</li>
+<li>connect to the wifi</li>
+<li>init.lua shim waits for wifi to connect</li>
+<li>beware the reboot loop</li>
+<li>you're also going to want mdns in most cases</li>
+<li>pick a unique name</li>
+</ul>

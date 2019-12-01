@@ -1,0 +1,12 @@
+* https://technomancy.us/talks/fennel-nodemcu
+* https://www.arduino.cc/
+* https://www.raspberrypi.org/
+* http://esp8266.net/
+* https://wiki.wemos.cc/products:d1:d1_mini
+* https://www.lua.org/
+* https://fennel-lang.org/
+* https://nodemcu.readthedocs.io/en/master/
+* https://nodemcu-build.com/
+* https://git.sr.ht/~technomancy/takver
+* https://git.sr.ht/~technomancy/pengbot
+* https://p.hagelb.org/hello-joe.gif
