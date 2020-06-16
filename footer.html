@@ -1,8 +1,8 @@
 ifdef(`__feed', `</content></entry>',
 ` ifdef(`__timestamp', `<p class="timestamp">
-  ifdef(`__first',,`<a href="/decr(__id)">&laquo; older</a> |')
+  ifelse(__id,1,,`<a href="/decr(__id)">&laquo; older</a> |')
   <a href="/__id">__timestamp</a>
-  ifdef(`__last',,`| <a href="/incr(__id)">newer &raquo;</a></p>')')
+  ifelse(__id,__latest,,`| <a href="/incr(__id)">newer &raquo;</a></p>')')
     <p id="khomut">๛</p>
 
     <div id="footer" class="row">
