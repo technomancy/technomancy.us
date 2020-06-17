@@ -17,17 +17,31 @@ include(header.html)
 <li>Mason & Dixon by Thomas Pynchon</li>
 <li>The Wave in the Mind by Ursula K. Le Guin</li>
 <li>Shadow and Claw by Gene Wolfe</li>
+<li>Parable of the Talents by Octavia E. Butler</li>
 <li>Meditations by Marcus Aurelius</li>
+some Delany
 </ul> -->
 
 <h2>Currently reading</h2>
 <ul>
+  <li>Guards, Guards by Terry Pratchett</li>
+  <li>The End of Policing by Alex S. Vitale</li>
+  <li>Radicalized by Cory Doctorow</li>
+  <li>The Te of Piglet by Benjamin Hoff</li>
   <li>What is the name of this Book by Raymond Smullyan</li>
-  <li>People's History of the United States by Howard Zinn</li>
 </ul>
 
 <h2>Have read (chronologically since June 2003)</h2>
 <ul>
+<li>Until the End of Time by Brian Greene</li>
+<li>The Left Hand of Darkness by Ursula K. Le Guin</li>
+<li>People's History of the United States by Howard Zinn</li>
+<li>Be Prepared by Vera Brosgol</li>
+<li>A Closed and Common Orbit by Becky Chambers</li>
+<li>Craft Coffee by Jessica Easto</li>
+<li>The Communist Manifesto by Karl Marx and Frederick Engels</li>
+<li>How Rory Thorne destroyed the Multiverse by K Eason</li>
+<li>Parable of the Sower by Octavia E. Butler</li>
 <li>Long Way to a Small, Angry Planet by Becky Chambers</li>
 <li>Testaments by Margaret Atwood</li>
 <li>Walkaway by Cory Doctorow</li>

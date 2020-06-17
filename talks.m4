@@ -6,6 +6,12 @@ include(header.html)
 <div id="wrapper">
   <dl>
     <!-- date, city &mdash; title -->
+    <dt>January 2020, Olympia, WA &mdash;
+      <a href="/talks/fediverse">What is the Fediverse?</a></dt>
+    <dd>A talk about how the Fediverse builds a decentralized system
+      in which you can own your own data free from the control of
+      abusive tech companies.</dd>
+
     <dt>July 2019, <a href="https://con.racket-lang.org/2019">Racket
         Con</a>, Salt Lake City, Utah &mdash;
       <a href="/talks/in-production">In Production: Creating Physical

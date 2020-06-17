@@ -98,15 +98,14 @@ include(header.html)
     <dt><a href='http://atreus.technomancy.us'>Atreus</a> (C, Racket, KiCAD)</dt>
     <dd>An open-source hardware, ergonomic mechanical travel keyboard design and firmware.</dd>
 
-    <dt><a href='http://bus-scheme.rubyforge.org'>Bus Scheme</a> (Ruby)</dt>
-    <dd>A Scheme interpreter written in Ruby, but implemented on the bus! I
-      <a href='http://technomancy.us/116'>spoke briefly about this</a> at RubyConf 08.</dd>
-
     <dt><a href="https://technomancy.itch.io/bussard">Bussard</a> (Lua)</dt>
     <dd>A space flight simulation adventure with a programmable ship and stations.</dd>
 
     <dt><a href='https://gitlab.com/technomancy/cardinality'>Cardinality</a> (Lua)</dt>
     <dd>A game authoring environment inspired by Hypercard and Scratch.</dd>
+
+    <dt><a href="https://github.com/noisesmith/energize">Energize!</a> (Fennel)</dt>
+    <dd>A game where you play as the transporter room operator.</dd>
 
     <dt><a href="https://github.com/technomancy/grenchman">Grenchman</a> (OCaml)</dt>
     <dd>Fast-launching CLI client for running Clojure code over nREPL.</dd>
@@ -122,10 +121,6 @@ include(header.html)
 
     <dt><a href='https://github.com/technomancy/orestes'>Orestes</a> (Forth, C)</dt>
     <dd>A Forth implementation for microcontrollers.</dd>
-
-    <dt><a href='https://github.com/mirah/pindah'>Pindah</a> (Mirah)</dt>
-    <dd>A tool for building Android applications with
-    Mirah. Maintainership has passed to Brendan Ribera and Alex Parrott.</dd>
 
     <dt><a href="https://gitlab.com/technomancy/polywell">Polywell</a> (Fennel, Lua)</dt>
     <dd>A fully programmable text editor and repl environment for
@@ -163,6 +158,11 @@ include(header.html)
       together. <a href="https://itch.io/jam/lisp-game-jam-2019/results">Winner
       of the 2019 Lisp Game Jam</a>.</dd>
 
+    <dt><a href="https://technomancy.itch.io/tremendous-quest-iv">Tremendous
+        Quest IV</a>, with <a href="https://benaiah.me/">Benaiah
+        Mischenko</a> (Fennel)</dt>
+    <dd>A short game about working in the QA department of an MMORPG.</dd>
+
     <dt>Miscellaneous Emacs Libraries</dt>
     <dd><a href='http://www.emacswiki.org/cgi-bin/wiki/FindFileInProject'>find-file-in-project</a>,
       <a href='http://www.emacswiki.org/cgi-bin/wiki/IdleHighlight'>idle-highlight-mode</a>,
@@ -173,6 +173,10 @@ include(header.html)
 
   <h4><a name="deprecated">Deprecated</a></h4>
   <dl>
+    <dt><a href='http://bus-scheme.rubyforge.org'>Bus Scheme</a> (Ruby)</dt>
+    <dd>A Scheme interpreter written in Ruby, but implemented on the bus! I
+      <a href='http://technomancy.us/116'>spoke briefly about this</a> at RubyConf 08.</dd>
+
     <dt><a href='http://conkeror.org'>Conkeror</a> (Javascript)</dt>
     <dd>A no-compromises, keyboard-driven, extensible web
       browser. Incompatible with newer versions of the Mozilla runtime.</dd>
@@ -224,6 +228,10 @@ include(header.html)
     <dt><a href='/59'>ElUnit</a> (ELisp)</dt>
     <dd>A testing framework for Emacs Lisp. Deprecated in favor
     of <a href='http://www.emacswiki.org/cgi-bin/wiki/ErtTestLibrary'>ERT</a>.</dd>
+
+    <dt><a href='https://github.com/mirah/pindah'>Pindah</a> (Mirah)</dt>
+    <dd>A tool for building Android applications with
+    Mirah. Maintainership has passed to Brendan Ribera and Alex Parrott.</dd>
 
     <dt><a href='/28'>RAV</a> (Ruby)</dt>
     <dd>A plugin for visualizing the data model of Rails

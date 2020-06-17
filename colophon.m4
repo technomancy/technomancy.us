@@ -17,8 +17,7 @@ include(header.html)
     <a href="https://technomancy.itch.io/bussard">Bussard</a>, a
     spaceflight programming adventure game, and
     <a href="https://fennel-lang.org">Fennel</a>, a small
-    programming language. I currently work
-    for <a href="https://circleci.com">CircleCI</a>.</p>
+    programming language.</p>
 
   <p><a href="/list">The archives</a> have a complete list of posts. I
     track my <a href="/books">reading habits</a> here too.</p>
@@ -42,6 +41,7 @@ include(header.html)
 
   <p>I've been interviewed in various places:</p>
   <ul>
+    <li><a href="https://librelounge.org/episodes/30-fennel-with-phil-hagelberg.html">Libre Lounge</a> (2019) by Serge Wroclawski</li>
     <li><a href="http://hifibyapg.com/volume-3.html#A.conversation.with.Phil.Hagelberg.on.Bussard">Hacks I Find Interesting</a> (2015) by Andrew Gwozdziewycz</li>
     <li><a href="http://sachachua.com/blog/2014/05/emacs-chat-phil-hagelberg/">Emacs Chats</a> video interview (2014) by Sacha Chua</li>
     <li><a href="http://phil.hagelberg.usesthis.com/">The Setup</a> (2013) by Daniel Bogan</li>
