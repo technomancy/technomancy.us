@@ -24,15 +24,18 @@ some Delany
 
 <h2>Currently reading</h2>
 <ul>
-  <li>Guards, Guards by Terry Pratchett</li>
+  <li>Making Sense of Olympia by David Scharer Water</li>
+  <li>Anarcho-Syndicalism in Theory and Practice by Rudolf Rocker</li>
   <li>The End of Policing by Alex S. Vitale</li>
-  <li>Radicalized by Cory Doctorow</li>
   <li>The Te of Piglet by Benjamin Hoff</li>
   <li>What is the name of this Book by Raymond Smullyan</li>
 </ul>
 
 <h2>Have read (chronologically since June 2003)</h2>
 <ul>
+<li>Record of a Spaceborn Few by Becky Chambers</li>
+<li>Guards, Guards by Terry Pratchett</li>
+<li>Radicalized by Cory Doctorow</li>
 <li>Until the End of Time by Brian Greene</li>
 <li>The Left Hand of Darkness by Ursula K. Le Guin</li>
 <li>People's History of the United States by Howard Zinn</li>

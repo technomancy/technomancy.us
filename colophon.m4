@@ -6,7 +6,7 @@ include(header.html)
 <div id='wrapper'>
   <img src='/i/headshot.jpg' alt='portrait' class='right' />
 
-  <p>My name is Phil Hagelberg, and this is my web site.</p>
+  <p>My name is Phil Hagelberg, (he/him) and this is my web site.</p>
 
   <p>I sell <a href="https://atreus.technomancy.us">DIY mechanical
     keyboard kits</a> and write <a href="/projects">computer
@@ -26,18 +26,16 @@ include(header.html)
     on <a href="https://freenode.net/">Freenode</a> IRC channels,
     particularly the <tt>#emacs</tt>, <tt>#fennel</tt>,
     and <tt>#clojure</tt> channels. I also post my shorter thoughts
-    to <a href="https://icosahedron.website/@technomancy">my Mastodon
-    account</a> on
-    the <a rel="me" href="https://en.wikipedia.org/wiki/Fediverse">Fediverse</a>.</p>
+    to <a href="https://hi.technomancy.us/users/technomancy">my 
+    account on Fediverse</a>.</p>
 
   <p>If you wish to comment on a post or otherwise contact me, feel
-    free to email me using my given name at this domain. Insightful
-    comments may be appended to posts with permission and attribution.
-    Sensitive data may be encrypted for
-    my <a href="/3FC33005.txt">public key</a>
-    (3FC33005). My previous key ID was 77E77DDC.</p>
+    free to email me using my given name at this domain.  Sensitive
+    data may be encrypted for my <a href="/3FC33005.txt">public
+    key</a> (3FC33005). My previous key ID was 77E77DDC.</p>
 
-    <!-- and a <a href="http://amzn.com/w/36G41BG8OG578">wish list on Amazon</a>. -->
+    <!-- and a <a href="http://amzn.com/w/36G41BG8OG578">wish list on Amazon</a>.
+         but Amazon is bad so I don't want to encourage people to use it. -->
 
   <p>I've been interviewed in various places:</p>
   <ul>
@@ -58,8 +56,8 @@ include(header.html)
     running <a href="http://www.debian.org">Debian GNU/Linux</a>,
     usually on an <a href="https://atreus.technomancy.us">Atreus
     keyboard</a>. They are published
-    via <a href="http://mbreen.com/m4.html">GNU M4</a>, rsync,
-    and <a href='http://p.hagelb.org/Makefile.html'>a 12-line
+    via <a href="https://chrisman.github.io/9.html">GNU M4</a>, rsync,
+    and <a href="http://p.hagelb.org/Makefile.html">a 12-line
     Makefile</a>. Prose contents of all articles are licensed under a
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
       Commons Attribution-ShareAlike 4.0 License</a> unless otherwise specified.</p>

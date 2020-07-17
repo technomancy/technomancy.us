@@ -95,17 +95,11 @@ include(header.html)
 
   <h4><a name="created">Created</a></h4>
   <dl>
+    <dt><a href="https://git.sr.ht/~technomancy/antifennel">Antifennel</a> (Fennel)</dt>
+    <dd>A compiler from Fennel to Lua.</dd>
+
     <dt><a href='http://atreus.technomancy.us'>Atreus</a> (C, Racket, KiCAD)</dt>
     <dd>An open-source hardware, ergonomic mechanical travel keyboard design and firmware.</dd>
-
-    <dt><a href="https://technomancy.itch.io/bussard">Bussard</a> (Lua)</dt>
-    <dd>A space flight simulation adventure with a programmable ship and stations.</dd>
-
-    <dt><a href='https://gitlab.com/technomancy/cardinality'>Cardinality</a> (Lua)</dt>
-    <dd>A game authoring environment inspired by Hypercard and Scratch.</dd>
-
-    <dt><a href="https://github.com/noisesmith/energize">Energize!</a> (Fennel)</dt>
-    <dd>A game where you play as the transporter room operator.</dd>
 
     <dt><a href="https://github.com/technomancy/grenchman">Grenchman</a> (OCaml)</dt>
     <dd>Fast-launching CLI client for running Clojure code over nREPL.</dd>
@@ -113,11 +107,6 @@ include(header.html)
     <dt><a href='http://leiningen.org'>Leiningen</a> (Clojure)</dt>
     <dd>Project automation for Clojure designed to not set your hair on
       fire. Installed hundreds of thousands of times.</dd>
-
-    <dt><a href="https://technomancy.itch.io/exo-encounter-667">EXO_encounter 667</a> (Fennel)</dt>
-    <dd>A top-down puzzle/adventure game featuring lasers and robots. Winner of
-    the <a href="https://itch.io/jam/lisp-game-jam-2018/results">Lisp Game Jam
-        Spring 2018</a>.</dd>
 
     <dt><a href='https://github.com/technomancy/orestes'>Orestes</a> (Forth, C)</dt>
     <dd>A Forth implementation for microcontrollers.</dd>
@@ -153,6 +142,32 @@ include(header.html)
       projects via ssh and tmux. Maintainership has passed to Chris
       Bilson.</dd>
 
+    <dt>Miscellaneous Emacs Libraries</dt>
+    <dd><a href='http://www.emacswiki.org/cgi-bin/wiki/FindFileInProject'>find-file-in-project</a>,
+      <a href='http://www.emacswiki.org/cgi-bin/wiki/IdleHighlight'>idle-highlight-mode</a>,
+      <a href='https://github.com/technomancy/better-defaults'>better-defaults</a>, and
+      <a href='https://github.com/technomancy/scpaste'>scpaste</a>.
+    </dd>
+  </dl>
+
+  <h4><a name="games">Games</a></h4>
+  <dl>
+    <dt><a href="https://technomancy.itch.io/bussard">Bussard</a> (Lua)</dt>
+    <dd>A space flight simulation adventure with a programmable ship and stations.</dd>
+
+    <dt><a href='https://gitlab.com/technomancy/cardinality'>Cardinality</a> (Lua)</dt>
+    <dd>A game authoring environment inspired by Hypercard and Scratch.</dd>
+
+    <dt><a href="https://github.com/noisesmith/energize">Energize!</a> (Fennel)</dt>
+    <dd>A game where you play as the transporter room operator.
+      Winner of the <a href="https://itch.io/jam/autumn-lisp-game-jam-2019/results">Autumn
+        Lisp Game Jam 2019</a>.</dd>
+
+    <dt><a href="https://technomancy.itch.io/exo-encounter-667">EXO_encounter 667</a> (Fennel)</dt>
+    <dd>A top-down puzzle/adventure game featuring lasers and robots. Winner of
+      the <a href="https://itch.io/jam/lisp-game-jam-2018/results">Lisp Game Jam
+        Spring 2018</a>.</dd>
+
     <dt><a href="https://technomancy.itch.io/this-is-my-mech">This is my Mech</a>, with Emma Bukacek (Fennel)</dt>
     <dd>A short game about a group of mech pilots working
       together. <a href="https://itch.io/jam/lisp-game-jam-2019/results">Winner
@@ -162,13 +177,6 @@ include(header.html)
         Quest IV</a>, with <a href="https://benaiah.me/">Benaiah
         Mischenko</a> (Fennel)</dt>
     <dd>A short game about working in the QA department of an MMORPG.</dd>
-
-    <dt>Miscellaneous Emacs Libraries</dt>
-    <dd><a href='http://www.emacswiki.org/cgi-bin/wiki/FindFileInProject'>find-file-in-project</a>,
-      <a href='http://www.emacswiki.org/cgi-bin/wiki/IdleHighlight'>idle-highlight-mode</a>,
-      <a href='https://github.com/technomancy/better-defaults'>better-defaults</a>, and
-      <a href='https://github.com/technomancy/scpaste'>scpaste</a>.
-    </dd>
   </dl>
 
   <h4><a name="deprecated">Deprecated</a></h4>

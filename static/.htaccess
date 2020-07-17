@@ -8,3 +8,5 @@ php_flag engine off
 Header set Strict-Transport-Security "max-age=31536000"
 Header set X-Frame-Options "DENY"
 Header set X-XSS-Protection "1; mode=block"
+
+ErrorDocument 404 https://technomancy.us/404
